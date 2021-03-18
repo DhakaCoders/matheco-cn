@@ -328,4 +328,8 @@ form .dropdown-menu li a{
 a{
 	color: #243444;
 	text-decoration: underline;
+	font-weight: 700;
+}
+a:hover{
+	color: #2285E3;
 }
