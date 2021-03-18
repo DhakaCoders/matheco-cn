@@ -1,0 +1,49 @@
+.hm-banner{
+	padding-left: 82px;
+}
+.hm-banner-cntlr{
+	position: relative;
+	padding: 16px 0 16px 20px;
+	margin-top: -80px;
+}
+.hm-banner-bdr{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 14.322%;
+	content: "";
+	background: #243444;
+	z-index: 1;
+}
+.hm-banner-img{
+	min-height: 838px;
+	position: relative;
+	z-index: 2;
+	display: flex;
+	align-items: flex-end;
+	
+}
+.hm-banner-inr{
+	display: flex;
+}
+.hm-banner-desc{
+	background: #2285e3;
+	color: #fff;
+	padding: 55px 55px 53px 57px;
+	display: inline-block;
+	margin-left: auto;
+	margin-bottom: -47px;
+}
+.hm-banner-title{
+	color: #fff;
+	text-transform: uppercase;
+}
+.hm-banner-desc p:last-of-type{
+	margin-bottom: 35px; 
+}
+.hm-banner-desc a{
+	color: #fff;
+	font-size: 700;
+	text-transform: uppercase;
+}
