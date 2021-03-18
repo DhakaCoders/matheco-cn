@@ -47,3 +47,143 @@
 	font-size: 700;
 	text-transform: uppercase;
 }
+.our-services{
+	padding: 104px 0 52px 0;
+}
+
+.our-services-grid-cntlr{
+
+}
+.our-services-grid{
+	margin: 0 -12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.our-services-item-wrap{
+	padding: 0 12px;
+	margin-bottom: 24px;
+	width: 25%;
+}
+.our-services-item-cnlr{
+
+}
+.our-services-item{
+	min-height: 456px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: #f8f8f8;
+}
+.our-srvcs-icon{
+	height: 140px;
+	width: 140px;
+	background: #fff;
+	border-radius: 50% 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 26px;
+}
+.our-services-hding{
+	margin-bottom: 22px;
+}
+.our-services-item-title{
+	margin-bottom: 0;
+	margin-top: auto;
+}
+.our-services-item-desc{
+	padding: 0 35px;
+	text-align: center;
+}
+.our-services-item-desc p:last-of-type{
+	margin-bottom: 0;
+}
+
+/*product sce*/
+.product{
+	padding-top: 52px;
+}
+.product-cntlr{
+	height: 340px;
+	position: relative;
+}
+.product-item-cntlr{
+	max-width: 710px;
+	width: 100%;
+	background: #2285e3;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 340px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+}
+.product-item-cntlr.login-product-item-cntlr{
+	right: 0;
+	left: initial;
+	top: 42px;
+	z-index: 3;
+	background: #243444;
+}
+.product-item{
+	max-width: 456px;
+	width: 100%;
+	text-align: center;
+}
+.product-item-icon{
+	margin-bottom: 28px;
+}
+.product-item-title{
+	margin-bottom: 16px;
+	color: #fff;
+}
+.product-item p:last-of-type{
+	margin-bottom: 45px;
+}
+.product-item a{
+	color: #fff;
+}
+/*football-backyard*/
+.football-backyard{
+
+}
+.football-backyard-cntlr{
+	display: flex;
+	align-items: center;
+}
+.ftball-bcwrd-img{
+	width: 49.7%;
+}
+.ftball-bcwrd-img img{
+	width: 100%;
+}
+.ftball-bcwrd-desc-cntlr{
+	width: 50.3%;
+	display: flex;
+	align-items: center;
+	padding: 20px 0 20px 115px;
+}
+.ftball-bcwrd-desc{
+	max-width: 590px;
+	width: 100%;
+	margin-bottom: -80px;
+}
+.ftball-bcwrd-title{
+
+}
+.ftball-bcwrd-desc p:last-of-type{
+	margin-bottom: 28px;
+}
+.ftball-bcwrd-btn{
+	padding-top: 8px;
+}
+.ftball-bcwrd-btn a{
+	text-transform: uppercase;
+	font-weight: 700;
+}
