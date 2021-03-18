@@ -354,10 +354,11 @@ ul li {
     content: "";
     position: absolute;
     left: 0;
-    top: 13px;
+    top: 12px;
     width: 8px;
     height: 8px;
     background: #D2232A;
+    border-radius: 100%;
 }
 ul li.refGridItem:before{
 	display: none;
