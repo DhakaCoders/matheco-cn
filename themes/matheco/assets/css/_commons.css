@@ -333,3 +333,60 @@ a{
 a:hover{
 	color: #2285E3;
 }
+
+
+.default-page-con ul,
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-left: 0;
+	padding-bottom: 15px;
+}
+.default-page-con ul li,
+ul li {
+	padding: 5px 0 15px 18px;
+	position: relative;
+	line-height: 24px;
+}
+
+.default-page-con ul li::before, ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 8px;
+    height: 8px;
+    background: #D2232A;
+}
+ul li.refGridItem:before{
+	display: none;
+}
+.default-page-con ol, ol {
+	padding: 0 0 0 0;
+	list-style: none;
+	counter-reset: my-awesome-counter;
+	-ms-counter-reset: my-awesome-counter;
+	-webkit-counter-reset: my-awesome-counter;
+}
+.default-page-con ol li ,ol li {
+	counter-increment: my-awesome-counter;
+	-ms-counter-increment: my-awesome-counter;
+	-webkit-counter-increment: my-awesome-counter;
+	padding-bottom: 10px;
+	line-height: 24px;
+	padding-left: 20px;
+	position: relative;
+}
+.default-page-con ol li::before,
+ol li::before {
+	content: counter(my-awesome-counter) ".";
+	color: #D2232A;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 4px;
+}
