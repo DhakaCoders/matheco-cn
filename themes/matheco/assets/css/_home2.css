@@ -7,7 +7,7 @@
 
 .sec-entry-hdr{
 	text-align: center;
-	max-width: 750px;
+	max-width: 700px;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -16,16 +16,66 @@
 	margin-bottom: 7px;
 }
 
+.hm-faq-entry-hdr p{
+	margin-bottom: 25px;
+}
+
+
+.mct-faq-accordion-ctlr{
+	margin-left: -12px;
+	margin-right: -12px;
+}
+.mct-faq-accordion-ctlr ul{
+	float: left;
+	width: 50%;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+.mct-faq-accordion-ctlr ul li{
+	padding-bottom: 40px;
+}
 
 .mct-faq-accordion{
 	background: #FFFFFF;
 	box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.04);
 	padding: 25px 30px;
-	margin-bottom: 40px;
 }
 .mct-faq-accordion-title{
+	font-size: 18px;
 	letter-spacing: initial;
-	margin-bottom: 0;
+	padding-right: 40px;
+	cursor: pointer;
+	position: relative;
+}
+.mct-faq-accordion-title span{
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	width: 36px;
+	height: 36px;
+	background: red;
+	border-radius: 100%;
+}
+.mct-faq-accordion-title span:after{
+	content: "\f067"!important;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    text-decoration: inherit;
+    color: #fff;
+    font-size: 16px;
+    padding-right: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+.mct-faq-accordion-title.active span:after{
+	content: "\f068"!important;
 }
 
 .mct-faq-accordion-des{
@@ -35,4 +85,10 @@
 }
 .mct-faq-accordion-des p{
 	margin-bottom: 0;
+}
+
+
+.mtc-faq-btn{
+	text-align: center;
+	margin-top: 10px;
 }

@@ -209,6 +209,22 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 /*start of Shariful*/
 
+  /*$('.mct-faq-accordion h5').on('click', function(){
+     
+   $(this).toggleClass('active');
+    $(this).parents().siblings().find('h5').removeClass('active'); 
+    $(this).parents().find('.mct-faq-accordion-des').slideToggle(300);
+    $(this).parents().siblings().find('.mct-faq-accordion-des').slideUp(300);
+    
+  });*/
+
+  $('.mct-faq-accordion h5').on('click', function(){
+    $(this).toggleClass('active');
+    $(this).parents().siblings().find('h5').removeClass('active');
+    $(this).parents().find('.mct-faq-accordion-des').slideToggle(300);
+    $(this).parents().siblings().find('.mct-faq-accordion-des').slideUp(300);
+  });
+
 
 /*start of Sabbir*/
 
