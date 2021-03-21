@@ -68,11 +68,26 @@
 	font-weight: 500;
 }
 
-.ftr-menu ul li a.login{
+.ftr-menu ul li.login a{
 	padding-right: 22px;
 	position: relative;
 }
-.ftr-menu ul li a.login i{
+.ftr-menu ul li.login a:after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	background: url('../images/ftr-login.svg');
+	background-repeat: no-repeat!important;
+	background-size: cover!important;
+	background-position: center center!important;
+	width: 12px;
+	height: 12px;
+}
+/*.ftr-menu ul li a.login i{
 	position: absolute;
 	top: 50%;
 	right: 0;
@@ -80,7 +95,7 @@
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	margin-top: -1px;
-}
+}*/
 
 .ftr-menu ul li a:hover{
 	opacity: 0.7;
