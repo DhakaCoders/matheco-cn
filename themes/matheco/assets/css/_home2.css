@@ -56,7 +56,7 @@
 	-ms-transform: translateY(-50%);
 	width: 36px;
 	height: 36px;
-	background: red;
+	background: #2285E3;
 	border-radius: 100%;
 }
 .mct-faq-accordion-title span:after{
@@ -73,6 +73,9 @@
     transform: translate(-50%,-50%);
     -webkit-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
+}
+.mct-faq-accordion-title.active span{
+	background: #D2232A;
 }
 .mct-faq-accordion-title.active span:after{
 	content: "\f068"!important;
