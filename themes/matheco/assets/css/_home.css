@@ -90,6 +90,7 @@
 	display: flex;
 	align-items: flex-end;
 	margin-bottom: 22px;
+	padding: 0 10px;
 }
 .our-services-item-title{
 	margin-bottom: 0;
