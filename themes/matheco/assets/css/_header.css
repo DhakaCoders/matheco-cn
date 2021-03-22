@@ -60,6 +60,22 @@ nav.main-nav > ul > li > a{
 	padding-bottom: 67px;
 	position: relative;
 }
+nav.main-nav > ul > li.login-menu-item > a{
+	padding-right: 22px;
+}
+nav.main-nav > ul > li.login-menu-item > a:after{
+	position: absolute;
+	content: "";
+	top: 2px;
+	right: 0;
+	background: url('../images/external-icon.svg');
+	background-repeat: no-repeat;
+	height: 12px;
+	width: 12px;
+}
+nav.main-nav > ul > li.login-menu-item > a:hover:after{
+	background: url('../images/external-icon-hvr.svg');
+}
 nav.main-nav ul li a:hover,
 nav.main-nav > ul > li.current-menu-item > a,
 nav.main-nav > ul > li.menu-item-has-children:hover > a,
