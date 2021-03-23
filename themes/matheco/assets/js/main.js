@@ -5,9 +5,9 @@ var CustomMapStyles  = [{"featureType":"water","elementType":"geometry","stylers
 
 var windowWidth = $(window).width();
 $('.navbar-toggle').on('click', function(){
-	$('#mobile-nav').slideToggle(300);
+  $('#mobile-nav').slideToggle(300);
 });
-	
+  
   
 //matchHeightCol
 if($('.mHc').length){
@@ -230,13 +230,12 @@ if( $('.hm-banner-bdr').length ){
     $(this).parents().siblings().find('.mct-faq-accordion-des').slideUp(300);
     
   });*/
-  $('.mct-faq-accordion-des').slideUp(300);
 
   $('.mct-faq-accordion h5').on('click', function(){
     $(this).toggleClass('active');
-    $(this).parent().siblings().find('h5').removeClass('active');
-    $(this).parent().find('.mct-faq-accordion-des').slideToggle(300);
-    $(this).parent().siblings().find('.mct-faq-accordion-des').slideUp(300);
+    $(this).parents().siblings().find('h5').removeClass('active');
+    $(this).parents().find('.mct-faq-accordion-des').slideToggle(300);
+    $(this).parents().siblings().find('.mct-faq-accordion-des').slideUp(300);
   });
 
 
