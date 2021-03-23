@@ -200,6 +200,20 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 /*start of Noyon*/
+if (windowWidth <= 767) {
+  $('.hambergar-icon').on('click', function(e){
+    $('.hdr-menu').slideToggle(500);
+    $(this).toggleClass('cross-icon');
+  });
+
+  $('li.menu-item-has-children > a').on('click', function(e){
+    e.preventDefault();
+    $(this).parent().toggleClass('sub-menu-arrow');
+    $(this).next().slideToggle(300);
+
+  });
+}
+
 if( $('.hm-banner-bdr').length ){
   var conWidth = $('.container').width();
   var OutConLft = (windowWidth - conWidth)/2;
