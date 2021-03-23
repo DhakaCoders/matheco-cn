@@ -5,9 +5,9 @@ var CustomMapStyles  = [{"featureType":"water","elementType":"geometry","stylers
 
 var windowWidth = $(window).width();
 $('.navbar-toggle').on('click', function(){
-	$('#mobile-nav').slideToggle(300);
+  $('#mobile-nav').slideToggle(300);
 });
-	
+  
   
 //matchHeightCol
 if($('.mHc').length){
@@ -245,9 +245,7 @@ $('.mct-faq-accordion-title').click(function(){
     $(this).parent().siblings().find('.mct-faq-accordion-des').slideUp(300);
     $(this).toggleClass('active');
     $(this).parent().siblings().find('.mct-faq-accordion-title').removeClass('active');
-   
 });
-
 
 
 /*start of Sabbir*/
