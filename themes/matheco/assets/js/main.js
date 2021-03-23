@@ -200,7 +200,20 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 /*start of Noyon*/
+if( $('.hm-banner-bdr').length ){
+  var conWidth = $('.container').width();
+  var OutConLft = (windowWidth - conWidth)/2;
+  $('.hm-banner-bdr').css("right",OutConLft);
+}
 
+/*if( $('..hm-banner-bdr').length ){
+  var conWidth = $('.container').width();
+  var OutConLft = (windowWidth - conWidth)/2;
+
+  var VclLefBgOuter = OutConLft + VclRtWidth;
+  var VclLefBg = windowWidth - VclLefBgOuter;
+  $('.Vehicle-left-bg').css("width",VclLefBg);
+}*/
 
 
 /*start of Rannojit*/

@@ -79,6 +79,7 @@
 .our-srvcs-icon{
 	height: 140px;
 	width: 140px;
+	padding: 30px;
 	background: #fff;
 	border-radius: 50% 50%;
 	display: flex;
@@ -88,13 +89,12 @@
 }
 .our-services-hding{
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
 	margin-bottom: 22px;
 	padding: 0 10px;
 }
 .our-services-item-title{
 	margin-bottom: 0;
-	margin-top: auto;
 	text-align: center;
 }
 .our-services-item-desc{
@@ -110,19 +110,17 @@
 	padding-top: 52px;
 }
 .product-cntlr{
-	height: 340px;
-	position: relative;
+
 }
 .product-item-cntlr{
-	max-width: 710px;
-	width: 100%;
+	float: left;
+	width: 50%;
 	background: #2285e3;
 	color: #fff;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 340px;
-	position: absolute;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -166,11 +164,14 @@
 
 }
 .football-backyard-cntlr{
-	display: flex;
-	align-items: center;
+	position: relative;
 }
 .ftball-bcwrd-img{
 	width: 49.7%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
 }
 .ftball-bcwrd-img img{
 	width: 100%;
@@ -180,6 +181,7 @@
 	display: flex;
 	align-items: center;
 	padding: 20px 0 20px 115px;
+	margin-left: auto;
 }
 .ftball-bcwrd-desc{
 	max-width: 590px;
