@@ -230,14 +230,24 @@ if( $('.hm-banner-bdr').length ){
     $(this).parents().siblings().find('.mct-faq-accordion-des').slideUp(300);
     
   });*/
-  $('.mct-faq-accordion-des').slideUp(300);
 
-  $('.mct-faq-accordion h5').on('click', function(){
+/*
+  $('.mct-faq-accordion-title').on('click', function(){
     $(this).toggleClass('active');
     $(this).parent().siblings().find('h5').removeClass('active');
     $(this).parent().find('.mct-faq-accordion-des').slideToggle(300);
     $(this).parent().siblings().find('.mct-faq-accordion-des').slideUp(300);
-  });
+  });*/
+
+
+$('.mct-faq-accordion-title').click(function(){
+    $(this).next().slideToggle(300);
+    $(this).parent().siblings().find('.mct-faq-accordion-des').slideUp(300);
+    $(this).toggleClass('active');
+    $(this).parent().siblings().find('.mct-faq-accordion-title').removeClass('active');
+   
+});
+
 
 
 /*start of Sabbir*/
