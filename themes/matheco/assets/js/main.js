@@ -210,11 +210,18 @@ if( $('.ftball-bcwrd-img').length ){
   var conWidth = $('.container').outerWidth();
   var OutConLft = (windowWidth - conWidth)/2;
   var VclRtWidth = $('.ftball-bcwrd-desc-cntlr').outerWidth();
-  alert(conWidth);
   var VclLefBgOuter = OutConLft + VclRtWidth;
-
   $('.ftball-bcwrd-img').css("width", VclLefBgOuter);
 }
+
+$(window).resize(function() { 
+  var window2Width = $(window).outerWidth();
+  var conWidth = $('.container').outerWidth();
+  var OutConLft = (window2Width - conWidth)/2;
+  var VclRtWidth = $('.ftball-bcwrd-desc-cntlr').outerWidth();
+  var VclLefBgOuter = OutConLft + VclRtWidth;
+  $('.ftball-bcwrd-img').css("width", VclLefBgOuter);
+});
 
 
 /*start of Rannojit*/

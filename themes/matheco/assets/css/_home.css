@@ -181,10 +181,11 @@
 }
 /*football-backyard*/
 .football-backyard{
-
+	margin-top: -43px;
 }
 .football-backyard-cntlr{
 	position: relative;
+
 }
 .ftball-bcwrd-img{
 	width: 49.7%;
@@ -200,8 +201,9 @@
 	width: 50.3%;
 	display: flex;
 	align-items: center;
-	padding: 20px 0 20px 115px;
+	padding: 90px 0 90px 115px;
 	margin-left: auto;
+	min-height: 685px;
 }
 .ftball-bcwrd-desc{
 	max-width: 590px;
