@@ -219,6 +219,12 @@ if( $('.hm-banner-bdr').length ){
   var OutConLft = (windowWidth - conWidth)/2;
   $('.hm-banner-bdr').css("right",OutConLft);
 }
+$(window).resize(function() { 
+  var window2Width = $(window).outerWidth();
+  var conWidth = $('.container').width();
+  var OutConLft = (window2Width - conWidth)/2;
+  $('.hm-banner-bdr').css("right",OutConLft);
+});
 
 if( $('.ftball-bcwrd-img').length ){
   var conWidth = $('.container').outerWidth();
