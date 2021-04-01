@@ -315,9 +315,19 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 		top: 100%;
 		z-index: 9999;
 		margin-top: 4px;
+		margin-bottom: 22px;
 		display: none;
 		padding: 65px 64px 85px 64px;
 		background: #243444;
+	}
+	.hdr-menu:after{
+		position: absolute;
+		content: "";
+		bottom: -6px;
+		right: 0;
+		height: 12px;
+		background: #2285e3;
+		width: 65.33%;
 	}
 	.hm-header{
 		padding-bottom: 0;
@@ -396,6 +406,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 	nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu li a{
 		color: #fff;
 		font-size: 14px;
+		font-weight: 500;
 	}
 }
 @media(max-width: 639px){
