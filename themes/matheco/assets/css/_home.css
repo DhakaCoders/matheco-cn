@@ -257,6 +257,11 @@
 	.hm-banner-img{
 		min-height: 687px;
 	}
+
+	.ftball-bcwrd-desc-cntlr{
+		padding-left: 60px;
+		min-height: 600px;
+	}
 }
 @media(max-width: 991px){
 	.hm-banner{
@@ -294,6 +299,14 @@
 	.our-services-item{
 		min-height: 380px;
 	}
+
+	.ftball-bcwrd-desc-cntlr{
+		padding-left: 15px;
+		min-height: 540px;
+	}
+	.ftball-bcwrd-desc{
+		margin-bottom: -60px;
+	}
 }
 @media(max-width: 767px){
 	.hm-banner{
@@ -330,12 +343,19 @@
 		display: block;
 
 	}
+	.our-services{
+		padding-bottom: 64px;
+		overflow: hidden;
+	}
+	.our-services-grid-cntlr{
+		max-width: 320px;
+	}
 	.our-services-item-wrap{
 		padding: 0;
-		margin-bottom: 0;
 		max-width: 320px;
 		width: 100px;
 		margin: 0 auto
+		margin-bottom: 20px;
 	}
 	.our-services-item{
 		min-height: 337px;
@@ -345,6 +365,68 @@
 	}
 	.OurServicesSlider.slick-dotted.slick-slider{
 		margin-bottom: 0!important;
+	}
+	.our-services-item-title br{
+		display: none;
+	}
+	.our-services-cntlr .sec-entry-hdr p:last-child{
+		margin-bottom: 28px;
+	}
+	.hm-box-grd-col{
+		float: initial;
+		width: 100%;
+	}
+	.hm-product-box-cntlr > div{
+		margin-left: -20px;
+		margin-right: 0;
+		padding-bottom: 56px;
+	}
+	.hm-login-box-cntlr > div {
+		margin-left: 0;
+		margin-right: -20px;
+	}
+	.hm-login-box-cntlr{
+		margin-top: -36px;
+	}
+	.hm-box-grd-icon{
+		margin-bottom: 25px;
+	}
+	.product-item-title{
+		margin-bottom: 15px;
+	}
+	.hm-box-grd-col p:last-of-type{
+		margin-bottom: 27px;
+	}
+	.hm-box-grd-section{
+		margin-bottom: 30px;
+	}
+	.football-backyard{
+		margin-top: 0;
+	}
+	.ftball-bcwrd-img{
+		position: initial;
+		min-height: 272px;
+		width: 100%;
+	}
+	.ftball-bcwrd-desc-cntlr{
+		min-height: initial;
+		padding: 45px 0;
+		width: 100%;
+		display: block;
+		align-items: center;
+		margin-left: initial;
+	}
+	.ftball-bcwrd-desc{
+		margin-bottom: 0;
+	}
+	.ftball-bcwrd-title{
+		margin-bottom: 15px;
+	}
+	.ftball-bcwrd-desc p:last-of-type{
+		margin-bottom: 15px;
+	}
+	.ftball-bcwrd-btn{
+		padding-top: 0;
 	}
 }
 @media(max-width: 575px){

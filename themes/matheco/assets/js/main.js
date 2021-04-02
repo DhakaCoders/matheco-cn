@@ -226,13 +226,16 @@ $(window).resize(function() {
   $('.hm-banner-bdr').css("right",OutConLft);
 });
 
-if( $('.ftball-bcwrd-img').length ){
-  var conWidth = $('.container').outerWidth();
-  var OutConLft = (windowWidth - conWidth)/2;
-  var VclRtWidth = $('.ftball-bcwrd-desc-cntlr').outerWidth();
-  var VclLefBgOuter = OutConLft + VclRtWidth;
-  $('.ftball-bcwrd-img').css("width", VclLefBgOuter);
+if (windowWidth > 767){
+  if( $('.ftball-bcwrd-img').length ){
+    var conWidth = $('.container').outerWidth();
+    var OutConLft = (windowWidth - conWidth)/2;
+    var VclRtWidth = $('.ftball-bcwrd-desc-cntlr').outerWidth();
+    var VclLefBgOuter = OutConLft + VclRtWidth;
+    $('.ftball-bcwrd-img').css("width", VclLefBgOuter);
+  }
 }
+
 
 $(window).resize(function() { 
   var window2Width = $(window).outerWidth();
