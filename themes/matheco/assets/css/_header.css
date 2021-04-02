@@ -330,7 +330,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 		width: 65.33%;
 	}
 	.hm-header{
-		padding-bottom: 0;
+		padding-bottom: 8px;
 	}
 	.header-cntlr{
 		position: relative;

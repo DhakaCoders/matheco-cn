@@ -243,6 +243,20 @@ $(window).resize(function() {
   $('.ftball-bcwrd-img').css("width", VclLefBgOuter);
 });
 
+if (windowWidth <= 767) {
+  if( $('.OurServicesSlider').length ){
+    $('.OurServicesSlider').slick({
+      dots: true,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    });
+  }
+}
+
 
 /*start of Rannojit*/
 
