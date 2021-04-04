@@ -46,6 +46,7 @@
 	padding-right: 40px;
 	cursor: pointer;
 	position: relative;
+	margin-bottom: 0;
 }
 .mct-faq-accordion-title span{
 	position: absolute;
