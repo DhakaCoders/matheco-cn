@@ -2,7 +2,7 @@
 	background: #2285e3;
 	
 }
-.hm-header{
+body.home .header{
 	padding-bottom: 80px;
 }
 .header-cntlr{
@@ -329,7 +329,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 		background: #2285e3;
 		width: 65.33%;
 	}
-	.hm-header{
+	body.home .header{
 		padding-bottom: 8px;
 	}
 	.header-cntlr{
