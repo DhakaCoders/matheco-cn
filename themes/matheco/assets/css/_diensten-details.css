@@ -1,0 +1,39 @@
+
+#dienstenDetails.default-page-con{
+	padding-bottom: 20px;
+}
+#dienstenDetails .dfp-promo-module-hdr{
+	display: flex;
+}
+#dienstenDetails .dfp-promo-icon{
+	margin-left: auto;
+}
+#dienstenDetails .dfp-promo-icon i{
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+#dienstenDetails .dfp-back-btn{
+	padding: 35px 0;
+	border-top: 2px solid red;
+}
+#dienstenDetails .dfp-back-btn a{
+	padding-left: 20px;
+	color: #707C88;
+	text-decoration: none;
+	position: relative;
+}
+#dienstenDetails .dfp-back-btn a:after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	background: url('../images/dfp-back-btn-icon.svg');
+	background-repeat: no-repeat!important;
+	background-size: cover!important;
+	width: 8px;
+	height: 14px;
+}
