@@ -300,6 +300,47 @@ $('.mct-faq-accordion-title').click(function(){
 
 /*start of Milon*/
 
+if( $('.TeamMemberSlider').length ){
+    $('.TeamMemberSlider').slick({
+      dots: false,
+      infinite: false,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 639,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 2,
+            dots: true,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+}
+
 if( $('.ornare-lft-bg').length ){
   var conWidth = $('.container').width();
 
@@ -324,6 +365,11 @@ $(window).resize(function() {
 $('.wpforms-error').on('click', function(){
   $(this).parents('.wpforms-field').removeClass('wpforms-has-error');
 });
+
+
+
+
+
 
 
 
