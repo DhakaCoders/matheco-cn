@@ -1,0 +1,15 @@
+.faq-overzicht-entry-hdr-sec{
+
+}
+
+.faq-entry-hdr-btn ul{
+	margin-left: -28px;
+	margin-right: -28px;
+}
+.faq-entry-hdr-btn ul li{
+	display: inline-block;
+	vertical-align: baseline;
+	padding-left: 28px;
+	padding-right: 28px;
+	padding-bottom: 50px;
+}
