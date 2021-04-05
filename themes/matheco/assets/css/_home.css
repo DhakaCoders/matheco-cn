@@ -71,7 +71,7 @@
 	clear: left;
 }
 .our-services-item-cnlr{
-
+	position: relative;
 }
 .our-services-item{
 	min-height: 456px;
@@ -101,6 +101,10 @@
 .our-services-item-title{
 	margin-bottom: 0;
 	text-align: center;
+}
+.our-services-item-title a{
+	text-decoration: none;
+	color: #243444;
 }
 .our-services-item-desc{
 	padding: 0 35px;
