@@ -52,6 +52,9 @@ team-member-sec-wrp
 	float: left;
 	padding: 0 12px;
 }
+.team-member-inr ul li:nth-child(4n+1){
+	clear: left;
+}
 .team-member-inr{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
