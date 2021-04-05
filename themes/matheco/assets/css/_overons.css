@@ -374,6 +374,13 @@ ovs-counter-sec-wrp
 	.ovs-counter-wrp ul li:nth-child(1) .ovs-counter-item{
 		padding-top: 25px;
 	}
+	.ovs-circle {
+	    width: 70px;
+	    height: 70px;
+	}
+	.ovs-circle strong {
+	    font-size: 14px;
+	}
 
 
 }
