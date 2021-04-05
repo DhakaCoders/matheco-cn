@@ -1,0 +1,113 @@
+#faq-details .dfp-back-btn-module{
+	padding: 35px 0;
+	border-top: 2px solid #F8F8F8;
+}
+#faq-details .dfp-back-btn{
+	padding: 0;
+	border: none;
+}
+#faq-details .dfp-back-btn-module{
+	display: flex;
+	align-items: center;
+}
+#faq-details .dfp-social-media{
+	margin-left: auto;
+}
+#faq-details .dfp-social-media span{
+	display: inline-block;
+	vertical-align: baseline;
+	padding-right: 20px;
+	color: #707C88;
+}
+#faq-details .dfp-social-media ul{
+	display: inline-block;
+	vertical-align: baseline;
+	margin-left: -8px;
+	margin-right: -8px;
+}
+#faq-details .dfp-social-media ul li{
+	display: inline-block;
+	vertical-align: baseline;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+#faq-details .dfp-social-media ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+	color: #243444;
+}
+#faq-details .dfp-social-media ul li a:hover{
+	color: #2285E3;
+}
+
+
+.faq-detials-sec{
+	padding: 80px 0 65px;
+	background: #F8F8F8;
+}
+.faq-detials-sec .mct-faq-accordion-ctlr ul li{
+	padding-bottom: 30px;
+}
+.faq-detials-sec .mtc-faq-entry-title{
+	margin-bottom: 20px;
+}
+
+
+#faq-details .dfp-promo-module h1, 
+#faq-details .dfp-promo-module-title{
+	margin-bottom: 15px;
+}
+
+#faq-details .dfp-promo-module a{
+	display: inline-block;
+	vertical-align: baseline;
+	margin-bottom: 20px;
+	color: #2285E3;
+	font-weight: 600;
+}
+#faq-details.default-page-con{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+
+@media(max-width: 991px){
+	.faq-detials-sec {
+	    padding: 60px 0 50px;
+	}
+}
+@media(max-width: 767px){
+	#faq-details.default-page-con{
+		padding-top: 30px;
+	}
+	#faq-details .dfp-promo-module h1, 
+	#faq-details .dfp-promo-module-title{
+		text-align: left;
+		margin-bottom: 15px;
+		padding-bottom: 15px;
+		border-bottom: 1px solid #F3F3F3;
+	}
+	#faq-details .dfp-promo-module a{
+		margin-bottom: 12px;
+	}
+	#faq-details .dfp-back-btn-module{
+		display: block;
+	}
+	#faq-details .dfp-back-btn-module {
+	    padding: 20px 0;
+	}
+	.faq-detials-sec {
+	    padding: 40px 0 40px;
+	}
+	.faq-detials-sec .mct-faq-accordion-ctlr ul li {
+	    padding-bottom: 20px;
+	}
+}
+@media(max-width: 575px){
+	.faq-detials-sec {
+	    padding: 30px 0 30px;
+	}
+	.faq-detials-sec .mct-faq-accordion-ctlr ul li {
+	    padding-bottom: 10px;
+	}
+}
