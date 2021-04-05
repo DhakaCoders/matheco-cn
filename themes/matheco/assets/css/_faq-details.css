@@ -39,3 +39,15 @@
 #faq-details .dfp-social-media ul li a:hover{
 	color: #2285E3;
 }
+
+
+.faq-detials-sec{
+	padding: 80px 0 65px;
+	background: #F8F8F8;
+}
+.faq-detials-sec .mct-faq-accordion-ctlr ul li{
+	padding-bottom: 30px;
+}
+.faq-detials-sec .mtc-faq-entry-title{
+	margin-bottom: 20px;
+}
