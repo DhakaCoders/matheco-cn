@@ -857,8 +857,9 @@ Gallery design
 	.dfp-slider-module {
 	    margin-top: 0;
 	}
-	.default-page-con {
-	    padding-bottom: 0;
+	.dfp-faq-module{
+		margin-left: -15px;
+		margin-right: -15px;
 	}
 	
 }
