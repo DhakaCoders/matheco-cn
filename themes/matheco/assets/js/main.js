@@ -300,6 +300,31 @@ $('.mct-faq-accordion-title').click(function(){
 
 /*start of Milon*/
 
+if( $('.ornare-lft-bg').length ){
+  var conWidth = $('.container').width();
+
+  var OutConLef = (windowWidth - conWidth)/2;
+  var VclLftWidth = $('.ornare-dsc').outerWidth();
+  var VclRtBgOuter = OutConRgt + VclLftWidth;
+  var VclRtBg = windowWidth - VclRtBgOuter;
+  $('.ornare-lft-bg').css("width",VclRtBg);
+}
+
+$(window).resize(function() { 
+  var window2Width = $(window).width();
+  var conWidth = $('.container').width();
+
+  var OutConRgt = (window2Width - conWidth)/2;
+  var VclLftWidth = $('.contat-frm-wrp').outerWidth();
+  var VclRtBgOuter = OutConRgt + VclLftWidth;
+  var VclRtBg = window2Width - VclRtBgOuter;
+  $('.ornare-lft-bg').css("width",VclRtBg);
+});
+
+$('.wpforms-error').on('click', function(){
+  $(this).parents('.wpforms-field').removeClass('wpforms-has-error');
+});
+
 
 
 

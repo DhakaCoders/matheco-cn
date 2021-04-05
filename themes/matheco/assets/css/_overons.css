@@ -1,0 +1,147 @@
+/*
+----------------------
+ornare-txt-img-sec-wrp
+----------------------
+*/
+.overons-breadcrumb-sec{
+	margin-bottom: 0;
+}
+.ornare-txt-img-sec-wrp{
+	position: relative;
+}
+.ornare-dsc-title.fl-h1 {
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+.ornare-lft-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: 1;
+    height: 630px;
+}
+.ornare-dsc {
+    width: 50%;
+    float: right;
+    padding-top: 40px;
+    padding-left: 140px;
+}
+.ornare-fea-img{
+	padding-top: 30px;
+}
+
+/*
+--------------------
+team-member-sec-wrp
+--------------------
+*/
+.team-member-sec-wrp{
+	padding-top: 100px;
+	padding-bottom: 90px;
+}
+.team-member-wrp .sec-entry-hdr{
+	padding-bottom: 35px;
+}
+.team-member-inr ul{
+	margin: 0 -12px;
+}
+.team-member-inr ul li{
+	width: 25%;
+	float: left;
+	padding: 0 12px;
+}
+.team-member-inr ul li:nth-child(4n+1){
+	clear: left;
+}
+.team-member-inr{
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.team-member-grid-img-cntlr{
+	position: relative;
+	overflow: hidden;
+}
+.team-member-grid-img{
+	height: 405px !important;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.team-member-grid-dsc{
+	text-align: center;
+	padding: 30px 10px 20px;
+}
+.team-member-grid-dsc .fl-h4{
+	text-transform: inherit;
+	margin-bottom: 12px;
+}
+.team-member-grid-dsc span{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 16px;
+	line-height: 1;
+	color: #707C88;
+}
+.team-member-wrp .fl-h2,
+.ovs-counter-wrp .fl-h2{
+	margin-bottom: 10px;
+}
+/*
+------------------
+ovs-counter-sec-wrp
+------------------
+*/
+.ovs-counter-sec-wrp{
+	padding-top: 80px;
+	padding-bottom: 100px;
+	background: #f8f8f8;
+}
+.ovs-counter-sec-wrp .sec-entry-hdr{
+	padding-bottom: 40px;
+}
+.ovs-counter-wrp ul{
+	margin: 0 -50px;
+}
+.ovs-counter-wrp ul li{
+	width: 25%;
+	float: left;
+	padding: 0 50px;
+}
+.ovs-counter-item{
+    text-align: center;
+    position: relative;
+}
+.ovs-counter-item:after{
+	content: "";
+	position: absolute;
+	right: -75px;
+	top: 45px;
+	width: 48px;
+	height: 2px;
+	background: #2285E3;
+}
+.ovs-counter-wrp ul li:last-child .ovs-counter-item:after{
+	content: none;
+}
+.ovs-circle{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	background: #fff;
+	margin: 0 auto;
+	margin-bottom: 18px;
+}
+.ovs-circle strong{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 18px;
+	line-height: 1;
+	color: #243444;
+	font-weight: 600;
+}

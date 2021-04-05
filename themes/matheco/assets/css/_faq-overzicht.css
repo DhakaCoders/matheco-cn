@@ -1,0 +1,82 @@
+.faq-overzicht-entry-hdr-sec{
+
+}
+
+.faq-entry-hdr-btn ul{
+	margin-left: -28px;
+	margin-right: -28px;
+}
+.faq-entry-hdr-btn ul li{
+	display: inline-block;
+	vertical-align: baseline;
+	padding-left: 28px;
+	padding-right: 28px;
+	padding-bottom: 50px;
+}
+.faq-entry-hdr-btn ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+	color: #707C88;
+	text-decoration: none;
+}
+.faq-entry-hdr-btn ul li.active a{
+	font-weight: 600;
+	color: #2285E3;
+	text-decoration: underline;
+}
+
+
+.faq-overzicht-sec{
+	padding: 72px 0 50px;
+	background: #F8F8F8;
+}
+
+
+.faq-overzicht-sec .mct-faq-accordion-ctlr ul{
+	margin-left: 0;
+	margin-right: 0;
+}
+.faq-overzicht-sec .mct-faq-accordion-ctlr ul li{
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 30px;
+}
+
+.fl-pagination-sec{
+	padding: 50px 0 60px;
+}
+.fl-pagination-ctlr{
+	text-align: center;
+}
+.fl-pagination-ctlr ul{
+	margin-left: -22px;
+	margin-right: -22px;
+}
+.fl-pagination-ctlr ul li{
+	display: inline-block;
+	vertical-align: baseline;
+	padding-left: 22px;
+	padding-right: 22px;
+}
+.fl-pagination-ctlr ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+	color: #243444;
+	font-weight: 600;
+	text-decoration: none;
+}
+.fl-pagination-ctlr ul li a:hover{
+	color: #2285E3;
+}
+.fl-pagination-ctlr ul li span.current{
+	color: #2285E3;
+	font-weight: 700;
+	width: 36px;
+	height: 36px;
+	border: 2px solid #2285E3;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

@@ -353,8 +353,8 @@
 	.our-services-item-wrap{
 		padding: 0;
 		max-width: 320px;
-		width: 100px;
-		margin: 0 auto
+		width: 100%;
+		margin: 0 auto;
 		margin-bottom: 20px;
 	}
 	.our-services-item{

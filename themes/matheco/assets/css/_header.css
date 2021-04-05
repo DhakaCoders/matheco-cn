@@ -81,12 +81,25 @@ nav.main-nav > ul > li.login-menu-item > a:hover:after{
 	background: url('../images/external-icon-hvr.svg');
 }
 nav.main-nav ul li a:hover,
-nav.main-nav > ul > li.current-menu-item > a,
 nav.main-nav > ul > li.menu-item-has-children:hover > a,
 nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover a{
 	color: #d2232a;
 }
-
+nav.main-nav > ul > li.current-menu-item > a:after{
+	position: absolute;
+	content: "";
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	width: 12px;
+	height: 12px;
+	background: #fff;
+	border-radius: 50% 50%;
+	margin-bottom: 7px;
+}
 
 nav.main-nav > ul > li.menu-item-has-children ul.sub-menu {
     position: absolute;
