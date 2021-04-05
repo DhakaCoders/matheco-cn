@@ -24,3 +24,21 @@
 	color: #2285E3;
 	text-decoration: underline;
 }
+
+
+.faq-overzicht-sec{
+	padding: 72px 0 50px;
+	background: #F8F8F8;
+}
+
+
+.faq-overzicht-sec .mct-faq-accordion-ctlr ul{
+	margin-left: 0;
+	margin-right: 0;
+}
+.faq-overzicht-sec .mct-faq-accordion-ctlr ul li{
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 30px;
+}
