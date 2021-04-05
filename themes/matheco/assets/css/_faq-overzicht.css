@@ -13,3 +13,14 @@
 	padding-right: 28px;
 	padding-bottom: 50px;
 }
+.faq-entry-hdr-btn ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+	color: #707C88;
+	text-decoration: none;
+}
+.faq-entry-hdr-btn ul li.active a{
+	font-weight: 600;
+	color: #2285E3;
+	text-decoration: underline;
+}
