@@ -469,14 +469,12 @@ Gallery design
 .dfp-faq-module .mct-faq-accordion-ctlr{
 	width: 100%;
 }
-.dfp-faq-module .mct-faq-accordion-ctlr ul{
-	width: 100%;
-	padding: 0;
-}
 .dfp-faq-module .mct-faq-accordion-ctlr ul li{
+	width: 100%;
 	padding: 0;
 	padding-bottom: 30px;
 }
+
 .dfp-faq-module .mct-faq-accordion{
 	padding: 25px 40px;
 }
