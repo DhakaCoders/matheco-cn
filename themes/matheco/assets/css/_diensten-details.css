@@ -40,3 +40,16 @@
 	width: 8px;
 	height: 14px;
 }
+
+
+.diensten-details-ctlr .mtc-faq-sec {
+    padding-top: 85px;
+    padding-bottom: 65px;
+    background: #F8F8F8;
+}
+.diensten-details-ctlr .mtc-faq-entry-title{
+	margin-bottom: 20px;
+}
+.diensten-details-ctlr .mct-faq-accordion-ctlr ul li{
+	padding-bottom: 30px;
+}
