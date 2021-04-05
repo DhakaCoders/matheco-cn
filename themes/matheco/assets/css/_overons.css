@@ -323,6 +323,9 @@ ovs-counter-sec-wrp
 	.team-member-grid-dsc {
 	    padding: 20px 10px 20px;
 	}
+	.TeamMemberSlider.slick-slider ul.slick-dots{
+		height: 6px;
+	}
 
 }
 
