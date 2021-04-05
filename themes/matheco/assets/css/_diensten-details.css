@@ -8,6 +8,7 @@
 }
 #dienstenDetails .dfp-promo-icon{
 	margin-left: auto;
+	order: 2;
 }
 #dienstenDetails .dfp-promo-icon i{
 	display: inline-block;
@@ -53,4 +54,44 @@
 }
 .diensten-details-ctlr .mct-faq-accordion-ctlr ul li{
 	padding-bottom: 30px;
+}
+
+@media(max-width: 991px){
+	#dienstenDetails .dfp-back-btn {
+	    padding: 30px 0;
+	}
+	.diensten-details-ctlr .mtc-faq-sec {
+	    padding-top: 60px;
+	    padding-bottom: 50px;
+	}
+}
+@media(max-width: 767px){
+	#dienstenDetails .dfp-promo-module-hdr {
+	    display: block;
+	}
+	#dienstenDetails .dfp-promo-icon{
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	#dienstenDetails.default-page-con {
+	    padding-top: 30px;
+	}
+	#dienstenDetails .dfp-back-btn {
+	    padding: 18px 0 0;
+	}
+	.diensten-details-ctlr .mtc-faq-sec {
+	    padding-top: 40px;
+	    padding-bottom: 30px;
+	}
+	.diensten-details-ctlr .mct-faq-accordion-ctlr ul li {
+	    padding-bottom: 20px;
+	}
+}
+@media(max-width: 575px){
+	.diensten-details-ctlr .mct-faq-accordion-ctlr ul li {
+	    padding-bottom: 10px;
+	}
+	.diensten-details-ctlr .mtc-faq-sec {
+	    padding-top: 30px;
+	}
 }
