@@ -1,0 +1,41 @@
+#faq-details .dfp-back-btn-module{
+	padding: 35px 0;
+	border-top: 2px solid #F8F8F8;
+}
+#faq-details .dfp-back-btn{
+	padding: 0;
+	border: none;
+}
+#faq-details .dfp-back-btn-module{
+	display: flex;
+	align-items: center;
+}
+#faq-details .dfp-social-media{
+	margin-left: auto;
+}
+#faq-details .dfp-social-media span{
+	display: inline-block;
+	vertical-align: baseline;
+	padding-right: 20px;
+	color: #707C88;
+}
+#faq-details .dfp-social-media ul{
+	display: inline-block;
+	vertical-align: baseline;
+	margin-left: -8px;
+	margin-right: -8px;
+}
+#faq-details .dfp-social-media ul li{
+	display: inline-block;
+	vertical-align: baseline;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+#faq-details .dfp-social-media ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+	color: #243444;
+}
+#faq-details .dfp-social-media ul li a:hover{
+	color: #2285E3;
+}
