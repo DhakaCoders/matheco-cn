@@ -1,6 +1,7 @@
 
 #dienstenDetails.default-page-con{
 	padding-bottom: 20px;
+	padding-top: 20px;
 }
 #dienstenDetails .dfp-promo-module-hdr{
 	display: flex;
@@ -15,15 +16,18 @@
 
 #dienstenDetails .dfp-back-btn{
 	padding: 35px 0;
-	border-top: 2px solid red;
+	border-top: 2px solid #F8F8F8;
 }
-#dienstenDetails .dfp-back-btn a{
+#dienstenDetails .dfp-back-btn a,
+#faq-details .dfp-back-btn a{
 	padding-left: 20px;
 	color: #707C88;
 	text-decoration: none;
+	font-weight: 400;
 	position: relative;
 }
-#dienstenDetails .dfp-back-btn a:after{
+#dienstenDetails .dfp-back-btn a:after,
+#faq-details .dfp-back-btn a:after{
 	content: "";
 	position: absolute;
 	top: 50%;
@@ -36,4 +40,17 @@
 	background-size: cover!important;
 	width: 8px;
 	height: 14px;
+}
+
+
+.diensten-details-ctlr .mtc-faq-sec {
+    padding-top: 85px;
+    padding-bottom: 65px;
+    background: #F8F8F8;
+}
+.diensten-details-ctlr .mtc-faq-entry-title{
+	margin-bottom: 20px;
+}
+.diensten-details-ctlr .mct-faq-accordion-ctlr ul li{
+	padding-bottom: 30px;
 }

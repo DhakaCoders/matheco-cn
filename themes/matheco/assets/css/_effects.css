@@ -1,11 +1,13 @@
 /**
 All Transitions
 */
+.team-member-grid-inr:hover .team-member-grid-img,
 a,input,img,textarea,button,svg,i,.dft-transition{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
+.team-member-grid-inr:hover .team-member-grid-img,
 .scale{
 	transform: scale(1.1);
 	-ms-transform: scale(1.1);

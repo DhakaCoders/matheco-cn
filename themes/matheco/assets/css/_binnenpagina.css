@@ -15,8 +15,8 @@
 	position: relative;
 }
 .default-page-con {
-	padding-bottom: 165px;
-	padding-top: 90px;
+	padding-bottom: 155px;
+	padding-top: 0;
 }
 
 .fl-dft-overflow-controller {
@@ -469,14 +469,12 @@ Gallery design
 .dfp-faq-module .mct-faq-accordion-ctlr{
 	width: 100%;
 }
-.dfp-faq-module .mct-faq-accordion-ctlr ul{
-	width: 100%;
-	padding: 0;
-}
 .dfp-faq-module .mct-faq-accordion-ctlr ul li{
+	width: 100%;
 	padding: 0;
 	padding-bottom: 30px;
 }
+
 .dfp-faq-module .mct-faq-accordion{
 	padding: 25px 40px;
 }
@@ -513,22 +511,28 @@ Gallery design
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-	.hm-product-module .hmProdctGrdsSlideItme{
-		width: 33.3333%;
-		padding-bottom: 25px;
+	.dfp-faq-module {
+	    padding: 70px 90px 65px 90px;
 	}
 }
 
 
 @media(max-width: 991px){
-	.hm-product-module .hmProdctGrdsSlideItme{
-		width: 50%;
-	}
-	.pn-con-bar{
-		margin-bottom: 40px;
+	.dfp-promo-module {
+	    padding-bottom: 30px;
 	}
 	.default-page-con{
 		padding-bottom: 80px;
+	}
+	.dfp-faq-module {
+	    padding: 55px 50px 50px 50px;
+	}
+	.ac-fancy-module{
+		height: 500px;
+	}
+	.ms-video-play-cntlr{
+		width: 100px;
+    	height: 100px;
 	}
 }
 @media(max-width: 850px){
@@ -537,7 +541,9 @@ Gallery design
 
 @media(max-width: 767px){
 	.dfp-promo-module {
-	    padding-bottom: 20px;
+	    padding-bottom: 25px;
+	    border-bottom: 1px solid #F3F3F3;
+	    margin-bottom: 15px;
 	}
 	.dfp-promo-module > strong{
 		font-size: 24px;
@@ -559,14 +565,13 @@ Gallery design
 	.dfp-tbl-wrap{
 		margin-bottom: 20px;
 		padding-bottom: 20px;
-		border-bottom: 1px solid #F1E8E1;
 	}
 	.dft-cr-leg-post-grid-module.show-sm{
 		margin-bottom: 0;
 	}
 	.default-page-con{
 		padding-bottom: 70px;
-		padding-top: 20px;
+		padding-top: 35px;
 	}
 	.table-dsc {
 	    overflow-x: scroll;
@@ -577,7 +582,7 @@ Gallery design
 	  height: 6px;
 	}
 	.table-dsc::-webkit-scrollbar-thumb {
-	  background: #F7C9C8;
+	  background: #2285E3;
 	  border-radius: 4px;
 	}
 	.table-dsc table {
@@ -608,28 +613,17 @@ Gallery design
 	.dfp-promo-module h1, 
 	.dfp-promo-module-title{
 		margin-bottom: 30px;
-	    padding-bottom: 15px;
-	    border-bottom: 1px solid #F1E8E1;
-	}
-	.pn-con-bar {
-	    margin-bottom: 30px;
-	}
-	.default-page-con ul li::before, 
-	ul li::before{
-		margin-top: -2px;
+		text-align: center;
 	}
 	.gallery-wrap{
 		padding-bottom: 0;
 	}
 	.ac-fancy-module{
 		height: 400px;
-		margin-bottom: 20px;
+		margin-bottom: 0;
 	}
-	.default-page-con hr{
-		margin-bottom: 25px;
-	}
-	.cta-ctlr{
-		padding: 60px 20px;
+	.cta-ctlr {
+	    padding: 75px 20px;
 	}
 	.cta-ctlr p br{
 		display: none;
@@ -657,6 +651,44 @@ Gallery design
 	.dfp-btn-module {
 	    margin-bottom: 30px;
 	    padding-top: 15px;
+	}
+	.mct-faq-title{
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+	.dfp-faq-module {
+	    padding: 45px 30px 30px 30px;
+	}
+	.mct-faq-accordion-title span{
+		width: 28px;
+    	height: 28px;
+	}
+	.fl-dft-lftimg-rgtdes{
+		display: block;
+	}
+	.fl-dft-lftimg-rgtdes-lft, 
+	.fl-dft-lftimg-rgtdes-rgt{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.fl-dft-lftimg-rgtdes-lft, 
+	.fl-dft-lftimg-rgtdes-rgt{
+		width: 100%;
+		padding: 0;
+	}
+	.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes {
+	    padding-top: 0;
+	}
+	.fl-dft-lftimg-rgtdes{
+		padding-bottom: 0;
+	}
+	.ms-video-play-cntlr {
+	    width: 80px;
+	    height: 80px;
+	}
+	.dfp-faq-module .mct-faq-accordion-ctlr ul li {
+	    padding-bottom: 20px;
 	}
 }
 
@@ -732,11 +764,11 @@ Gallery design
 	    margin-bottom: 15px;
 	}
 	.default-page-con ul li, ul li {
-	    padding: 2px 0 8px 20px;
+	    padding: 2px 0 8px 15px;
 	    line-height: 18px;
 	}
 	.default-page-con ul li::before, ul li::before{
-		margin-top: -4px;
+		margin-top: -3px;
 	}
 	.default-page-con h1, .default-page-con h2, .default-page-con h3, .default-page-con h4, .default-page-con h5 {
 	    margin-bottom: 20px;
@@ -769,7 +801,7 @@ Gallery design
 		margin-bottom: 22px;
 	}
 	.fl-dft-lftimg-rgtdes-rgt{
-		padding-left: 15px;
+		padding-left: 0;
 	}
 	.dfp-btn-module a{
 		width: 154px!important;
@@ -788,6 +820,12 @@ Gallery design
 	
 	.dfp-single-img-module {
 	    margin-top: 0;
+	}
+	.dfp-faq-module {
+	    padding: 35px 25px 30px 25px;
+	}
+	.dfp-faq-module .mct-faq-accordion-ctlr ul li {
+	    padding-bottom: 10px;
 	}
 }
 

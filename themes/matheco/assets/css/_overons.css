@@ -3,6 +3,9 @@
 ornare-txt-img-sec-wrp
 ----------------------
 */
+.overons-breadcrumb-sec{
+	margin-bottom: 0;
+}
 .ornare-txt-img-sec-wrp{
 	position: relative;
 }
@@ -19,10 +22,11 @@ ornare-txt-img-sec-wrp
     z-index: 1;
     height: 630px;
 }
-.ornare-dsc{
-	width: 39%;
-	float: right;
-	padding-top: 40px;
+.ornare-dsc {
+    width: 50%;
+    float: right;
+    padding-top: 40px;
+    padding-left: 140px;
 }
 .ornare-fea-img{
 	padding-top: 30px;
@@ -35,7 +39,7 @@ team-member-sec-wrp
 */
 .team-member-sec-wrp{
 	padding-top: 100px;
-	padding-bottom: 85px;
+	padding-bottom: 90px;
 }
 .team-member-wrp .sec-entry-hdr{
 	padding-bottom: 35px;
@@ -48,8 +52,23 @@ team-member-sec-wrp
 	float: left;
 	padding: 0 12px;
 }
+.team-member-inr ul li:nth-child(4n+1){
+	clear: left;
+}
+.team-member-inr{
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.team-member-grid-img-cntlr{
+	position: relative;
+	overflow: hidden;
+}
 .team-member-grid-img{
 	height: 405px !important;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
 }
 .team-member-grid-dsc{
 	text-align: center;
@@ -99,7 +118,7 @@ ovs-counter-sec-wrp
 	content: "";
 	position: absolute;
 	right: -75px;
-	top: 40px;
+	top: 45px;
 	width: 48px;
 	height: 2px;
 	background: #2285E3;
@@ -116,7 +135,7 @@ ovs-counter-sec-wrp
 	border-radius: 50%;
 	background: #fff;
 	margin: 0 auto;
-	margin-bottom: 15px;
+	margin-bottom: 18px;
 }
 .ovs-circle strong{
 	display: inline-block;

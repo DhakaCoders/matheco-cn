@@ -299,17 +299,6 @@ $('.mct-faq-accordion-title').click(function(){
 
 
 /*start of Milon*/
-/*if (windowWidth >= 767){
-  if( $('.ornare-lft-bg').length ){
-    var conWidth = $('.container').width();
-
-    var OutConLft = (windowWidth - conWidth)/2;
-    var VclRtWidth = $('.ornare-txt-img-wrp').outerWidth();
-    var VclLefBgOuter = OutConLft + VclRtWidth;
-    var VclLefBg = windowWidth - VclLefBgOuter;
-    $('.ornare-lft-bg').css("width",VclLefBg);
-  }
-}*/
 
 if( $('.ornare-lft-bg').length ){
   var conWidth = $('.container').width();
@@ -330,6 +319,10 @@ $(window).resize(function() {
   var VclRtBgOuter = OutConRgt + VclLftWidth;
   var VclRtBg = window2Width - VclRtBgOuter;
   $('.ornare-lft-bg').css("width",VclRtBg);
+});
+
+$('.wpforms-error').on('click', function(){
+  $(this).parents('.wpforms-field').removeClass('wpforms-has-error');
 });
 
 

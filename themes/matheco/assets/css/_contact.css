@@ -29,6 +29,9 @@ contact-info-sec-wrp
 	float: left;
 	padding: 0 12px;
 }
+.contact-info-box-wrp ul li:nth-child(3n+1){
+	clear: left;
+}
 .contact-info-box-inr{
 	background: #243444;
 	padding: 50px 30px 35px;
@@ -73,7 +76,7 @@ contact-info-sec-wrp
 .contact-form-lft {
     width: 73%;
     float: left;
-    padding-right: 55px;
+    padding-right: 115px;
 }
 .contact-form-rgt {
     width: 27%;
@@ -236,7 +239,7 @@ contact-info-sec-wrp
 	font-weight: 400;
 }
 .wpforms-field-text p a:hover{
-	color: #31304F;
+	color: #d2232a;
 }
 .contact-form-wrp .wpforms-container .wpforms-form.was-validated .wpforms-field-container .wpforms-has-error label.wpforms-error{
 	display: block;
@@ -405,4 +408,55 @@ placeholder
 }
 .contact-form-info ul li a:hover{
 	opacity: .7;
+}
+
+/*
+------------------
+ Responsive Css
+------------------
+*/
+
+@media (max-width: 1699px){
+	
+}
+
+
+@media (max-width: 1499px) {
+	
+}
+
+@media(max-width: 1399px){
+	
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+	
+
+}
+
+@media(max-width: 991px){
+	
+	
+}
+
+@media(max-width: 767px){
+	
+}
+
+@media(max-width: 575px){
+	
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
 }
