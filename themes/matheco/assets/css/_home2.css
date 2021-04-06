@@ -42,6 +42,7 @@
 	padding: 25px 30px;
 }
 .mct-faq-accordion-title{
+	font-size: 18px;
 	letter-spacing: initial;
 	padding-right: 40px;
 	cursor: pointer;
@@ -138,6 +139,9 @@
 	    padding-right: 0;
 	    padding-bottom: 20px;
 	}
+	.mct-faq-accordion-title{
+		font-size: 16px;
+	}
 	
 }
 
@@ -158,6 +162,9 @@
 	}
 	.mct-faq-accordion-title span:after{
 		font-size: 12px;
+	}
+	.mct-faq-accordion-title {
+	    font-size: 14px;
 	}
 }
 

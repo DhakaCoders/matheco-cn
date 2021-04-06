@@ -28,6 +28,10 @@
 	text-decoration: underline;
 }
 
+.faq-entry-hdr-btn ul li a:hover{
+	color: #2285E3;
+}
+
 
 .faq-overzicht-sec{
 	padding: 72px 0 50px;

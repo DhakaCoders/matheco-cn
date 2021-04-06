@@ -534,6 +534,12 @@ Gallery design
 		width: 100px;
     	height: 100px;
 	}
+	.dfp-faq-module .mct-faq-accordion {
+	    padding: 25px 30px;
+	}
+	.dfp-faq-module{
+		margin-bottom: 50px;
+	}
 }
 @media(max-width: 850px){
 	
@@ -687,6 +693,12 @@ Gallery design
 	.dfp-faq-module .mct-faq-accordion-ctlr ul li {
 	    padding-bottom: 20px;
 	}
+	.dfp-faq-module .mct-faq-accordion {
+	    padding: 25px 20px;
+	}
+	.dfp-faq-module{
+		margin-bottom: 40px;
+	}
 }
 
 
@@ -823,6 +835,9 @@ Gallery design
 	}
 	.dfp-faq-module .mct-faq-accordion-ctlr ul li {
 	    padding-bottom: 10px;
+	}
+	.dfp-faq-module{
+		margin-bottom: 30px;
 	}
 }
 
