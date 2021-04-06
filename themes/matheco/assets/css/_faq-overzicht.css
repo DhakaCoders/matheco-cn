@@ -2,6 +2,9 @@
 
 }
 
+.faq-entry-hdr-btn{
+	padding-bottom: 30px;
+}
 .faq-entry-hdr-btn ul{
 	margin-left: -28px;
 	margin-right: -28px;
@@ -11,7 +14,7 @@
 	vertical-align: baseline;
 	padding-left: 28px;
 	padding-right: 28px;
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 }
 .faq-entry-hdr-btn ul li a{
 	display: inline-block;
@@ -95,9 +98,6 @@
 	.faq-overzicht-entry-hdr-sec{
 		padding-top: 30px;
 	}
-	.faq-entry-hdr-btn ul li{
-		padding-bottom: 40px;
-	}
 	.faq-overzicht-sec {
 	    padding: 40px 0 30px;
 	}
@@ -114,6 +114,9 @@
 	.faq-entry-hdr-btn ul li{
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+	.faq-entry-hdr-btn{
+		padding-bottom: 20px;
 	}
 }
 @media(max-width: 575px){
