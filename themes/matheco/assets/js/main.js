@@ -294,9 +294,14 @@ $('.mct-faq-accordion-title').click(function(){
 
 
 /*start of Sabbir*/
-
-
-
+if (windowWidth <= 767) {
+if( $('.filter-prdt').length ){
+$('.filter-prdt').click(function(){
+  $('.filter-sidebar').slideToggle(400);
+  $(this).toggleClass('filter-prdt-arw-rotate');
+});
+}
+}
 
 /*start of Milon*/
 
