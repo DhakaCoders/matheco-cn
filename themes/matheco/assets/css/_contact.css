@@ -274,14 +274,23 @@ contact-info-sec-wrp
     position: absolute;
     bottom: 15px;
     display: block;
-    right: 20px;
+    right: 32px;
     padding-right: 12px;
     font-weight: 700!important;
     text-align: right;
     width: auto;
     text-transform: inherit;
     margin-bottom: 0;
+    text-indent: 0 !important;
+	background: url(../images/union-icon.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 21px 20px;
+	width: 21px;
+	height: 20px;
+	color: transparent !important;
 }
+
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error{
 	font-weight: 700;
 	font-size: 14px;
@@ -294,6 +303,22 @@ contact-info-sec-wrp
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error input {
     border: 1px solid #D17181 !important;
+}
+.contact-form-wrp .wpforms-container .wpforms-form.was-validated .wpforms-field-container .wpforms-has-error input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #243444 !important;
+  opacity: 1;
+}
+.contact-form-wrp .wpforms-container .wpforms-form.was-validated .wpforms-field-container .wpforms-has-error input::-moz-placeholder { /* Firefox 19+ */
+  color: #243444 !important;
+  opacity: 1;
+}
+.contact-form-wrp .wpforms-container .wpforms-form.was-validated .wpforms-field-container .wpforms-has-error input:-ms-input-placeholder { /* IE 10+ */
+  color: #243444 !important;
+  opacity: 1;
+}
+.contact-form-wrp .wpforms-container .wpforms-form.was-validated .wpforms-field-container .wpforms-has-error input:-moz-placeholder { /* Firefox 18- */
+  color: #243444 !important;
+  opacity: 1;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .form-privacy-text{
 	width: 100%!important;
