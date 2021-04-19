@@ -21,6 +21,7 @@
 	vertical-align: baseline;
 	color: #707C88;
 	text-decoration: none;
+	font-weight: 400;
 }
 .faq-entry-hdr-btn ul li.active a{
 	font-weight: 600;
