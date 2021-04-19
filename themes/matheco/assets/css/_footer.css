@@ -314,12 +314,14 @@
 	}
 	.ftr-menu ul li a {
 	    font-size: 14px;
+	    font-weight: 700;
 	}
 	.ftr-location a, 
 	.ftr-phone a, 
 	.ftr-email a, 
 	.ftr-vat span {
 	    font-size: 14px;
+	    font-weight: 400;
 	}
 	.ftr-location, 
 	.ftr-phone, 
