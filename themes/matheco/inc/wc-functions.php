@@ -93,23 +93,30 @@ if (!function_exists('add_shorttext_below_title_loop')) {
           }
         $seller_flash = get_field('seller_flash', $product->get_id());
         $gridtag = cbv_get_image_tag( get_post_thumbnail_id($product->get_id()), 'pgrid' );
-        echo '<div class="fl-product-grd">';
-        if( !empty($seller_flash) ) printf('<span class="seller-flash">%s</span>', $seller_flash); 
-        wc_get_template_part('loop/sale-flash');
-        echo '<div class="fl-product-grd-inr">';
-        echo '<div class="fl-pro-grd-img-cntlr mHc1">';
-        echo '<a class="overlay-link" href="'.get_permalink( $product->get_id() ).'"></a>';
-        echo $gridtag;
-        echo '</div>';/*end loop image*/
-        echo '<div class="mHc6">';
-        echo '<h3 class="fl-h5 mHc2 fl-pro-grd-title"><a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a></h3>';
-        echo '<div class="fl-pro-grd-price">';
-        echo $product->get_price_html();
-        echo '</div>';/*end loop price*/
-        echo '</div>';
-        echo '<div><a class="fl-trnsprnt-btn" href="'.get_permalink( $product->get_id() ).'">'.$label.'</a></div>';
-        echo '</div>';
-        echo '</div>';
+        echo '<div class="fl-product-grd mHc">
+        <div class="fl-product-grd-inr">
+          <div class="fl-pro-grd-img-cntlr mHc1">
+            <a href="#" class="overlay-link"></a>
+            '.$gridtag.'
+          </div>
+          <div class="fl-pro-grd-des mHc2">
+            <h4 class="fl-h5 fl-pro-grd-title"><a href="#">Product naam</a></h4>
+            <div class="fl-pro-grd-price">
+                <span class="woocommerce-Price-amount amount">
+                  <bdi><span class="woocommerce-Price-currencySymbol">€</span>199,00</bdi>
+                </span>
+                &nbsp;-&nbsp;
+                <span class="woocommerce-Price-amount amount">
+                  <bdi><span class="woocommerce-Price-currencySymbol">€</span>200,00</bdi>
+                </span>                                                                   
+            </div>
+            <p>Vitae quis leo a massa. Ut vulputate suscipit amet, urna nulla.</p>
+          </div>  
+          <div class="fl-pro-grd-btn">
+            <a class="fl-trnsprnt-btn prdt-btn" href="#">MEER INFO</a>
+          </div>
+        </div>
+        </div>';
         
     }
 }
