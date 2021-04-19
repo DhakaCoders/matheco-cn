@@ -16,7 +16,6 @@
 
 
 
-/*start of Rannojit*/
 
 
 /*start of Shariful*/
@@ -35,5 +34,19 @@
 
 /*start of Milon*/
 @import url('_overons.css');
+
+
+
+/*start of Rannojit*/
+
+@import url('_checkout-progress.css');
+@import url('_woocommerce.css');
+@import url('_wc_common.css');
+@import url('_wc-product-details.css');
+@import url('_wc-my-account.css');
+@import url('_wc-product-popup.css');
+@import url('_thank-you.css');
+@import url('_wc_cart.css');
+@import url('_cookie-pop-up.css');
 
 
