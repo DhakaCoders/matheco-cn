@@ -163,7 +163,7 @@ ol li::before {
 	align-items: center;
 }
 .fl-dft-lftimg-rgtdes-lft{
-	min-height: 282px;
+	min-height: 328px;
 }
 .fl-dft-lftimg-rgtdes-lft-img-scale{
 	position: relative;
@@ -480,10 +480,14 @@ Gallery design
 }
 .dfp-faq-module .mct-faq-accordion-title{
 	margin-bottom: 0!important;
+	text-transform: lowercase;
+}
+.dfp-faq-module .mct-faq-title{
+	text-align: center;
 }
 
 .dfp-box-grd-module{
-	margin-top: 30px;
+	padding-top: 30px;
 	margin-bottom: 60px;
 }
 
