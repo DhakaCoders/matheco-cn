@@ -20,15 +20,37 @@
 	border-top: 2px solid #F8F8F8;
 }
 #dienstenDetails .dfp-back-btn a,
-#faq-details .dfp-back-btn a{
+#faq-details .dfp-back-btn a,
+.xs-faq-details .dfp-back-btn a{
 	padding-left: 20px;
 	color: #707C88;
 	text-decoration: none;
 	font-weight: 400;
 	position: relative;
 }
-#dienstenDetails .dfp-back-btn a:after,
-#faq-details .dfp-back-btn a:after{
+#dienstenDetails .dfp-back-btn a i,
+#faq-details .dfp-back-btn a i,
+.xs-faq-details .dfp-back-btn a i{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+#dienstenDetails .dfp-back-btn a:hover,
+#faq-details .dfp-back-btn a:hover,
+.xs-faq-details .dfp-back-btn a:hover{
+	color: #2285E3;
+}
+#dienstenDetails .dfp-back-btn a:hover svg,
+#faq-details .dfp-back-btn a:hover svg,
+.xs-faq-details .dfp-back-btn a:hover svg{
+	fill: #2285E3;
+}
+/*#dienstenDetails .dfp-back-btn a:after,
+#faq-details .dfp-back-btn a:after,
+.xs-faq-details .dfp-back-btn a:after{
 	content: "";
 	position: absolute;
 	top: 50%;
@@ -42,7 +64,7 @@
 	width: 8px;
 	height: 14px;
 }
-
+*/
 
 .diensten-details-ctlr .mtc-faq-sec {
     padding-top: 85px;
