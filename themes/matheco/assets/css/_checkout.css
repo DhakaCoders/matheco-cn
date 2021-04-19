@@ -23,6 +23,7 @@
 .chkout-subtitle{
 	text-transform: initial;
 	margin-bottom: 0;
+	font-weight: 600;
 }
 .chkout-service{
 	display: flex;
