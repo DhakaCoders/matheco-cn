@@ -595,9 +595,8 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	    display: block;
 	    
 	}
-	
 	.product-page-sidebar{
-		width: 100%;
+		width: 26%;
 		padding-right: 0;
 		padding: 0;
 	}
@@ -605,16 +604,15 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	    width: 100%;
 	}
 	.product-page-sidebar{
-		display: none;
 		position: absolute;
 		top: 0;
 		right: 0;
 		left: 0;
 		background: #fcf8f7;
 		z-index: 101;
-		-webkit-box-shadow: 3px 11px 5px -9px rgba(0,0,0,1);
+/* 		-webkit-box-shadow: 3px 11px 5px -9px rgba(0,0,0,1);
 		-moz-box-shadow: 3px 11px 5px -9px rgba(0,0,0,1);
-		box-shadow: 3px 11px 5px -9px rgba(0,0,0,1);
+		box-shadow: 3px 11px 5px -9px rgba(0,0,0,1); */
 	}
 	body.archive.post-type-archive .page-entry-header{
 		border: none;
@@ -722,6 +720,12 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
     }
     .term-geschenken .fl-products-cntlr {
         padding-top: 0;
+    }
+    .product-page-sidebar{
+    	width: 100%;
+    }
+    .fltr-prdt-title{
+    	margin-left: 20px;
     }
 }
 

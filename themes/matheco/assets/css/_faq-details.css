@@ -24,12 +24,14 @@
 	vertical-align: baseline;
 	margin-left: -8px;
 	margin-right: -8px;
+	padding-bottom: 0;
 }
 #faq-details .dfp-social-media ul li{
 	display: inline-block;
 	vertical-align: baseline;
 	padding-left: 8px;
 	padding-right: 8px;
+	padding-bottom: 0;
 }
 #faq-details .dfp-social-media ul li a{
 	display: inline-block;
@@ -71,6 +73,12 @@
 }
 
 
+.xs-faq-details{
+	padding: 20px 0;
+	background: #F8F8F8;
+}
+
+
 @media(max-width: 991px){
 	.faq-detials-sec {
 	    padding: 60px 0 50px;
@@ -90,9 +98,6 @@
 	#faq-details .dfp-promo-module a{
 		margin-bottom: 12px;
 	}
-	#faq-details .dfp-back-btn-module{
-		display: block;
-	}
 	#faq-details .dfp-back-btn-module {
 	    padding: 20px 0;
 	}
@@ -109,5 +114,12 @@
 	}
 	.faq-detials-sec .mct-faq-accordion-ctlr ul li {
 	    padding-bottom: 10px;
+	}
+	#faq-details .dfp-social-media span{
+		padding-right: 10px;
+	}
+	#faq-details .dfp-social-media ul li {
+	    padding-left: 4px;
+	    padding-right: 4px;
 	}
 }
