@@ -180,17 +180,23 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 	
 }
 
-
-.shopping-card{
-
+.user-cart-cntlr{
+	display: flex;
+	align-items: center;
 }
-.shopping-card a{
+.shopping-cart{
+	padding-left: 23px;
+}
+.shopping-cart a,
+.user a{
 	display: inline-block;
 }
-.shopping-card a i{
+.shopping-cart a i,
+.user a i{
 	display: inline-block;
 }
-.shopping-card a:hover i svg{
+.shopping-cart a:hover i svg,
+.user a:hover i svg{
 	fill: #d2232a;
 }
 
