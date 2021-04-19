@@ -107,6 +107,7 @@
 }
 .fl-products-cntlr{
 	width: 74.30%;
+	margin-left: auto;
 }
 .fl-products-cntlr ul.products {
     display: flex;
@@ -275,6 +276,9 @@
 	.product-page-sidebar{
 		padding-right: 16px;
 	}
+	.fl-products-cntlr{
+		width: 71.30%;
+	}
 	.fltr-prdt-title{
 		padding-left: 26px;
 		margin-left: 5px;
@@ -335,9 +339,6 @@
 		margin: auto;
 		padding-right: 0;
 		margin-top: -73px;
-	}
-	.sidebar-content{
-		padding-bottom: 20px;
 	}
 	.filter-prdt{
 		padding-right: 35px;
