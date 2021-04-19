@@ -157,20 +157,29 @@
 	text-decoration: none;
 }
 .fl-product-grd .fl-pro-grd-title a:hover {
-    color: #2285e3;
-    
+    color: #2285e3;   
 }
-.fl-products-cntlr .fl-pro-grd-price {
+.shop-page .fl-pro-grd-price {
+    padding-bottom: 22px;
+}
+.fl-pro-grd-price span.woocommerce-Price-amount bdi,
+.fl-pro-grd-price span.woocommerce-Price-amount bdi span,
+.fl-pro-grd-price del span.woocommerce-Price-amount bdi,
+.fl-pro-grd-price del span.woocommerce-Price-amount bdi span,
+.fl-pro-grd-price ins span.woocommerce-Price-amount bdi,
+.fl-pro-grd-price ins span.woocommerce-Price-amount bdi span {
     margin-bottom: 25px;
-    font-size: 16px;
+    font-size: 16px!important;
     line-height: 1.2;
-    color: #707C88;
+    color: #707C88!important;
 }
-.product-price del span, .xoo-cp-pprice del span, .fl-pro-grd-price del span {
-    color: #525A61;
-    font-size: 12px;
+.fl-pro-grd-price span.woocommerce-Price-amount bdi span,
+.fl-pro-grd-price del span.woocommerce-Price-amount bdi span {
+	padding-right: 5px;
+}
+.fl-pro-grd-price del span.woocommerce-Price-amount bdi {
     text-decoration-line: line-through;
-    margin-right: 0;
+    margin-right: 5px;
 }
 .fl-product-grd-inr a.prdt-btn{
 	color: #2285E3;
