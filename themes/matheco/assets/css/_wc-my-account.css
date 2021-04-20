@@ -371,7 +371,7 @@ body.woocommerce-account .register-field-error{
 body.woocommerce-account .woocommerce-form{
     border:none;
     margin:0;
-    border-top:1px solid #ECE9E9;
+    border-top: 1px solid #E9E8E7;
     padding-left:0px;
     margin-right: 24px;
     padding-right: 0;
@@ -434,9 +434,10 @@ body.woocommerce-account .login-register-wrap a{
 body.woocommerce-account .login-register-wrap a:hover {
     color: #8dcc0c;
 }
-body.woocommerce-account .woocommerce form .form-row label,
+body.woocommerce-account .woocommerce form .form-row label, 
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row label{
-    color:#000;
+    color: #243444;
+    font-weight:600;
 }
 body.woocommerce-account .woocommerce button[type=submit],
 body.woocommerce-account .woocommerce button[type=button]{
