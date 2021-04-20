@@ -179,7 +179,6 @@ if (!function_exists('add_custom_box_product_summary')) {
         echo '</div>';
         if( !empty($long_desc) ){
             echo '<div class="long-desc">';
-            echo '<h2>Beschrijving</h2>';
             echo wpautop( $long_desc, true );
             echo '</div>';
         }
@@ -224,7 +223,7 @@ function cbv_get_single_price(){
 // Change 'add to cart' text on single product page (only for product ID 386)
 add_filter( 'woocommerce_product_single_add_to_cart_text', 'bryce_id_add_to_cart_text' );
 function bryce_id_add_to_cart_text( $default ) {
-        return __( 'In Winkelmand', THEME_NAME );
+        return __( 'BESTELLEN', THEME_NAME );
 }
 
 add_action('woocommerce_product_thumbnails', 'cbv_add_custom_info', 20);
