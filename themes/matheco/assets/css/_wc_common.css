@@ -246,9 +246,10 @@ body.woocommerce-order-received h2.woocommerce-column__title {
     padding-left: 10px;
 }
 .woocommerce-MyAccount-navigation ul li a{
-    color: #43587B !important;
-    font-weight: 600;
+    color: #ffffff !important;
+    font-weight: 700;
     padding: 5px 0;
+    text-decoration: none;
 }
 .woocommerce-account .woocommerce-Addresses,
 .woocommerce-account .woocommerce-address-fields{
