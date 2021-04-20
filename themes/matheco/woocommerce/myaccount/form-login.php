@@ -206,7 +206,7 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 
 	<?php endif; $losturl = wp_lostpassword_url();?>
 
-			<h2><?php esc_html_e( 'Inloggen', 'woocommerce' ); ?></h2>
+			<h4><?php esc_html_e( 'Inloggen', 'woocommerce' ); ?></h4>
 			<div><p>Welkom terug!</p></div>
 			<form class="woocommerce-form woocommerce-form-login login" method="post">
 
@@ -243,7 +243,7 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 
 		<div class="u-column2 col-2">
 
-			<h2><?php esc_html_e( 'Nieuw bij Thelene?', 'woocommerce' ); ?></h2>
+			<h4><?php esc_html_e( 'Nieuw bij Thelene?', 'woocommerce' ); ?></h4>
 			<div class="signup-notification">
 				<p>Vul hier je e-mailadres in als je nog niet beschikt over een account. Indien gewenst, kan je in de volgende stap een account aanmaken.</p>
 			</div>
