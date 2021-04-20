@@ -183,20 +183,21 @@ if (!function_exists('add_custom_box_product_summary')) {
             echo '</div>';
         }
         echo '</div>';
+        echo '<div class="export-file"><p>LOREM IPSUM DOLOR SIT AMET</p></div>';
         echo '<div class="meta-crtl">';
         echo '<ul>';
             echo '<li>';
                 echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in"><strong>' .esc_html__( 'Categorie: ', 'woocommerce' ). '</strong> ', '</span>' );
             echo '</li>';
-            cbv_display_some_product_attributes();
             if ( wc_product_sku_enabled() && !empty($product->get_sku()) && ( $product->get_sku() || $product->is_type( 'variable' ) ) ) :
-            echo '<li>';
+                echo '<li>';
                 echo '<strong>';
                 esc_html_e( 'SKU:', 'woocommerce' );
                 echo '</strong>';
                 echo '<span class="sku">'.( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' ).'</span>';
-            echo '</li>';
+                echo '</li>';
             endif;
+            echo '<li><span><strong>Extra:</strong> 00000000</span></li>';
         echo '</ul>';
         echo '</div>';
         echo '<div class="price-quentity-ctrl">';
@@ -223,39 +224,6 @@ function cbv_get_single_price(){
 add_filter( 'woocommerce_product_single_add_to_cart_text', 'bryce_id_add_to_cart_text' );
 function bryce_id_add_to_cart_text( $default ) {
         return __( 'BESTELLEN', THEME_NAME );
-}
-
-add_action('woocommerce_product_thumbnails', 'cbv_add_custom_info', 20);
-function cbv_add_custom_info(){
-    global $product;
-    $quantity = get_field('quantity', $product->get_id());
-    $water_temp = get_field('water_temp', $product->get_id());
-    $brewing_time = get_field('brewing_time', $product->get_id());
-    if( !empty($quantity) ||  !empty($water_temp) ||  !empty($brewing_time)):
-        echo '<div class="custom-info-crtl hide-sm">';
-        echo '<ul>';
-        if( !empty($quantity) ) printf('<li class="qnty"><span>Hoeveelheid:</span>%s gr/Liter</li>', $quantity);
-        if( !empty($water_temp) ) printf('<li class="water-temp"><span>Water temperatuur::</span>%s c°</li>', $water_temp);
-        if( !empty($brewing_time) ) printf('<li class="into-time"><span>Trektijd:</span>%s</li>', $brewing_time);
-        echo '</ul>';
-        echo '</div>';
-    endif;
-}
-add_action('woocommerce_after_single_product_summary', 'cbv_add_custom_info_for_xs', 5);
-function cbv_add_custom_info_for_xs(){
-    global $product;
-    $quantity = get_field('quantity', $product->get_id());
-    $water_temp = get_field('water_temp', $product->get_id());
-    $brewing_time = get_field('brewing_time', $product->get_id());
-    if( !empty($quantity) ||  !empty($water_temp) ||  !empty($brewing_time)):
-        echo '<div class="custom-info-crtl custom-info-xs show-sm">';
-        echo '<ul>';
-        if( !empty($quantity) ) printf('<li class="qnty"><span>Hoeveelheid:</span>%s gr/Liter</li>', $quantity);
-        if( !empty($water_temp) ) printf('<li class="water-temp"><span>Water temperatuur::</span>%s c°</li>', $water_temp);
-        if( !empty($brewing_time) ) printf('<li class="into-time"><span>Trektijd:</span>%s</li>', $brewing_time);
-        echo '</ul>';
-        echo '</div>';
-    endif;
 }
 
 add_action( 'woocommerce_product_options_inventory_product_data', 'misha_adv_product_options');
@@ -363,41 +331,6 @@ function end_modify_html() {
 
 add_action( 'wp_head', 'start_modify_html' );
 add_action( 'wp_footer', 'end_modify_html' );
-
-// display general product attributes
-function cbv_display_some_product_attributes(){
-    global $product;
-    $formatted_attributes = array();
-    $attributes = $product->get_attributes();
-    if($attributes):
-        foreach($attributes as $attr => $attr_deets){
-            // skip variations
-            if ( $attr_deets->get_variation() ) {
-                continue;
-            }
-            $attribute_label = wc_attribute_label($attr);
-
-            if ( isset( $attributes[ $attr ] ) || isset( $attributes[ 'pa_' . $attr ] ) ) {
-
-                $attribute = isset( $attributes[ $attr ] ) ? $attributes[ $attr ] : $attributes[ 'pa_' . $attr ];
-
-                if ( $attribute['is_taxonomy'] ) {
-                    echo '<li><span class="pro-attribute">';
-                        echo '<strong>'.$attribute_label.': </strong>';
-                        echo implode( ', ', wc_get_product_terms( $product->get_id(), $attribute['name'], array( 'fields' => 'names' ) ) );
-                    echo '</span></li>';
-
-                } else {
-                    echo '<li><span class="pro-attribute">';
-                        echo '<strong>'.$attribute_label.': </strong>';
-                    echo $attribute['value'];
-                    echo '</span></li>';
-                }
-
-            }
-        }
-    endif;
-}
 
 remove_action( 'woocommerce_cart_is_empty', 'wc_empty_cart_message');
 add_action( 'woocommerce_cart_is_empty', 'woo_if_cart_empty' );
