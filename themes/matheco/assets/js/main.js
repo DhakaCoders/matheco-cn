@@ -367,9 +367,14 @@ $(window).resize(function() {
   $('.ornare-lft-bg').css("width",VclRtBg);
 });
 
-$('.wpforms-error').on('click', function(){
-  $(this).parents('.wpforms-field').removeClass('wpforms-has-error');
+/*$('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button').on('click', function(){
+  $(this).parents('.wpforms-field').addClass('wpforms-has-error');
+});*/
+
+$('.contact-form-wrp .wpforms-field-pagebreak .wpforms-clear button:hover, .contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button').on('click', function(){
+  $('.wpforms-field.wpforms-field-email').addClass('wpforms-has-error');
 });
+
 
 
 

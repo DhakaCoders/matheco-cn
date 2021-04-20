@@ -11,7 +11,7 @@
 .checkout-hdr{
 	padding-bottom: 54px;
 }
-.chkout-title{
+.checkout-hdr .chkout-title{
 	margin-bottom: 15px;
 }
 .checkout-hdr p{
@@ -23,6 +23,7 @@
 .chkout-subtitle{
 	text-transform: initial;
 	margin-bottom: 0;
+	font-weight: 600;
 }
 .chkout-service{
 	display: flex;
@@ -72,7 +73,7 @@
 .chk-acc-title{
 	margin-bottom: 38px;
 }
-.chk-acc-tp, .chk-acc-btm{
+.chk-acc-title, .chk-acc-tp, .chk-acc-btm{
 	text-align: center;
 }
 .chk-tp-title, .chk-tp-title{
@@ -102,7 +103,16 @@
 .chk-scl-itm{
 	max-width: 50%;
 	width: 100%;
-	padding: 0 10px 17px;
+	padding: 0 10px;
+	margin-bottom: 17px;
+	position: relative;
+}
+.chk-scl-itm:hover i,
+.chk-scl-itm:hover span{
+	color: #2285e3;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
 }
 .chk-scl-itm i{
 	color: #fff;
@@ -166,13 +176,24 @@
 	.checkout-hdr{
 		padding-bottom: 45px;
 	}
+	.chkout-logo{
+		padding-bottom: 38px;
+	}
+	.checkout-hdr .chkout-title{
+		font-size: 24px;
+		line-height: 1.1;
+		margin-bottom: 20px;
+	}
+	.checkout-hdr p{
+		margin-bottom: 19px;
+	}
 	.srv-fea-img{
 		display: none;
 	}
 	.srv-cont{
 		margin: auto;
-		max-width: 375px;
-		width: 100%;
+		max-width: 100%;
+		width: auto;
 	}
 	.chk-acc{
 		padding-bottom: 16px;	
@@ -189,6 +210,9 @@
 	.chk-acc-title{
 		text-align: center;
 	}
+	.chk-scl-itm{
+		margin-bottom: 20px;	
+	}	
 }
 
 @media (max-width: 639px) {
