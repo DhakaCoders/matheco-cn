@@ -12,24 +12,10 @@ function get_custom_wc_output_content_wrapper(){
 
     if(is_shop() OR is_product_category()){ 
         get_template_part('templates/breadcrumbs');
-        echo '<section class="product-page-cntlr"><div class="container"><div class="row"><div class="col-md-12"><div class="product-page-col-cntlr clearfix">';
-        //get_template_part('templates/shop', 'search');
-        $off_sidebar = false;
-        $classCss = '';
-        if(is_product_category()){
-            $category = get_queried_object();
-            if( in_array($category->slug, assign_gift_card_cat()) ){
-                $off_sidebar = true;
-                $classCss = ' full-product-page';
-            }
-        }
-        if( !$off_sidebar ){
-            echo '<div class="product-page-sidebar">';
-                get_sidebar('shop');
-            echo '</div>';
-        }
-        echo '<div class="product-page-col-rgt'.$classCss.'">';
+        echo '<section class="product-page-cntlr">';
         get_template_part('templates/shop', 'top');
+        echo ' <div class="product-category"><div class="container"><div class="row"><div class="col-md-12"><div class="product-page-col-rgt">';
+        get_sidebar('shop');
         echo '<div class="fl-products-cntlr">';
     }
 
@@ -38,9 +24,9 @@ function get_custom_wc_output_content_wrapper(){
 
 function get_custom_wc_output_content_wrapper_end(){
   if(is_shop() OR is_product_category()){
-    echo '</div>'; 
-    echo '</div>'; 
-    echo '</div></div></div></div></section>';
+    echo '</div>';
+    echo '</div></div></div></div>';
+    echo '</section>';
     get_template_part('templates/shop', 'bottom');
   }
 
@@ -59,7 +45,7 @@ function get_array( $string ){
 add_filter('loop_shop_columns', 'loop_columns', 999);
 if (!function_exists('loop_columns')) {
   function loop_columns() {
-    return 4; // 3 products per row
+    return 3; // 3 products per row
   }
 }
 /*Loop Hooks*/
@@ -83,41 +69,26 @@ add_action('woocommerce_shop_loop_item_title', 'add_shorttext_below_title_loop',
 if (!function_exists('add_shorttext_below_title_loop')) {
     function add_shorttext_below_title_loop() {
         global $product, $woocommerce, $post;
-          switch ( $product->get_type() ) {
-          case "gift-card" :
-              $label  = __('selecteer bedrag', 'woocommerce');
-          break;
-          default :
-              $label  = __('MEER INFO', 'woocommerce');
-          break;
-          }
+        $label  = __('MEER INFO', 'woocommerce');
         $seller_flash = get_field('seller_flash', $product->get_id());
+        $sh_desc = $product->get_short_description();
         $gridtag = cbv_get_image_tag( get_post_thumbnail_id($product->get_id()), 'pgrid' );
         echo '<div class="fl-product-grd mHc">
         <div class="fl-product-grd-inr">
           <div class="fl-pro-grd-img-cntlr mHc1">
-            <a href="#" class="overlay-link"></a>
+            <a href="'.get_permalink( $product->get_id() ).'" class="overlay-link"></a>
             '.$gridtag.'
           </div>
           <div class="fl-pro-grd-des mHc2">
-            <h4 class="fl-h5 fl-pro-grd-title"><a href="#">Product naam</a></h4>
-            <div class="fl-pro-grd-price">
-                <span class="woocommerce-Price-amount amount">
-                  <bdi><span class="woocommerce-Price-currencySymbol">€</span>199,00</bdi>
-                </span>
-                &nbsp;-&nbsp;
-                <span class="woocommerce-Price-amount amount">
-                  <bdi><span class="woocommerce-Price-currencySymbol">€</span>200,00</bdi>
-                </span>                                                                   
-            </div>
-            <p>Vitae quis leo a massa. Ut vulputate suscipit amet, urna nulla.</p>
-          </div>  
-          <div class="fl-pro-grd-btn">
-            <a class="fl-trnsprnt-btn prdt-btn" href="#">MEER INFO</a>
+            <h4 class="fl-h5 fl-pro-grd-title"><a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a></h4>
+            <div class="fl-pro-grd-price">'.$product->get_price_html().'</div>';
+        if( !empty($sh_desc) ) echo wpautop($sh_desc);
+        echo '</div>';  
+        echo '<div class="fl-pro-grd-btn">
+            <a class="fl-trnsprnt-btn prdt-btn" href="'.get_permalink( $product->get_id() ).'">MEER INFO</a>
           </div>
         </div>
         </div>';
-        
     }
 }
 
@@ -154,7 +125,7 @@ add_filter( 'loop_shop_per_page', 'new_loop_shop_per_page', 20 );
 function new_loop_shop_per_page( $cols ) {
   // $cols contains the current number of products per page based on the value stored on Options –> Reading
   // Return the number of products you wanna show per page.
-  $cols = 8;
+  $cols = 6;
   return $cols;
 }
 
@@ -197,46 +168,42 @@ add_action('woocommerce_single_product_summary', 'add_custom_box_product_summary
 if (!function_exists('add_custom_box_product_summary')) {
     function add_custom_box_product_summary() {
         global $product, $woocommerce, $post;
-        $sh_desc = $product->get_short_description();
         $long_desc = $product->get_description();
-        $product_usps = get_field('product_usps', 'options' );
-        $sh_desc = !empty($sh_desc)?$sh_desc:'';
-
-            echo '<div class="summary-ctrl">';
-            echo '<div class="summary-hdr">';
-            echo '<h1 class="product_title entry-title hide-sm">'.$product->get_title().'</h1>';
-            if( !empty($sh_desc) ){
-                echo '<div class="short-desc">';
-                echo wpautop( $sh_desc, true );
-                echo '</div>';
-            }
-            if( !empty($long_desc) ){
-                echo '<div class="long-desc">';
-                echo '<h2>Beschrijving</h2>';
-                echo wpautop( $long_desc, true );
-                echo '</div>';
-            }
+        echo '<div class="summary-ctrl">';
+        echo '<div class="summary-hdr">';
+        echo '<h1 class="product_title entry-title hide-sm">'.$product->get_title().'</h1>';
+        echo '<div class="qty-price-wrap">';
+        echo '<span class="single-price-total">';
+        echo $product->get_price_html();
+        echo '</span>';
+        echo '</div>';
+        if( !empty($long_desc) ){
+            echo '<div class="long-desc">';
+            echo '<h2>Beschrijving</h2>';
+            echo wpautop( $long_desc, true );
             echo '</div>';
-            echo '<div class="meta-crtl">';
-            echo '<ul>';
-                echo '<li>';
-                    echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in"><strong>' .esc_html__( 'Categorie: ', 'woocommerce' ). '</strong> ', '</span>' );
-                echo '</li>';
-                cbv_display_some_product_attributes();
-                if ( wc_product_sku_enabled() && !empty($product->get_sku()) && ( $product->get_sku() || $product->is_type( 'variable' ) ) ) :
-                echo '<li>';
-                    echo '<strong>';
-                    esc_html_e( 'SKU:', 'woocommerce' );
-                    echo '</strong>';
-                    echo '<span class="sku">'.( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' ).'</span>';
-                echo '</li>';
-                endif;
-            echo '</ul>';
-            echo '</div>';
-            echo '<div class="price-quentity-ctrl">';
-              woocommerce_template_single_add_to_cart();
-            echo '</div>';
-            echo '</div>';
+        }
+        echo '</div>';
+        echo '<div class="meta-crtl">';
+        echo '<ul>';
+            echo '<li>';
+                echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in"><strong>' .esc_html__( 'Categorie: ', 'woocommerce' ). '</strong> ', '</span>' );
+            echo '</li>';
+            cbv_display_some_product_attributes();
+            if ( wc_product_sku_enabled() && !empty($product->get_sku()) && ( $product->get_sku() || $product->is_type( 'variable' ) ) ) :
+            echo '<li>';
+                echo '<strong>';
+                esc_html_e( 'SKU:', 'woocommerce' );
+                echo '</strong>';
+                echo '<span class="sku">'.( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' ).'</span>';
+            echo '</li>';
+            endif;
+        echo '</ul>';
+        echo '</div>';
+        echo '<div class="price-quentity-ctrl">';
+          woocommerce_template_single_add_to_cart();
+        echo '</div>';
+        echo '</div>';
 
     }
 }
@@ -251,12 +218,6 @@ function cbv_get_single_price(){
     global $product;
     echo '<span class="plus">+</span></div>';
     echo '</div></div>';
-    echo '<div class="qty-price-wrap">';
-    echo '<span class="price-pre-title">Totaal: </span>';
-    echo '<span class="single-price-total">';
-    echo $product->get_price_html();
-    echo '</span>';
-    echo '</div>';
 }
 
 
@@ -330,13 +291,8 @@ function misha_adv_product_options(){
  
 add_action( 'woocommerce_process_product_meta', 'misha_save_fields', 10, 2 );
 function misha_save_fields( $id, $post ){
- 
-    //if( !empty( $_POST['super_product'] ) ) {
-        update_post_meta( $id, 'product_min_qty', $_POST['product_min_qty'] );
-        update_post_meta( $id, 'product_max_qty', $_POST['product_max_qty'] );
-    //} else {
-    //  delete_post_meta( $id, 'super_product' );
-    //}
+    update_post_meta( $id, 'product_min_qty', $_POST['product_min_qty'] );
+    update_post_meta( $id, 'product_max_qty', $_POST['product_max_qty'] );
  
 }
 
@@ -382,103 +338,11 @@ function product_max_qty($product_id = '', $_product = array()){
     }
     return $get_max_purchase_qty;
 }
-
-add_filter('woocommerce_get_catalog_ordering_args', 'custom_woocommerce_get_catalog_ordering_args');
-
-function custom_woocommerce_get_catalog_ordering_args( $args ) {
-    $orderby_value = isset( $_GET['orderby'] ) ? wc_clean( $_GET['orderby'] ) : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
-    if ( 'title' == $orderby_value ) {
-        $args['orderby'] = 'title';
-        $args['order'] = 'asc';
-    }elseif('title-desc' == $orderby_value){
-        $args['orderby'] = 'title';
-        $args['order'] = 'desc';
-    }
-    return $args;
-}
-//add_filter( 'woocommerce_default_catalog_orderby_options', 'wc_customize_product_sorting' );
-//add_filter( 'woocommerce_catalog_orderby', 'wc_customize_product_sorting' );
-
-function wc_customize_product_sorting($sorting_options){
-    $sorting_options = array(
-        'title'      => __( 'A-Z', 'woocommerce' ),
-        'title-desc' => __( 'Z-A', 'woocommerce' ),
-        'popularity' => __( 'Populariteit', 'woocommerce' ),
-        //'rating'     => __( 'average rating', 'woocommerce' ),
-        'date'       => __( 'Nieuwste', 'woocommerce' ),
-        'price'      => __( 'Prijs: laag naar hoog', 'woocommerce' ),
-        'price-desc' => __( 'Prijs: hoog naar laag', 'woocommerce' ),
-    );
-
-    return $sorting_options;
-}
-// custom cbv_catalog hook
-add_action('cbv_catalog', 'cbv_catalog_ordering');
-
-function cbv_catalog_ordering() {
-    global $wp_query;
-
-    /*if ( 0 == $wp_query->found_posts || ! woocommerce_products_will_display() ) {
-        return;
-    }*/
-
-    $orderby                 = isset( $_GET['orderby'] ) ? wc_clean( $_GET['orderby'] ) : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
-    $show_default_orderby    = 'menu_order' === apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
-    $catalog_orderby_options = apply_filters( 'woocommerce_catalog_orderby', array(
-        'title' => __( 'A-Z', 'woocommerce' ),
-        'title-desc' => __( 'Z-A', 'woocommerce' ),
-        'popularity' => __( 'Populariteit', 'woocommerce' ),
-        //'rating'     => __( 'average rating', 'woocommerce' ),
-        'date'       => __( 'Nieuwste', 'woocommerce' ),
-        'price'      => __( 'Prijs: laag naar hoog', 'woocommerce' ),
-        'price-desc' => __( 'Prijs: hoog naar laag', 'woocommerce' )
-    ) );
-
-    if ( ! $show_default_orderby ) {
-        unset( $catalog_orderby_options['menu_order'] );
-    }
-
-    if ( get_option( 'woocommerce_enable_review_rating' ) === 'no' ) {
-        unset( $catalog_orderby_options['rating'] );
-    }
-
-    if( get_option('woocommerce_enable_review_rating') == 'no' && get_option('woocommerce_default_catalog_orderby') == 'rating') {
-        update_option('woocommerce_default_catalog_orderby', 'date');
-    }
-
-    wc_get_template( 'loop/orderby.php', array( 'catalog_orderby_options' => $catalog_orderby_options, 'orderby' => $orderby, 'show_default_orderby' => $show_default_orderby ) );
-}
 function projectnamespace_woocommerce_text( $translated, $text, $domain ) {
     if ( $domain === 'woocommerce' ) {
         $translated = str_replace(
-            array( 
-                'Proceed to checkout', 
-                'Return to shop', 
-                'Billing details', 
-                'Your order', 
-                'Place order',
-                'Additional information',
-                'Subtotal',
-                'Total',
-                'Set an amount',
-                'Kortingsbon',
-                'Waardebon toepassen',
-                'Verder naar afrekenen',
-            ),
-            array( 
-                'ik ga bestellen', 
-                'ik ga bestellen', 
-                '1. Persoonlijke gegevens', 
-                'Overzicht', 
-                'Afrekenen',
-                '4. Extra Info',
-                'Subtotaal',
-                'Totaal',
-                'Bedrag',
-                'Kortingscode',
-                'Verzilver',
-                'ik ga bestellen'
-            ),
+            array(''),
+            array(''),
             $translated
         );
     }
@@ -493,9 +357,9 @@ function start_modify_html() {
 
 function end_modify_html() {
    $html = ob_get_clean();
-   $html = str_replace( 'Kies een bedrag', 'Bedrag', $html );
+   /*$html = str_replace( 'Kies een bedrag', 'Bedrag', $html );
    $html = str_replace( 'Message', 'Aangepast bericht', $html );
-   $html = str_replace( 'Dit is een verplicht veld', 'Controleer dit veld', $html );
+   $html = str_replace( 'Dit is een verplicht veld', 'Controleer dit veld', $html );*/
    echo $html;
 }
 
