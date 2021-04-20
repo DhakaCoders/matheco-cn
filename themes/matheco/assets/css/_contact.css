@@ -305,19 +305,19 @@ contact-info-sec-wrp
     border: 1px solid #D17181 !important;
 }
 .contact-form-wrp .wpforms-container .wpforms-form.was-validated .wpforms-field-container .wpforms-has-error input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #243444 !important;
+  color:#D9534F !important;
   opacity: 1;
 }
 .contact-form-wrp .wpforms-container .wpforms-form.was-validated .wpforms-field-container .wpforms-has-error input::-moz-placeholder { /* Firefox 19+ */
-  color: #243444 !important;
+  color:#D9534F !important;
   opacity: 1;
 }
 .contact-form-wrp .wpforms-container .wpforms-form.was-validated .wpforms-field-container .wpforms-has-error input:-ms-input-placeholder { /* IE 10+ */
-  color: #243444 !important;
+  color:#D9534F !important;
   opacity: 1;
 }
 .contact-form-wrp .wpforms-container .wpforms-form.was-validated .wpforms-field-container .wpforms-has-error input:-moz-placeholder { /* Firefox 18- */
-  color: #243444 !important;
+  color:#D9534F !important;
   opacity: 1;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .form-privacy-text{
