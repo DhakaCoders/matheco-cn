@@ -203,6 +203,7 @@ if (!function_exists('add_custom_box_product_summary')) {
           woocommerce_template_single_add_to_cart();
         echo '</div>';
         echo '</div>';
+        
 
     }
 }
