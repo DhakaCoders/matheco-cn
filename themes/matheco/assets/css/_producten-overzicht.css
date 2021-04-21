@@ -304,6 +304,12 @@
 	.fltr-prdt-title{
 		margin-left: 14px;
 	}
+	.fl-pro-grd-des{
+		margin: 0 26px;
+	}
+	.fl-pro-grd-btn{
+		padding: 0 26px 20px;
+	}
 }
 
 @media (max-width: 991px) {
@@ -332,6 +338,12 @@
 	.fl-products-cntlr .fl-product-grd .fl-pro-grd-title{
 		font-size: 18px;
 		margin-bottom: 8px;
+	}
+	.fl-pro-grd-des{
+		margin: 0 21px;
+	}
+	.fl-pro-grd-btn{
+		padding: 0 21px 20px;
 	}
 	.fl-products-cntlr .fl-pro-grd-price{
 		font-size: 15px;
@@ -417,6 +429,12 @@
 	}
 	.fl-products-cntlr ul.products > li{
 		width: 100%!important;
+	}
+	.fl-pro-grd-des{
+		margin: 0 30px;
+	}
+	.fl-pro-grd-btn{
+		padding: 0 30px 20px;
 	}
 }
 
