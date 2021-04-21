@@ -31,7 +31,7 @@ $allowed_html = array(
 <?php if( strpos($_SERVER['REQUEST_URI'], "winkelmandje") !== false ){ wc_get_template('myaccount/winkelmandje.php');
 //wc_get_template('myaccount/winkelmandje.php');
 }else{ ?>
-	<img src="<?php echo THEME_URI; ?>/assets/images/account-deshboard.jpg" alt="deshboard">
+	<img src="<?php echo THEME_URI; ?>/assets/images/account-deshboard.png" alt="deshboard">
 
 <?php } ?>
 </div>
