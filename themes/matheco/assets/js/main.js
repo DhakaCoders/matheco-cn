@@ -303,6 +303,59 @@ $('.filter-prdt').click(function(){
 }
 }
 
+/**
+Slick slider
+*/
+if( $('.hasRelatedProduct').length ){
+    $('.hasRelatedProduct').slick({
+      dots: false,
+      arrows:false,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+}
+
+
+
+/* start of Niaz */
+$(".type-order-format .woocommerce-input-wrapper span").each(function(){
+        $(this).append('<div class="radio-custom"></div>')
+  });
+$(".billing-address-wrap .same-as-shipping-address,.login-info p:first-child,.form-row .woocommerce-form__label-for-checkbox").each(function(){
+        $(this).append('<div class="checkbox-custom"></div>')
+  });
 /*start of Milon*/
 
 if( $('.TeamMemberSlider').length ){
@@ -454,5 +507,6 @@ $("#billing_order_type_Particulier").on('change', function(){
 });
 
 new WOW().init();
+
 
 })(jQuery);

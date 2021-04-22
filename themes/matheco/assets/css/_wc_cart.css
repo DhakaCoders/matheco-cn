@@ -374,12 +374,9 @@ Empty cart
 	font-weight: bold;
 	font-size: 48px;
 	line-height: 30px;
-	color: #202020;
+	color: #243444;
 	margin-top: 48px;
 	margin-bottom: 24px;
-}
-.cart-is-emtpy p{
-	color: #525A61;
 }
 .cart-is-emtpy + .return-to-shop a {
     display: inline-block;
