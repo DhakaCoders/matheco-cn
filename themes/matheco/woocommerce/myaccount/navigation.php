@@ -23,6 +23,12 @@ do_action( 'woocommerce_before_account_navigation' );
 ?>
 
 <nav class="woocommerce-MyAccount-navigation">
+<?php if( (is_wc_endpoint_url( 'orders' )) || (strpos($_SERVER['REQUEST_URI'], "winkelmandje") !== false) || (is_wc_endpoint_url( 'edit-account' )) ){ ?>
+<?php }else{ ?>
+	<div class="nav-text">
+		<p>Vanaf uw accountdashboard kunt u uw recente bestellingen bekijken, uw verzend- en factuuradressen beheren en uw wachtwoord en accountgegevens bewerken.</p>
+	</div>
+<?php } ?>
 	<ul>
 		<?php foreach ( wc_get_account_menu_items() as $endpoint => $label ) : ?>
 			<li class="<?php echo wc_get_account_menu_item_classes( $endpoint ); ?>">
