@@ -269,7 +269,7 @@ get_template_part('templates/breadcrumbs');
           <article class="default-page-con">
             <?php if( is_account_page() && !is_user_logged_in()){ ?>
             <div class="page-title">
-            <h1><?php the_title(); ?></h1>
+            <h1>Jouw account</h1>
             </div>
             <?php }elseif( !is_account_page() && !is_checkout()){ ?>
             <div class="page-title">

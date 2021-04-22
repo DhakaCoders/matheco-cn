@@ -440,6 +440,8 @@ function cbv_wc_custom_class( $classes ) {
         $classes[] = 'woocommerce-orders';
     }elseif( is_account_page() && is_user_logged_in() &&  is_wc_endpoint_url( 'edit-account' )) {
         $classes[] = 'woocommerce-edit-account';
+    }elseif( is_account_page() && is_user_logged_in() && !is_endpoint()) {
+        $classes[] = 'loggedin-deshboard-crtl';
     }
     
     if( is_cart() && WC()->cart->cart_contents_count == 0){
@@ -452,6 +454,12 @@ function cbv_wc_custom_class( $classes ) {
         $classes[]='hide-account-title';
     }
     return $classes;
+}
+
+function is_endpoint(){
+    if( strpos($_SERVER['REQUEST_URI'], "winkelmandje") !== false || is_wc_endpoint_url( 'orders' ) || is_wc_endpoint_url( 'edit-account' )){
+        return true;
+    }
 }
 
 /**

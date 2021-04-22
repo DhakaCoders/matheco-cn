@@ -38,79 +38,116 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php else : ?>
 		<div class="checkout-page-title thankyou-page clearfix">
-			<div class="checkoutpt-left">
-				<h1><?php the_title(); ?></h1>
-			</div>
-			<div class="checkoutpt-right">
-				<div class="progressbar-crtl">
-			        <div class="n-checkout-progress-wrap">
-			          <div class="checkout-progress-cntlr">
-			            <div class="checkout-progress">
-			              <div class="checkout-progress-bar">
-			                <span class="ckour-pro-bar-active ckour-pro-bar-1"></span>
-			                <span class="ckour-pro-bar-active ckour-pro-bar-2"></span>
-			                <span class="ckour-pro-bar-active ckour-pro-bar-3 active"></span>
-			              </div>
-			              <div class="chckout-prgrs-col chckout-prgrs-col-1 ">
-			                <strong class="chckout-prgrs-number">1</strong> 
-			                <h6 class="chckout-prgrs-title">Winkelmandje</h6>
-			              </div>
-
-			              <div class="chckout-prgrs-col chckout-prgrs-col-2">
-			                <strong class="chckout-prgrs-number">2</strong> 
-			                <h6 class="chckout-prgrs-title">Klantgegevens <br>
-			                en Betaling</h6>
-			              </div>
-
-			              <div class="chckout-prgrs-col chckout-prgrs-col-3 active">
-			                <strong class="chckout-prgrs-number">3</strong> 
-			                <h6 class="chckout-prgrs-title">Bevestiging</h6>
-			              </div>
-
-			            </div>
-			          </div>
-			        </div>
-				</div>
-			</div>
+		<div class="checkoutpt-left">
+		<h1><?php the_title(); ?></h1>
 		</div>
-			<section class="thank-you-section">
-			  <div class="container">
-			    <div class="row">
-			      <div class="col-md-12">
-			        <div class="thank-you-sec-cntlr">
-			          <div class="thnk-you-des">
-			            <i><img src="<?php echo THEME_URI; ?>/assets/images/thankyou-pg-logo.svg" alt="logo"></i>
-			            <h1 class="fl-h2 thank-you-des-title">Bedankt <span>&lt;<?php echo $order->get_billing_first_name(); ?>&gt;</span> voor je bestelling</h1>
-			            <a href="#">Bestelnummer: #<?php echo $order->get_order_number(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></a>
-			            <p>Een bevestigingsmail <br> komt zodadelijk jouw richting uit.</p>
-			          </div>
-			          <div class="thnk-y-social-des" style="background:url(<?php echo THEME_URI; ?>/assets/images/thank-you-social-bg.jpg);">
-			            <div class="thnk-you-social-des-cntlr" >
-			              <h5 class="fl-h5 thnk-you-social-des-title"><?php esc_html_e( 'Social Media', 'woocommerce' ); ?></h5>
-			              <p>Interdum, nunc id blandit porttitor, velit purus posuere turpis.</p>
-			               <?php 
-							$smedias = get_field('social_media', 'options');
-			                if(!empty($smedias)):  
-			               ?>
-			              <div class="thnkY-social-link">
-			                <ul class="reset-list">
-			                  <?php foreach($smedias as $smedia): ?>
-				                  <li>
-				                    <a target="_blank" href="<?php echo $smedia['url']; ?>">
-				                        <?php echo $smedia['icon']; ?>
-				                    </a>
-				                  </li>
-				                <?php endforeach; ?>
-			                </ul>
-			              </div>
-			          	  <?php endif; ?>
-			            </div>
-			          </div>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
-			</section>
+		<div class="checkoutpt-right">
+		<div class="progressbar-crtl">
+		    <div class="n-checkout-progress-wrap">
+		      <div class="checkout-progress-cntlr">
+		        <div class="checkout-progress">
+		          <div class="checkout-progress-bar">
+		            <span class="ckour-pro-bar-active ckour-pro-bar-1"></span>
+		            <span class="ckour-pro-bar-active ckour-pro-bar-2"></span>
+		            <span class="ckour-pro-bar-active ckour-pro-bar-3 active"></span>
+		          </div>
+		          <div class="chckout-prgrs-col chckout-prgrs-col-1 ">
+		            <strong class="chckout-prgrs-number">1</strong> 
+		            <h6 class="chckout-prgrs-title">Winkelmandje</h6>
+		          </div>
+
+		          <div class="chckout-prgrs-col chckout-prgrs-col-2">
+		            <strong class="chckout-prgrs-number">2</strong> 
+		            <h6 class="chckout-prgrs-title">Klantgegevens <br>
+		            en Betaling</h6>
+		          </div>
+
+		          <div class="chckout-prgrs-col chckout-prgrs-col-3 active">
+		            <strong class="chckout-prgrs-number">3</strong> 
+		            <h6 class="chckout-prgrs-title">Bevestiging</h6>
+		          </div>
+
+		        </div>
+		      </div>
+		    </div>
+		</div>
+		</div>
+		</div>
+
+		<section class="checkout-sec">
+		<div class="container">
+		<div class="row">
+		  <div class="col-md-12">
+		    <div class="checkout-cntrl">
+		      <div class="checkout-hdr">
+		        <div class="chkout-logo">
+		          <img src="<?php echo THEME_URI; ?>/assets/images/checkout-logo.png" alt="">
+		        </div>
+		        <h3 class="fl-h3 chkout-title">Bedankt <span>&lt;<?php echo $order->get_billing_first_name(); ?>&gt;</span> voor je bestelling</h3>
+		        <p>Bestelnummer:<span>#<?php echo $order->get_order_number(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span></p>
+		        <h6 class="fl-h6 chkout-subtitle">Een bevestigingsmail  komt zodadelijk jouw richting uit.</h6> 
+		      </div>
+		      <div class="chkout-service">
+		        <div class="srv-fea-img">
+		          <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/checkout-page-img.jpg" alt=""></a>
+		        </div>
+		        <div class="srv-cont">
+		          <div class="chk-acc">
+		            <div class="chk-acc-bg">
+		              <div class="chk-acc-hdr">
+		                <h4 class="fl-h4 chk-acc-title">Service & contact</h4>
+		              </div>
+		              <div class="chk-acc-tp">
+		                <img src="<?php echo THEME_URI; ?>/assets/images/srv&cont.svg" alt="">                    
+		                <h6 class="fl-h6 chk-tp-title">Snel regelen in je account</h6>
+		                <p>Volg je bestelling, betaal<br> facturen of retourneer een<br> artikel.</p>
+		              </div>
+		              <div class="chk-acc-btm">
+		                <img src="<?php echo THEME_URI; ?>/assets/images/srv&cont-2.svg" alt="">
+		                <h6 class="fl-h6 chk-tp-title">Heb je ons nodig?</h6>
+		                <p>We helpen je graag. Onze<br> klantenservice is dag en nacht<br> open.</p>
+		              </div>
+		            </div>  
+		          </div>
+		          <div class="chkout-scl">
+		            <div class="chkout-scl-bg">
+		              <div class="chkout-scl-hdr">
+		                <h4 class="fl-h4 chk-scl-title">social media</h4>
+		                <p>Wil je ons volgen?</p>
+		              </div>  
+		              <div class="chk-scl-blg">
+		                <div class="chk-scl-itm fb">
+		                  <a href="#" class="overlay-link"></a>
+		                  <i class="fab fa-facebook-f"></i>
+		                  <span>facebook</span>
+		                </div>
+		                <div class="chk-scl-itm inst">
+		                  <a href="#" class="overlay-link"></a>
+		                  <i class="fab fa-instagram"></i>
+		                  <span>Instagram</span>
+		                </div>
+		                <div class="chk-scl-itm twitter">
+		                  <a href="#" class="overlay-link"></a>
+		                  <i class="fab fa-twitter"></i>
+		                  <span>Twitter</span>
+		                </div>
+		                <div class="chk-scl-itm linkedin">
+		                  <a href="#" class="overlay-link"></a>
+		                  <i class="fab fa-linkedin-in"></i>
+		                  <span>Linkedin</span>
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		</div>
+		</section>
+
+
 		<?php endif; ?>
 
 	<?php else : ?>
