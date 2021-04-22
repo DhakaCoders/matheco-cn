@@ -580,7 +580,7 @@ body.hide-account-title .register-title h3{
     position: absolute;
     width: 18px;
     border-radius: 50%;
-    border: 1px solid #8AA4E4;
+    border: 1px solid #BFBFBF;;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -598,9 +598,9 @@ body.hide-account-title .register-title h3{
 }
 
 
-/*.container input:checked ~ .radio-custom{
-    background:#8aa4e4!important
-}*/
+.container input:checked ~ .radio-custom{
+    border: 1px solid #2285E3!important;
+}
 .woocommerce-input-wrapper span input:checked ~ .radio-custom:after{
     display: block;
 }
@@ -609,7 +609,7 @@ body.hide-account-title .register-title h3{
     position: absolute;
     width: 10px;
     height: 10px;
-    background: #8aa4e4;
+    background: #2285E3;
     border-radius: 50%;
     display: none;
 }
