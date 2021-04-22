@@ -76,6 +76,9 @@ nav.main-nav > ul > li.login-menu-item > a:after{
 	height: 12px;
 	width: 12px;
 	background-size: contain;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
 }
 nav.main-nav > ul > li.login-menu-item > a:hover:after{
 	background: url('../images/external-icon-hvr.svg');
