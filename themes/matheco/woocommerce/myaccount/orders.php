@@ -61,7 +61,7 @@ if ( $customer_orders ) :
         <div class="orders-crtl">
         <time class="my-ac-time" datetime="<?php echo esc_attr( $order->get_date_created()->date( 'c' ) ); ?>"><?php echo esc_html( wc_format_datetime( $order->get_date_created(), 'd F Y' ) ); ?></time>
       <div class="code-text">
-        <?php echo __('Bestelnummer', 'woocommerce' ) . '#'.$order->get_order_number(); ?>
+        <?php echo __('Bestelnummer', 'woocommerce' ) . ' '.$order->get_order_number(); ?>
       </div>
           <span></span>
           <div class="order-details">
