@@ -1052,6 +1052,10 @@ body.woocommerce-checkout .custom-checkout-order-review table td strong{
     border:none!important;
     font-weight:400;
  }
+ body.woocommerce-checkout .custom-checkout-order-review table.shop_table td {
+    font-weight: 600;
+    color: #243444;
+}
 body.woocommerce-checkout .custom-checkout-order-review table td.product-name strong{
     display: none;
  }
@@ -1084,6 +1088,7 @@ body.woocommerce-checkout .default-page-con h3{
 }
 body.woocommerce-checkout .custom-checkout-order-review h3{
     border-bottom:none;
+    display: none;
 }
 /*body.woocommerce-checkout .woocommerce-billing-fields {
     padding-top: 78px;
