@@ -63,8 +63,6 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 			</p>
 		</div>
 		<div class="woocommerce-billing-fields__field-wrapper">
-			<div id="extra_fields">
-			</div>
 			<p class="form-row form-row-first" id="billing_first_name_field">
 				<label for="billing_first_name" class="">Naam</label>
 				<span class="woocommerce-input-wrapper">
@@ -77,6 +75,13 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 					<input type="text" class="input-text " name="billing_last_name" id="billing_last_name" placeholder="Naam" value="<?php echo isset($_POST['billing_last_name'])? $_POST['billing_last_name']:'';?>" required>
 				</span>
 			</p>
+			<p class="form-row form-row-wide" id="billing_company_field">
+		        <label for="billing_company" class="">Bedrijfsnaam</label>
+		        <span class="woocommerce-input-wrapper">
+		          <input type="text" class="input-text " name="billing_company" id="billing_company" placeholder="Bedrijfsnaam">
+		        </span>
+	      	</p>
+			<div id="extra_fields"></div>
 			<?php 
 				woocommerce_form_field('billing_country', array(
 			    'type'       => 'select',
@@ -129,13 +134,13 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 						<input type="email" class="input-text " name="billing_email_2" id="billing_email_2" placeholder="" value="<?php echo isset($_POST['billing_email_2'])? $_POST['billing_email_2']:$setedEmail;?>" required>
 					</span>
 				</p>
-				<p class="form-row form-row-first billing_gsm_number" id="billing_address_1_field">
+				<p class="form-row form-row-wide billing_gsm_number" id="billing_address_1_field">
 					<label for="billing_gsm_number" class="">GSM nummer</label>
 					<span class="woocommerce-input-wrapper">
 						<input type="text" class="input-text " name="billing_gsm_number" id="billing_gsm_number" placeholder="Bijv. 0493 20 36 20" value="<?php echo isset($_POST['billing_gsm_number'])? $_POST['billing_gsm_number']:'';?>" autocomplete="gsm-number">
 					</span>
 				</p>
-				<p class="form-row form-row-last billing_phone" id="billing_phone_field">
+				<p class="form-row form-row-wide billing_phone" id="billing_phone_field">
 					<label for="billing_phone" class="">Telefoon</label>
 					<span class="woocommerce-input-wrapper">
 						<input type="tel" class="input-text " name="billing_phone" id="billing_phone" placeholder="Bijv. 09 224 61 11" value="<?php echo isset($_POST['billing_phone'])? $_POST['billing_phone']:'';?>" autocomplete="tel" required>
@@ -155,14 +160,14 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 					
 					<?php if( isset($data_reg) && array_key_exists('exists_email', $data_reg) ){printf('<span class="error-valid error-confirm_password">%s</span>', $data_reg['exists_email'] );}?>
 				</p>
-				<p class="form-row form-row-first password" id="password_field">
+				<p class="form-row form-row-wide password" id="password_field">
 					<label for="re_password" class="">Wachtwoord</label>
 					<span class="woocommerce-input-wrapper">
 						<input type="password" class="input-text " name="password" id="re_password" placeholder="Minimaal 8 karakters"  autocomplete="password" required>
 					</span>
 					<span class="error-valid error-rel_password"></span>
 				</p>
-				<p class="form-row form-row-last confirm_password" id="confirm_password_field">
+				<p class="form-row form-row-wide confirm_password" id="confirm_password_field">
 					<label for="confirm_password" class="">Wachtwoord bevestigen</label>
 					<span class="woocommerce-input-wrapper">
 						<input type="password" class="input-text " name="confirm_password" id="confirm_password" autocomplete="confirm-password" required>
