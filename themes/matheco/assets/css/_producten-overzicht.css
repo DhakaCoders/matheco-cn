@@ -181,21 +181,34 @@
 }
 .fl-pro-grd-price span.woocommerce-Price-amount bdi span,
 .fl-pro-grd-price del span.woocommerce-Price-amount bdi span,
-.fl-pro-grd-price ins span.woocommerce-Price-amount bdi span {
+.fl-pro-grd-price ins span.woocommerce-Price-amount bdi span,
+.single-product .single-price-total span.woocommerce-Price-amount bdi,
+.single-product .single-price-total del span.woocommerce-Price-amount bdi span,
+ .single-product .single-price-total ins span.woocommerce-Price-amount bdi span {
 	margin-right: 5px!important;
 }
 .fl-pro-grd-price del span.woocommerce-Price-amount bdi,
-.fl-pro-grd-price del span.woocommerce-Price-amount bdi span {
+.fl-pro-grd-price del span.woocommerce-Price-amount bdi span,
+.single-product .single-price-total del span.woocommerce-Price-amount bdi,
+.single-product .single-price-total del span.woocommerce-Price-amount bdi span {
 	position: relative;
-    color:#b4192b!important;
+    color:#707C88!important;
 }
+.single-product .single-price-total del + ins span.woocommerce-Price-amount bdi,
+.single-product .single-price-total del + ins span.woocommerce-Price-amount bdi span,
+.fl-pro-grd-price del + ins span.woocommerce-Price-amount bdi,
+.fl-pro-grd-price del + ins span.woocommerce-Price-amount bdi span{
+	color: #243444!important;
+}
+
 .fl-pro-grd-price ins span.woocommerce-Price-amount bdi{
 
 }
-.fl-pro-grd-price del span.woocommerce-Price-amount bdi:after{
+.fl-pro-grd-price del span.woocommerce-Price-amount bdi:after,
+.single-product .single-price-total del span.woocommerce-Price-amount bdi:after{
 	position: absolute;
 	content: "";
-	background: #b4192b;
+	background: #707C88;
 	width: 100%;
 	height: 1px;
 	left: 0;
@@ -206,6 +219,7 @@
 .fl-product-grd-inr a.prdt-btn{
 	color: #2285E3;
 	padding-bottom: 1px;
+	text-decoration: underline!important;
 }
 .fl-pro-grd-btn{
 	padding: 0 32px 32px;
