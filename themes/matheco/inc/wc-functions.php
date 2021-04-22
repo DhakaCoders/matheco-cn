@@ -162,7 +162,9 @@ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_singl
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_sharing', 50 );
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 
+add_action('cbv_related_product', 'woocommerce_output_related_products');
 
 add_action('woocommerce_single_product_summary', 'add_custom_box_product_summary', 5);
 if (!function_exists('add_custom_box_product_summary')) {

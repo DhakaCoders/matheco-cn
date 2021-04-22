@@ -69,6 +69,7 @@ get_template_part('templates/breadcrumbs');
     </div>
   </div>
 </section>
+<?php do_action('cbv_related_product'); ?>
 <?php
 get_footer( 'shop' );
 
