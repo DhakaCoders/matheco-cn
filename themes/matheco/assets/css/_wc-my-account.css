@@ -32,6 +32,23 @@ body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccou
     -ms-transition:all .5s;
     -webkit-transition:all .5s;
 }
+body.loggedin-deshboard-crtl .default-page-con h1{
+    margin-bottom:18px!important;
+}
+body.woocommerce-account .default-page-con h1 + p{
+    color: #78797B;
+    font-weight: 500;
+}
+body.loggedin-deshboard-crtl .woocommerce-account-grds-cntlr{
+    border-top: 1px solid #ECEEEF;
+    margin-top: 22px;
+    padding-top: 68px;
+    padding-bottom: 76px;
+    margin-bottom: 0;
+}
+body.loggedin-deshboard-crtl .woocommerce-MyAccount-navigation .nav-text{
+    margin-bottom: 40px;
+}
 body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul li.is-active:hover{
     opacity: 1;
 }
