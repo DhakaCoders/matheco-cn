@@ -497,7 +497,8 @@ body.woocommerce-account .woocommerce #register_next{
 body.woocommerce-account .woocommerce form .form-row label,
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row label,
 body.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row label{
-    padding-bottom: 11px;
+    padding-bottom: 9px;
+    display: inline-block;
 }
 body.woocommerce-account .woocommerce-notices-wrapper{
     margin-bottom: 80px;
@@ -556,6 +557,57 @@ body.woocommerce-account .woocommerce .u-column2.col-2{
 }
 
 /*  ----------------------------- my new account page ------------------------- */
+
+body.hide-account-title .woocommerce-notices-wrapper{
+    margin-bottom:0px;
+}
+body.hide-account-title .register-top-title h1{
+    border-bottom: 1px solid #ECEEEF!important;
+}
+body.hide-account-title .register-top-title{
+    margin-bottom:100px;
+}
+body.hide-account-title.woocommerce-account .register-title h3{
+    padding-bottom:18px!important;
+    margin-bottom: 33px;
+}
+body.hide-account-title span.woocommerce-input-wrapper span {
+    font-size: 15px;
+}
+body.hide-account-title article.default-page-con {
+    max-width: 926px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#billing_order_type_field label, #billing_salutation_field label{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body.hide-account-title #billing_last_name_field label{
     opacity: 0;
     visibility: visible;
@@ -565,7 +617,7 @@ body.hide-account-title .register-title h3{
 }
 .woocommerce-account .register-title h3{
     font-size:24px;
-    border-bottom: 1px solid #F1E8E1;
+    border-bottom: 1px solid #ECEEEF;
     padding-bottom: 15px;
 }
 .register-top-title h1{
@@ -690,26 +742,28 @@ body.woocommerce-account  .woocommerce-page form .form-row select,
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .selection .select2-selection,
 body.woocommerce-checkout .woocommerce-shipping-fields .selection .select2-selection{
     width: 100%;
-    height: 48px!important;
-    border: 1px solid #F2EDE9!important;
-    border-radius: 6px!important;
-    color: #9EA5AB;
+    height: 50px!important;
+    border: 1px solid #EDEDED!important;
+    color: #707C88;
     padding: 5px 18px 5px;
-    font-size: 14px;
+    font-size: 15px;
+    background: #fff;
 }
 body.woocommerce-account .billing-address-wrap h3{
-    font-size:16px;
-    font-weight:normal;
-    font-family: 'Bitter', serif;
+    font-size: 16px;
+    font-family: Work Sans;
+    font-weight: 600;
+    color: #243444;
+    text-transform: capitalize;
 }
 body.woocommerce-account .woocommerce-input-wrapper .bootstrap-select{
     width: 100%!important;
 }
 
 .checkbox-custom{
-    width: 18px;
-    height: 18px;
-    border:1px solid #8AA4E4;
+    width: 24px;
+    height: 24px;
+    border:1px solid #2285E3;
     box-shadow: inset 0px 2px 2px -1px rgb(74 74 104 / 10%);
     border-radius: 3px;
     position: absolute;
@@ -719,10 +773,10 @@ body.woocommerce-account .woocommerce-input-wrapper .bootstrap-select{
 }
 
 .checkbox-custom:after{
-    left: 5px;
-    top: 1px;
-    width: 6px;
-    height: 11px;
+    left: 8px;
+    top: 3px;
+    width: 7px;
+    height: 13px;
     border: solid white;
     border-width: 0 2px 2px 0;
     -webkit-transform: rotate(45deg);
@@ -735,7 +789,7 @@ body.woocommerce-account .woocommerce-input-wrapper .bootstrap-select{
 .same-as-shipping-address input:checked ~ .checkbox-custom,
 .login-info p > input:checked ~ .checkbox-custom,
 .woocommerce-form .form-row .woocommerce-form__label-for-checkbox input:checked ~ .checkbox-custom{
-    background: #8AA4E4;
+    background: #2285E3;
 }
 .login-info p > input:checked ~ .checkbox-custom:after,
 .same-as-shipping-address input:checked ~ .checkbox-custom:after,
@@ -746,7 +800,8 @@ body.woocommerce-account .woocommerce-input-wrapper .bootstrap-select{
 .login-info p:first-child,
 .woocommerce-form .form-row .woocommerce-form__label-for-checkbox{
     position: relative;
-    padding-left: 25px;
+    padding-left: 30px;
+    font-size: 15px;
 }
 .same-as-shipping-address input,
 .login-info p > input,
@@ -770,13 +825,14 @@ body.woocommerce-account .woocommerce-input-wrapper .bootstrap-select{
     margin-top:65px;
 }
 body.woocommerce-account .register-btn button[type="submit"]{
-    background: #8CCC0C!important;
-    border: 2px solid #8CCC0C!important;
+    background: #5CB85C!important;
+    border: 2px solid #5CB85C!important;
     padding: 15px 15px!important;
     margin-top: 23px;
     cursor: pointer;
-    width: 311px;
+    width: 320px;
     font-weight: 700;
+    height: 50px;
 }
 .register-btn{
     text-align: right;
@@ -789,24 +845,26 @@ body.woocommerce-account .register-btn button[type="submit"]{
     margin-left: auto;
     text-align: center;
 }
-.payment-logo-crtl ul {
+.payment-logo-crtl ul{
     display: flex;
 }
 
-.register-pay-logo-wrap h3 {
-    font-size: 14px;
+.register-pay-logo-wrap h3{
+    font-size: 16px;
     font-weight: normal;
     display: inline-block;
     padding-right: 14px;
     margin-bottom: 0px!important;
-    color: #525A61;
+    color: #707C88;
+    letter-spacing: 0;
 }
 
-.register-pay-logo-wrap {
+.register-pay-logo-wrap{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid #ECE9E9;
+    border-top: 1px solid #ECEEEF;
+    height: 113px;
 }
 /*.loggedin-deshboard-crtl .innerpage-con-wrap,.hide-account-title .innerpage-con-wrap{
     overflow: hidden;
@@ -822,10 +880,10 @@ body.woocommerce-account .register-btn button[type="submit"]{
     padding: 5px 0 8px 18px!important;
 }
 .register-btn .reg-btn-crtl {
-    margin-bottom: 12px;
-}
+    margin-bottom: 22px;}
 .reg-btn-crtl .html-text span {
-    font-size: 12px;
+    font-size: 16px;
+    color: #78797B;
 }
 body.hide-account-title .login-info #billing_email_field{
     border-top: 1px solid #ECE9E9;
