@@ -4,6 +4,7 @@ $thisID = get_the_ID();
 if( !is_cart() )
 get_template_part('templates/breadcrumbs');
 ?>
+<?php if( is_checkout() ){ get_template_part('templates/checkout', 'top'); } ?>
 <section class="innerpage-con-wrap">
     <?php if(have_rows('inhoud')){  ?>
     <article class="default-page-con">
@@ -262,7 +263,7 @@ get_template_part('templates/breadcrumbs');
     <?php } ?>
     <?php endwhile; ?>
     </article>
-    <?php }else{ ?>
+    <?php }else{ ?>  
     <div class="container">
       <div class="row">
         <div class="col-md-12">
