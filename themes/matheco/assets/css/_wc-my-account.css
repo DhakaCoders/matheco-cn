@@ -644,7 +644,8 @@ body.hide-account-title .register-title h3{
     position: relative;
     padding-left:30px
  }
-.radio-custom{
+.radio-custom,
+body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li label:after{
     height: 18px;
     position: absolute;
     width: 18px;
@@ -659,6 +660,26 @@ body.hide-account-title .register-title h3{
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     margin-top: -1px;
+}
+body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li label:before{
+    left: 23px;
+    background: #2285E3!important;
+}
+.woocommerce-input-wrapper span .radio-custom:after,
+body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li label:before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: none;
+}
+.woocommerce-input-wrapper span input:checked ~ .radio-custom:after,
+body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li input:checked ~  label:before{
+    display: block;
+}
+body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li input{
+    display: none;
 }
 .woocommerce .woocommerce-widget-layered-nav-list .radio-btn.woocommerce-widget-layered-nav-list__item--chosen a::after,
 /*.woocommerce .woocommerce-widget-layered-nav-list .radio-btn  a::before,
@@ -730,6 +751,9 @@ body.woocommerce-checkout .checkout-terms{
 body.woocommerce-checkout  .payment-method-crtl .woocommerce-additional-fields.extra-info{
     padding-top: 30px;
 }
+body.woocommerce-checkout .payment-method-crtl .woocommerce-additional-fields.extra-info h3 {
+    margin-bottom: 15px;
+}
 body.woocommerce-account .woocommerce form .form-row-last, 
 body.woocommerce-account .woocommerce-page form .form-row-last,
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row-last,
@@ -791,6 +815,9 @@ body.woocommerce-account .woocommerce-input-wrapper .bootstrap-select{
 .woocommerce-form .form-row .woocommerce-form__label-for-checkbox input:checked ~ .checkbox-custom{
     background: #2285E3;
 }
+body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li input:checked ~ label:after{
+    border-color:#2285E3!important;
+}
 .login-info p > input:checked ~ .checkbox-custom:after,
 .same-as-shipping-address input:checked ~ .checkbox-custom:after,
 .woocommerce-form .form-row .woocommerce-form__label-for-checkbox input:checked ~ .checkbox-custom:after{
@@ -816,6 +843,12 @@ body.woocommerce-account .woocommerce-input-wrapper .bootstrap-select{
     cursor: pointer;
     z-index: 1;
     height: 100%;
+}
+body.woocommerce-checkout #payment div.payment_box {
+    left: 0;
+    top: 100%;
+    margin-top: 0;
+    position: absolute;
 }
 .woocommerce-form .form-row .woocommerce-form__label-for-checkbox .checkbox-custom{
     margin-top:-7px;
@@ -1087,6 +1120,13 @@ body.woocommerce-checkout .default-page-con h3{
      border-bottom: 1px solid #ECEEEF;
      padding-bottom:18px;
 }
+body.woocommerce-checkout .woocommerce input[type="text"], 
+body.woocommerce-checkout .woocommerce input[type="email"], 
+body.woocommerce-checkout .woocommerce input[type="tel"], 
+body.woocommerce-checkout .woocommerce input[type="password"], 
+body.woocommerce-checkout .woocommerce textarea{
+    height:50px;
+}
 body.woocommerce-checkout .custom-checkout-order-review h3{
     border-bottom:none;
     display: none;
@@ -1099,15 +1139,21 @@ body.woocommerce-checkout #customer_details .col-2{
     padding-left: 110px;
     padding-right: 0;
 }
+body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li label:after{
+    content:"";
+    left: 19px;
+    border: 1px solid #BFBFBF!important;
+}
+
 body.woocommerce-checkout .custom-checkout-order-review table.shop_table tfoot .order-total{
 
 }
 body.woocommerce-checkout .woocommerce-additional-fields h3{
-    border-bottom: 1px solid #F1E8E1;
+    border-bottom: 1px solid #ECEEEF;
     padding-bottom: 20px;
 }
 body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .woocommerce-input-wrapper textarea{
-    min-height:275px;
+    min-height:273px;
 }
 body.woocommerce-checkout .custom-checkout-order-review table tbody,
 body.woocommerce-checkout .custom-checkout-order-review table tfoot,
@@ -1171,7 +1217,7 @@ body.woocommerce-checkout .innerpage-con-wrap{
     padding-bottom:80px;
 }
 body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .form-row{
-    margin-bottom:45px
+    margin-bottom: 30px;
 }
 body.woocommerce-checkout .woocommerce-terms-and-conditions-wrapper label{
     color:#525A61;
@@ -1258,6 +1304,10 @@ body.woocommerce-checkout .custom-checkout-order-review .ywgc_enter_code .form-r
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .selection .select2-selection .select2-selection__rendered,
 body.woocommerce-checkout .woocommerce-shipping-fields .selection .select2-selection .select2-selection__rendered{
     padding-left: 0;
+    color: #707C88;
+}
+body.woocommerce-checkout #customer_details .col-2 .custom-checkout-order-review {
+    padding-top: 60px;
 }
 .select2-container--default .select2-search--dropdown .select2-search__field{
     border-right:3px;
@@ -1279,8 +1329,7 @@ body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment .pl
 body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li{
     width:48%;
     height:60px;
-    border: 1px solid #F2EDE9;
-    border-radius:6px;
+    border: 1px solid #EDEDED;
     background: #FFFFFF;
     margin: 0;
     font-weight: 400;
@@ -1340,12 +1389,13 @@ body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul 
     padding-left: 0px;
 }
 body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li .payment_box{
-    background:#8CCC0C!important;
+    background:#5CB85C!important;
     color:#fff!important;
     font-weight:500;
+    z-index:1;
 }
 body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li .payment_box:before{
-        border: 1em solid #8ccc0c!important;
+        border: 1em solid #5CB85C!important;
         border-right-color: transparent!important;
         border-left-color: transparent!important;
         border-top-color: transparent!important;
