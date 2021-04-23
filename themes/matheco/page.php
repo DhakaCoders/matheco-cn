@@ -1,8 +1,7 @@
 <?php 
 get_header(); 
 $thisID = get_the_ID(); 
-if( !is_cart() )
-get_template_part('templates/breadcrumbs');
+if( !is_cart() ) get_template_part('templates/breadcrumbs');
 ?>
 <?php if( is_checkout() ){ get_template_part('templates/checkout', 'top'); } ?>
 <section class="innerpage-con-wrap">
