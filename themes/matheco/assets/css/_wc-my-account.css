@@ -1631,6 +1631,13 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     .back-to-dashboard-btn-cntlr{
         display: block;
     }
+    body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul li{
+        height:40px;
+        margin-bottom:15px!important;
+    }
+    body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul li a{
+        font-size: 12px;
+    }
     /* -------------------- myaccount login-register-page ----------------------*/
     body.woocommerce-account .account-page-title{
         padding-top: 0px;
@@ -1875,7 +1882,8 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
         font-size: 14px;
     }
     body.woocommerce-account .woocommerce-account-grds-cntlr{
-        margin-bottom:55px;
+        margin-bottom: 35px;
+        padding-bottom: 0;
     }
     body.woocommerce-account.loggedin-deshboard-crtl .default-page-con p{
         margin-bottom:10px;
