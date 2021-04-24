@@ -146,6 +146,7 @@ body.woocommerce-cart .product-quantity .quantity input{
 
 body.woocommerce-cart .woocommerce table.shop_table td{
 	border: none;
+	padding: 14px 0!important;
 }
 body.woocommerce-cart .woocommerce a.remove{
 	text-align: right!important;
@@ -590,8 +591,8 @@ body.woocommerce-page.woocommerce-checkout .woocommerce-NoticeGroup-checkout .wo
 	}
 	body.woocommerce-cart .cart-table-crtl table.shop_table tbody tr td{
 		width: 100%;
-		padding-top: 3px!important;
-		padding-bottom: 3px!important;
+		padding-top: 8px!important;
+		padding-bottom: 8px!important;
 		padding-right: 0!important;
 		text-align: left!important;
 	}
