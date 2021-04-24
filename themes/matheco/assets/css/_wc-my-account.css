@@ -141,7 +141,8 @@ body.woocommerce-edit-account .woocommerce-account-grds-cntlr .woocommerce-MyAcc
     max-width:68%;
 }
 body.woocommerce-edit-account .account-page-title h1,
-body.woocommerce-orders .account-page-title h1{
+body.woocommerce-orders .account-page-title h1,
+body.loggedin-winkelmandje-crtl .default-page-con h1{
     border-bottom: 1px solid #ECEEEF!important;
     padding-bottom:16px!important;
 }
@@ -1467,8 +1468,9 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
         padding-bottom: 55px;
     }
     body.woocommerce-edit-account .innerpage-con-wrap .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation,
-    body.woocommerce-orders .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation{
-        padding-right: 80px;
+    body.woocommerce-orders .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation,
+    body.loggedin-winkelmandje-crtl .woocommerce-account-grds-cntlr .woocommerce-MyAccount-navigation{
+        padding-right: 80px!important;
     }
 
 }
@@ -1512,8 +1514,9 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
         font-size:15px;
     }
    body.woocommerce-edit-account .innerpage-con-wrap .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation, 
-   body.woocommerce-orders .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation{
-        padding-right:50px;
+   body.woocommerce-orders .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation,
+   body.loggedin-winkelmandje-crtl .woocommerce-account-grds-cntlr .woocommerce-MyAccount-navigation{
+        padding-right:50px!important;
    }
     /* --------------- edit account page ---------------*/
     body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul li a:after{
@@ -1560,9 +1563,7 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
         margin-bottom: 15px!important;
     }
     /* -------------------- loggedin-winkelmandje-crtl -------------------------*/
-    body.loggedin-winkelmandje-crtl .woocommerce-account-grds-cntlr .woocommerce-MyAccount-content{
-        padding-left: 50px;
-    }
+ 
     body.loggedin-winkelmandje-crtl .woocommerce-mini-cart__buttons.buttons a{
         width:130px;
     }
@@ -1967,7 +1968,8 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
         
     }
 
-    body.woocommerce-orders .account-page-title h1{
+    body.woocommerce-orders .account-page-title h1,
+    body.loggedin-winkelmandje-crtl .default-page-con h1{
         margin-bottom:40px;
         font-size: 24px;
     }
@@ -2084,9 +2086,7 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     body.loggedin-winkelmandje-crtl .woocommerce-account-grds-cntlr .woocommerce-MyAccount-content{
         padding-left:0px;
     }
-    body.loggedin-winkelmandje-crtl .deshboard-inner .myaccount-cart-crtl {
-        padding: 0 30px;
-    }
+
     body.loggedin-winkelmandje-crtl .myaccount-cart-crtl ul li a.remove_from_cart_button + a img{
         width: 100px;
     }
@@ -2094,7 +2094,7 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
         margin-bottom: 18px;
     }
     body.loggedin-winkelmandje-crtl .account-page-title .woocommerce-account-grds-cntlr{
-        padding-top:15px;
+        padding-top:0px;
     }
 
     /* ----------------------------- chenk out page -----------------------------*/
@@ -2331,6 +2331,9 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
         background-position: left bottom;
         background-size: 300px auto;
         padding-bottom: 40px;
+    }
+    p.woocommerce-mini-cart__buttons.buttons a {
+        width: 50%!important;
     }
 }
 
