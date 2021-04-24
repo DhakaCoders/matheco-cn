@@ -385,12 +385,15 @@ small.woocommerce-price-suffix,
 	.spotlight-popup-cntlr {
 	    padding-top: 25px;
 	}
+	.spotlight-popup{
+		margin: 0 -20px;
+	}
 	.flex-fill {
-	    padding: 0px 8px;
+	    padding: 0px 20px;
 	}
 	.spotlight-popup .flex-fill .pro-item-cntlr + div{
-		left: 8px;
-		right: 8px;
+		left: 5px;
+		right: 5px;
 	}
 	.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle{
 		padding-left: 15px!important
@@ -458,6 +461,16 @@ small.woocommerce-price-suffix,
 	}
 	.xoo-cp-container{
 		padding-bottom:40px;
+	}
+	.spotlight-popup {
+    	margin: 0 -15px;
+	}
+	.flex-fill{
+		padding: 0 15px;
+	}
+	.spotlight-popup .flex-fill .pro-item-cntlr + div {
+    	left: 2px;
+    	right: 2px;
 	}
 
 }
