@@ -87,10 +87,11 @@
 	color: #2285E3;
 }
 .checkout-page-title .checkoutpt-left{
-    float: left;
+    /*float: left;*/
 }
 .checkout-page-title .checkoutpt-right{
-    float: right;
+    /*float: right;*/
+    margin-left: auto;
 }
 .checkout-page-title .progressbar-crtl{
 	width: 440px;

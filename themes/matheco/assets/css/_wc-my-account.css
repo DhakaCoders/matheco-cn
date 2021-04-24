@@ -399,9 +399,7 @@ body.woocommerce-account .default-page-con h1{
     margin-bottom:0;
     font-size:30px;
 }
-body.woocommerce-checkout .checkout-page-title{
-    border-bottom: 1px solid #F1E8E1;
-}
+
 body.woocommerce-checkout .checkout-page-title h1{
     padding-bottom: 28px;
     margin-bottom:0;    
@@ -1027,18 +1025,22 @@ body.loggedin-winkelmandje-crtl .myaccount-cart-crtl .woocommerce-mini-cart + p 
 }
 */
 /* ---------------------------- checkout page ----------------------------------*/
-body.woocommerce-checkout .breadcrumb-sec{
-    display: none;
+body.woocommerce-checkout .breadcrumb-sec {
+    margin-bottom: 0;
 }
 body.woocommerce-checkout .default-page-con{
     padding-bottom:0px;
 }
-body.woocommerce-checkout .woocommerce-notices-wrapper {
+body.woocommerce-checkout .checkout-page-title h1{
+    padding-bottom: 0px;
+}
+body.woocommerce-checkout .woocommerce-notices-wrapper{
     margin-bottom: 30px;
     overflow: hidden;
 }
-body.woocommerce-checkout .checkout-page-title .checkoutpt-right{
-    padding-top:60px;
+.checkout-page-title {
+    align-items: center;
+    display: flex;
 }
 body.woocommerce-checkout .innerpage-con-wrap{
     max-width: 100%;
@@ -1107,12 +1109,13 @@ body.woocommerce-checkout .custom-checkout-order-review table tr.order-total td 
     color: #2285E3;
 }
 body.woocommerce-checkout .checkout-page-title h1{
-    padding-bottom:29px;
+    padding-bottom:0px;
+    font-size: 30px;
 }
-body.woocommerce-checkout .checkout-page-title{
+/*body.woocommerce-checkout .checkout-page-title{
     margin-bottom: 48px;
     padding-bottom:14px;
-}
+}*/
 body.woocommerce-checkout .default-page-con h3{
      border-bottom: 1px solid #ECEEEF;
      padding-bottom:18px;
@@ -1441,6 +1444,12 @@ body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .select2-co
 }
 body.woocommerce-checkout .select2-container--default .select2-search--dropdown .select2-search__field{
     border:none;
+}
+body.woocommerce-checkout section.checkout-top-sec{
+    background: #F8F8F8;
+    height: 220px;
+    display: flex;
+    align-items: center;
 }
 @media(max-width:1599px){
     body.woocommerce-account .woocommerce-notices-wrapper{
