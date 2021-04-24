@@ -1471,6 +1471,9 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
         padding-top: 45px;
         padding-bottom: 55px;
     }
+    body.woocommerce-edit-account .innerpage-con-wrap .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation{
+        padding-right: 80px;
+    }
 
 }
 
