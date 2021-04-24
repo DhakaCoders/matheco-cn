@@ -1112,10 +1112,16 @@ body.woocommerce-checkout .checkout-page-title h1{
     padding-bottom:0px;
     font-size: 30px;
 }
-/*body.woocommerce-checkout .checkout-page-title{
-    margin-bottom: 48px;
-    padding-bottom:14px;
-}*/
+body.woocommerce-checkout .woocommerce-input-wrapper input {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 3px;
+}
+span.woocommerce-terms-and-conditions-checkbox-text a{
+    text-decoration: none;
+    font-weight: 500;
+}
 body.woocommerce-checkout .default-page-con h3{
      border-bottom: 1px solid #ECEEEF;
      padding-bottom:18px;
