@@ -29,10 +29,10 @@ if ( apply_filters( 'woocommerce_checkout_show_terms', true ) && function_exists
 				<label class="woocommerce-form__label woocommerce-form__label-for-checkbox checkbox">
 				<input type="checkbox" class="woocommerce-form__input woocommerce-form__input-checkbox input-checkbox" name="terms" <?php checked( apply_filters( 'woocommerce_terms_is_checked_default', isset( $_POST['terms'] ) ), true ); // WPCS: input var ok, csrf ok. ?> id="terms" required/>
 					<span class="woocommerce-terms-and-conditions-checkbox-text">
-						<?php 
-						//wc_terms_and_conditions_checkbox_text(); 
-						esc_html_e( 'Ik aanvaard de algemene voorwaarden', 'woocommerce' );
-						?>
+					<?php 
+					//wc_terms_and_conditions_checkbox_text(); 
+					?>
+					<?php esc_html_e( 'Ik aanvaard de', 'woocommerce' ); ?> <a href="<?php echo esc_url(home_url('term')); ?>" target="_blank"><?php esc_html_e( 'algemene voorwaarden', 'woocommerce' ); ?></a>
 						
 					</span>&nbsp;<span class="required">*</span>
 				</label>
