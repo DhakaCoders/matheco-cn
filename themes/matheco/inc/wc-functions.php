@@ -164,8 +164,6 @@ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_singl
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 
-add_action('cbv_related_product', 'woocommerce_output_related_products');
-
 add_action('woocommerce_single_product_summary', 'add_custom_box_product_summary', 5);
 if (!function_exists('add_custom_box_product_summary')) {
     function add_custom_box_product_summary() {
@@ -228,6 +226,12 @@ function bryce_id_add_to_cart_text( $default ) {
         return __( 'BESTELLEN', THEME_NAME );
 }
 
+add_action('cbv_related_product', 'woocommerce_output_related_products', 1);
+add_action('cbv_related_product', 'wc_product_single_faq', 5);
+
+function wc_product_single_faq(){
+    get_template_part('templates/product-single/bottom', 'section');
+}
 add_action( 'woocommerce_product_options_inventory_product_data', 'misha_adv_product_options');
 function misha_adv_product_options(){
  
