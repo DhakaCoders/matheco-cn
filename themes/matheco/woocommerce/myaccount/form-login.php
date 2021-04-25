@@ -25,7 +25,8 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 	global $woocommerce; global $data_reg;
 	$setedEmail = isset( $_POST["reg_email"])? $_POST["reg_email"]:'';
     $countries_obj   = new WC_Countries();
-    $countries   = $countries_obj->__get('countries');
+    //$countries   = $countries_obj->__get('countries');
+    $countries = $countries_obj->get_allowed_countries();
 ?>
 <div class="register-nextstep woocommerce-billing-fields" id="form_next">
 	<div class="register-top-title">

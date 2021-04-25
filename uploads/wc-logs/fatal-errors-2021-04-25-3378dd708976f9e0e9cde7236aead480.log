@@ -1,0 +1,10 @@
+2021-04-25T05:55:27+00:00 CRITICAL Uncaught Error: Using $this when not in object context in E:\host\htdocs\2021\04\mathecos\matheco-cn\plugins\woocommerce\includes\class-wc-countries.php:273
+Stack trace:
+#0 E:\host\htdocs\2021\04\mathecos\matheco-cn\themes\matheco\woocommerce\myaccount\form-login.php(86): WC_Countries::get_allowed_countries()
+#1 E:\host\htdocs\2021\04\mathecos\matheco-cn\plugins\woocommerce\includes\wc-core-functions.php(345): include('E:\\host\\htdocs\\...')
+#2 E:\host\htdocs\2021\04\mathecos\matheco-cn\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(57): wc_get_template('myaccount/form-...')
+#3 E:\host\htdocs\2021\04\mathecos\matheco-cn\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_My_Account::output('')
+#4 E:\host\htdocs\2021\04\mathecos\matheco-cn\plugins\woocommerce\includes\class-wc-shortcodes.php(115): WC_Shortcodes::shortcode_wrapper(Array, '')
+#5 E:\host\htdocs\2021\04\mathecos\wp-includes\shortcodes.php(343): WC_Shortcodes::my_account('', '', 'woocommerce_my_...')
+# in E:\host\htdocs\2021\04\mathecos\matheco-cn\plugins\woocommerce\includes\class-wc-countries.php on line 273
+
