@@ -1037,7 +1037,7 @@ body.woocommerce-checkout .checkout-page-title h1{
     padding-bottom: 0px;
 }
 body.woocommerce-checkout .woocommerce-notices-wrapper{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     overflow: hidden;
 }
 .checkout-page-title {
@@ -1272,17 +1272,20 @@ body.woocommerce-checkout .payment-method-crtl .shipping-methods{
 body.woocommerce-checkout .checkout-terms .woocommerce-privacy-policy-text{
     display: none;
 }
-body.woocommerce-checkout .custom-checkout-order-review .ywgc_enter_code .form-row-first {
+body.woocommerce-checkout .custom-checkout-order-review .form-row-first{
     width: 100%!important;
     margin-bottom:15px;
 }
 
-body.woocommerce-checkout .custom-checkout-order-review .ywgc_enter_code .form-row-last {
+body.woocommerce-checkout .custom-checkout-order-review .form-row-last{
     width: 100%!important;
     text-align:right;
-    margin-bottom:28px;
+    margin-bottom:17px;
 }
-body.woocommerce-checkout .custom-checkout-order-review .ywgc_enter_code .form-row-last button[type=submit] {
+.woocommerce-info {
+    display: none;
+}
+body.woocommerce-checkout .custom-checkout-order-review .form-row-last button[type=button]{
     background: transparent!important;
     color: #707C88!important;
     font-size: 14px!important;
@@ -1290,28 +1293,28 @@ body.woocommerce-checkout .custom-checkout-order-review .ywgc_enter_code .form-r
     width: 170px;
     border: 1px solid #707C88!important;
 }
-.giftcard-crtl input {
+.coupon-full-width input{
     border: 2px solid #F8F8F8!important;
     color: #707C88!important;
     font-size: 14px!important;
 }
-.giftcard-crtl input:placeholder{
+.coupon-full-width input:placeholder{
     color: #707C88!important;
     opacity: 0.5!important;
 }
-.giftcard-crtl input::-webkit-input-placeholder{
+.coupon-full-width input::-webkit-input-placeholder{
     color: #707C88!important;
     opacity: 0.5!important;
 }
-.giftcard-crtl input::-moz-placeholder{
+.coupon-full-width input::-moz-placeholder{
     color: #707C88!important;
     opacity: 0.5!important;
 }
-.giftcard-crtl input:-ms-input-placeholder{
+.coupon-full-width input:-ms-input-placeholder{
     color: #707C88!important;
     opacity: 0.5!important;
 }
-.giftcard-crtl input:-moz-placeholder{
+.coupon-full-width input:-moz-placeholder{
     color: #707C88!important;
     opacity: 0.5!important;
 }
