@@ -11,7 +11,7 @@
 <section class="checkout-top-sec">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12">
+			<div class="col-md-12">
 				<div class="checkout-page-title clearfix">
 				<div class="checkoutpt-left">
 					<h1><?php the_title(); ?></h1>
