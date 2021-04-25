@@ -236,7 +236,7 @@ h3.pro-item-desc-title{
 	text-decoration-line: underline;
 	text-align: left;
 	border-bottom: 1px solid #ecf1f4;
-    padding-bottom: 20px;
+    padding-bottom: 18px;
     display: block;
 }
 .flex-fill > div:nth-child(2){
@@ -516,9 +516,9 @@ small.woocommerce-price-suffix,
 	}
 	.pro-item-cntlr {
 	    border: none;
-	    border-bottom: 1px solid #f5f6f7;
-	    border-top: 1px solid #f5f6f7;
-	    margin-top: 15px;
+	    /* border-bottom: 1px solid #f5f6f7; */
+	    /* border-top: 1px solid #f5f6f7; */
+	    margin-top: 20px;
 	}
 	.product-quantity .product-order-btn button[type="submit"],
 	.product-quantity .product-order-btn a{
@@ -526,9 +526,23 @@ small.woocommerce-price-suffix,
 	}
 	.pro-item.prsimple {
 	    display: flex;
+	    border-bottom: 1px solid #ecf1f4;
+	}
+	.pro-item-cntlr .pro-item{
+		padding-bottom: 42px;
+		margin-bottom: 18px;
 	}
 	.pro-item-img-cntlr{
-	    padding-right: 30px;
+	    /* padding-right: 30px; */
+	    width: 110px;
+	    height: 110px;
+	}
+	.pro-item-img {
+    	width: 90px;
+	}
+	.pro-item-desc{
+		border-bottom: none;
+		padding-left: 24px;
 	}
 	.xoo-cp-content .xoo-cp-pdetails-row {
 	    padding-bottom: 15px;
@@ -544,6 +558,13 @@ small.woocommerce-price-suffix,
 	}
 	.popup-bottom-btn{
 		flex-direction: column;
+		align-items: center;
+	}
+	.xoo-cp-container .popup-bottom-btn a:first-child{
+		padding-right: 0;
+	}
+	.spotlight-popup-cntlr .spotlight-popup{
+		margin-bottom: 0;
 	}
 }
 @media(max-width:575px){
@@ -587,9 +608,12 @@ small.woocommerce-price-suffix,
 	.product-quantity form .product-order-btn{
 	    margin-top: 0;
 	}
+	.pro-item-cntlr .pro-item{
+		margin-bottom: 0;
+	}
 	.pro-item-cntlr{
-	    margin-top: 0;
-	    padding-bottom: 27px;
+	    margin-top: 20px;
+	    padding-bottom: 15px;
 	}
 	.flex-fill > div:nth-child(2) a{
 		font-size:12px;
@@ -606,12 +630,20 @@ small.woocommerce-price-suffix,
 	}
 	.xoo-cp-container{
 		max-width:420px;
+		padding-bottom: 30px;
 	}
 }
+
 @media(max-width:479px){
+	.xoo-cp-container {
+	    max-width: 349px;
+	    padding-top: 20px;
+	}
+}
+
+@media(max-width:375px){
 	.xoo-cp-container {
 	    max-width: 290px;
 	    padding-top: 20px;
 	}
 }
-

@@ -25,7 +25,8 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 	global $woocommerce; global $data_reg;
 	$setedEmail = isset( $_POST["reg_email"])? $_POST["reg_email"]:'';
     $countries_obj   = new WC_Countries();
-    $countries   = $countries_obj->__get('countries');
+    //$countries   = $countries_obj->__get('countries');
+    $countries = $countries_obj->get_allowed_countries();
 ?>
 <div class="register-nextstep woocommerce-billing-fields" id="form_next">
 	<div class="register-top-title">
@@ -264,31 +265,6 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 
 		</div>
 
-	</div>
-	<div class="login-btm-wrap">
-		<h2 class="login-btm-title">DOLOR SIT AMET</h2>
-		<div class="login-info-crtl">
-			<div class="login-info-inr loginInfoSlider">
-				<div class="loginInfoSlideItem">
-					<div class="loginInfoItem">
-						<i></i>
-						<p>Lorem ipsum dolor sit amet</p>
-					</div>
-				</div>
-				<div class="loginInfoSlideItem">
-					<div class="loginInfoItem">
-						<i></i>
-						<p>Lorem ipsum dolor sit amet</p>
-					</div>
-				</div>
-				<div class="loginInfoSlideItem">
-					<div class="loginInfoItem">
-						<i></i>
-						<p>Lorem ipsum dolor sit amet</p>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
 </div>
 <?php endif; ?>
