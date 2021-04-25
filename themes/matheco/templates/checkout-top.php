@@ -1,3 +1,13 @@
+<?php $cURL = wc_get_cart_url(); ?>
+<section class="checkout-backbtn-sec show-xs">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="back-to-dashboard-btn-cntlr"><a class="backshop-cart" href="<?php echo $cURL; ?>">Terug naar winkelmandje</a></div>
+			</div>	
+		</div>
+	</div>
+</section>
 <section class="checkout-top-sec">
 	<div class="container">
 		<div class="row">
