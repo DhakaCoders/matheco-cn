@@ -506,6 +506,14 @@ $("#billing_order_type_Particulier").on('change', function(){
     }
 });
 
+// Coupon code triger
+$("#apply_coupon_code").click(function(){
+    var couponCode = $('#coupon_code_enter').val();
+    $("body .checkout_coupon.woocommerce-form-coupon input#coupon_code").val(couponCode)
+    $(".checkout_coupon button").submit();
+
+});
+
 new WOW().init();
 
 

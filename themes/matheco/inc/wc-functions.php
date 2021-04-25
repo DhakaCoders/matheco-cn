@@ -313,8 +313,18 @@ function product_max_qty($product_id = '', $_product = array()){
 function projectnamespace_woocommerce_text( $translated, $text, $domain ) {
     if ( $domain === 'woocommerce' ) {
         $translated = str_replace(
-            array(''),
-            array(''),
+            array(
+                'Apply coupon',
+                'Proceed to checkout',
+                'Subtotal',
+                'Total'
+            ),
+            array(
+                'Verzilver',
+                'ik ga bestellen',
+                'Subtotaal',
+                'Totaal'
+            ),
             $translated
         );
     }
@@ -584,5 +594,6 @@ function remove_postcode_validation( $fields ) {
     return $fields;
 }
 remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display' );
+add_action('cbv_wc_cross_sell_display', 'woocommerce_cross_sell_display');
 include_once(THEME_DIR .'/inc/wc-manage-fields.php');
 

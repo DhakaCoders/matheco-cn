@@ -84,7 +84,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 					<h3 class="order-review-title"><?php esc_html_e( 'Overzicht', 'woocommerce' ); ?></h3>
 					<?php 
 						wc_get_template_part('checkout/review-order');
-						do_action('woocommerce_giftcard_form');
+						wc_get_template_part('checkout/cbv-form-coupon');
 					?>
 					<div class="checkout-terms">
 						<?php wc_get_template_part( 'checkout/terms' ); ?>
