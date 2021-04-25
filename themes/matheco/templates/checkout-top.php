@@ -1,5 +1,5 @@
 <?php $cURL = wc_get_cart_url(); ?>
-<section class="checkout-backbtn-sec show-xs">
+<section class="checkout-backbtn-sec show-sm">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
