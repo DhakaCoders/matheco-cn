@@ -570,16 +570,16 @@ body.hide-account-title .register-top-title h1{
     border-bottom: 1px solid #ECEEEF!important;
 }
 body.hide-account-title .register-top-title{
-    margin-bottom:100px;
+    margin-bottom: 35px;
 }
 body.hide-account-title.woocommerce-account .register-title h3{
     padding-bottom:18px!important;
     margin-bottom: 33px;
 }
-body.hide-account-title span.woocommerce-input-wrapper span {
+body.hide-account-title span.woocommerce-input-wrapper span{
     font-size: 15px;
 }
-body.hide-account-title article.default-page-con {
+body.hide-account-title article.default-page-con{
     max-width: 926px;
     width: 100%;
     margin-left: auto;
@@ -1530,7 +1530,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-account .woocommerce button[type=button]{
         padding:13px 60px!important;
     }
-
+    body.woocommerce-account #login_register #customer_login{
+        padding-bottom:30px;
+    }
 
 
     /*  ----------------------------- myaccount login-register page ------------------------- */
@@ -1770,6 +1772,10 @@ body.woocommerce-checkout section.checkout-top-sec{
         border-top:none;
         padding-top: 5px;
     }
+    body.woocommerce-account #login_register #customer_login{
+        padding-bottom:0px;
+    }
+    body.woocommerce-account .woocommerce-form
     body.woocommerce-account .login-register-wrap a{
         font-size:12px;
     }
@@ -2121,16 +2127,21 @@ body.woocommerce-checkout section.checkout-top-sec{
         margin-left: auto;
         margin-right:auto;
     }
-    body.woocommerce-account .default-page-con h1 + p{
-        font-size:16px;
+   body.woocommerce-account .default-page-con h1 + p{
+        font-size: 16px;
+        border-bottom: 1px solid #ECEEEF;
+        padding-bottom: 18px;
+        margin-bottom: 18px!important;
     }
-
     body.woocommerce-edit-account .account-page-title{
         max-width:100%;
     }
     body.loggedin-deshboard-crtl .woocommerce-account-grds-cntlr,
     body.woocommerce-edit-account .woocommerce-account-grds-cntlr{
         padding-top:10px;
+    }
+    body.loggedin-deshboard-crtl .woocommerce-account-grds-cntlr {
+        border-top: none;
     }
     body.woocommerce-account .woocommerce-MyAccount-navigation{
         margin-bottom: 6px;
