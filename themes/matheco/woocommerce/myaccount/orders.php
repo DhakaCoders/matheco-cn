@@ -85,6 +85,7 @@ if ( $customer_orders ) :
                 } else {
                   $qty_display = esc_html( $qty );
                 }
+                $formatted_meta_data = $item->get_formatted_meta_data( '_', true );
                 ?>
               <div class="myac-pro-grd-item">
                 <div class="myac-pro-grd-item-inr">
@@ -97,15 +98,23 @@ if ( $customer_orders ) :
             						$exp_title = explode('-', $item->get_name());
             						if(!empty($exp_title)){
             							$cart_title = $exp_title[0];
-            							$cart_attributes = isset($exp_title[1])?$exp_title[1]:'';
             						}else{
             							$cart_title = $item->get_name();
-            							$cart_attributes = '';
             						}
-                  	    echo $cart_title; ?><strong class="product-quantity">&times;&nbsp;<?php echo $qty_display; 
-                  	?></strong>
+                  	    echo $cart_title; ?>
                     </h5>
-                  <?php if( !empty($cart_attributes) ) printf('<span>%s</span>', $cart_attributes); ?>
+                    <div class="order-comment">
+                      <p>Volutpat sagittis, consequat nibh.</p>
+                    </div>
+                  <?php 
+                  if ($formatted_meta_data) :
+                  echo '<div class="formateted-meta"><ul>';
+                      foreach ($formatted_meta_data as $key => $data) :
+                        echo '<li><strong>'.$data->display_key.':</strong> <span>'.$data->display_value.'</span></li>';
+                    endforeach;
+                    echo '</ul></div>';
+                  endif;
+                  ?>
                   <div class="product-price">
                     <?php echo $product->get_price_html(); ?>
                   </div>
