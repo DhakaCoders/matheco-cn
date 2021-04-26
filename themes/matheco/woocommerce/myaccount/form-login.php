@@ -33,7 +33,9 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 		<h1>Nieuw bij Thelene</h1>
 	</div>
 	<?php if($data_reg): ?>
-	<div class="register-field-error">
+	
+	<?php endif; ?>
+    <div class="register-field-error">
 		<div class="contact-er-msg">
           <span>
             <i><svg class="error-msg-icon-svg" width="32" height="32" viewBox="0 0 32 32" fill="#ffffff">
@@ -41,7 +43,6 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
             Oh snap! Het formulier lijkt niet correct!</span>
         </div>
 	</div>
-	<?php endif; ?>
 	<div class="register-title">
 		<h3>Persoonlijke gegevens</h3>
 	</div>
