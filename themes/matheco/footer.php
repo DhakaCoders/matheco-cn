@@ -1,49 +1,64 @@
+<?php 
+  $logoObj = get_field('ftlogo', 'options');
+  if( is_array($logoObj) ){
+    $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+  }else{
+    $logo_tag = '';
+  }
+  $address = get_field('address', 'options');
+  $gmurl = get_field('url', 'options');
+  $telefoon = get_field('telefoon', 'options');
+  $email = get_field('emailadres', 'options');
+  $bwt = get_field('btw', 'options');
+  $gmaplink = !empty($gmurl)?$gmurl: 'javascript:void()';
+  $smedias = get_field('social_media', 'options');
+  $copyright_text = get_field('copyright_text', 'options');
+?>
 <footer class="footer">
   <div class="ftr-top">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="ftr-top-inr clearfix">
-            <div class="ftr-logo">
-              <a href="#">
-                <img src="<?php echo THEME_URI; ?>/assets/images/ftr-logo.png">
-              </a>
-            </div>
+              <?php if( !empty($logo_tag) ): ?>
+              <div class="ftr-logo">
+                <a href="<?php echo esc_url(home_url('/')); ?>">
+                  <?php echo $logo_tag; ?>
+                </a>
+              </div>
+              <?php endif; ?>
             <div class="ftr-menu ftr-col-1">
-              <h6 class="ftr-menu-title fl-h6 hide-sm">NAVIGATIE</h6>
-              <ul class="reset-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Over ons</a></li>
-                <li><a href="#">Onze Diensten</a></li>
-                <li><a href="#">Webshop</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li class="login"><a href="#">LOGIN</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
+              <h6 class="ftr-menu-title fl-h6 hide-sm"><?php _e( 'NAVIGATIE', THEME_NAME ); ?></h6>
+              <?php 
+                $fmenuOptions1 = array( 
+                    'theme_location' => 'cbv_fta_menu', 
+                    'menu_class' => 'reset-list',
+                    'container' => '',
+                    'container_class' => ''
+                  );
+                wp_nav_menu( $fmenuOptions1 );
+              ?> 
             </div>
             <div class="ftr-menu ftr-col-2 hide-sm">
-              <h6 class="ftr-menu-title fl-h6 hide-sm">Diensten</h6>
-              <ul class="reset-list">
-                <li><a href="#">Toonbanken</a></li>
-                <li><a href="#">Airco en warmtepompen</a></li>
-                <li><a href="#">Verkoop koelinstallatie</a></li>
-                <li><a href="#">Na verkoop</a></li>
-              </ul>
+              <h6 class="ftr-menu-title fl-h6 hide-sm"><?php _e( 'Diensten', THEME_NAME ); ?></h6>
+              <?php 
+                $fmenuOptions2 = array( 
+                    'theme_location' => 'cbv_ftb_menu', 
+                    'menu_class' => 'reset-list',
+                    'container' => '',
+                    'container_class' => ''
+                  );
+                wp_nav_menu( $fmenuOptions2 );
+              ?>
             </div>
             <div class="ftr-menu ftr-col-3">
-              <h6 class="ftr-menu-title fl-h6 hide-sm">Contact</h6>
-              <div class="ftr-location">
-                <a target="_blank" href="#">Kwatrechtsteenweg 144c <br>9230 Wetteren</a>
-              </div>
-              <div class="ftr-phone">
-                <a href="tel:024545851">02 454 58 51</a>
-              </div>
-              <div class="ftr-email">
-                <a href="mailto:info@matheco-cooling.be">info@matheco-cooling.be</a>
-              </div>
-              <div class="ftr-vat">
-                <span>BTW: BE 0475.464.306 </span>
-              </div>
+              <h6 class="ftr-menu-title fl-h6 hide-sm"><?php _e( 'Contact', THEME_NAME ); ?></h6>
+              <?php 
+                if( !empty($address) ) printf('<div class="ftr-location"><a href="%s" target="_blank">%s</a></div>', $gmaplink, $address);
+                if( !empty($telefoon) ) printf('<div class="ftr-phone"><a href="tel:%s">%s</a></div>', phone_preg($telefoon),  $telefoon); 
+                if( !empty($email) ) printf('<div class="ftr-email"><a href="mailto:%s">%s</a></div>', $email, $email); 
+                if( !empty($bwt) ) printf('<div class="ftr-vat"><span>BTW: %s</span></div>', $bwt); 
+              ?>
             </div>
           </div>
         </div>
@@ -56,14 +71,18 @@
         <div class="col-md-12">
           <div class="ftr-btm-inr">
             <div class="ftr-copywrite">
-              <p>Copyright &copy; 2021 Matheco. All rights reserved.</p>
+              <?php if( !empty( $copyright_text ) ) printf( '<span>%s</span>', $copyright_text); ?> 
             </div>
             <div class="ftr-btm-menu">
-              <ul class="reset-list">
-                <li><a href="#">Sitemap</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Cookie Policy</a></li>
-              </ul>
+              <?php 
+                $copyrightmenu = array( 
+                    'theme_location' => 'cbv_copyright_menu', 
+                    'menu_class' => 'reset-list',
+                    'container' => '',
+                    'container_class' => ''
+                  );
+                wp_nav_menu( $copyrightmenu );
+              ?>
             </div>
             <div class="ftr-btm-designby">
               <a href="#">Website laten maken door Conversal</a>

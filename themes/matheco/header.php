@@ -57,47 +57,58 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php 
+$logoObj = get_field('hdlogo', 'options');
+if( is_array($logoObj) ){
+  $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+}else{
+  $logo_tag = '';
+}
+?>  
 <header class="header hm-header">
   <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="header-cntlr clearfix">
             <div class="hdr-lft">
-              <div class="logo">
-                <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo.svg"></a>
-              </div>
+            <?php if( !empty($logo_tag) ): ?>
+            <div class="logo">
+              <a href="<?php echo esc_url(home_url('/')); ?>">
+                <?php echo $logo_tag; ?>
+              </a>
+            </div>
+            <?php endif; ?>
             </div>
             <div class="hdr-rgt">
               <div class="hdr-menu">
                 <nav class="main-nav">
-                  <ul class="clearfix reset-list">
-                    <li class="current-menu-item"><a href="#">Home</a></li>
-                    <li><a href="#">Over ons</a></li>
-                    <li class="menu-item-has-children">
-                      <a href="#">Onze Diensten</a>
-                      <ul class="sub-menu" style="">
-                        <li><a href="#">Toonbanken</a></li>
-                        <li><a href="#">Airco en warmtepompen</a></li>
-                        <li><a href="#">Verkoop koelinstallatie</a></li>
-                        <li><a href="#">Na verkoop</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Webshop</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li class="login-menu-item"><a href="#">LOGIN</a></li>
-                    <li><a href="#">Contact</a></li>
-                  </ul>
+                <?php 
+                  $menuOptions = array( 
+                      'theme_location' => 'cbv_main_menu', 
+                      'menu_class' => 'clearfix reset-list',
+                      'container' => '',
+                      'container_class' => ''
+                    );
+                  wp_nav_menu( $menuOptions ); 
+                ?>
                 </nav>
               </div>
               <div class="user-cart-cntlr">
                 <div class="user">
-                  <a href="#">
+                  <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">
                     <i><svg class="hdr-user-icon" width="32" height="32" viewBox="0 0 32 32" fill="#fff">
                       <use xlink:href="#hdr-user-icon"></use></svg></i>
                   </a>
                 </div>
                 <div class="shopping-cart">
-                  <a href="#">
+                  <a href="<?php echo wc_get_cart_url(); ?>">
+                  <?php 
+                  if( WC()->cart->get_cart_contents_count() > 0 ){
+                    echo sprintf ( '<span>%d</span>', WC()->cart->get_cart_contents_count() );
+                  }else{
+                    echo sprintf ( '<span>%d</span>', 0 );
+                  }  
+                  ?>
                     <i><svg class="shopping-cart-icon" width="32" height="32" viewBox="0 0 32 32" fill="#fff">
                       <use xlink:href="#shopping-cart-icon"></use></svg></i>
                   </a>
