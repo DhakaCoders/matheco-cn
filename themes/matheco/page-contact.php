@@ -15,7 +15,7 @@ get_template_part('templates/breadcrumbs');
         <div class="contact-info-wrp">
           <div class="contact-info-dsc">
             <?php 
-              if( !empty($intro['subtitel']) ) printf( '<h1 class="contact-info-dsc-title fl-h1">%s</h1>', $intro['subtitel'] );
+              if( !empty($page_title) ) printf( '<h1 class="contact-info-dsc-title fl-h1">%s</h1>', $page_title );
               if( !empty($intro['beschrijving']) ) echo wpautop( $intro['beschrijving'] );
             ?>
           </div>

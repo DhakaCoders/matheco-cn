@@ -1758,6 +1758,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-account .default-page-con{
         padding-top: 40px;
     }
+    body.woocommerce-orders .default-page-con{
+        padding-top:0px;
+    }
     body.woocommerce-account .woocommerce-form#mail_checker{
         padding-top: 16px;
     }
@@ -2332,6 +2335,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     }
     body.woocommerce-account .default-page-con{
         padding-top:20px;
+    }
+    body.woocommerce-orders .default-page-con{
+        padding-top:0px;
     }
     body.woocommerce-account .woocommerce form .form-row label{
         font-size:14px;

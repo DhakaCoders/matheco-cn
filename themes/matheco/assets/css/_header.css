@@ -216,6 +216,13 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
     display: inline-block;
     margin-top:-2px;
     margin-left: 2px;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+
+}
+.shopping-cart a:hover span{
+	color:#fff;
 }
 /*xs hambergar icon*/
 .xs-hambergar{
