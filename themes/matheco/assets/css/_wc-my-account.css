@@ -1775,6 +1775,7 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-account #login_register #customer_login{
         padding-bottom:0px;
     }
+    body.woocommerce-account .woocommerce-form
     body.woocommerce-account .login-register-wrap a{
         font-size:12px;
     }
@@ -2126,16 +2127,21 @@ body.woocommerce-checkout section.checkout-top-sec{
         margin-left: auto;
         margin-right:auto;
     }
-    body.woocommerce-account .default-page-con h1 + p{
-        font-size:16px;
+   body.woocommerce-account .default-page-con h1 + p{
+        font-size: 16px;
+        border-bottom: 1px solid #ECEEEF;
+        padding-bottom: 18px;
+        margin-bottom: 18px!important;
     }
-
     body.woocommerce-edit-account .account-page-title{
         max-width:100%;
     }
     body.loggedin-deshboard-crtl .woocommerce-account-grds-cntlr,
     body.woocommerce-edit-account .woocommerce-account-grds-cntlr{
         padding-top:10px;
+    }
+    body.loggedin-deshboard-crtl .woocommerce-account-grds-cntlr {
+        border-top: none;
     }
     body.woocommerce-account .woocommerce-MyAccount-navigation{
         margin-bottom: 6px;
