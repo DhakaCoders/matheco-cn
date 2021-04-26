@@ -27,7 +27,7 @@ global $product;
 $attachment_ids = $product->get_gallery_image_ids();
 if ( $attachment_ids && $product->get_image_id() ) {
 echo '<div class="thumbnails-cntlr">';
-echo '<span class="fl-singgle-pro-prev"></span> <span class="fl-singgle-pro-next"></span>';
+echo '<span class="fl-singgle-pro-prev"><svg class="pro-thumb-lft-arrow" width="21" height="21" viewBox="0 0 21 21" fill="#707C88"><use xlink:href="#pro-thumb-lft-arrow"></use> </svg></span><span class="fl-singgle-pro-next"><svg class="pro-thumb-rgt-arrow" width="21" height="21" viewBox="0 0 21 21" fill="#707C88"><use xlink:href="#pro-thumb-rgt-arrow"></use></svg></span>';
 echo '<div class="thumbnails">';
 if ( $product->get_image_id() ) {
 	$imgtag = wp_get_attachment_image( $product->get_image_id(), 'medium' );
