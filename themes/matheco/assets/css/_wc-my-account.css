@@ -570,16 +570,16 @@ body.hide-account-title .register-top-title h1{
     border-bottom: 1px solid #ECEEEF!important;
 }
 body.hide-account-title .register-top-title{
-    margin-bottom:100px;
+    margin-bottom: 35px;
 }
 body.hide-account-title.woocommerce-account .register-title h3{
     padding-bottom:18px!important;
     margin-bottom: 33px;
 }
-body.hide-account-title span.woocommerce-input-wrapper span {
+body.hide-account-title span.woocommerce-input-wrapper span{
     font-size: 15px;
 }
-body.hide-account-title article.default-page-con {
+body.hide-account-title article.default-page-con{
     max-width: 926px;
     width: 100%;
     margin-left: auto;
