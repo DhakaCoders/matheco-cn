@@ -165,7 +165,8 @@
 .fl-product-grd .fl-pro-grd-title a:hover {
     color: #2285e3;   
 }
-.post-type-archive-product .fl-pro-grd-price {
+.post-type-archive-product .fl-pro-grd-price,
+.single-product .fl-pro-grd-price{
     padding-bottom: 22px;
 }
 .fl-pro-grd-price span.woocommerce-Price-amount bdi,
