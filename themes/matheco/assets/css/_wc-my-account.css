@@ -1530,7 +1530,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-account .woocommerce button[type=button]{
         padding:13px 60px!important;
     }
-
+    body.woocommerce-account #login_register #customer_login{
+        padding-bottom:30px;
+    }
 
 
     /*  ----------------------------- myaccount login-register page ------------------------- */
@@ -1769,6 +1771,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-account .woocommerce-form{
         border-top:none;
         padding-top: 5px;
+    }
+    body.woocommerce-account #login_register #customer_login{
+        padding-bottom:0px;
     }
     body.woocommerce-account .login-register-wrap a{
         font-size:12px;

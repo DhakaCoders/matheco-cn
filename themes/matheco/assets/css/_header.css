@@ -202,7 +202,21 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 .user a:hover i svg{
 	fill: #d2232a;
 }
-
+.shopping-cart a{
+	position:relative;
+}
+.shopping-cart a span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size:12px;
+    line-height:1;
+    margin-bottom: 0;
+    display: inline-block;
+    margin-top:-2px;
+    margin-left: 2px;
+}
 /*xs hambergar icon*/
 .xs-hambergar{
 	padding-left: 28px;
@@ -450,6 +464,9 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 		content: none;
 		display: none;
 	}
+	.shopping-cart a span{
+		font-size:11px;
+	}
 }
 @media(max-width: 639px){
 	
@@ -467,6 +484,10 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 	}
 	.hdr-menu{
 		padding: 50px 40px;
+	}
+	.shopping-cart a span{
+		font-size:10px;
+		margin-top:-1px;
 	}
 
 }
