@@ -372,6 +372,9 @@ body.woocommerce-account #login_register #customer_login .u-column1{
     width:100%!important;
     max-width:49%!important;
 }
+body.woocommerce-account #login_register #customer_login .u-column1 h4 + div{
+    padding-bottom: 20px;
+}
 body.woocommerce-account #login_register #customer_login .u-column1 .woocommerce-form-login__rememberme{
     display: none!important;
 }
@@ -475,7 +478,8 @@ body.woocommerce-account .login-register-wrap a{
     font-size: 14px;
 }
 body.woocommerce-account .login-register-wrap a:hover {
-    color: #8dcc0c;
+    color: #D9534F;
+;
 }
 body.woocommerce-account .woocommerce form .form-row label, 
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row label{
