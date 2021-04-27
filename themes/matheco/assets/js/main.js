@@ -347,6 +347,25 @@ if( $('.hasRelatedProduct').length ){
     });
 }
 
+if( $('.main-img-crtl').length ){
+ $('.main-img-crtl').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  autoplay:true,
+  asNavFor: '.thumbnails-cntlr .thumbnails'
+});
+$('.thumbnails-cntlr .thumbnails').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.main-img-crtl',
+  dots: false,
+  // centerMode: true,
+  autoplay:true,
+  focusOnSelect: true
+});
+}
 
 
 /* start of Niaz */

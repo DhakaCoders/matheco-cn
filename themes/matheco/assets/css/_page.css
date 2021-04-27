@@ -40,3 +40,15 @@
 .sitemap ol li a:focus{
 	text-decoration: underline;
 }
+
+/* resposnive */
+
+
+@media(max-width:767px){
+	.slick-slider ul.slick-dots{
+		position: absolute;
+		bottom: -24px;
+		display: flex!important;
+		justify-content: center;
+	}
+}
