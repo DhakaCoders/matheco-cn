@@ -416,8 +416,12 @@ small.woocommerce-price-suffix,
 	.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle .popup-product-title a{
 	    font-size: 18px;
 	}
-	.woocommerce-Price-amount bdi {
-	    font-size: 14px;
+	.woocommerce-Price-amount bdi,
+	.single-product .single-price-total del span.woocommerce-Price-amount bdi, 
+	.single-product .single-price-total del span.woocommerce-Price-amount bdi span, 
+	.single-product .single-price-total ins span.woocommerce-Price-amount bdi, 
+	.single-product .single-price-total ins span.woocommerce-Price-amount bdi span {
+	    font-size: 16px!important;
 	}
 	.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-pdetails-col-2 .product-order-btn a, .popup-bottom-btn a{
 	    width: 150px;

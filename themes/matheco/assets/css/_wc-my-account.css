@@ -1517,6 +1517,17 @@ body.woocommerce-checkout section.checkout-top-sec{
     }
 
 }
+@media(max-width:1399px){
+    body.woocommerce-orders .myac-pro-grd-item .myac-pro-grd-item-inr{
+        padding-right: 20px;
+    }
+    body.woocommerce-orders .faq-accordion-wrp ul li .orders-crtl{
+        padding-left:20px;
+    }
+    body.woocommerce-orders .myac-pro-grd-item-inr .myac-pro-grd-img{
+        margin-right: 20px;
+    }
+}
 
 @media(max-width:1199px){
    /* body.woocommerce-account .woocommerce input[type="text"],
