@@ -5,7 +5,7 @@ Template Name: Contact
 get_header();
 $thisID = get_the_ID(); 
 get_template_part('templates/breadcrumbs');
-  $intro = get_field('formsec', $thisID);
+  $intro = get_field('introsec', $thisID);
   $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title();
 ?>
 <section class="contact-info-sec-wrp">
@@ -19,40 +19,29 @@ get_template_part('templates/breadcrumbs');
               if( !empty($intro['beschrijving']) ) echo wpautop( $intro['beschrijving'] );
             ?>
           </div>
+          <?php 
+            $contactinfo = $intro['contact_info'];
+            if( $contactinfo ):
+          ?>
           <div class="contact-info-box-wrp">
             <ul class="clearfix reset-list">
+              <?php foreach( $contactinfo as $cinfo ): ?>
               <li>
                 <div class="contact-info-box-inr mHc">
                   <div class="contact-info-box-dsc">
-                    <i><img src="<?php echo THEME_URI; ?>/assets/images/phone-book-icon.svg"></i>
-                    <h4 class="fl-h4 mHc1">Sales</h4>
-                    <a href="tel:02 454 58 51">02 454 58 51</a>
-                    <a href="mailto:info@matheco-cooling.be">info@matheco-cooling.be</a>
+                    <i><?php if( !empty($cinfo['icon']) ) echo cbv_get_image_tag($cinfo['icon']); ?></i>
+                    <?php 
+                      if( !empty($cinfo['titel']) ) printf( '<h4 class="fl-h4 mHc1">%s</h4>', $cinfo['titel'] );
+                      if( !empty($cinfo['telefoon']) ) printf( '<a href="tel:%s">%s</a>', phone_preg($cinfo['telefoon']), $cinfo['telefoon'] );
+                      if( !empty($cinfo['emailadres']) ) printf( '<a href="mailto:%s">%s</a>', $cinfo['emailadres'], $cinfo['emailadres'] );
+                    ?>
                   </div>
                 </div>
               </li>
-              <li>
-                <div class="contact-info-box-inr mHc">
-                  <div class="contact-info-box-dsc">
-                    <i><img src="<?php echo THEME_URI; ?>/assets/images/phone-book-icon.svg"></i>
-                    <h4 class="fl-h4 mHc1">Diesnt na verkoop</h4>
-                    <a href="tel:02 454 58 51">02 454 58 51</a>
-                    <a href="mailto:info@matheco-cooling.be">info@matheco-cooling.be</a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="contact-info-box-inr mHc">
-                  <div class="contact-info-box-dsc">
-                    <i><img src="<?php echo THEME_URI; ?>/assets/images/phone-book-icon.svg"></i>
-                    <h4 class="fl-h4 mHc1">Secretariaat</h4>
-                    <a href="tel:02 454 58 51">02 454 58 51</a>
-                    <a href="mailto:info@matheco-cooling.be">info@matheco-cooling.be</a>
-                  </div>
-                </div>
-              </li>
+              <?php endforeach; ?>
             </ul>
           </div>
+          <?php endif; ?>
         </div>
       </div>
     </div>
@@ -64,7 +53,10 @@ get_template_part('templates/breadcrumbs');
   <div class="row">
     <div class="col-md-12">
     <div class="contact-form-block clearfix">
-      <?php if(!empty($intro['shortcode'])): ?>
+      <?php
+      $form = get_field('formsec', $thisID); 
+      if(!empty($form['shortcode'])): 
+      ?>
       <div class="contact-form-lft">
         <div class="contact-er-msg">
           <span>
@@ -74,7 +66,7 @@ get_template_part('templates/breadcrumbs');
         </div>
         <div class="contact-form-wrp clearfix">
           <div class="wpforms-container">
-              <?php echo do_shortcode( $intro['shortcode'] ); ?>
+              <?php echo do_shortcode( $form['shortcode'] ); ?>
           </div>
         </div>
       </div>

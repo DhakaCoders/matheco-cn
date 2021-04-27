@@ -59,6 +59,9 @@ body.woocommerce-checkout .custom-checkout-order-review .ywgc_enter_code .form-r
 	color: #fff!important;
 	border-color:#D9534F!important;
 }
+.fl-product-grd-inr a.prdt-btn:hover{
+	color:#D9534F!important;
+}
 body.single-product .pro-cart-btn button:hover svg{
 	fill: #F3BF00!important;
 }
