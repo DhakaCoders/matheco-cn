@@ -10,6 +10,12 @@
 	-moz-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
 }
 
+/* .fl-singgle-pro-prev{
+	background-image: url('../images/pro-thumb-lft-arrow.svg');
+	width: 21px;
+	height: 21px;
+} */
+
 .main-img-crtl .woocommerce-product-gallery__image{
 	height: 425px;
 	background: #fff;
@@ -181,6 +187,7 @@
 .export-file{
 	color: #2285E3;	
 	padding-bottom: 36px;
+	cursor: pointer;
 }
 .export-file p{
 	position: relative;
@@ -230,6 +237,9 @@
 .meta-crtl ul li > span{
 	display: block;
 	text-transform: capitalize;
+}
+.single-product .breadcrumb-sec{
+	margin-bottom: 100px;
 }
 .fl-product{
 	/* overflow: hidden; */
@@ -599,6 +609,7 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	}
 	.related.products.related-pro-crtl h2{
 		margin-bottom: 45px;
+		font-size: 28px;
 	}
 	.woocommerce div.product .product_title{
 		font-size: 27px;
@@ -631,14 +642,15 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.related.products.related-pro-crtl{
 		padding: 80px 0;
 	}
-	.related.products.related-pro-crtl h2{
-		margin-bottom: 35px;
-	}
 	.woocommerce div.product .product_title{
 		font-size: 26px;
 	}
 	.single-product .faq-detials-sec{
 		padding: 80px 0 65px;
+	}
+	.related.products.related-pro-crtl h2{
+		font-size: 26px;
+		margin-bottom: 35px;
 	}
 }
 
@@ -709,7 +721,7 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 		font-size:20px;
 	}
 	.related.products.related-pro-crtl h2{
-		font-size: 30px;
+		font-size: 24px;
 	}
 	.long-desc h2{
 		font-size:20px;
@@ -778,10 +790,10 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 		padding: 70px 0;
 	}
 	.related.products.related-pro-crtl h2{
-		margin-bottom: 25px;
+		margin-bottom: 22px;
 	}
 	.woocommerce div.product .product_title{
-		margin-bottom: 15px;
+		margin-bottom: 12px;
 	}
 	.thumbnails-cntlr .thumbnails{
 		padding-bottom: 35px!important;
@@ -980,6 +992,9 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.woocommerce div.product .product_title{
 		font-size: 22px;
 	}
+	.related.products.related-pro-crtl h2{
+		font-size: 20px;
+	}
 }
 
 @media(max-width: 479px){
@@ -1002,7 +1017,6 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
         display: none!important;
     }
     .related.products.related-pro-crtl h2 {
-        font-size: 24px;
         margin-bottom: 25px;
     }
     .thumbnails-cntlr .thumb-bg > div {
