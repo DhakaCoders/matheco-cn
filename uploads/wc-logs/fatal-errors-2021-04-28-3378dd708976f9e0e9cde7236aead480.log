@@ -1,0 +1,4 @@
+2021-04-28T13:41:20+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\project\2021\march\matheco\matheco-cn\plugins\advanced-custom-fields-pro\includes\fields\class-acf-field-file.php on line 3
+
+2021-04-28T13:42:06+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\project\2021\march\matheco\wp-includes\Requests\Transport\cURL.php on line 163
+
