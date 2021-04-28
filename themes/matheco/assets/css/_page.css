@@ -43,9 +43,15 @@
 
 /* resposnive */
 
+@media(max-width:1199px){
+	.slick-slider ul.slick-dots{
+		display: none!important;
+	}
+}
 
 @media(max-width:767px){
 	.slick-slider ul.slick-dots{
+		display: block!important;
 		position: absolute;
 		bottom: -24px;
 		display: flex!important;
