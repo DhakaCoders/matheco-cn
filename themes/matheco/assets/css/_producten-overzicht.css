@@ -287,7 +287,7 @@
 
 /* Product attribute filter */
 .woocommerce .woocommerce-widget-layered-nav-list a::before,
-.post-type-archive-product .sidebar-widget ul.product-categories li a:before {
+ .sidebar-widget ul.product-categories li a:before {
     margin-right: 0;
     content: "";
     width: 18px !important;
@@ -303,6 +303,13 @@
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
+}
+.sidebar-widget ul.product-categories li a:checked ~:before{
+	background: red!important;
+	border-color: red!important;
+}
+.sidebar-widget ul.product-categories li:checked ~ a:before {
+    background: red!important;
 }
 .woocommerce .woocommerce-widget-layered-nav-list .woocommerce-widget-layered-nav-list__item--chosen a::before {
     background: #a00 !important;
