@@ -118,6 +118,9 @@
     margin: 0 -12px!important;
     padding-bottom: 75px!important;
 }
+.post-type-archive-product .fl-pagi-cntlr{
+	margin-bottom: 170px;
+}
 .fl-products-cntlr ul.products > li {
     width: 33.3333%!important;
     padding: 0 12px 24px!important;
@@ -334,6 +337,23 @@
 .post-type-archive-product .sidebar-widget ul.product-categories li a{
 	text-decoration: none;
 	padding-left: 30px;
+}
+.product-categories .cat-item a:before{
+	background: #2285e3!important;
+    border-color: #2285e3!important;
+}
+.product-categories .cat-item a:after{
+	content: "";
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .term-geschenken .fl-products-cntlr ul.products > li .dfp-cta-module{

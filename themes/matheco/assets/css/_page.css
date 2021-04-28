@@ -24,8 +24,9 @@
 	width: 42px;
 	height: 4px;
 }
-
-
+.slick-prev, .slick-next{
+	display: none!important;
+}
 .sitemap{
 	padding: 50px 0 70px;
 }
