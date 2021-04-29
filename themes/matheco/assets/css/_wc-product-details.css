@@ -132,6 +132,7 @@
 .woocommerce div.product .product_title{
 	font-size: 30px;
 	letter-spacing: -0.02em;
+	margin-bottom: 17px;
 }
 
 .long-desc{
@@ -165,6 +166,7 @@
 	text-transform: uppercase;
 	padding-left: 33px;
 	margin-bottom: 0;
+	font-weight: 700;
 }
 .export-file p:after{
 	position: absolute;
