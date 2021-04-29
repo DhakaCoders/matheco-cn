@@ -1,8 +1,6 @@
 .page-template-default .innerpage-con-wrap{
 	padding-top: 100px!important;
-}
-.checkout-cntrl{
-	padding-bottom: 94px;
+	padding-bottom: 94px!important;
 }
 .checkout-hdr{
 	text-align: center;
@@ -150,6 +148,10 @@
 }
 
 @media (max-width: 1399px) {
+	.page-template-default .innerpage-con-wrap{
+		padding-top: 90px!important;
+		padding-bottom: 84px!important;
+	}
 	.chk-acc-bg{
 		padding: 45px 34px 23px 30px;
 	}
@@ -159,6 +161,10 @@
 }
 
 @media (max-width: 1199px) {
+	.page-template-default .innerpage-con-wrap{
+		padding-top: 80px!important;
+		padding-bottom: 74px!important;
+	}
 	.srv-fea-img{
 		width: 60%;
 	}
@@ -174,9 +180,17 @@
 	.srv-cont{
 		width: 42%;
 	}
+	.page-template-default .innerpage-con-wrap{
+		padding-top: 70px!important;
+		padding-bottom: 64px!important;
+	}
 }
 
 @media (max-width: 767px) {
+	.page-template-default .innerpage-con-wrap{
+		padding-top: 60px!important;
+		padding-bottom: 54px!important;
+	}
 	.checkout-cntrl{
 		padding-top: 45px;
 		padding-bottom: 50px;
@@ -228,11 +242,16 @@
 }
 
 @media (max-width: 575px) {
-	
+	.page-template-default .innerpage-con-wrap{
+		padding-top: 50px!important;
+		padding-bottom: 48px!important;
+	}
 }
 
 @media (max-width: 479px) {
-	
+	.page-template-default .innerpage-con-wrap{
+		padding-top: 44px!important;
+	}
 }
 
 @media (max-width: 359px) {
