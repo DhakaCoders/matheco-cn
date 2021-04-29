@@ -2,6 +2,9 @@
 	padding-top: 100px!important;
 	padding-bottom: 94px!important;
 }
+.page-template-default .checkout-cntrl{
+	margin: 0 -20px;
+}
 .checkout-hdr{
 	text-align: center;
 }
@@ -112,6 +115,8 @@
 	padding: 0 10px;
 	margin-bottom: 17px;
 	position: relative;
+	display: flex;
+	align-items: center;
 }
 .chk-scl-itm:hover i,
 .chk-scl-itm:hover span{
@@ -124,10 +129,10 @@
 	color: #fff;
 	font-size: 16px;
 	width: 26px;
+	padding-right: 5px;
 }
 .chk-scl-itm span{
 	color: #fff;
-	padding-left: 5px;
 	text-transform: capitalize;
 }
 
@@ -144,7 +149,9 @@
 }
 
 @media (max-width: 1499px) {
-	
+	.checkout-hdr .chkout-title{
+		font-size: 29px!important;
+	}
 }
 
 @media (max-width: 1399px) {
@@ -157,6 +164,9 @@
 	}
 	.chkout-scl-bg{
 		padding: 45px 35px 32px 20px;
+	}
+	.checkout-hdr .chkout-title{
+		font-size: 28px!important;
 	}
 }
 
@@ -171,6 +181,9 @@
 	.srv-cont {
     	width: 33%;
 	}
+	.checkout-hdr .chkout-title{
+		font-size: 27px!important;
+	}
 }
 
 @media (max-width: 991px) {
@@ -184,16 +197,25 @@
 		padding-top: 70px!important;
 		padding-bottom: 64px!important;
 	}
+	.chk-acc-bg{
+		padding: 45px 27px 23px 29px;
+	}
+	.checkout-hdr .chkout-title{
+		font-size: 26px!important;
+	}
 }
 
 @media (max-width: 767px) {
+	.page-template-default .checkout-top-sec{
+		padding-bottom: 0!important;
+	}
+	.page-template-default .checkout-page-title{
+		margin-bottom: 0!important;
+		padding-bottom: 0!important;
+	}
 	.page-template-default .innerpage-con-wrap{
 		padding-top: 60px!important;
 		padding-bottom: 54px!important;
-	}
-	.checkout-cntrl{
-		padding-top: 45px;
-		padding-bottom: 50px;
 	}
 	.checkout-hdr{
 		padding-bottom: 45px;
@@ -205,6 +227,7 @@
 		font-size: 24px;
 		line-height: 1.1;
 		margin-bottom: 20px;
+		font-size: 25px!important;
 	}
 	.checkout-hdr p{
 		margin-bottom: 19px;
@@ -246,6 +269,9 @@
 		padding-top: 50px!important;
 		padding-bottom: 48px!important;
 	}
+	.checkout-hdr .chkout-title{
+		font-size: 24px!important;
+	}
 }
 
 @media (max-width: 479px) {
@@ -259,6 +285,6 @@
 		padding: 55px 20px 23px 20px;
 	}
 	.chk-scl-itm i{
-		width: 17px;
+		width: 22px;
 	}
 }
