@@ -15,7 +15,7 @@ body.woocommerce-account .account-page-title h1{
 body.woocommerce-account .woocommerce-account-grds-cntlr{
     padding-top: 47px;
     margin-bottom: 75px;
-    
+
 }
 body.loggedin-deshboard-crtl .woocommerce-account-grds-cntlr{
     align-items: center;  
@@ -493,7 +493,7 @@ body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row l
 body.woocommerce-account .woocommerce button[type=submit],
 body.woocommerce-account .woocommerce button[type=button]{
     margin-left: 0px!important;
-    padding: 15px 15px!important;
+    padding: 16px 15px!important;
     line-height: 1;
     width: 170px;
     border-radius: 0px!important;
