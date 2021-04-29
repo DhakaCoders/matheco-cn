@@ -28,7 +28,7 @@ if ( $total <= 1 ) {
 	return;
 }
 ?>
-<nav class="fl-pagi-cntlr">
+<nav class="fl-pagination-ctlr">
 	<?php
 	echo paginate_links(
 		apply_filters(
