@@ -564,7 +564,3 @@ new WOW().init();
 
 
 })(jQuery);
-
-function customParam(params){
-   return jQuery.param(params);
-}
