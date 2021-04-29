@@ -452,11 +452,13 @@ class cbv_wc_attribute_widget extends WC_Widget {
 
 		$term_counts        = $this->get_filtered_term_product_counts( wp_list_pluck( $terms, 'term_id' ), $taxonomy, $query_type );
 		$_chosen_attributes = WC_Query::get_layered_nav_chosen_attributes();
+		
 		$found              = false;
 		$base_link          = $this->get_current_page_url();
 		foreach ( $terms as $term ) {
 			$current_values = isset( $_chosen_attributes[ $taxonomy ]['terms'] ) ? $_chosen_attributes[ $taxonomy ]['terms'] : array();
 			$option_is_set  = in_array( $term->slug, $current_values, true );
+						var_dump($option_is_set);
 			$count          = isset( $term_counts[ $term->term_id ] ) ? $term_counts[ $term->term_id ] : 0;
 
 			// Skip the term for the current archive.
@@ -475,11 +477,10 @@ class cbv_wc_attribute_widget extends WC_Widget {
 			// phpcs:ignore WordPress.Security.NonceVerification.Recommended
 			$current_filter = isset( $_GET[ $filter_name ] ) ? explode( ',', wc_clean( wp_unslash( $_GET[ $filter_name ] ) ) ) : array();
 			$current_filter = array_map( 'sanitize_title', $current_filter );
-
 			if ( ! in_array( $term->slug, $current_filter, true ) ) {
 				$current_filter[] = $term->slug;
 			}
-
+			//var_dump($current_filter);
 			$link = remove_query_arg( $filter_name, $base_link );
 
 			// Add current filters to URL.
@@ -499,7 +500,6 @@ class cbv_wc_attribute_widget extends WC_Widget {
 				$addClass = 'radio-btn ';
 			}
 			if ( ! empty( $current_filter ) ) {
-				
 				if( $filter_name == 'filter_cafeine' ){
 					foreach( $current_filter as $cafs ){
 						if( $cafs != @$_GET[ $filter_name ] ){
@@ -520,13 +520,16 @@ class cbv_wc_attribute_widget extends WC_Widget {
 					if ( 'or' === $query_type && ! ( 1 === count( $current_filter ) && $option_is_set ) ) {
 						$link = add_query_arg( 'query_type_' . wc_attribute_taxonomy_slug( $taxonomy ), 'or', $link );
 					}
+
+
 				}
 				
 				$link = str_replace( '%2C', ',', $link );
-
+				
 			}
 
 			if ( $count >= 0 || $option_is_set ) { // here's been changed $count > 0
+			//echo $link;
 				$link      = apply_filters( 'woocommerce_layered_nav_link', $link, $term, $taxonomy );
 
 				$term_html = '<a rel="nofollow" href="' . esc_url( $link ) . '">' . esc_html( $term->name ) . '</a>';

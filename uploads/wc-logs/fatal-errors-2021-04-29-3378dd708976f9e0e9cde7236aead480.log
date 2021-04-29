@@ -1,0 +1,34 @@
+2021-04-29T04:03:22+00:00 CRITICAL Uncaught Error: Call to undefined method cbv_wc_category_widget::get_main_tax_query() in E:\host\htdocs\2021\04\mathecos\matheco-cn\themes\matheco\inc\class-cbv_wc_category_widgets.php:71
+Stack trace:
+#0 E:\host\htdocs\2021\04\mathecos\matheco-cn\themes\matheco\inc\class-cbv_wc_category_widgets.php(202): cbv_wc_category_widget->get_filtered_term_product_counts(Array, NULL, NULL)
+#1 E:\host\htdocs\2021\04\mathecos\wp-includes\class-wp-widget.php(380): cbv_wc_category_widget->widget(Array, Array)
+#2 E:\host\htdocs\2021\04\mathecos\wp-includes\widgets.php(823): WP_Widget->display_callback(Array, Array)
+#3 E:\host\htdocs\2021\04\mathecos\matheco-cn\themes\matheco\sidebar-shop.php(8): dynamic_sidebar('shop-widget')
+#4 E:\host\htdocs\2021\04\mathecos\wp-includes\template.php(730): require_once('E:\\host\\htdocs\\...')
+#5 E:\host\htdocs\2021\04\mathecos\wp-includes\template.php(676): load_template('E:\\host\\htdocs\\...', true, Array)
+#6 E:\host\htdocs\2021\04\mathecos\wp-includes\general-template.php(136): locate_t in E:\host\htdocs\2021\04\mathecos\matheco-cn\themes\matheco\inc\class-cbv_wc_category_widgets.php on line 71
+
+2021-04-29T04:04:22+00:00 CRITICAL Uncaught Error: Call to undefined method cbv_wc_category_widget::get_main_tax_query() in E:\host\htdocs\2021\04\mathecos\matheco-cn\themes\matheco\inc\class-cbv_wc_category_widgets.php:71
+Stack trace:
+#0 E:\host\htdocs\2021\04\mathecos\matheco-cn\themes\matheco\inc\class-cbv_wc_category_widgets.php(202): cbv_wc_category_widget->get_filtered_term_product_counts(Array, 'product_cat', NULL)
+#1 E:\host\htdocs\2021\04\mathecos\wp-includes\class-wp-widget.php(380): cbv_wc_category_widget->widget(Array, Array)
+#2 E:\host\htdocs\2021\04\mathecos\wp-includes\widgets.php(823): WP_Widget->display_callback(Array, Array)
+#3 E:\host\htdocs\2021\04\mathecos\matheco-cn\themes\matheco\sidebar-shop.php(8): dynamic_sidebar('shop-widget')
+#4 E:\host\htdocs\2021\04\mathecos\wp-includes\template.php(730): require_once('E:\\host\\htdocs\\...')
+#5 E:\host\htdocs\2021\04\mathecos\wp-includes\template.php(676): load_template('E:\\host\\htdocs\\...', true, Array)
+#6 E:\host\htdocs\2021\04\mathecos\wp-includes\general-template.php(136): in E:\host\htdocs\2021\04\mathecos\matheco-cn\themes\matheco\inc\class-cbv_wc_category_widgets.php on line 71
+
+2021-04-29T04:06:58+00:00 CRITICAL Uncaught Error: Call to undefined method cbv_wc_category_widget::get_main_tax_query() in E:\host\htdocs\2021\04\mathecos\matheco-cn\themes\matheco\inc\class-cbv_wc_category_widgets.php:71
+Stack trace:
+#0 E:\host\htdocs\2021\04\mathecos\matheco-cn\themes\matheco\inc\class-cbv_wc_category_widgets.php(207): cbv_wc_category_widget->get_filtered_term_product_counts(Array, 'product_cat', 'or')
+#1 E:\host\htdocs\2021\04\mathecos\wp-includes\class-wp-widget.php(380): cbv_wc_category_widget->widget(Array, Array)
+#2 E:\host\htdocs\2021\04\mathecos\wp-includes\widgets.php(823): WP_Widget->display_callback(Array, Array)
+#3 E:\host\htdocs\2021\04\mathecos\matheco-cn\themes\matheco\sidebar-shop.php(8): dynamic_sidebar('shop-widget')
+#4 E:\host\htdocs\2021\04\mathecos\wp-includes\template.php(730): require_once('E:\\host\\htdocs\\...')
+#5 E:\host\htdocs\2021\04\mathecos\wp-includes\template.php(676): load_template('E:\\host\\htdocs\\...', true, Array)
+#6 E:\host\htdocs\2021\04\mathecos\wp-includes\general-template.php(136): in E:\host\htdocs\2021\04\mathecos\matheco-cn\themes\matheco\inc\class-cbv_wc_category_widgets.php on line 71
+
+2021-04-29T04:17:25+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) in E:\host\htdocs\2021\04\mathecos\matheco-cn\themes\matheco\inc\class-wc-widget-layered-category.php on line 63
+
+2021-04-29T04:47:45+00:00 CRITICAL syntax error, unexpected '}', expecting ';' in E:\host\htdocs\2021\04\mathecos\matheco-cn\themes\matheco\inc\class-wc-widget-layered-category.php on line 365
+
