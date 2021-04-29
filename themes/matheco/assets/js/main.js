@@ -541,14 +541,20 @@ $("#apply_coupon_code").click(function(){
 
 $("#cat_filterform").on("change", "#cat_filter input:checkbox", function(){
   var url = $("#cat_filterform").data('url');
+  var minMax = $("#minMaxPrice").data('minmax');
   console.log(url);
-  var selected = new Array();
+  var selected = new Array();  
   $('#cat_filter input:checkbox:checked').each(function () {
       selected.push(this.value);
   });
   if (selected.length > 0) {
-      //console.log("Selected values: " + selected.join(","));
-      window.location.assign(url+'?filter_cats='+selected.join(","));
+      //var params = { filter_cats:selected.join(",") };
+      var params = 'filter_cats='+selected.join(",");
+      if(minMax){
+        window.location.assign(url+'&'+params);
+      }else{
+        window.location.assign(url+'?'+params);
+      }  
   }else{
     window.location.assign(url)
   }
