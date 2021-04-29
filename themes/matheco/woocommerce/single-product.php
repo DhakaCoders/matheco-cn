@@ -22,6 +22,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header( 'shop' ); 
 get_template_part('templates/breadcrumbs');
 ?>
+<section class="checkout-backbtn-sec show-sm">
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="back-to-dashboard-btn-cntlr"><a class="backshop-cart" href="<?php echo get_permalink(get_option( 'woocommerce_shop_page_id' )); ?>">Terug naar overzicht</a></div>
+		</div>	
+	</div>
+</div>
+</section>
 <section class="product-details-page">
   <div class="container">
     <div class="row">
