@@ -307,13 +307,7 @@
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
 }
-/* .sidebar-widget ul.product-categories li a:checked ~:before{
-	background: red!important;
-	border-color: red!important;
-}
-.sidebar-widget ul.product-categories li:checked ~ a:before {
-    background: red!important;
-} */
+
 .woocommerce .woocommerce-widget-layered-nav-list .woocommerce-widget-layered-nav-list__item--chosen a::before {
     background: #a00 !important;
     content: "" !important;
