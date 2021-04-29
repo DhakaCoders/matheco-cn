@@ -214,8 +214,10 @@
 	margin-bottom: 100px;
 }
 .fl-product{
-	/* overflow: hidden; */
 	padding-bottom: 70px;
+}
+.single-product .woocommerce-notices-wrapper{
+	margin-bottom: 0!important;
 }
 .fl-product .price-quentity-ctrl form .variations tbody tr td{
 	width: 100%;
