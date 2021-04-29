@@ -412,12 +412,15 @@
 .filter-sidebar{
 	background: #fff;
 	padding-top: 23px;
+	-webkit-box-shadow: 3px 11px 5px -9px rgb(0 0 0);
+    -moz-box-shadow: 3px 11px 5px -9px rgba(0,0,0,1);
+    box-shadow: 3px 11px 5px -9px rgb(0 0 0);
 }
 .sidebar-widget{
 	padding-bottom: 10px;
 	padding-top: 8px;
 	padding-left: 20px;
-	padding-right: 35px;
+	padding-right: 30px;
 }
 .price_slider_wrapper .price_slider_amount button.button{
 	width: 150px!important;

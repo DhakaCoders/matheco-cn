@@ -1,5 +1,7 @@
+.page-template-default .innerpage-con-wrap{
+	padding-top: 100px!important;
+}
 .checkout-cntrl{
-	padding-top: 100px;
 	padding-bottom: 94px;
 }
 .checkout-hdr{
@@ -11,8 +13,13 @@
 .checkout-hdr{
 	padding-bottom: 54px;
 }
+.page-template-default .default-page-con h3{
+	border-bottom: none!important;
+	padding-bottom: 0!important;
+}
 .checkout-hdr .chkout-title{
 	margin-bottom: 15px;
+	font-size: 30px!important;
 }
 .checkout-hdr p{
 	margin-bottom: 30px;
