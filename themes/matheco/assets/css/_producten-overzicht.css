@@ -154,12 +154,12 @@
 .fl-pro-grd-des {
 	padding-top: 34px;
 	border-top: 1px solid #f8f8f8;
-	padding: 34px 0 12px;
+	padding: 34px 0 5px;
 	margin: 0 32px;
 }
 .fl-products-cntlr .fl-product-grd .fl-pro-grd-title{
 	font-size: 20px;
-	margin-bottom: 6px;
+	margin-bottom: 3px;
     font-weight: 600;
 	letter-spacing: -0.02em;
 	text-transform: uppercase;
@@ -173,7 +173,7 @@
 }
 .post-type-archive-product .fl-pro-grd-price,
 .single-product .fl-pro-grd-price{
-    padding-bottom: 22px;
+    padding-bottom: 19px;
 }
 .fl-pro-grd-price span.woocommerce-Price-amount bdi,
 .fl-pro-grd-price span.woocommerce-Price-amount bdi span,
@@ -234,10 +234,12 @@
 }
 .fl-pro-grd-btn{
 	padding: 0 32px 32px;
+	line-height: 1;
 }
 .fl-pro-grd-btn a{
 	display: inline-block;
 	vertical-align: baseline;
+	line-height: 1;
 }
 .product-page-col-rgt .fl-pagination-ctlr{
 	text-align: right;
@@ -406,9 +408,6 @@
 .filter-sidebar{
 	background: #fff;
 	padding-top: 23px;
-	-webkit-box-shadow: 3px 11px 5px -9px rgb(0 0 0);
-    -moz-box-shadow: 3px 11px 5px -9px rgba(0,0,0,1);
-    box-shadow: 3px 11px 5px -9px rgb(0 0 0);
 }
 .sidebar-widget{
 	padding-bottom: 10px;
@@ -523,7 +522,7 @@
 		font-size: 15px;
 	}
 	.fl-pro-grd-btn{
-		padding: 0 30px 20px;
+		padding: 0 30px 30px;
 	}
 }
 
@@ -543,7 +542,7 @@
 		margin: 0 26px;
 	}
 	.fl-pro-grd-btn{
-		padding: 0 26px 20px;
+		padding: 0 26px 30px;
 	}
 }
 
@@ -578,7 +577,7 @@
 		margin: 0 21px;
 	}
 	.fl-pro-grd-btn{
-		padding: 0 21px 20px;
+		padding: 0 21px 30px;
 	}
 	.fl-products-cntlr .fl-pro-grd-price{
 		font-size: 15px;
@@ -595,6 +594,9 @@
 	.contacteer-bg{
 		min-height: 309px;
 	}
+	.main-img-crtl{
+		box-shadow: none!important;
+	}
 }
 
 @media (max-width: 767px) {
@@ -605,7 +607,7 @@
 		padding-top: 40px;
 	}
 	.product-category{
-		padding-top: 50px;
+		padding-top: 53px;
 	}
 	.product-page-col-rgt{
 		display: block;
@@ -614,7 +616,7 @@
 		width: 100%;		
 		margin: auto;
 		padding-right: 0;
-		margin-top: -73px;
+		margin-top: -81px;
 	}
 	.filter-prdt{
 		padding-right: 35px;
@@ -646,6 +648,11 @@
 	.fl-products-cntlr{
 		width: 100%;
 	}
+	.filter-sidebar{
+		-webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+	    -moz-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+	    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+	}
 }
 
 @media (max-width: 639px) {
@@ -669,7 +676,7 @@
 		margin: 0 30px;
 	}
 	.fl-pro-grd-btn{
-		padding: 0 30px 20px;
+		padding: 0 30px 35px;
 	}
 }
 
