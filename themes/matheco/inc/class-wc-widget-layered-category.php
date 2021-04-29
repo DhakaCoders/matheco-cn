@@ -308,7 +308,7 @@ class WC_Widget_Layered_Category extends WC_Widget {
 	protected function layered_nav_list( $terms, $taxonomy, $query_type ) {
 		// List display.
 		$base_link = $this->get_current_page_url();
-		echo '<form id="cat_filterform"><ul id="cat_filter">';
+		echo '<form id="cat_filterform" data-url="'.$base_link.'"><ul id="cat_filter">';
 		$filter_name = 'filter_cats';
 		// phpcs:ignore WordPress.Security.NonceVerification.Recommended
 		$current_filter = isset( $_GET[ $filter_name ] ) ? explode( ',', wc_clean( wp_unslash( $_GET[ $filter_name ] ) ) ) : array();
@@ -318,7 +318,8 @@ class WC_Widget_Layered_Category extends WC_Widget {
 		
 
 		foreach ( $terms as $term ) {
-			echo '<li><lable for="term_'.$term->slug.'"><input type="checkbox" id="term_'.$term->slug.'" name="filter_cats" value="' . $term->term_id . '"> '.$term->name.'</label></li>';
+			$checked = (in_array($term->term_id, $current_filter))?'checked':'';
+			echo '<li><lable for="term_'.$term->slug.'"><input '.$checked.' type="checkbox" id="term_'.$term->slug.'" name="filter_cats" value="' . $term->term_id . '"> '.$term->name.'</label></li>';
 		}
 
 		echo '</ul></form>';

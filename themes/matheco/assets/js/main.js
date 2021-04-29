@@ -540,7 +540,19 @@ $("#apply_coupon_code").click(function(){
 // category filter
 
 $("#cat_filterform").on("change", "#cat_filter input:checkbox", function(){
-    $("#cat_filterform").submit();
+  var url = $("#cat_filterform").data('url');
+  console.log(url);
+  var selected = new Array();
+  $('#cat_filter input:checkbox:checked').each(function () {
+      selected.push(this.value);
+  });
+  if (selected.length > 0) {
+      //console.log("Selected values: " + selected.join(","));
+      window.location.assign(url+'?filter_cats='+selected.join(","));
+  }else{
+    window.location.assign(url)
+  }
+  //$("#cat_filterform").submit();
 });
 new WOW().init();
 
