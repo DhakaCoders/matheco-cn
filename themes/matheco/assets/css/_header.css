@@ -215,7 +215,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
     margin-bottom: 0;
     display: inline-block;
     margin-top:-2px;
-    margin-left: 2px;
+    margin-left: 1.5px;
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
