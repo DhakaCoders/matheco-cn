@@ -535,6 +535,11 @@ $("#apply_coupon_code").click(function(){
 
 });
 
+// category filter
+
+$("#cat_filterform").on("change", "#cat_filter input:checkbox", function(){
+    $("#cat_filterform").submit();
+});
 new WOW().init();
 
 
