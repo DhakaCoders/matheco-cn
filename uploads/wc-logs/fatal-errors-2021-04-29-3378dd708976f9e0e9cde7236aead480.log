@@ -32,3 +32,25 @@ Stack trace:
 
 2021-04-29T04:47:45+00:00 CRITICAL syntax error, unexpected '}', expecting ';' in E:\host\htdocs\2021\04\mathecos\matheco-cn\themes\matheco\inc\class-wc-widget-layered-category.php on line 365
 
+2021-04-29T16:39:58+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Widget_Layered_Category::get_instance_query_type() in E:\host\htdocs\2021\04\mathecos\matheco-cn\themes\matheco\inc\class-wc-widget-layered-category.php:111
+Stack trace:
+#0 E:\host\htdocs\2021\04\mathecos\wp-includes\class-wp-widget.php(380): WC_Widget_Layered_Category->widget(Array, Array)
+#1 E:\host\htdocs\2021\04\mathecos\wp-includes\widgets.php(823): WP_Widget->display_callback(Array, Array)
+#2 E:\host\htdocs\2021\04\mathecos\matheco-cn\themes\matheco\sidebar-shop.php(8): dynamic_sidebar('shop-widget')
+#3 E:\host\htdocs\2021\04\mathecos\wp-includes\template.php(730): require_once('E:\\host\\htdocs\\...')
+#4 E:\host\htdocs\2021\04\mathecos\wp-includes\template.php(676): load_template('E:\\host\\htdocs\\...', true, Array)
+#5 E:\host\htdocs\2021\04\mathecos\wp-includes\general-template.php(136): locate_template(Array, true, true, Array)
+#6 E:\host\htdocs\2021\04\mathecos\matheco-cn\themes\matheco\inc\wc-functions.php(18): get_sidebar('shop')
+#7 E:\host\htdocs\2021\ in E:\host\htdocs\2021\04\mathecos\matheco-cn\themes\matheco\inc\class-wc-widget-layered-category.php on line 111
+
+2021-04-29T16:41:41+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Widget_Layered_Category::get_instance_query_type() in E:\host\htdocs\2021\04\mathecos\matheco-cn\themes\matheco\inc\class-wc-widget-layered-category.php:120
+Stack trace:
+#0 E:\host\htdocs\2021\04\mathecos\wp-includes\class-wp-widget.php(380): WC_Widget_Layered_Category->widget(Array, Array)
+#1 E:\host\htdocs\2021\04\mathecos\wp-includes\widgets.php(823): WP_Widget->display_callback(Array, Array)
+#2 E:\host\htdocs\2021\04\mathecos\matheco-cn\themes\matheco\sidebar-shop.php(8): dynamic_sidebar('shop-widget')
+#3 E:\host\htdocs\2021\04\mathecos\wp-includes\template.php(730): require_once('E:\\host\\htdocs\\...')
+#4 E:\host\htdocs\2021\04\mathecos\wp-includes\template.php(676): load_template('E:\\host\\htdocs\\...', true, Array)
+#5 E:\host\htdocs\2021\04\mathecos\wp-includes\general-template.php(136): locate_template(Array, true, true, Array)
+#6 E:\host\htdocs\2021\04\mathecos\matheco-cn\themes\matheco\inc\wc-functions.php(18): get_sidebar('shop')
+#7 E:\host\htdocs\2021\ in E:\host\htdocs\2021\04\mathecos\matheco-cn\themes\matheco\inc\class-wc-widget-layered-category.php on line 120
+

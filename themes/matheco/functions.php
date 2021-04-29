@@ -180,7 +180,26 @@ function custom_post_type_query($query) {
     return $query;
 }
  
-add_filter('pre_get_posts','custom_post_type_query');
+//add_filter('pre_get_posts','custom_post_type_query');
+
+add_filter( 'woocommerce_product_query_tax_query', 'filter_products_with_specific_product_tags', 10, 2 );
+function filter_products_with_specific_product_tags( $tax_query, $query ) {
+    // Only on category pages
+    if ( is_shop() ) {
+        $filter_name = 'filter_cats';
+        $current_filter = isset( $_GET[ $filter_name ] ) ? explode( ',', wc_clean( wp_unslash( $_GET[ $filter_name ] ) ) ) : array();
+        $current_filter = array_map( 'sanitize_title', $current_filter );
+        if($current_filter){
+            $tax_query[] = array(
+                'taxonomy' => 'product_cat',
+                'field' => 'term_id',
+                'terms' => $current_filter, // Defined product tags term names
+            );
+        }
+    }
+    return $tax_query;
+};
+
 /**
 Debug->>
 */
