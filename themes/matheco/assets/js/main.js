@@ -371,6 +371,13 @@ $('.thumbnails-cntlr .thumbnails').slick({
 });
 }
 
+if( $('.sidebar-widget ul li lable input').length ){
+  $(".sidebar-widget ul li lable input").on('click',function(){
+    $(this).parent().toggleClass('active-lable');
+  });
+
+}
+
 
 /* start of Niaz */
 $(".type-order-format .woocommerce-input-wrapper span").each(function(){

@@ -117,11 +117,13 @@
 }
 .custom-info-crtl ul li span{
 	display: block;
-	 font-family: 'Bitter', serif;
-	 font-weight: 400;
-	 color: #525A61;
+	font-family: 'Bitter', serif;
+	font-weight: 400;
+	color: #525A61;
 }
-
+.archive .fl-pagination-ctlr ul li:before{
+	content: none;
+}
 .woocommerce div.product div.summary{
 	width: 51%!important;
 	padding-left: 120px;
@@ -216,7 +218,8 @@
 .fl-product{
 	padding-bottom: 70px;
 }
-.single-product .woocommerce-notices-wrapper{
+.single-product .woocommerce-notices-wrapper,
+.archive .woocommerce-notices-wrapper{
 	margin-bottom: 0!important;
 }
 .fl-product .price-quentity-ctrl form .variations tbody tr td{
