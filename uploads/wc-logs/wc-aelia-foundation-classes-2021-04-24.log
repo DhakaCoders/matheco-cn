@@ -1,2 +1,0 @@
-[2021-04-24 17:41:06] wc-aelia-foundation-classes.NOTICE: [IP2Location] GeoIP database does not exist: "D:\xampp\htdocs\project\2021\march\matheco/matheco-cn/uploads/GeoLite2-City.mmdb". [] {"process_id":2804}
-[2021-04-24 17:41:06] wc-aelia-foundation-classes.NOTICE: [IP2Location] Could not instantiate GeoIP DB Reader. Geolocation aborted. [] {"process_id":2804}
