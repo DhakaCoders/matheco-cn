@@ -185,7 +185,7 @@ body.woocommerce-account #customer_login .u-column2.col-2 > h2{
 .woocommerce input[type="tel"]:focus,
 .woocommerce input[type="password"]:focus,
 .woocommerce textarea:focus{
-	border-color:#d0d0d0;
+	border-color:#d0d0d0!important;
 	border-width:1px!important;
 }
 .woocommerce textarea{
