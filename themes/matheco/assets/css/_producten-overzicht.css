@@ -8,7 +8,7 @@
 	padding-bottom: 54px;
 }
 .fl-secrh-cntlr{
-	max-width: 492px;
+	max-width: 926px;
 	width: 100%;
 	margin: auto;
 }
@@ -417,6 +417,9 @@
 .filter-sidebar{
 	background: #fff;
 	padding-top: 23px;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+	-webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+	-ms-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
 }
 .sidebar-widget #cat_filterform ul li{
 	padding-left: 0;
