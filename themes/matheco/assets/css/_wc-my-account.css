@@ -1,5 +1,8 @@
 
-body.woocommerce-account .woocommerce form .form-row{
+body.woocommerce-account .woocommerce form .form-row,
+body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row,
+body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .form-row,
+body.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row{
     padding-left:0px!important;
     padding-right:0px!important;
 }
