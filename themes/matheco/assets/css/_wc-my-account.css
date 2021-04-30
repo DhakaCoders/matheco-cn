@@ -1359,7 +1359,8 @@ body.woocommerce-checkout .custom-checkout-order-review .form-row-last button[ty
     width: 170px;
     border: 1px solid #707C88!important;
 }
-body.woocommerce-checkout .custom-checkout-order-review .form-row-last button[type=button]:hover{
+body.woocommerce-checkout .custom-checkout-order-review .form-row-last button[type=button]:hover,
+body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code + button:hover{
     background: #5CB85C!important;
     border-color: #5CB85C!important;
     color: #fff!important;

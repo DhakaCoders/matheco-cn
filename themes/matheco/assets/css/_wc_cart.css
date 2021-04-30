@@ -204,7 +204,7 @@ body.woocommerce-cart .empty-cart-btn a{
 }
 body.woocommerce-cart .empty-cart-btn a:hover,
 body.woocommerce-cart .add-more-product a:hover{
-	color: #EC5387;
+	color: #D9534F;
 }
 body.woocommerce-cart table.shop_table tbody tr td.actions{
 	display: none;
@@ -283,13 +283,13 @@ body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-f
     box-sizing: border-box;
     font-size: 14px!important;
 }
-body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code + button:hover{
+/*body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code + button:hover{
     background: #31304F!important;
     color: #fff!important;
     background: #EC5387!important;
     color: #fff!important;
     border-color: #EC5387!important;
-}
+}*/
 body.woocommerce-cart .cart_totals .wc-proceed-to-checkout #pwgc-redeem-form #pwgc-redeem-gift-card-container input[type=text]{
 	width: 100%;
 }
@@ -321,13 +321,13 @@ body.woocommerce-cart .cart_totals .wc-proceed-to-checkout a.checkout-button{
 .woocommerce-cart .wc-proceed-to-checkout{
 	padding-bottom: 24px!important;
 }
-body.woocommerce-cart .cart_totals .wc-proceed-to-checkout a.checkout-button:hover,
+/*body.woocommerce-cart .cart_totals .wc-proceed-to-checkout a.checkout-button:hover,
 body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon button:hover{
 	border-color: #EC5387!important;
 	background: #EC5387!important;
 	color: #fff!important;
 
-}
+}*/
 body.woocommerce-cart .add-more-product a{
    	color: #707C88;
     position: relative;
@@ -353,6 +353,10 @@ body.woocommerce-cart .add-more-product a:after{
 	width: 14px;
 	background-image: url('../images/left-arrow-icon.svg');
 	background-repeat: no-repeat;
+}
+body.woocommerce-cart .add-more-product a:hover:after{
+	background:url('../images/left-arrow-icon-hover.svg');
+	background-repeat:no-repeat!important;
 }
 body.woocommerce-cart.woocommerce-page table.shop_table th{
 	font-weight: 400;

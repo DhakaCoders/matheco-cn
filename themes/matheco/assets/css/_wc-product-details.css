@@ -314,6 +314,9 @@ body.woocommerce-cart .product-quantity .quantity.qty1 span{
 	justify-content: center;
 	border-radius: 100% 100%;
 	cursor: pointer;
+	transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+	-ms-transition:all 0.5s;
 }
 
 .cart-btn-qty .quantity.qty span.plus,
