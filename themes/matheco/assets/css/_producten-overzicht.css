@@ -234,6 +234,7 @@
 	color: #2285E3;
 	padding-bottom: 1px;
 	text-decoration: underline!important;
+	font-size: 12px;
 }
 .fl-pro-grd-btn{
 	padding: 0 32px 32px;
@@ -438,6 +439,7 @@
 	margin: 0!important;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
+	font-size: 14px!important;
 	text-transform: uppercase;
 	background: transparent!important;
 	border: 1px solid#707c88!important;
