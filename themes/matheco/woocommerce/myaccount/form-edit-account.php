@@ -26,7 +26,7 @@ if (isset( $_POST["account_email"] ) && isset($_POST['user_id'])) {
 <div class="woocommerce-edit-account-crtl">
 	<?php 
 		if( array_key_exists('error', $reg) ){
-			printf('<div class="contact-er-msg"><span><i><svg class="error-msg-icon-svg" width="32" height="32" viewBox="0 0 32 32" fill="#ffffff"><use xlink:href="#error-msg-icon-svg"></use> </svg></i>%s</div>', $reg['error']);
+			printf('<div class="contact-er-msg"><span><i><svg class="error-icon-svg" width="18" height="18" viewBox="0 0 18 18" fill="#ffffff"><use xlink:href="#error-icon-svg"></use> </svg></i>%s</div>', $reg['error']);
 		}elseif( array_key_exists('success', $reg) ){
 			printf('<div class="contact-success-msg">%s</div>', $reg['success']);
 		}

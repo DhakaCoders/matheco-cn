@@ -30,7 +30,7 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 ?>
 <div class="register-nextstep woocommerce-billing-fields" id="form_next">
 	<div class="register-top-title">
-		<h1>Nieuw bij Thelene</h1>
+		<h1>Nieuw bij Matheco</h1>
 	</div>
 	<?php if($data_reg): ?>
 	
@@ -38,8 +38,8 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
     <div class="register-field-error">
 		<div class="contact-er-msg">
           <span>
-            <i><svg class="error-msg-icon-svg" width="32" height="32" viewBox="0 0 32 32" fill="#ffffff">
-            <use xlink:href="#error-msg-icon-svg"></use> </svg></i>
+            <i><svg class="error-icon-svg" width="18" height="18" viewBox="0 0 18 18" fill="#ffffff">
+            <use xlink:href="#error-icon-svg"></use> </svg></i>
             Oh snap! Het formulier lijkt niet correct!</span>
         </div>
 	</div>
