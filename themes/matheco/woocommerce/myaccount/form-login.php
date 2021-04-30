@@ -250,7 +250,7 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 
 		<div class="u-column2 col-2">
 
-			<h4><?php esc_html_e( 'Nieuw bij Thelene?', 'woocommerce' ); ?></h4>
+			<h4><?php esc_html_e( 'Nieuw bij Matheco?', 'woocommerce' ); ?></h4>
 			<div class="signup-notification">
 				<p>Vul hier je e-mailadres in als je nog niet beschikt over een account. Indien gewenst, kan je in de volgende stap een account aanmaken.</p>
 			</div>
