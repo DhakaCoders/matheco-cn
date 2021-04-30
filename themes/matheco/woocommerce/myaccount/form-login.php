@@ -197,8 +197,8 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
               <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-01.svg"></li>
               <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-02.svg"></li>
               <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-03.svg"></li>
-              <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-04.svg"></li>
               <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-05.svg"></li>
+              <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-04.svg"></li>
             </ul>
 		</div>
 	</div>
