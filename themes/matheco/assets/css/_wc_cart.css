@@ -203,7 +203,8 @@ body.woocommerce-cart .empty-cart-btn a{
 	text-decoration: underline;
 }
 body.woocommerce-cart .empty-cart-btn a:hover,
-body.woocommerce-cart .add-more-product a:hover{
+body.woocommerce-cart .add-more-product a:hover,
+body.woocommerce-cart.woocommerce-page .product-name a:hover{
 	color: #D9534F;
 }
 body.woocommerce-cart table.shop_table tbody tr td.actions{
