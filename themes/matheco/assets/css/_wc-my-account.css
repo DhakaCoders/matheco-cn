@@ -721,12 +721,24 @@ body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul 
     border-radius: 50%;
     display: none;
 }
-.woocommerce-input-wrapper span input:checked ~ .radio-custom:after,
-body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li input:checked ~  label:before,
-body.woocommerce-checkout .shipping-methods .woocommerce-shipping-methods li input:checked ~ label:before{
+.shipping-methods .woocommerce-shipping-methods li input[type=hidden] + label:before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
     display: block!important;
 }
-body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li input{
+.shipping-methods .woocommerce-shipping-methods li input[type=hidden] + label:after{
+    border-color: #2285E3!important;
+}
+.woocommerce-input-wrapper span input[type=radio]:checked ~ .radio-custom:after,
+body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li input[type=radio]:checked ~  label:before,
+body.woocommerce-checkout .shipping-methods .woocommerce-shipping-methods li input[type=radio]:checked ~ label:before{
+    display: block!important;
+}
+body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li input[type=radio],
+.shipping-methods .woocommerce-shipping-methods li input[type=radio]{
     display: none;
 }
 .woocommerce .woocommerce-widget-layered-nav-list .radio-btn.woocommerce-widget-layered-nav-list__item--chosen a::after,
@@ -736,10 +748,10 @@ body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul 
 }
 
 
-.container input:checked ~ .radio-custom{
+.container input[type=radio]:checked ~ .radio-custom{
     border: 1px solid #2285E3!important;
 }
-.woocommerce-input-wrapper span input:checked ~ .radio-custom:after{
+.woocommerce-input-wrapper span input[type=radio]:checked ~ .radio-custom:after{
     display: block;
 }
 .woocommerce-input-wrapper span .radio-custom:after{
@@ -855,18 +867,19 @@ body.woocommerce-account .woocommerce-input-wrapper .bootstrap-select{
     border-bottom-right-radius: 1px;
     
 }
-.same-as-shipping-address input:checked ~ .checkbox-custom,
-.login-info p > input:checked ~ .checkbox-custom,
-.woocommerce-form .form-row .woocommerce-form__label-for-checkbox input:checked ~ .checkbox-custom{
+.same-as-shipping-address input[type=radio]:checked ~ .checkbox-custom,
+.login-info p > input[type=radio]:checked ~ .checkbox-custom,
+.woocommerce-form .form-row .woocommerce-form__label-for-checkbox input[type=radio]:checked ~ .checkbox-custom{
     background: #2285E3;
     border-color:#2285E3;
 }
-body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li input:checked ~ label:after{
+body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li input[type=radio]:checked ~ label:after,
+.shipping-methods .woocommerce-shipping-methods li input[type=radio]:checked ~ label:after{
     border-color:#2285E3!important;
 }
-.login-info p > input:checked ~ .checkbox-custom:after,
-.same-as-shipping-address input:checked ~ .checkbox-custom:after,
-.woocommerce-form .form-row .woocommerce-form__label-for-checkbox input:checked ~ .checkbox-custom:after{
+.login-info p > input[type=checkbox]:checked ~ .checkbox-custom:after,
+.same-as-shipping-address input[type=checkbox]:checked ~ .checkbox-custom:after,
+.woocommerce-form .form-row .woocommerce-form__label-for-checkbox input[type=checkbox]:checked ~ .checkbox-custom:after{
     content: "";
 }
 .same-as-shipping-address,
@@ -1344,6 +1357,11 @@ body.woocommerce-checkout .custom-checkout-order-review .form-row-last button[ty
     padding: 8px 15px;
     width: 170px;
     border: 1px solid #707C88!important;
+}
+body.woocommerce-checkout .custom-checkout-order-review .form-row-last button[type=button]:hover{
+    background: #5CB85C!important;
+    border-color: #5CB85C!important;
+    color: #fff!important;
 }
 .coupon-full-width input{
     border: 2px solid #F8F8F8!important;
