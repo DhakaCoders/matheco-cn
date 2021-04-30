@@ -1,5 +1,8 @@
 .product-entry-hdr{
-	padding-bottom: 46px;
+	padding-bottom: 50px;
+}
+.product-entry-hdr p{
+	color: #243444;
 }
 .secrh-select-cntlr{
 	padding-bottom: 54px;
