@@ -445,6 +445,7 @@ body.woocommerce-account .woocommerce input[type="tel"]::placeholder,
 body.woocommerce-account .woocommerce input[type="password"]::placeholder, 
 body.woocommerce-account .woocommerce textarea::placeholder{
     color:#707C88;
+    opacity:1;
 }
 body.woocommerce-account .woocommerce input[type="text"]:-moz-placeholder, 
 body.woocommerce-account .woocommerce input[type="email"]:-moz-placeholder,
@@ -452,6 +453,7 @@ body.woocommerce-account .woocommerce input[type="tel"]:-moz-placeholder,
 body.woocommerce-account .woocommerce input[type="password"]:-moz-placeholder, 
 body.woocommerce-account .woocommerce textarea:-moz-placeholder{
     color:#707C88;
+    opacity:1;
 }
 body.woocommerce-account .woocommerce input[type="text"]:-ms-input-placeholder, 
     body.woocommerce-account .woocommerce input[type="email"]:-ms-input-placeholderr,
@@ -459,6 +461,7 @@ body.woocommerce-account .woocommerce input[type="tel"]:-ms-input-placeholder,
 body.woocommerce-account .woocommerce input[type="password"]:-ms-input-placeholder, 
 body.woocommerce-account .woocommerce textarea:-ms-input-placeholderr{
     color:#707C88;
+    opacity:1;
 }
 
 body.woocommerce-account .woocommerce input[type="text"]::-moz-placeholder, 
@@ -467,6 +470,7 @@ body.woocommerce-account .woocommerce input[type="tel"]::-moz-placeholder,
 body.woocommerce-account .woocommerce input[type="password"]::-moz-placeholder, 
 body.woocommerce-account .woocommerce textarea::-moz-placeholder{
     color:#707C88;
+    opacity:1;
 }
 body.woocommerce-account .woocommerce input[type="text"]::-webkit-input-placeholder 
 body.woocommerce-account .woocommerce input[type="email"]::-webkit-input-placeholder,
@@ -474,6 +478,7 @@ body.woocommerce-account .woocommerce input[type="tel"]::-webkit-input-placehold
 body.woocommerce-account .woocommerce input[type="password"]::-webkit-input-placeholder,
 body.woocommerce-account .woocommerce textarea::-webkit-input-placeholder{
     color:#707C88;
+    opacity:1;
 }
 body.woocommerce-account .login-register-wrap a{
     color: #0275D8;
