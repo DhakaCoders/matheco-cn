@@ -331,7 +331,7 @@ input.select2-search__field{
 }
 .error-valid {
     position: absolute;
-    top: 0;
+    top: 9px;
     right: 2px;
     color: #D17181;
     font-size: 12px;
