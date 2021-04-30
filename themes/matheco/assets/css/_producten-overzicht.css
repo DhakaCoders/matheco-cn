@@ -65,7 +65,7 @@
 	margin-top: -2px;
 }
 .fl-secrh form button:hover i svg{
-	fill: #EC5387;
+	fill: #D9534F;
 }
 
 /* product  */
@@ -361,7 +361,17 @@
 	background: #2285e3!important;
     border-color: #2285e3!important;
 }
-
+.sidebar-widget #cat_filterform ul li lable input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom:0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	cursor: pointer;
+}
 .product-categories .cat-item.current-cat a:after,
 .sidebar-widget #cat_filterform ul li lable:after{
 	content: "";
