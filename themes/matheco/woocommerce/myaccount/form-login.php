@@ -30,7 +30,7 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 ?>
 <div class="register-nextstep woocommerce-billing-fields" id="form_next">
 	<div class="register-top-title">
-		<h1>Nieuw bij Thelene</h1>
+		<h1>Nieuw bij Matheco</h1>
 	</div>
 	<?php if($data_reg): ?>
 	
@@ -38,8 +38,8 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
     <div class="register-field-error">
 		<div class="contact-er-msg">
           <span>
-            <i><svg class="error-msg-icon-svg" width="32" height="32" viewBox="0 0 32 32" fill="#ffffff">
-            <use xlink:href="#error-msg-icon-svg"></use> </svg></i>
+            <i><svg class="error-icon-svg" width="18" height="18" viewBox="0 0 18 18" fill="#ffffff">
+            <use xlink:href="#error-icon-svg"></use> </svg></i>
             Oh snap! Het formulier lijkt niet correct!</span>
         </div>
 	</div>
@@ -197,8 +197,8 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
               <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-01.svg"></li>
               <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-02.svg"></li>
               <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-03.svg"></li>
-              <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-04.svg"></li>
               <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-05.svg"></li>
+              <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-04.svg"></li>
             </ul>
 		</div>
 	</div>
@@ -250,7 +250,7 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 
 		<div class="u-column2 col-2">
 
-			<h4><?php esc_html_e( 'Nieuw bij Thelene?', 'woocommerce' ); ?></h4>
+			<h4><?php esc_html_e( 'Nieuw bij Matheco?', 'woocommerce' ); ?></h4>
 			<div class="signup-notification">
 				<p>Vul hier je e-mailadres in als je nog niet beschikt over een account. Indien gewenst, kan je in de volgende stap een account aanmaken.</p>
 			</div>

@@ -402,7 +402,7 @@ function misha_remove_my_account_links( $menu_links ){
     $menu_links['orders'] = 'Bestellingen';
     $menu_links['winkelmandje'] = 'Winkelmandje';
     $menu_links['edit-account'] = 'ACCOUNT info';
-    $menu_links['customer-logout'] = 'LOGOUT';
+    $menu_links['customer-logout'] = 'uitloggen';
     return $menu_links;
  
 }

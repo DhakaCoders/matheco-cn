@@ -1,7 +1,29 @@
 
-body.woocommerce-account .woocommerce form .form-row{
+body.woocommerce-account .woocommerce form .form-row,
+body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row,
+body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .form-row,
+body.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row{
     padding-left:0px!important;
     padding-right:0px!important;
+}
+.woocommerce form .form-row .required{
+    font-size: 13px;
+}
+.woocommerce form .show-password-input,.woocommerce-page form .show-password-input{
+    margin-top: 6px;
+}
+.woocommerce-password-strength.bad {
+    background-color: #D9534F;
+    border-color: #D9534F;
+    color: #fff;
+    font-size: 14px;
+}
+.woocommerce-password-strength.good,
+.woocommerce-password-strength.strong{
+    font-size:14px;
+}
+body.woocommerce-checkout .custom-checkout-order-review table.shop_table{
+    margin-bottom: 12px;
 }
 /* ------------------- my account  deshboard-----------------------*/
 body.woocommerce-account .account-page-title{
@@ -445,6 +467,7 @@ body.woocommerce-account .woocommerce input[type="tel"]::placeholder,
 body.woocommerce-account .woocommerce input[type="password"]::placeholder, 
 body.woocommerce-account .woocommerce textarea::placeholder{
     color:#707C88;
+    opacity:1;
 }
 body.woocommerce-account .woocommerce input[type="text"]:-moz-placeholder, 
 body.woocommerce-account .woocommerce input[type="email"]:-moz-placeholder,
@@ -452,6 +475,7 @@ body.woocommerce-account .woocommerce input[type="tel"]:-moz-placeholder,
 body.woocommerce-account .woocommerce input[type="password"]:-moz-placeholder, 
 body.woocommerce-account .woocommerce textarea:-moz-placeholder{
     color:#707C88;
+    opacity:1;
 }
 body.woocommerce-account .woocommerce input[type="text"]:-ms-input-placeholder, 
     body.woocommerce-account .woocommerce input[type="email"]:-ms-input-placeholderr,
@@ -459,6 +483,7 @@ body.woocommerce-account .woocommerce input[type="tel"]:-ms-input-placeholder,
 body.woocommerce-account .woocommerce input[type="password"]:-ms-input-placeholder, 
 body.woocommerce-account .woocommerce textarea:-ms-input-placeholderr{
     color:#707C88;
+    opacity:1;
 }
 
 body.woocommerce-account .woocommerce input[type="text"]::-moz-placeholder, 
@@ -467,6 +492,7 @@ body.woocommerce-account .woocommerce input[type="tel"]::-moz-placeholder,
 body.woocommerce-account .woocommerce input[type="password"]::-moz-placeholder, 
 body.woocommerce-account .woocommerce textarea::-moz-placeholder{
     color:#707C88;
+    opacity:1;
 }
 body.woocommerce-account .woocommerce input[type="text"]::-webkit-input-placeholder 
 body.woocommerce-account .woocommerce input[type="email"]::-webkit-input-placeholder,
@@ -474,6 +500,7 @@ body.woocommerce-account .woocommerce input[type="tel"]::-webkit-input-placehold
 body.woocommerce-account .woocommerce input[type="password"]::-webkit-input-placeholder,
 body.woocommerce-account .woocommerce textarea::-webkit-input-placeholder{
     color:#707C88;
+    opacity:1;
 }
 body.woocommerce-account .login-register-wrap a{
     color: #0275D8;
@@ -909,6 +936,7 @@ body.woocommerce-account .register-btn button[type="submit"]{
     margin-bottom: 0px!important;
     color: #707C88;
     letter-spacing: 0;
+    text-transform: capitalize;
 }
 
 .register-pay-logo-wrap{
@@ -992,6 +1020,7 @@ body.loggedin-winkelmandje-crtl .woocommerce-mini-cart .woocommerce-mini-cart-it
     margin-bottom: 20px;
     background: #F8F8F8;
 }
+
 body.loggedin-winkelmandje-crtl .woocommerce-mini-cart__buttons.buttons a{
     width: 210px;
     height: 40px;
@@ -1116,11 +1145,11 @@ body.woocommerce-checkout .custom-checkout-order-review table td.product-name st
  }
 body.woocommerce-checkout .custom-checkout-order-review table td,
 body.woocommerce-checkout .custom-checkout-order-review table th{
-    padding: 6px 0px;
+    padding: 3px 0px;
 }
 body.woocommerce-checkout .custom-checkout-order-review table tr.order-total th, 
 body.woocommerce-checkout .custom-checkout-order-review table tr.order-total td {
-    padding-top: 23px!important;
+    padding-top: 20px!important;
 }
 body.woocommerce-checkout #customer_details .col-1 {
     width: 66%;
@@ -1280,7 +1309,7 @@ body.woocommerce-checkout .woocommerce-shipping-fields .woocommerce-form__label{
 
 }
 body.woocommerce-checkout .woocommerce-shipping-fields .woocommerce-form__label input#ship-to-different-address-checkbox{
-    margin-top:-1px!important;
+    margin-top:0px!important;
     cursor: pointer;
 }
 body.woocommerce-checkout .default-page-con h3{
@@ -1520,10 +1549,6 @@ body.woocommerce-checkout section.checkout-top-sec{
     }
     body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .woocommerce-input-wrapper textarea{
         min-height: 200px;
-    }
-    body.loggedin-deshboard-crtl .woocommerce-account-grds-cntlr{
-        padding-top: 45px;
-        padding-bottom: 55px;
     }
     body.woocommerce-edit-account .innerpage-con-wrap .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation,
     body.woocommerce-orders .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation,
