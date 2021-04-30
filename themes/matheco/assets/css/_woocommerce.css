@@ -168,6 +168,7 @@ body.woocommerce-account #customer_login .u-column2.col-2 > h2{
 	height: 48px;
 	background: #FFFFFF;
 	border: 1px solid #EDEDED;
+	border-width:1px!important;
 	box-sizing: border-box;
 	padding: 5px 16px 5px;
 	color: #707C88;
@@ -184,7 +185,8 @@ body.woocommerce-account #customer_login .u-column2.col-2 > h2{
 .woocommerce input[type="tel"]:focus,
 .woocommerce input[type="password"]:focus,
 .woocommerce textarea:focus{
-	border-color:#d0d0d0!important;
+	border:#d0d0d0!important;
+	border-width:1px!important;
 }
 .woocommerce textarea{
 	min-height: 200px;

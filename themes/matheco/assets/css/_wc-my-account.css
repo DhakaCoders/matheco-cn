@@ -924,6 +924,7 @@ body.woocommerce-account .register-btn button[type="submit"]{
     margin-bottom: 0px!important;
     color: #707C88;
     letter-spacing: 0;
+    text-transform: capitalize;
 }
 
 .register-pay-logo-wrap{
