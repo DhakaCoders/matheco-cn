@@ -3,6 +3,16 @@ body.woocommerce-account .woocommerce form .form-row{
     padding-left:0px!important;
     padding-right:0px!important;
 }
+body.woocommerce form .form-row .required{
+    font-size: 13px;
+}
+body.woocommerce form .show-password-input, body.woocommerce-page form .show-password-input{
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    margin-top: 2px;
+}
 /* ------------------- my account  deshboard-----------------------*/
 body.woocommerce-account .account-page-title{
     padding-top:7px;
@@ -997,6 +1007,7 @@ body.loggedin-winkelmandje-crtl .woocommerce-mini-cart .woocommerce-mini-cart-it
     margin-bottom: 20px;
     background: #F8F8F8;
 }
+
 body.loggedin-winkelmandje-crtl .woocommerce-mini-cart__buttons.buttons a{
     width: 210px;
     height: 40px;
