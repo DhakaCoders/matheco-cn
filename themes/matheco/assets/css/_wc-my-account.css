@@ -3,10 +3,10 @@ body.woocommerce-account .woocommerce form .form-row{
     padding-left:0px!important;
     padding-right:0px!important;
 }
-body.woocommerce form .form-row .required{
+.woocommerce form .form-row .required{
     font-size: 13px;
 }
-body.woocommerce form .show-password-input, body.woocommerce-page form .show-password-input{
+.woocommerce form .show-password-input,.woocommerce-page form .show-password-input{
     top: 50%;
     transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -1133,11 +1133,11 @@ body.woocommerce-checkout .custom-checkout-order-review table td.product-name st
  }
 body.woocommerce-checkout .custom-checkout-order-review table td,
 body.woocommerce-checkout .custom-checkout-order-review table th{
-    padding: 6px 0px;
+    padding: 3px 0px;
 }
 body.woocommerce-checkout .custom-checkout-order-review table tr.order-total th, 
 body.woocommerce-checkout .custom-checkout-order-review table tr.order-total td {
-    padding-top: 23px!important;
+    padding-top: 20px!important;
 }
 body.woocommerce-checkout #customer_details .col-1 {
     width: 66%;
@@ -1297,7 +1297,7 @@ body.woocommerce-checkout .woocommerce-shipping-fields .woocommerce-form__label{
 
 }
 body.woocommerce-checkout .woocommerce-shipping-fields .woocommerce-form__label input#ship-to-different-address-checkbox{
-    margin-top:-1px!important;
+    margin-top:0px!important;
     cursor: pointer;
 }
 body.woocommerce-checkout .default-page-con h3{
@@ -1537,10 +1537,6 @@ body.woocommerce-checkout section.checkout-top-sec{
     }
     body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .woocommerce-input-wrapper textarea{
         min-height: 200px;
-    }
-    body.loggedin-deshboard-crtl .woocommerce-account-grds-cntlr{
-        padding-top: 45px;
-        padding-bottom: 55px;
     }
     body.woocommerce-edit-account .innerpage-con-wrap .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation,
     body.woocommerce-orders .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation,
