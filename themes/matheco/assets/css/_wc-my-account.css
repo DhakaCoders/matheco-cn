@@ -15,6 +15,13 @@ body.woocommerce-account .woocommerce form .form-row{
     color: #fff;
     font-size: 14px;
 }
+.woocommerce-password-strength.good,
+.woocommerce-password-strength.strong{
+    font-size:14px;
+}
+body.woocommerce-checkout .custom-checkout-order-review table.shop_table{
+    margin-bottom: 12px;
+}
 /* ------------------- my account  deshboard-----------------------*/
 body.woocommerce-account .account-page-title{
     padding-top:7px;
