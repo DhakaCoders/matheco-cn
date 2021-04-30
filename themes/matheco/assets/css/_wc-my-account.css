@@ -9,6 +9,12 @@ body.woocommerce-account .woocommerce form .form-row{
 .woocommerce form .show-password-input,.woocommerce-page form .show-password-input{
     margin-top: 6px;
 }
+.woocommerce-password-strength.bad {
+    background-color: #D9534F;
+    border-color: #D9534F;
+    color: #fff;
+    font-size: 14px;
+}
 /* ------------------- my account  deshboard-----------------------*/
 body.woocommerce-account .account-page-title{
     padding-top:7px;
