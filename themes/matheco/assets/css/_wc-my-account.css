@@ -513,7 +513,8 @@ body.woocommerce-account .login-register-wrap a:hover {
 ;
 }
 body.woocommerce-account .woocommerce form .form-row label, 
-body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row label{
+body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row label,
+body.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row label{
     color: #243444;
     font-weight:600;
 }
