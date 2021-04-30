@@ -34,10 +34,9 @@
 }
 .thumbnails-cntlr{
 	position: relative;
-	max-width: 465px;
+	max-width: 390px;
     width: 100%;
     margin: auto;
-	padding: 0 28px;
 }
 .thumbnails-cntlr span:hover{
 	opacity: .7;
@@ -75,9 +74,11 @@
 }
 .fl-singgle-pro-prev{
 	left: 0;
+	margin-left: -42px;
 }
 .fl-singgle-pro-next{
 	right: 0;
+	margin-right: -42px;
 }
 .fl-singgle-pro-prev,
 .fl-singgle-pro-next{
@@ -85,6 +86,9 @@
 	height: 22px;
 	position: absolute;
 	cursor: pointer;
+	display: flex!important;
+	justify-content: center!important;
+	align-items: center!important;
 	top: 50%;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
@@ -216,7 +220,7 @@
 	margin-bottom: 100px;
 }
 .fl-product{
-	padding-bottom: 70px;
+	padding-bottom: 39px;
 }
 .single-product .woocommerce-notices-wrapper,
 .archive .woocommerce-notices-wrapper{
@@ -647,11 +651,11 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
     	margin-left: 0;
     	margin-right: 0;
     	border-bottom: 2px solid #f0ede8;
-    	padding-bottom: 35px;
+    	padding-bottom: 36px;
+    	margin-bottom: 0;
 	}
 	.custom-info-crtl,
 	.thumbnails-cntlr{
-	    max-width: 550px;
     	width:100%;
     	margin-left: auto;
     	margin-right: auto;
@@ -778,10 +782,6 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 }
 
 @media(max-width: 767px){
-	.thumbnails-cntlr .thumb-bg img{
-		padding: 2px;
-		max-height: 40px;
-	}
 	.single-product .wc-product-title{
 		display: none!important;
 	}
@@ -872,6 +872,10 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.single-product .faq-detials-sec{
 		padding: 60px 0 45px;
 	}
+	.single-product .back-to-dashboard-btn-cntlr{
+		padding: 0 20px;
+		margin: 0 -20px!important;
+	}
 }
 
 
@@ -956,6 +960,9 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.related.products.related-pro-crtl h2{
 		font-size: 20px;
 	}
+	.thumbnails-cntlr{
+		max-width: 325px;
+	}
 }
 
 @media(max-width: 479px){
@@ -971,14 +978,8 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.term-geschenken .fl-products-cntlr ul.products > li{
 	    width:100%!important;
 	 }
-    .fl-singgle-pro-prev, .fl-singgle-pro-next {
-        display: block!important;
-    }
     .related.products.related-pro-crtl h2 {
         margin-bottom: 25px;
-    }
-    .thumbnails-cntlr .thumb-bg > div {
-        height: 54px;
     }
     .main-img-crtl{
     	box-shadow: initial;
@@ -1000,6 +1001,12 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.thumbnails-cntlr .thumb-bg{
 		padding: 0 5px;
 	}
+	.thumbnails-cntlr{
+		max-width: 269px;
+	}
+	.thumbnails-cntlr .thumb-bg img{
+		max-height: 50px;
+	}
 }
 
 @media(max-width: 359px){
@@ -1009,5 +1016,16 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	}
 	.thumbnails-cntlr .thumb-bg > div{
 		padding: 5px;
+	}
+	.fl-singgle-pro-prev{
+		margin-left: -24px;
+	}
+	.fl-singgle-pro-next{
+		margin-right: -24px;
+	}
+	svg.pro-thumb-lft-arrow,
+	svg.pro-thumb-rgt-arrow{
+		height: 14px;
+		width: 14px;
 	}
 }
