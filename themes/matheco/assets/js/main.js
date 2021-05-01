@@ -386,10 +386,6 @@ $(".type-order-format .woocommerce-input-wrapper span").each(function(){
 $(".billing-address-wrap .same-as-shipping-address,.login-info p:first-child,.form-row .woocommerce-form__label-for-checkbox").each(function(){
         $(this).append('<div class="checkbox-custom"></div>')
   });
-//shop page checkbox
-$(".sidebar-widget #cat_filterform ul li lable").each(function(){
-        $(this).append('<div class="product-checkbox"></div>')
-  });
 /*start of Milon*/
 
 if( $('.TeamMemberSlider').length ){
