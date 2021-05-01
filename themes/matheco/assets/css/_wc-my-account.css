@@ -1885,14 +1885,17 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-account .login-register-wrap a{
         font-size:12px;
     }
-    body.woocommerce-account .woocommerce input[type="text"], 
+    body.woocommerce-account .woocommerce input[type="text"],
+    body.woocommerce-account .woocommerce form .form-row select, 
     body.woocommerce-account .woocommerce input[type="email"], 
     body.woocommerce-account .woocommerce input[type="tel"], 
     body.woocommerce-account .woocommerce input[type="password"], 
     body.woocommerce-account .woocommerce textarea{
         height:48px;
+        border-width: 2px!important;
 
     }
+
     
     body.woocommerce-edit-account .woocommerce input[type="text"], 
     body.woocommerce-edit-account .woocommerce input[type="email"], 
@@ -1970,7 +1973,8 @@ body.woocommerce-checkout section.checkout-top-sec{
     .woocommerce input[type="text"], .woocommerce input[type="email"],
     .woocommerce input[type="tel"], 
     .woocommerce input[type="password"], 
-    .woocommerce textarea{
+    .woocommerce textarea,
+    body.woocommerce-account .woocommerce form .form-row select{
         padding-left: 15px;
         font-size:12px;
     }
@@ -2008,9 +2012,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.hide-account-title .register-btn button[type="submit"]{
         margin-top: 22px;
     }
-    body.hide-account-title .contact-er-msg {
+    /*body.hide-account-title .contact-er-msg {
         padding: 21px 18px;
-    }
+    }*/
     body.hide-account-title #billing_last_name_field label{
         display: none;
     }
