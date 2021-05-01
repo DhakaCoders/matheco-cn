@@ -868,9 +868,9 @@ body.woocommerce-account .woocommerce-input-wrapper .bootstrap-select{
     border-bottom-right-radius: 1px;
     
 }
-.same-as-shipping-address input[type=radio]:checked ~ .checkbox-custom,
-.login-info p > input[type=radio]:checked ~ .checkbox-custom,
-.woocommerce-form .form-row .woocommerce-form__label-for-checkbox input[type=radio]:checked ~ .checkbox-custom{
+.same-as-shipping-address input[type=checkbox]:checked ~ .checkbox-custom,
+.login-info p > input[type=checkbox]:checked ~ .checkbox-custom,
+.woocommerce-form .form-row .woocommerce-form__label-for-checkbox input[type=checkbox]:checked ~ .checkbox-custom{
     background: #2285E3;
     border-color:#2285E3;
 }
@@ -1885,14 +1885,17 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-account .login-register-wrap a{
         font-size:12px;
     }
-    body.woocommerce-account .woocommerce input[type="text"], 
+    body.woocommerce-account .woocommerce input[type="text"],
+    body.woocommerce-account .woocommerce form .form-row select, 
     body.woocommerce-account .woocommerce input[type="email"], 
     body.woocommerce-account .woocommerce input[type="tel"], 
     body.woocommerce-account .woocommerce input[type="password"], 
     body.woocommerce-account .woocommerce textarea{
         height:48px;
+        border-width: 2px!important;
 
     }
+
     
     body.woocommerce-edit-account .woocommerce input[type="text"], 
     body.woocommerce-edit-account .woocommerce input[type="email"], 
@@ -1970,9 +1973,11 @@ body.woocommerce-checkout section.checkout-top-sec{
     .woocommerce input[type="text"], .woocommerce input[type="email"],
     .woocommerce input[type="tel"], 
     .woocommerce input[type="password"], 
-    .woocommerce textarea{
+    .woocommerce textarea,
+    body.woocommerce-account .woocommerce form .form-row select{
         padding-left: 15px;
         font-size:12px;
+        border-width: 2px!important;
     }
     body.hide-account-title .register-top-title{
         margin-bottom: 0px;
@@ -2008,9 +2013,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.hide-account-title .register-btn button[type="submit"]{
         margin-top: 22px;
     }
-    body.hide-account-title .contact-er-msg {
+    /*body.hide-account-title .contact-er-msg {
         padding: 21px 18px;
-    }
+    }*/
     body.hide-account-title #billing_last_name_field label{
         display: none;
     }
@@ -2456,9 +2461,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-account #customer_login .u-column2.col-2 > h2{
         font-size:26px;
     }
-    body.woocommerce-account .default-page-con{
+/*    body.woocommerce-account .default-page-con{
         padding-top:20px;
-    }
+    }*/
     body.woocommerce-orders .default-page-con{
         padding-top:0px;
     }

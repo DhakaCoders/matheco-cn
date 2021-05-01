@@ -588,7 +588,12 @@ placeholder
 	.contact-google-map{
 		height: 510px;
 	}
-
+	.contact-er-msg span{
+		font-size: 14px;
+	}
+	.contact-er-msg {
+	    padding: 11px 18px;
+	}
 }
 
 @media(max-width: 575px){
@@ -644,7 +649,7 @@ placeholder
 	    padding-top: 30px;
 	}
 	.contact-er-msg span{
-		font-size: 15px;
+		font-size: 12px;
 	}
 
 
@@ -656,9 +661,6 @@ placeholder
 	}
 	.contact-er-msg {
 	    padding: 13px 5px 13px 15px;
-	}
-	.contact-er-msg span{
-		padding-left: 22px;
 	}
 
 }
