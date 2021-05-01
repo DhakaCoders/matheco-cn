@@ -297,7 +297,7 @@
 /* Product attribute filter */
 .woocommerce .woocommerce-widget-layered-nav-list a::before,
  .sidebar-widget ul.product-categories li a:before,
- .sidebar-widget #cat_filterform ul li lable:before {
+ .sidebar-widget #cat_filterform ul li lable .product-checkbox:before{
     margin-right: 0;
     content: "";
     width: 18px !important;
@@ -314,9 +314,10 @@
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
 }
-/* .sidebar-widget #cat_filterform ul li lable input{
-	display: none;
-} */
+
+.sidebar-widget #cat_filterform ul li lable .product-checkbox{
+	position: relative;
+}
 .woocommerce .woocommerce-widget-layered-nav-list .woocommerce-widget-layered-nav-list__item--chosen a::before {
     background: #a00 !important;
     content: "" !important;
@@ -374,7 +375,7 @@
 	cursor: pointer;
 }
 .product-categories .cat-item.current-cat a:after,
-.sidebar-widget #cat_filterform ul li lable:after{
+.sidebar-widget #cat_filterform ul li lable .product-checkbox:after{
 	content: "";
     position: absolute;
     left: 6px;
