@@ -204,8 +204,20 @@ body.woocommerce-cart .empty-cart-btn a{
 }
 body.woocommerce-cart .empty-cart-btn a:hover,
 body.woocommerce-cart .add-more-product a:hover,
-body.woocommerce-cart.woocommerce-page .product-name a:hover{
+body.woocommerce-cart.woocommerce-page .product-name a:hover,
+.export-file p:hover{
 	color: #D9534F;
+}
+.export-file p{
+	transition: all .5s;
+    -webkit-transition: all .5s;
+    -ms-transition: all .5s;
+}
+.export-file p:hover:after{
+	background-image: url(../images/document-hover.svg)!important;
+}
+body.woocommerce-cart .add-more-product a:hover:after{
+	left:-5px;
 }
 body.woocommerce-cart table.shop_table tbody tr td.actions{
 	display: none;
@@ -354,6 +366,9 @@ body.woocommerce-cart .add-more-product a:after{
 	width: 14px;
 	background-image: url('../images/left-arrow-icon.svg');
 	background-repeat: no-repeat;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
 }
 body.woocommerce-cart .add-more-product a:hover:after{
 	background:url('../images/left-arrow-icon-hover.svg');

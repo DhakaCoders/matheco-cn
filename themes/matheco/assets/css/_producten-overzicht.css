@@ -172,8 +172,9 @@
 	text-decoration: none;
 }
 .fl-product-grd .fl-pro-grd-title a:hover,
-.pro-item-desc .pro-item-descWrap .pro-item-desc-title a:hover{
-    color: #2285e3;   
+.pro-item-desc .pro-item-descWrap .pro-item-desc-title a:hover,
+.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle .popup-product-title a:hover{
+    color: #2285e3!important;   
 }
 .post-type-archive-product .fl-pro-grd-price,
 .single-product .fl-pro-grd-price{

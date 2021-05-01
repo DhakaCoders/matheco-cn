@@ -273,9 +273,12 @@ span.xoo-cp-close.xoo-cp-icon-cross:before{
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% auto;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -ms-transition: all .5s;
 }
 span.xoo-cp-close.xoo-cp-icon-cross:hover:before{
-    background: url(../images/single-pro-popup-cross-icon-hover.svg);
+    background: url(../images/single-pro-popup-cross-icon-hover1.svg);
 }
 .product-quantity form .quantity{
 	display: flex;
