@@ -219,8 +219,8 @@
 .single-product .breadcrumb-sec{
 	margin-bottom: 100px;
 }
-.fl-product{
-	padding-bottom: 39px;
+.single-product .fl-product{
+	padding-bottom: 103px;
 }
 .single-product .woocommerce-notices-wrapper,
 .archive .woocommerce-notices-wrapper{
@@ -551,7 +551,14 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 .single-product .faq-detials-sec .mtc-faq-entry-title{
 	margin-bottom: 23px;
 }
+.single-product.woocommerce div.product form.cart,
+.single-product.woocommerce div.product div.summary{
+	margin-bottom: 0!important;
+}
 
+/* ================= */
+/* == responsive == */
+/* =============== */
 
 @media (max-width: 1699px){
 	.woocommerce div.product .product_title{
@@ -577,13 +584,10 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.woocommerce div.product .product_title{
 		font-size: 28px;
 	}
-	/*.related.products ul li{*/
-	/*	width:33.3333%!important;*/
-	/*}*/
 }
 @media(max-width: 1399px){
 	.single-product .fl-product{
-		padding-bottom: 60px;
+		padding-bottom: 90px;
 	}
 	.related.products.related-pro-crtl{
 		padding: 90px 0;
@@ -615,7 +619,7 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 		margin-bottom: 75px;
 	}
 	.single-product .fl-product{
-		padding-bottom: 50px;
+		padding-bottom: 80px;
 	}
 	.related.products.related-pro-crtl{
 		padding: 80px 0;
@@ -764,7 +768,7 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 		margin-bottom: 65px;
 	}
 	.single-product .fl-product{
-		padding-bottom: 40px;
+		padding-bottom: 70px;
 	}
 	.related.products.related-pro-crtl{
 		padding: 70px 0;
@@ -864,7 +868,7 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 		margin-bottom: 55px;
 	}
 	.single-product .fl-product{
-		padding-bottom: 30px;
+		padding-bottom: 60px;
 	}
 	.related.products.related-pro-crtl{
 		padding: 60px 0;
@@ -955,7 +959,7 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 		margin-bottom: 45px;
 	}
 	.single-product .fl-product{
-		padding-bottom: 20px;
+		padding-bottom: 56px;
 	}
 	.woocommerce div.product .product_title{
 		font-size: 22px;
