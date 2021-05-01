@@ -216,7 +216,7 @@ contact-info-sec-wrp
     padding: 10px 10px 10px!important;
     text-align: center;
 }
-.contact-form-wrp .wpforms-field-pagebreak .wpforms-clear button:hover,
+/*.contact-form-wrp .wpforms-field-pagebreak .wpforms-clear button:hover,
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button:hover{
 	background: transparent!important;
 	color: #2285E3!important;
@@ -224,7 +224,7 @@ contact-info-sec-wrp
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
-}
+}*/
 .wpforms-field-text p{
 	font-size: 13px;
 	line-height: 1.3;
