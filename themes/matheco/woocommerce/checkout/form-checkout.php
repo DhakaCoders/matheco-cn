@@ -81,7 +81,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 			<div class="col-2">
 				
 				<div class="custom-checkout-order-review">
-					<h3 class="order-review-title"><?php esc_html_e( 'Overzicht', 'woocommerce' ); ?></h3>
+					<h3 class="order-review-title">5. <?php esc_html_e( 'Overzicht', 'woocommerce' ); ?></h3>
 					<?php 
 						wc_get_template_part('checkout/review-order');
 						wc_get_template_part('checkout/cbv-form-coupon');
