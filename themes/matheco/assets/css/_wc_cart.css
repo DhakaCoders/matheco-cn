@@ -208,14 +208,6 @@ body.woocommerce-cart.woocommerce-page .product-name a:hover,
 .export-file p:hover{
 	color: #D9534F;
 }
-.export-file p{
-	transition: all .5s;
-    -webkit-transition: all .5s;
-    -ms-transition: all .5s;
-}
-.export-file p:hover:after{
-	background-image: url(../images/document-hover.svg)!important;
-}
 body.woocommerce-cart .add-more-product a:hover:after{
 	left:-5px;
 }

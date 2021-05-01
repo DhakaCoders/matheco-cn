@@ -16,7 +16,7 @@ if( !is_cart() ) get_template_part('templates/breadcrumbs');
     <div class="block-955">
       <div class="dfp-promo-module clearfix">
         <?php 
-          if( !empty($title) ) printf('<div class="pgTitleBlock"><h1 class="dfp-promo-module-title fl-h1">%s</h1></div>', $title); 
+          if( !empty($title) ) printf('<div><strong class="dfp-promo-module-title fl-h1">%s</strong></div>', $title); 
           if( !empty($afbeelding) ){
             echo '<div class="dfp-plate-one-img-bx">'. cbv_get_image_tag($afbeelding).'</div>';
           }
@@ -32,6 +32,23 @@ if( !is_cart() ) get_template_part('templates/breadcrumbs');
         <?php if( !empty( $beschrijving ) ) echo wpautop($beschrijving); ?>
       </div>
     </div>
+    <?php }elseif( get_row_layout() == 'afbeelding_tekst' ){ 
+      $fc_afbeelding = get_sub_field('fc_afbeelding');
+      $imgsrc = cbv_get_image_src($fc_afbeelding, 'dfpageg1');
+      $fc_tekst = get_sub_field('fc_tekst');
+      $positie_afbeelding = get_sub_field('positie_afbeelding');
+      $imgposcls = ( $positie_afbeelding == 'right' ) ? ' fl-dft-rgtimg-lftdes' : '';
+      ?>
+      <div class="block-955">
+      <div class="fl-dft-overflow-controller">
+        <div class="fl-dft-lftimg-rgtdes clearfix<?php echo $imgposcls; ?>">
+          <div class="fl-dft-lftimg-rgtdes-lft mHc" style="background-image: url(<?php echo $imgsrc; ?>);"></div>
+          <div class="fl-dft-lftimg-rgtdes-rgt mHc">
+            <?php echo wpautop($fc_tekst); ?>
+          </div>
+        </div>
+      </div>
+      </div>
     <?php }elseif( get_row_layout() == 'galerij' ){ 
     $galleries = get_sub_field('fc_afbeeldingen');
     $lightbox = get_sub_field('lightbox');
