@@ -175,4 +175,50 @@
     </div>
   </div>
 </section>
+
+<section class="mtc-faq-sec">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="mtc-faq-sec-inr">
+          <div class="sec-entry-hdr hm-faq-entry-hdr">
+            <h2 class="mtc-faq-entry-title fl-h3">FAQ</h2>
+            <p>Vitae quis leo a massa. Ut vulputate suscipit amet, urna nulla tristique. Eu enim non ullamcorper.</p>
+          </div>
+          <div class="mct-faq-accordion-ctlr clearfix">
+            <ul class="reset-list clearfix">
+              <li>
+                <div class="mct-faq-accordion">
+                  <h5 class="mct-faq-accordion-title fl-h5">Ut vulputate suscipit amet, urna nulla tristique?<span></span></h5>
+                  <div class="mct-faq-accordion-des">
+                    <p>Purus consequat sed egestas. Nunc purus molestie sed tincidunt tellus adipiscing. Vestibulum, eu purus sapien mi sit. Interdum porttitor at praesent auctor diam. Purus gravida nulla amet.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="mct-faq-accordion">
+                  <h5 class="mct-faq-accordion-title fl-h5">At dictum dignissim ut odio egestas commodo nulla?<span></span></h5>
+                  <div class="mct-faq-accordion-des">
+                    <p>Purus consequat sed egestas. Nunc purus molestie sed tincidunt tellus adipiscing. Vestibulum, eu purus sapien mi sit. Interdum porttitor at praesent auctor diam. Purus gravida nulla amet.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="mct-faq-accordion">
+                  <h5 class="mct-faq-accordion-title fl-h5">Dolor augue ut tempus, non in quis diam aenean morbi?<span></span></h5>
+                  <div class="mct-faq-accordion-des">
+                    <p>Purus consequat sed egestas. Nunc purus molestie sed tincidunt tellus adipiscing. Vestibulum, eu purus sapien mi sit. Interdum porttitor at praesent auctor diam. Purus gravida nulla amet.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="mtc-faq-btn">
+            <a href="#">ONTDEK MEER</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <?php get_footer(); ?>
