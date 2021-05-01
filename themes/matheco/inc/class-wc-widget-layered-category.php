@@ -226,7 +226,7 @@ class WC_Widget_Layered_Category extends WC_Widget {
 		}
 		foreach ( $terms as $term ) {
 			$checked = (in_array($term->term_id, $current_filter))?'checked':'';
-			echo '<li><lable for="term_'.$term->slug.'"><input '.$checked.' type="checkbox" id="term_'.$term->slug.'" name="filter_cats" value="' . $term->term_id . '"> '.$term->name.'</label></li>';
+			echo '<li class="filter-term-list"><lable for="term_'.$term->slug.'"><input '.$checked.' type="checkbox" id="term_'.$term->slug.'" name="filter_cats" value="' . $term->term_id . '"> '.$term->name.'</label></li>';
 		}
 
 		echo '</ul></form>';
