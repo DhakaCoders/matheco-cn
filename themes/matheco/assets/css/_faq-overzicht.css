@@ -32,8 +32,13 @@
 .faq-entry-hdr-btn ul li a:hover{
 	color: #2285E3;
 }
-
-
+.faq-overzicht-sec .mct-faq-accordion-title span{
+	width: 40px;
+	height:40px;
+}
+.faq-overzicht-sec .mct-faq-accordion{
+	padding:31px 40px;
+}
 .faq-overzicht-sec{
 	padding: 72px 0 50px;
 	background: #F8F8F8;
