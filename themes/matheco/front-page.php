@@ -202,15 +202,23 @@
   </div>
 </section>
 <?php endif; ?>
-
+<?php endif; ?>
+<?php  
+  $showhide_faq = get_field('showhide_faq', HOMEID);
+  if($showhide_faq): 
+    $faq = get_field('faqsec', HOMEID);
+    if($faq):
+?>
 <section class="mtc-faq-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="mtc-faq-sec-inr">
           <div class="sec-entry-hdr hm-faq-entry-hdr">
-            <h2 class="mtc-faq-entry-title fl-h3">FAQ</h2>
-            <p>Vitae quis leo a massa. Ut vulputate suscipit amet, urna nulla tristique. Eu enim non ullamcorper.</p>
+          <?php 
+            if( !empty($faq['titel']) ) printf( '<h2 class="mtc-faq-entry-title fl-h3">%s</h2>', $faq['titel'] );
+            if( !empty($faq['beschrijving']) ) echo wpautop( $faq['beschrijving'] );
+          ?>
           </div>
           <div class="mct-faq-accordion-ctlr clearfix">
             <ul class="reset-list clearfix">
@@ -240,13 +248,17 @@
               </li>
             </ul>
           </div>
-          <div class="mtc-faq-btn">
-            <a href="#">ONTDEK MEER</a>
-          </div>
+          <?php 
+            $faqknop = $faq['knop'];
+            if( is_array( $faqknop ) &&  !empty( $faqknop['url'] ) ){
+              printf('<div class="mtc-faq-btn"><a href="%s" target="%s">%s</a></div>', $overknop['url'], $faqknop['target'], $faqknop['title']); 
+            }
+          ?>
         </div>
       </div>
     </div>
   </div>
 </section>
-
+<?php endif; ?>
+<?php endif; ?>
 <?php get_footer(); ?>
