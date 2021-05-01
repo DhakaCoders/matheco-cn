@@ -183,6 +183,15 @@
 	height: 24px;
 	left: 0;
 }
+.export-file p,
+.export-file p:after{
+	transition: all .5s;
+    -webkit-transition: all .5s;
+    -ms-transition: all .5s;
+}
+.export-file p:hover:after{
+	background-image: url(../images/document-hover.svg)!important;
+}
 .meta-crtl{
 	font-weight: 700;
 	color: #707C88;
