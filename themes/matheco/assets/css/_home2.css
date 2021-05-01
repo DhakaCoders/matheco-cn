@@ -57,10 +57,14 @@
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
-	width: 36px;
-	height: 36px;
+	width: 28px;
+	height: 28px;
 	background: #2285E3;
 	border-radius: 100%;
+}
+.home .mct-faq-accordion-title span{
+	width: 36px;
+	height: 36px;
 }
 .mct-faq-accordion-title span:after{
 	content: "\f067"!important;
@@ -88,6 +92,7 @@
 	padding-top: 25px;
 	border-top: 1px solid #F3F3F3;
 	display: none;
+	margin-top: 30px;
 }
 .mct-faq-accordion-des p{
 	margin-bottom: 0;
