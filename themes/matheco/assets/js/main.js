@@ -371,12 +371,12 @@ $('.thumbnails-cntlr .thumbnails').slick({
 });
 }
 
-if( $('.sidebar-widget ul li lable input').length ){
-  $(".sidebar-widget ul li lable input").on('click',function(){
-    $(this).parent().toggleClass('active-lable');
-  });
+// if( $('.sidebar-widget ul li lable input').length ){
+//   $(".sidebar-widget ul li lable input").on('click',function(){
+//     $(this).parent().toggleClass('active-lable');
+//   });
 
-}
+// }
 
 
 /* start of Niaz */
