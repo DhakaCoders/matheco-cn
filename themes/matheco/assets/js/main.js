@@ -549,7 +549,6 @@ $("#apply_coupon_code").click(function(){
 $("#cat_filterform").on("change", "#cat_filter input:checkbox", function(){
   var url = $("#cat_filterform").data('url');
   var minMax = $("#minMaxPrice").data('minmax');
-  console.log(url);
   var selected = new Array();  
   $('#cat_filter input:checkbox:checked').each(function () {
       selected.push(this.value);
