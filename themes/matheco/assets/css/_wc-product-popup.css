@@ -8,6 +8,12 @@
     letter-spacing: -0.02em;
     margin-bottom: 25px;
 }
+.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-pdetails-col-2 .product-order-btn a:first-child:hover,
+.xoo-cp-container .popup-bottom-btn a:first-child:hover{
+	background:transparent!important;
+	color:#D9534F!important;
+	border:#D9534F!important;
+}
 .xoo-cp-active{
 	background: rgba(252, 248, 248, 0.88)!important;
 }
@@ -249,6 +255,15 @@ h3.pro-item-desc-title{
 .flex-fill > div:nth-child(2){
 	text-align: center;
 }
+span.xoo-cp-close.xoo-cp-icon-cross{
+	background-color:transparent;
+	right: 76px;
+	top: 60px;
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+}
+
 span.xoo-cp-close.xoo-cp-icon-cross:before{
     content: "";
     background: url(../images/single-pro-popup-cross-icon.svg);
@@ -258,8 +273,9 @@ span.xoo-cp-close.xoo-cp-icon-cross:before{
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% auto;
-    right: 76px;
-    top: 60px;
+}
+span.xoo-cp-close.xoo-cp-icon-cross:hover:before{
+    background: url(../images/single-pro-popup-cross-icon-hover.svg);
 }
 .product-quantity form .quantity{
 	display: flex;

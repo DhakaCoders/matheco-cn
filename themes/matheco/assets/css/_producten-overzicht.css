@@ -171,7 +171,8 @@
 .fl-product-grd .fl-pro-grd-title a{
 	text-decoration: none;
 }
-.fl-product-grd .fl-pro-grd-title a:hover {
+.fl-product-grd .fl-pro-grd-title a:hover,
+.pro-item-desc .pro-item-descWrap .pro-item-desc-title a:hover{
     color: #2285e3;   
 }
 .post-type-archive-product .fl-pro-grd-price,

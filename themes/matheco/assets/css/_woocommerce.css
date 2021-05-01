@@ -57,7 +57,9 @@ body.woocommerce-checkout .payment-method-crtl .custom-checkout-btn button[type=
 body.woocommerce-checkout .custom-checkout-order-review .ywgc_enter_code .form-row-last button[type=submit]:hover,
 body.woocommerce-cart .cart_totals .wc-proceed-to-checkout a.checkout-button:hover,
 body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon button:hover,
-body.woocommerce-cart .product-quantity .quantity.qty1 span:hover{
+body.woocommerce-cart .product-quantity .quantity.qty1 span:hover,
+.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-pdetails-col-2 .product-order-btn a:hover,
+.popup-bottom-btn a:hover{
 	background: #D9534F!important;
 	color: #fff!important;
 	border-color:#D9534F!important;
