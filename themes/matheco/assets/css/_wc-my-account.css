@@ -2456,9 +2456,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-account #customer_login .u-column2.col-2 > h2{
         font-size:26px;
     }
-    body.woocommerce-account .default-page-con{
+/*    body.woocommerce-account .default-page-con{
         padding-top:20px;
-    }
+    }*/
     body.woocommerce-orders .default-page-con{
         padding-top:0px;
     }
