@@ -172,8 +172,9 @@
 	text-decoration: none;
 }
 .fl-product-grd .fl-pro-grd-title a:hover,
-.pro-item-desc .pro-item-descWrap .pro-item-desc-title a:hover{
-    color: #2285e3;   
+.pro-item-desc .pro-item-descWrap .pro-item-desc-title a:hover,
+.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle .popup-product-title a:hover{
+    color: #2285e3!important;   
 }
 .post-type-archive-product .fl-pro-grd-price,
 .single-product .fl-pro-grd-price{
@@ -297,7 +298,7 @@
 /* Product attribute filter */
 .woocommerce .woocommerce-widget-layered-nav-list a::before,
  .sidebar-widget ul.product-categories li a:before,
- .sidebar-widget #cat_filterform ul li lable:before {
+ .sidebar-widget #cat_filterform ul li lable:before{
     margin-right: 0;
     content: "";
     width: 18px !important;
@@ -314,9 +315,6 @@
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
 }
-/* .sidebar-widget #cat_filterform ul li lable input{
-	display: none;
-} */
 .woocommerce .woocommerce-widget-layered-nav-list .woocommerce-widget-layered-nav-list__item--chosen a::before {
     background: #a00 !important;
     content: "" !important;
@@ -358,7 +356,7 @@
 	position: relative;
 }
 .product-categories .cat-item.current-cat a:before,
-.sidebar-widget #cat_filterform ul li lable.active-lable:before{
+.sidebar-widget #cat_filterform ul li.term-active lable:before{
 	background: #2285e3!important;
     border-color: #2285e3!important;
 }
@@ -372,20 +370,22 @@
 	height: 100%;
 	opacity: 0;
 	cursor: pointer;
+	z-index:1;
 }
 .product-categories .cat-item.current-cat a:after,
 .sidebar-widget #cat_filterform ul li lable:after{
 	content: "";
     position: absolute;
-    left: 6px;
-    top: 2px;
-    width: 6px;
+    left: 7px;
+    top: 3px;
+    width: 5px;
     height: 10px;
     border: solid #fff;
     border-width: 0 2px 2px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+    border-bottom-right-radius: 4px;
 }
 
 .term-geschenken .fl-products-cntlr ul.products > li .dfp-cta-module{
