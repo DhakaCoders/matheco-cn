@@ -79,6 +79,7 @@
     line-height: 1.3;
     color: #707C88;
     margin-bottom: 0;
+    text-transform: initial;
 }
 .chckout-prgrs-col-2{
 	text-align: center;
