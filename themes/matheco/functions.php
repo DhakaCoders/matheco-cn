@@ -5,8 +5,9 @@ Constants->>
 defined('THEME_NAME') or define('THEME_NAME', 'matheco');
 defined( 'THEME_DIR' ) or define( 'THEME_DIR', get_template_directory() );
 defined( 'THEME_URI' ) or define( 'THEME_URI', get_template_directory_uri() );
-
 defined( 'HOMEID' ) or define( 'HOMEID', get_option('page_on_front') );
+
+defined( 'PERPAGE_FAQ' ) or define( 'PERPAGE_FAQ', 6 );
 
 /**
 Theme Setup->>
@@ -159,28 +160,20 @@ if( !function_exists('cbv_custom_both_breadcrump')){
     }
 }
 
-function custom_post_type_query($query) {
-    if (isset($_GET['sortby']) && $query->is_main_query() && !is_admin() ) {
-        /*$query->set('post_type',array('faqs'));
-        $query->set( 'posts_per_page', 2 );
-        $query->set( 'orderby', 'modified' );*/
-        $post_type = 'post';
-        $order = '';
 
-        if( isset($_GET['sortby']) && !empty($_GET['sortby']) ){
-            $order = $_GET['sortby'];
+function custom_post_type_query($query) {
+    if (!is_admin() && $query->is_main_query()){
+
+        if(is_tax('cat_faq')){
+          // where 24 is number of posts per page on custom taxonomy pages
+          $query->set('posts_per_page', PERPAGE_FAQ);
+
         }
-        if( !empty( $order ) ){
-            $query->set('post_type', $post_type);
-            $query->set( 'order', $order );
-        }
-    }elseif(!isset($_GET['orderby']) && !isset($_GET['sortby']) && $query->is_main_query() && !is_admin()){
-        $query->set( 'order', 'asc' );
     }
     return $query;
 }
  
-//add_filter('pre_get_posts','custom_post_type_query');
+add_filter('pre_get_posts','custom_post_type_query');
 
 add_filter( 'woocommerce_product_query_tax_query', 'filter_products_with_specific_product_tags', 10, 2 );
 function filter_products_with_specific_product_tags( $tax_query, $query ) {

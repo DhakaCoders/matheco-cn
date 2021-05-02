@@ -95,28 +95,84 @@ if( !is_cart() ) get_template_part('templates/breadcrumbs');
       </div>
     </div>
 
+    <?php }elseif( get_row_layout() == 'quick_knops' ){ 
+    $fc_producten = get_sub_field('fc_producten');
+    $fc_login = get_sub_field('fc_login');
+    ?>
+    <div class="block-1440">
+      <div class="dfp-box-grd-module">
+        <div class="hm-box-grd-sec-cntlr clearfix">
+          <?php if($fc_producten): ?>
+          <div class="hm-box-grd-col hm-product-box-cntlr">
+            <div>
+              <div>
+                <div class="hm-box-grd-icon">
+                  <i><img src="<?php echo THEME_URI; ?>/assets/images/shopping-cart.svg" alt=""></i>
+                </div>
+                <?php 
+                  if( !empty($fc_producten['fc_titel']) ) printf( '<h4 class="product-item-title fl-h4">%s</h4>', $fc_producten['fc_titel'] );
+                  if( !empty($fc_producten['fc_tekst']) ) echo wpautop( $fc_producten['fc_tekst'] );
+                  $prodknop = $fc_producten['knop'];
+                  if( is_array( $prodknop ) &&  !empty( $prodknop['url'] ) ){
+                      printf('<a href="%s" target="%s">%s</a>', $prodknop['url'], $prodknop['target'], $prodknop['title']); 
+                  }else{
+                    printf('<a href="%s">PRODUCTEN</a>', get_permalink(get_option( 'woocommerce_shop_page_id' )));
+                  }
+                ?>
+              </div>
+            </div>
+          </div>
+          <?php endif; ?>
+          <?php if($fc_login): ?>
+          <div class="hm-box-grd-col hm-login-box-cntlr">
+            <div>
+              <div>
+                <div class="hm-box-grd-icon">
+                  <i><img src="<?php echo THEME_URI; ?>/assets/images/user-icon.svg" alt=""></i>
+                </div>
+                <?php 
+                  if( !empty($fc_login['fc_titel']) ) printf( '<h4 class="product-item-title fl-h4">%s</h4>', $fc_login['fc_titel'] );
+                  if( !empty($fc_login['fc_tekst']) ) echo wpautop( $fc_login['fc_tekst'] );
+                  $logknop = $fc_login['knop'];
+                  if( is_array( $logknop ) &&  !empty( $logknop['url'] ) ){
+                      printf('<div class="ftball-bcwrd-btn"><a href="%s" target="%s"><span>%s</span><i><svg class="external-icon" width="12" height="12" viewBox="0 0 12 12" fill="#fff">
+                    <use xlink:href="#external-icon"></use></svg></i></a></div>', $logknop['url'], $logknop['target'], $logknop['title']); 
+                  }else{
+                    printf('<a class="login-icon" href="%s">
+                      <span>LOGIN</span>
+                      <i><svg class="external-icon" width="12" height="12" viewBox="0 0 12 12" fill="#fff">
+                    <use xlink:href="#external-icon"></use></svg></i>
+                    </a>', get_permalink(get_option( 'woocommerce_myaccount_page_id' )));
+                  }
+                ?>
+              </div>
+            </div>
+          </div>
+          <?php endif; ?>
+        </div>
+      </div>
+    </div>
     <?php }elseif( get_row_layout() == 'cta' ){ 
     $fc_titel = get_sub_field('fc_titel');
     $fc_tekst = get_sub_field('fc_tekst');
     $fc_knop = get_sub_field('fc_knop');
     ?>
     <div class="block-955">
-        <div class="dfp-cta-module clearfix">
-          <div class="cta-ctlr">
-          <?php 
-            if( !empty($fc_titel) ) printf('<h4 class="cta-title fl-h4">%s</h4>', $fc_titel);
-            if( !empty($fc_tekst) ) echo wpautop( $fc_tekst );
+      <div class="dfp-cta-module clearfix">
+        <div class="cta-ctlr">
+        <?php 
+          if( !empty($fc_titel) ) printf('<h4 class="cta-title fl-h4">%s</h4>', $fc_titel);
+          if( !empty($fc_tekst) ) echo wpautop( $fc_tekst );
 
-            if( is_array( $fc_knop ) &&  !empty( $fc_knop['url'] ) ){
-              printf('<div class="cta-btn"><a class="fl-trnsprnt-btn" href="%s" target="%s">%s</a></div>', $fc_knop['url'], $fc_knop['target'], $fc_knop['title']); 
-            }
-          ?>
-          </div>
+          if( is_array( $fc_knop ) &&  !empty( $fc_knop['url'] ) ){
+            printf('<div class="cta-btn"><a class="fl-trnsprnt-btn" href="%s" target="%s">%s</a></div>', $fc_knop['url'], $fc_knop['target'], $fc_knop['title']); 
+          }
+        ?>
         </div>
       </div>
     </div>
     <?php }elseif( get_row_layout() == 'faq' ){
-    $fc_title = get_sub_field('fc_title');
+    $fc_titel = get_sub_field('fc_titel');
     $faqIDS = get_sub_field('fc_faq');
     if( !empty($faqIDS) ){
     $count = count($faqIDS);
@@ -132,28 +188,30 @@ if( !is_cart() ) get_template_part('templates/breadcrumbs');
     }else{
     $faqQuery = new WP_Query(array());
     }
-    if( $faqQuery->have_posts() ):
     ?>
+    <div class="block-955">
     <div class="dfp-faq-module">
       <div class="mct-faq-accordion-ctlr clearfix">
-      <?php if( !empty($fc_title) ) printf('<h4 class="mct-faq-title fl-h4">%s</h4>', $fc_title); ?>
+      <?php if( !empty($fc_titel) ) printf('<h4 class="mct-faq-title fl-h4">%s</h4>', $fc_titel); ?>
+      <?php if( $faqQuery->have_posts() ): ?>
       <ul class="reset-list clearfix">
       <?php 
         while($faqQuery->have_posts()): $faqQuery->the_post(); 
       ?>
       <li>
         <div class="mct-faq-accordion">
-          <h5 class="mct-faq-accordion-title">Dolor augue ut tempus, non in quis diam aenean morbi.<span></span></h5>
+          <h5 class="mct-faq-accordion-title"><?php the_title(); ?><span></span></h5>
           <div class="mct-faq-accordion-des">
-            <p>Purus consequat sed egestas. Nunc purus molestie sed tincidunt tellus adipiscing. Vestibulum, eu purus sapien mi sit. Interdum porttitor at praesent auctor diam. Purus gravida nulla amet.</p>
+            <?php the_excerpt(); ?>
           </div>
         </div>
       </li>
       <?php endwhile; ?>
       </ul>
+      <?php endif; wp_reset_postdata(); ?>
       </div>
     </div>
-    <?php endif; wp_reset_postdata(); ?>
+    </div>
     <?php }elseif( get_row_layout() == 'diensten' ){
     $dienIDS = get_sub_field('fc_diensten');
     if( !empty($dienIDS) ){
@@ -178,18 +236,20 @@ if( !is_cart() ) get_template_part('templates/breadcrumbs');
           <div class="our-services-grid OurServicesSlider">
             <?php 
               while($dieQuery->have_posts()): $dieQuery->the_post(); 
+                $imgID = get_post_thumbnail_id(get_the_ID());
+                $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): '';
             ?>
             <div class="our-services-item-wrap">
               <div class="our-services-item-cnlr">
                 <div class="our-services-item">
                   <div class="our-srvcs-icon">
-                    <i><img src="assets/images/our-services-item-icon-001.svg" alt=""></i>
+                    <i><?php echo $imgtag; ?></i>
                   </div>
                   <div class="our-services-hding mHc">
-                    <h4 class="our-services-item-title fl-h4">Toonbanken</h4>
+                    <h4 class="our-services-item-title fl-h4"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                   </div>
                   <div class="our-services-item-desc">
-                    <p>Vitae quis leo a massa. Ut vulputate suscipit amet, urna nulla tristique. Eu enim non ullamcorper.</p>
+                    <?php the_excerpt(); ?>
                   </div>
                 </div>
               </div>
@@ -198,6 +258,60 @@ if( !is_cart() ) get_template_part('templates/breadcrumbs');
           </div>
         </div>
       </div>
+    </div>
+    <?php endif; wp_reset_postdata(); ?>
+    <?php }elseif( get_row_layout() == 'producten' ){
+    $productIDS = get_sub_field('selecteer_producten');
+    if( !empty($productIDS) ){
+    $pcount = count($productIDS);
+    $pQuery = new WP_Query(array(
+    'post_type' => 'product',
+    'posts_per_page'=> $pcount,
+    'post__in' => $productIDS,
+    'orderby' => 'date',
+    'order'=> 'asc',
+
+    ));
+
+    }else{
+    $pQuery = new WP_Query(array());
+    }
+    if( $pQuery->have_posts() ):
+    ?>
+    <div class="block-1440">
+    <div class="hm-product-module hide-sm">
+    <div class="hm-product-grds clearfix">
+    <?php 
+      while($pQuery->have_posts()): $pQuery->the_post(); 
+      global $product, $woocommerce, $post;
+      $label  = __('MEER INFO', 'woocommerce');
+      $seller_flash = get_field('seller_flash', $product->get_id());
+      $sh_desc = $product->get_short_description();
+      $gridtag = cbv_get_image_tag( get_post_thumbnail_id($product->get_id()), 'pgrid' );
+    ?>
+      <div class="hmProdctGrdsSlideItme">
+        <?php 
+        echo '<div class="fl-product-grd mHc">
+        <div class="fl-product-grd-inr">
+          <div class="fl-pro-grd-img-cntlr mHc1">
+            <a href="'.get_permalink( $product->get_id() ).'" class="overlay-link"></a>
+            '.$gridtag.'
+          </div>
+          <div class="fl-pro-grd-des mHc2">
+            <h4 class="fl-h5 fl-pro-grd-title"><a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a></h4>
+            <div class="fl-pro-grd-price">'.$product->get_price_html().'</div>';
+          if( !empty($sh_desc) ) echo wpautop($sh_desc);
+          echo '</div>';  
+          echo '<div class="fl-pro-grd-btn">
+            <a class="fl-trnsprnt-btn prdt-btn" href="'.get_permalink( $product->get_id() ).'">MEER INFO</a>
+          </div>
+        </div>
+        </div>';
+        ?>
+      </div>
+    <?php endwhile; ?>
+    </div>
+    </div>
     </div>
     <?php endif; wp_reset_postdata(); ?>
     <?php }elseif( get_row_layout() == 'table' ){

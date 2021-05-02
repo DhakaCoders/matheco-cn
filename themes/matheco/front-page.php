@@ -220,40 +220,54 @@
             if( !empty($faq['beschrijving']) ) echo wpautop( $faq['beschrijving'] );
           ?>
           </div>
+          <?php 
+          $faqIDS = $faq['selecteer_faq'];
+          if( !empty($faqIDS) ){
+            $faqQuery = new WP_Query(array(
+              'post_type' => 'faqs',
+              'posts_per_page'=> 3,
+              'post__in' => $faqIDS,
+              'orderby' => 'date',
+              'order'=> 'asc',
+
+            ));
+                
+          }else{
+            $faqQuery = new WP_Query(array(
+              'post_type' => 'faqs',
+              'posts_per_page'=> 3,
+              'orderby' => 'date',
+              'order'=> 'desc',
+
+            ));
+          }
+          if( $faqQuery->have_posts() ):
+          ?>
           <div class="mct-faq-accordion-ctlr clearfix">
             <ul class="reset-list clearfix">
+              <?php 
+                while($faqQuery->have_posts()): $faqQuery->the_post(); 
+              ?>
               <li>
                 <div class="mct-faq-accordion">
-                  <h5 class="mct-faq-accordion-title fl-h5">Ut vulputate suscipit amet, urna nulla tristique?<span></span></h5>
+                  <h5 class="mct-faq-accordion-title fl-h5"><?php the_title(); ?><span></span></h5>
                   <div class="mct-faq-accordion-des">
-                    <p>Purus consequat sed egestas. Nunc purus molestie sed tincidunt tellus adipiscing. Vestibulum, eu purus sapien mi sit. Interdum porttitor at praesent auctor diam. Purus gravida nulla amet.</p>
+                    <?php the_excerpt(); ?>
                   </div>
                 </div>
               </li>
-              <li>
-                <div class="mct-faq-accordion">
-                  <h5 class="mct-faq-accordion-title fl-h5">At dictum dignissim ut odio egestas commodo nulla?<span></span></h5>
-                  <div class="mct-faq-accordion-des">
-                    <p>Purus consequat sed egestas. Nunc purus molestie sed tincidunt tellus adipiscing. Vestibulum, eu purus sapien mi sit. Interdum porttitor at praesent auctor diam. Purus gravida nulla amet.</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="mct-faq-accordion">
-                  <h5 class="mct-faq-accordion-title fl-h5">Dolor augue ut tempus, non in quis diam aenean morbi?<span></span></h5>
-                  <div class="mct-faq-accordion-des">
-                    <p>Purus consequat sed egestas. Nunc purus molestie sed tincidunt tellus adipiscing. Vestibulum, eu purus sapien mi sit. Interdum porttitor at praesent auctor diam. Purus gravida nulla amet.</p>
-                  </div>
-                </div>
-              </li>
+              <?php endwhile; ?>
             </ul>
           </div>
           <?php 
             $faqknop = $faq['knop'];
             if( is_array( $faqknop ) &&  !empty( $faqknop['url'] ) ){
               printf('<div class="mtc-faq-btn"><a href="%s" target="%s">%s</a></div>', $overknop['url'], $faqknop['target'], $faqknop['title']); 
+            }else{
+              printf('<div class="mtc-faq-btn"><a href="%s">ONTDEK MEER</a></div>', get_link_by_page_template('page-faq.')); 
             }
           ?>
+          <?php endif; wp_reset_postdata(); ?>
         </div>
       </div>
     </div>

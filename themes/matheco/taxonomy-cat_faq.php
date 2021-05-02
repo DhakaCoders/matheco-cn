@@ -1,15 +1,13 @@
 <?php 
-/*
-Template Name: FAQ 
-*/
-get_header();
-  $thisID = get_the_ID(); 
+  get_header();
+  $thisID = get_id_by_page_template('page-faq.php'); 
   get_template_part('templates/breadcrumbs');
   $intro = get_field('introsec', $thisID);
   $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title();
   $terms = get_terms( 'cat_faq', array(
       'hide_empty' => false,
   ) );
+  $current_term = get_queried_object();
 ?>
 <section class="faq-overzicht-entry-hdr-sec">
   <div class="container">
@@ -21,21 +19,18 @@ get_header();
               if( !empty($page_title) ) printf( '<h2 class="mtc-faq-entry-title fl-h3">%s</h2>', $page_title );
               if( !empty($intro['beschrijving']) ) echo wpautop( $intro['beschrijving'] );
             ?>
-            <?php 
-              if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
-            ?>
+            <?php if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){ ?>
             <div class="faq-entry-hdr-btn">
               <ul class="reset-list">
                 <?php 
+                  
                   $i = 1; foreach ( $terms as $term ) { 
+                    $activeClass = ($current_term->term_id == $term->term_id )?' class="active"':'';
                 ?>
-                  <?php 
-                    if( $i == 1  ): 
-                    $active_term_id = $term->term_id; 
-                  ?>
-                   <li class="active"><a href="<?php echo get_permalink($thisID); ?>"><?php echo $term->name; ?></a></li>
+                  <?php if( $i == 1  ): ?>
+                   <li><a href="<?php echo get_permalink($thisID); ?>"><?php echo $term->name; ?></a></li>
                   <?php else: ?>
-                  <li><a href="<?php echo esc_url( get_term_link( $term ) ); ?>"><?php echo $term->name; ?></a></li>
+                  <li<?php echo $activeClass; ?>><a href="<?php echo esc_url( get_term_link( $term ) ); ?>"><?php echo $term->name; ?></a></li>
                   <?php endif; ?>
                 <?php $i++; } ?>
               </ul>
@@ -55,14 +50,13 @@ $query = new WP_Query(array(
   'paged' => $paged,
   'orderby' => 'date',
   'order'=> 'desc',
-  'tax_query' => array(
-      array(
-          'taxonomy' => 'cat_faq',
-          'field'    => 'term_id',
-          'terms'    => array( $active_term_id ),
-      ),
-  ),
-
+    'tax_query' => array(
+        array(
+            'taxonomy' => 'cat_faq',
+            'field'    => 'term_id',
+            'terms'    => array( $current_term->term_id ),
+        ),
+    ),
 ));
 if( $query->have_posts() ):
 ?>
