@@ -368,8 +368,13 @@ body.woocommerce-cart .product-quantity .quantity{
 	margin: 0 -12px;
 	flex-wrap: wrap;
 }
-.related-pro-crtl .hasRelatedProduct{
+.related-pro-crtl .hasRelatedProduct,
+.hm-product-grds{
     margin:0 -12px
+}
+.hm-product-module {
+    margin-top: 54px;
+    margin-bottom: 55px;
 }
 /*.related.products ul li{*/
 /*	width: 25%!important;*/
@@ -421,7 +426,8 @@ body.single-product div.product form.cart .button:before{
 	padding-top: 98px;
 	padding-bottom: 100px;
 }
-.related-pro-crtl .product{
+.related-pro-crtl .product,
+.hmProdctGrdsSlideItme{
     padding: 0 12px;    
 }
 .related.products.related-pro-crtl h2{

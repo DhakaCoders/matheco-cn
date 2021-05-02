@@ -138,6 +138,9 @@
 .fl-product-grd {
 	background: #fff;
 }
+.hmProdctGrdsSlideItme .fl-product-grd{
+	border: 4px solid #F8F8F8;
+}
 .fl-product-grd-inr{
 	overflow: hidden;
 }
