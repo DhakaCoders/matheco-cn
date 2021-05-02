@@ -543,7 +543,9 @@
 }
 
 @media (max-width: 1499px) {
-	
+	.dft-hm-product-module .hmProdctGrdsSlideItme .fl-product-grd{
+		border: 3px solid #F8F8F8;
+	}	
 }
 
 @media (max-width: 1399px) {
