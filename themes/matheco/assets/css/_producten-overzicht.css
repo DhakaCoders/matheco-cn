@@ -702,6 +702,9 @@
 	.fl-pro-grd-des{
 		padding: 34px 0 7px;
 	}
+	.dft-hm-product-module .hmProdctGrdsSlideItme .fl-product-grd{
+		border: 2px solid #F8F8F8;
+	}
 }
 
 @media (max-width: 639px) {
