@@ -482,7 +482,7 @@ if( $('.TeamMemberSlider').length ){
     $('.TeamMemberSlider').slick({
       dots: false,
       infinite: false,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 4000,
       speed: 700,
       slidesToShow: 4,
