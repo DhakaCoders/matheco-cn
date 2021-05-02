@@ -267,7 +267,7 @@ if( $('.OurServicesSlider').length ){
       dots: false,
       arrows:false,
       infinite: true,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 4000,
       speed: 700,
       slidesToShow: 4,

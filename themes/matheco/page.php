@@ -239,8 +239,8 @@ if( !is_cart() ) get_template_part('templates/breadcrumbs');
                 $imgID = get_post_thumbnail_id(get_the_ID());
                 $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): '';
             ?>
-            <div class="our-services-item-wrap mHc">
-              <div class="our-services-item-cnlr">
+            <div class="our-services-item-wrap">
+              <div class="our-services-item-cnlr mHc">
                 <div class="our-services-item">
                   <div class="our-srvcs-icon">
                     <i><?php echo $imgtag; ?></i>
