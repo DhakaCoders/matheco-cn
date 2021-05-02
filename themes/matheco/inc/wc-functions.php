@@ -70,12 +70,12 @@ if (!function_exists('add_shorttext_below_title_loop')) {
     function add_shorttext_below_title_loop() {
         global $product, $woocommerce, $post;
         $label  = __('MEER INFO', 'woocommerce');
-        $seller_flash = get_field('seller_flash', $product->get_id());
         $sh_desc = $product->get_short_description();
         $gridtag = cbv_get_image_tag( get_post_thumbnail_id($product->get_id()), 'pgrid' );
         echo '<div class="fl-product-grd mHc">
-        <div class="fl-product-grd-inr">
-          <div class="fl-pro-grd-img-cntlr mHc1">
+        <div class="fl-product-grd-inr">';
+        wc_get_template_part('loop/sale','flash');
+        echo '<div class="fl-pro-grd-img-cntlr mHc1">
             <a href="'.get_permalink( $product->get_id() ).'" class="overlay-link"></a>
             '.$gridtag.'
           </div>

@@ -270,6 +270,9 @@
 		padding-left: 60px;
 		min-height: 600px;
 	}
+	.our-services-item{
+		padding:55px 0px;
+	}
 }
 @media(max-width: 991px){
 	.hm-banner{
@@ -364,7 +367,6 @@
 		margin-bottom: 18px;
 	}
 	.our-services-grid{
-		margin: 0;
 		display: block;
 
 	}
@@ -380,7 +382,6 @@
 		max-width:initial;
 	}
 	.our-services-item-wrap{
-		padding: 0;
 		max-width: 320px;
 		width: 100%;
 		margin: 0 auto;
@@ -402,7 +403,7 @@
 		clear: initial;
 	}
 	.OurServicesSlider.slick-dotted.slick-slider{
-		margin-bottom: 0!important;
+		margin-bottom: 55px!important;
 	}
 	.our-services-item-title br{
 		display: none;
