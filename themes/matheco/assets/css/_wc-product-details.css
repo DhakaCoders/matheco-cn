@@ -388,6 +388,18 @@ body.woocommerce-cart .product-quantity .quantity{
 .dfp-our-service-module .slick-slider .slick-dots li.slick-active{
      background: #243444!important;
 }
+.hm-product-grds .hmProdctGrdsSlideItme,
+.our-services-grid .our-services-item-wrap{
+	display: none;
+}
+.hm-product-grds .hmProdctGrdsSlideItme:first-child,
+.our-services-grid .our-services-item-wrap:first-child{
+	display: block;
+}
+.hm-product-grds.slick-initialized .hmProdctGrdsSlideItme,
+.our-services-grid.slick-initialized .our-services-item-wrap{
+	display: block;
+}
 /*.related.products ul li{*/
 /*	width: 25%!important;*/
 /*	padding: 0 12px 0!important;*/
