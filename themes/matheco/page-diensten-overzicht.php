@@ -19,7 +19,7 @@ get_template_part('templates/breadcrumbs');
       <div class="col-md-12">
         <div class="dops-grds-cntlr">
           <div class="our-services-grid-cntlr">
-            <div class="our-services-grid OurServicesSlider">
+            <div class="our-services-grid">
               <div class="our-services-item-wrap mHc">
                 <div class="our-services-item-cnlr">
                   <div class="our-services-item">
