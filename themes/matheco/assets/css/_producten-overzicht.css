@@ -181,7 +181,8 @@
     color: #2285e3!important;   
 }
 .post-type-archive-product .fl-pro-grd-price,
-.single-product .fl-pro-grd-price{
+.single-product .fl-pro-grd-price,
+.dft-hm-product-module .fl-pro-grd-price{
     padding-bottom: 24px;
 }
 .fl-pro-grd-price span.woocommerce-Price-amount bdi,
