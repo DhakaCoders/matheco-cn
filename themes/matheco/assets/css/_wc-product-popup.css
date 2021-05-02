@@ -61,7 +61,7 @@
     justify-content: center;
 }
 .xoo-cp-content .popup-product-title{
-	padding-bottom: 6px;
+	padding-bottom: 1px;
 }
 .xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle .popup-product-title a{
 	font-size: 20px;
@@ -257,7 +257,7 @@ h3.pro-item-desc-title{
 }
 span.xoo-cp-close.xoo-cp-icon-cross{
 	background-color:transparent;
-	right: 76px;
+	right: 31px;
 	top: 60px;
 	width: 10px;
 	height: 10px;
@@ -435,9 +435,13 @@ small.woocommerce-price-suffix,
 	    width: 180px;
 	}
 }
+
 @media(max-width:992px){
+	span.xoo-cp-close.xoo-cp-icon-cross{
+		right: 21px;
+	}
 	.xoo-cp-container h5 {
-	    font-size: 25px;
+	    font-size: 24px;
 	}
 	.xoo-cp-container {
 	    max-width: 600px;
@@ -519,12 +523,17 @@ small.woocommerce-price-suffix,
 	    padding-top:20px;
 	}
 	.xoo-cp-container h5 {
-	    font-size: 20px;
 	    margin-bottom:20px;
 	}
-	span.xoo-cp-close.xoo-cp-icon-cross:before{
-		right: 35px;
-		top:39px;
+	.spotlight-popup-cntlr h5.popup-related{
+		font-size: 22px!important;
+	}
+	span.xoo-cp-close.xoo-cp-icon-cross{
+		top: 34px;
+		right: 21px;
+	}
+	.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle .popup-product-title a{
+		font-size: 16px;
 	}
 	.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-pdetails-col-1, 
 	.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-pdetails-col-2,
@@ -606,9 +615,14 @@ small.woocommerce-price-suffix,
 	.spotlight-popup-cntlr .spotlight-popup{
 		margin-bottom: 0;
 	}
+	body.woocommerce-cart .page-title h1{
+		margin-bottom: 40px;
+	}
 }
 @media(max-width:575px){
-
+	.spotlight-popup-cntlr h5.popup-related{
+		font-size: 20px!important;
+	}
 	.xoo-cp-container h5{
 	    margin-bottom: 10px;
 	}
@@ -672,6 +686,9 @@ small.woocommerce-price-suffix,
 		max-width:420px;
 		padding-bottom: 30px;
 	}
+	span.xoo-cp-close.xoo-cp-icon-cross{
+		top: 27px;
+	}
 }
 
 @media(max-width:479px){
@@ -683,7 +700,10 @@ small.woocommerce-price-suffix,
 
 @media(max-width:375px){
 	.xoo-cp-container {
-	    max-width: 290px;
+	    max-width: 300px;
 	    padding-top: 20px;
+	}
+	.pro-item-desc{
+		padding-left: 22px;
 	}
 }

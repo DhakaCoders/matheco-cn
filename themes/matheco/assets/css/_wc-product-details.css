@@ -224,7 +224,6 @@
 .meta-crtl ul li > span{
 	display: block;
 	text-transform: capitalize;
-	display: flex;
 }
 .single-product .breadcrumb-sec{
 	margin-bottom: 100px;
