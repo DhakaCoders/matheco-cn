@@ -384,8 +384,8 @@ body.woocommerce-cart .product-quantity .quantity{
 .dfp-our-service-module .slick-slider .slick-dots li{
     background: #f8f8f8!important;
 }
-.dft-hm-product-module .slick-slider .slick-dots li,
-.dfp-our-service-module .slick-slider .slick-dots li{
+.dft-hm-product-module .slick-slider .slick-dots li.slick-active,
+.dfp-our-service-module .slick-slider .slick-dots li.slick-active{
      background: #243444!important;
 }
 /*.related.products ul li{*/
