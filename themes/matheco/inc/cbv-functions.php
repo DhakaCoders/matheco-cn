@@ -90,7 +90,7 @@ function array_insert(&$array, $position, $insert_arr)
 
 function cbv_get_excerpt(){
   global $post;
-  $link = ' <a href="'. get_permalink($post->ID) . '">Continue Reading...</a>';
+  $link = ' <a href="'. get_permalink($post->ID) . '">meer...</a>';
   $excerpt = explode(' ', get_the_excerpt());
   array_pop($excerpt);
   $excerpt = implode(" ",$excerpt);
