@@ -581,6 +581,9 @@
 	.fl-pro-grd-btn{
 		padding: 0 26px 30px;
 	}
+	.contacteer-inner p{
+		margin-bottom: 42px;
+	}
 }
 
 @media (max-width: 991px) {
@@ -620,9 +623,6 @@
 	.fl-products-cntlr .fl-pro-grd-price{
 		font-size: 15px;
 	}
-	/* .product-page-col-rgt .fl-pagination-ctlr{
-		padding-bottom: 160px;
-	} */
 	.contacteer-ons{
 		padding-bottom: 60px;
 	}
@@ -634,6 +634,9 @@
 	}
 	.main-img-crtl{
 		box-shadow: none!important;
+	}
+	.contacteer-inner p{
+		margin-bottom: 39px;
 	}
 }
 
@@ -705,6 +708,9 @@
 	.dft-hm-product-module .hmProdctGrdsSlideItme .fl-product-grd{
 		border: 2px solid #F8F8F8;
 	}
+	.contacteer-inner p{
+		margin-bottom: 36px;
+	}
 }
 
 @media (max-width: 639px) {
@@ -716,6 +722,9 @@
 	}
 	.fl-products-cntlr ul.products{
 		padding-bottom: 30px!important;
+	}
+	.contacteer-inner p{
+		margin-bottom: 34px;
 	}
 }
 
@@ -752,6 +761,9 @@
 	}
 	.fl-pro-grd-des{
 		padding: 34px 0 9px;
+	}
+	.contacteer-inner p{
+		margin-bottom: 32px;
 	}
 }
 
