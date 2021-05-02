@@ -318,12 +318,12 @@
 		clear: initial;
 	}
 	.our-services-item{
-		min-height: 380px;
+		padding:48px 0px;
 	}
-	.dfp-our-service-module .our-services-item,
+/*	.dfp-our-service-module .our-services-item,
 	.home .our-services-item{
 		min-height: initial;
-	}
+	}*/
 
 	.ftball-bcwrd-desc-cntlr{
 		padding-left: 15px;
@@ -392,12 +392,12 @@
 		width: initial;
 	}
 	.our-services-item{
-		min-height: 337px;
+		padding:30px 0;
 	}
-	.dfp-our-service-module .our-services-item,
+/*	.dfp-our-service-module .our-services-item,
 	.home .our-services-item{
 		min-height: initial;
-	}
+	}*/
 	.our-services-item-wrap:nth-child(2n+1){
 		clear: initial;
 	}
