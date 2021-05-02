@@ -590,10 +590,24 @@ Gallery design
 	    overflow-y: hidden;
 	    white-space: nowrap;
 	}
-	.table-dsc::-webkit-scrollbar {
+	.table-dsc::-webkit-scrollbar{
 	  height: 6px;
 	}
-	.table-dsc::-webkit-scrollbar-thumb {
+	.table-dsc::-moz-scrollbar{
+	  height: 6px;
+	}
+	.table-dsc::-ms-scrollbar{
+	  height: 6px;
+	}
+	.table-dsc::-webkit-scrollbar-thumb{
+	  background: #2285E3;
+	  border-radius: 4px;
+	}
+	.table-dsc::-moz-scrollbar-thumb{
+	  background: #2285E3;
+	  border-radius: 4px;
+	}
+	.table-dsc::-ms-scrollbar-thumb{
 	  background: #2285E3;
 	  border-radius: 4px;
 	}
