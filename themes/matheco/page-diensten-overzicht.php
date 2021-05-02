@@ -20,13 +20,13 @@ get_template_part('templates/breadcrumbs');
         <div class="dops-grds-cntlr">
           <div class="our-services-grid-cntlr">
             <div class="our-services-grid OurServicesSlider">
-              <div class="our-services-item-wrap">
+              <div class="our-services-item-wrap mHc">
                 <div class="our-services-item-cnlr">
                   <div class="our-services-item">
                     <div class="our-srvcs-icon">
                       <i><img src="<?php echo THEME_URI; ?>/assets/images/our-services-item-icon-001.svg" alt=""></i>
                     </div>
-                    <div class="our-services-hding mHc">
+                    <div class="our-services-hding mHc1">
                       <h4 class="our-services-item-title fl-h4"><a href="#">Toonbanken</a></h4>
                     </div>
                     <div class="our-services-item-desc">
@@ -36,13 +36,13 @@ get_template_part('templates/breadcrumbs');
                 </div>
               </div>
 
-              <div class="our-services-item-wrap">
+              <div class="our-services-item-wrap mHc">
                 <div class="our-services-item-cnlr">
                   <div class="our-services-item">
                     <div class="our-srvcs-icon">
                       <i><img src="<?php echo THEME_URI; ?>/assets/images/our-services-item-icon-002.svg" alt=""></i>
                     </div>
-                    <div class="our-services-hding mHc">
+                    <div class="our-services-hding mHc1">
                       <h4 class="our-services-item-title fl-h4"><a href="#">Airco <br>
                       en warmtepompen</a></h4>
                     </div>
@@ -53,13 +53,13 @@ get_template_part('templates/breadcrumbs');
                 </div>
               </div>
 
-              <div class="our-services-item-wrap">
+              <div class="our-services-item-wrap mHc">
                 <div class="our-services-item-cnlr">
                   <div class="our-services-item">
                     <div class="our-srvcs-icon">
                       <i><img src="<?php echo THEME_URI; ?>/assets/images/our-services-item-icon-003.svg" alt=""></i>
                     </div>
-                    <div class="our-services-hding mHc">
+                    <div class="our-services-hding mHc1">
                       <h4 class="our-services-item-title fl-h4"><a href="#">Verkoop <br>
                       koelinstallatie</a></h4>
                     </div>
@@ -70,13 +70,13 @@ get_template_part('templates/breadcrumbs');
                 </div>
               </div>
 
-              <div class="our-services-item-wrap">
+              <div class="our-services-item-wrap mHc">
                 <div class="our-services-item-cnlr">
                   <div class="our-services-item">
                     <div class="our-srvcs-icon">
                       <i><img src="<?php echo THEME_URI; ?>/assets/images/our-services-item-icon-004.svg" alt=""></i>
                     </div>
-                    <div class="our-services-hding mHc">
+                    <div class="our-services-hding mHc1">
                       <h4 class="our-services-item-title fl-h4"><a href="#"> Na <br>
                       verkoop</a></h4>
                     </div>
