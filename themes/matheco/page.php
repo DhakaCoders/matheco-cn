@@ -279,7 +279,7 @@ if( !is_cart() ) get_template_part('templates/breadcrumbs');
     if( $pQuery->have_posts() ):
     ?>
     <div class="block-1440">
-    <div class="hm-product-module hm-product-module hide-sm">
+    <div class="hm-product-module dft-hm-product-module hide-sm">
     <div class="hm-product-grds clearfix">
     <?php 
       while($pQuery->have_posts()): $pQuery->the_post(); 
