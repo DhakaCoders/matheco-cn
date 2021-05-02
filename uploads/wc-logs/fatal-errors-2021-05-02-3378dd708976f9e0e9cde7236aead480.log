@@ -1,10 +1,2 @@
-2021-05-02T06:39:10+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in D:\xampp\htdocs\projects\2021\matheco\wp-includes\Requests\Transport\cURL.php on line 163
-
-2021-05-02T07:24:51+00:00 CRITICAL Uncaught RuntimeException: Unable to claim actions. Database error. in D:\xampp\htdocs\projects\2021\matheco\matheco-cn\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_DBStore.php:675
-Stack trace:
-#0 D:\xampp\htdocs\projects\2021\matheco\matheco-cn\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_DBStore.php(599): ActionScheduler_DBStore->claim_actions(0, 25, NULL, Array, '')
-#1 D:\xampp\htdocs\projects\2021\matheco\matheco-cn\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(153): ActionScheduler_DBStore->stake_claim(25)
-#2 D:\xampp\htdocs\projects\2021\matheco\matheco-cn\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
-#3 D:\xampp\htdocs\projects\2021\matheco\wp-includes\class-wp-hook.php(287): ActionScheduler_QueueRunner->run('WP Cron')
-#4 D:\xampp\htdocs\projects\2021\matheco\wp-includes\class-wp-hook.php(311) in D:\xampp\htdocs\projects\2021\matheco\matheco-cn\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_DBStore.php on line 675
+2021-05-02T08:00:06+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in G:\xampp\htdocs\project\2021\March\matheco\matheco-cn\plugins\woocommerce\packages\woocommerce-admin\src\API\Reports\Customers\DataStore.php on line 8
 

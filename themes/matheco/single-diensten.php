@@ -82,7 +82,26 @@ get_template_part('templates/breadcrumbs');
 
   </article>
 </section>
+<?php 
+$faq = get_field('faqsec', $thisID);
+if($faq):
+  $faqIDs = $faq['selecteer_faq'];
+  if( !empty($faqIDs) ){
+  $count = count($faqIDs);
+  $faqQuery = new WP_Query(array(
+  'post_type' => 'faqs',
+  'posts_per_page'=> $count,
+  'post__in' => $faqIDs,
+  'orderby' => 'date',
+  'order'=> 'asc',
 
+  ));
+
+  }else{
+  $faqQuery = new WP_Query(array());
+  }
+?>
+<?php if( $faqQuery->have_posts() ): ?>
 <div class="diensten-details-ctlr">
   <section class="mtc-faq-sec">
     <div class="container">
@@ -90,42 +109,26 @@ get_template_part('templates/breadcrumbs');
         <div class="col-md-12">
           <div class="mtc-faq-sec-inr">
             <div class="sec-entry-hdr hm-faq-entry-hdr">
-              <h2 class="mtc-faq-entry-title fl-h3">FAQ</h2>
+              <?php if( !empty($faq['titel']) ) 
+                printf('<h2 class="mtc-faq-entry-title fl-h3">%s</h2>', $faq['titel']); 
+              else
+                printf('<h2 class="mtc-faq-entry-title fl-h3">%s</h2>', 'FAQ'); 
+              ?>
             </div>
             <div class="mct-faq-accordion-ctlr clearfix">
               <ul class="reset-list clearfix">
+                <?php 
+                  while($faqQuery->have_posts()): $faqQuery->the_post(); 
+                ?>
                 <li>
                   <div class="mct-faq-accordion">
-                    <h5 class="mct-faq-accordion-title">Dolor augue ut tempus, non in quis diam aenean morbi.<span></span></h5>
+                    <h5 class="mct-faq-accordion-title"><?php the_title(); ?><span></span></h5>
                     <div class="mct-faq-accordion-des">
-                      <p>Purus consequat sed egestas. Nunc purus molestie sed tincidunt tellus adipiscing. Vestibulum, eu purus sapien mi sit. Interdum porttitor at praesent auctor diam. Purus gravida nulla amet.</p>
+                      <?php the_excerpt(); ?>
                     </div>
                   </div>
                 </li>
-                <li>
-                  <div class="mct-faq-accordion">
-                    <h5 class="mct-faq-accordion-title">Dolor augue ut tempus, non in quis diam aenean morbi.<span></span></h5>
-                    <div class="mct-faq-accordion-des">
-                      <p>Purus consequat sed egestas. Nunc purus molestie sed tincidunt tellus adipiscing. Vestibulum, eu purus sapien mi sit. Interdum porttitor at praesent auctor diam. Purus gravida nulla amet.</p>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="mct-faq-accordion">
-                    <h5 class="mct-faq-accordion-title">Dolor augue ut tempus, non in quis diam aenean morbi.<span></span></h5>
-                    <div class="mct-faq-accordion-des">
-                      <p>Purus consequat sed egestas. Nunc purus molestie sed tincidunt tellus adipiscing. Vestibulum, eu purus sapien mi sit. Interdum porttitor at praesent auctor diam. Purus gravida nulla amet.</p>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="mct-faq-accordion">
-                    <h5 class="mct-faq-accordion-title">Dolor augue ut tempus, non in quis diam aenean morbi.<span></span></h5>
-                    <div class="mct-faq-accordion-des">
-                      <p>Purus consequat sed egestas. Nunc purus molestie sed tincidunt tellus adipiscing. Vestibulum, eu purus sapien mi sit. Interdum porttitor at praesent auctor diam. Purus gravida nulla amet.</p>
-                    </div>
-                  </div>
-                </li>
+                <?php endwhile; ?>
               </ul>
             </div>
           </div>
@@ -134,4 +137,6 @@ get_template_part('templates/breadcrumbs');
     </div>
   </section>
 </div>
+<?php endif; wp_reset_postdata(); ?>
+<?php endif; ?>
 <?php get_footer(); ?>
