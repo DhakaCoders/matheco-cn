@@ -187,17 +187,17 @@ if (!function_exists('add_custom_box_product_summary')) {
         echo '<div class="meta-crtl">';
         echo '<ul>';
             echo '<li>';
-                echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in"><strong>' .esc_html__( 'Categorie: ', 'woocommerce' ). '</strong> ', '</span>' );
+            echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in"><strong>'.esc_html__( 'Categorie:', 'woocommerce' ). '</strong>', '</span>' );
             echo '</li>';
             if ( wc_product_sku_enabled() && !empty($product->get_sku()) && ( $product->get_sku() || $product->is_type( 'variable' ) ) ) :
-                echo '<li>';
+                echo '<li><span class="sku">';
                 echo '<strong>';
                 esc_html_e( 'SKU:', 'woocommerce' );
                 echo '</strong>';
-                echo '<span class="sku">'.( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' ).'</span>';
-                echo '</li>';
+                echo ( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' );
+                echo '</span></li>';
             endif;
-            echo '<li><span><strong>Extra:</strong> 00000000</span></li>';
+            echo '<li><span class="extra"><strong>Extra:</strong>00000000</span></li>';
         echo '</ul>';
         echo '</div>';
         echo '<div class="price-quentity-ctrl">';

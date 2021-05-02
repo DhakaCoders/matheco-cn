@@ -15,7 +15,7 @@
                 <div class="hm-banner-desc">
                   <?php 
                     if( !empty($hbanner['titel']) ) printf( '<h1 class="hm-banner-title fl-h1">%s</h1>', $hbanner['titel'] );
-                    if( !empty($hbanner['subtitel']) ) printf( '%s', $hbanner['subtitel'] );
+                    if( !empty($hbanner['beschrijving']) ) echo wpautop($hbanner['beschrijving']);
                     $hbknop = $hbanner['knop'];
                     if( is_array( $hbknop ) &&  !empty( $hbknop['url'] ) ){
                         printf('<a href="%s" target="%s">%s</a>', $hbknop['url'], $hbknop['target'], $hbknop['title']); 
