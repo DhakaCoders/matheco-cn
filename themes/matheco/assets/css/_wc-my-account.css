@@ -1803,6 +1803,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation{
         float:none!important;
     }
+    body.woocommerce-checkout .woocommerce-shipping-fields .woocommerce-form__label input#ship-to-different-address-checkbox{
+        margin-top:-1px!important;
+    }
     body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li label:before, 
     .shipping-methods .woocommerce-shipping-methods li label:before,
     .shipping-methods .woocommerce-shipping-methods li input[type=hidden] + label:before{
