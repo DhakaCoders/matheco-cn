@@ -106,6 +106,9 @@
 	margin-bottom: 0;
 	text-align: center;
 }
+.our-services-item-title:hover a{
+	color:#2285E3;
+}
 .our-services-item-title a{
 	text-decoration: none;
 	color: #243444;
@@ -250,6 +253,23 @@
 	}
 	.our-services-item-desc p{
 		font-size: 15px;
+	}
+	.our-services-item{
+		padding: 60px 0;
+	}
+	.our-services-item-desc{
+	    padding: 0 20px;
+	}
+	.our-srvcs-icon{
+    	height: 135px;
+    	width: 135px;
+	}
+	.ftball-bcwrd-desc-cntlr{
+	    padding: 91px 0 110px 85px;
+	    min-height: 560px;
+	}
+	.ftball-bcwrd-img{
+		background-position:right center!important;
 	}
 }
 @media(max-width: 1399px){

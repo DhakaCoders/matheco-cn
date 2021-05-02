@@ -474,6 +474,9 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 	.shopping-cart a span{
 		font-size:11px;
 	}
+	.user-cart-cntlr .user {
+	    display: none;
+	}
 }
 @media(max-width: 639px){
 	
@@ -486,9 +489,9 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 	.shopping-cart{
 		padding-left: 6px;
 	}
-	.xs-hambergar{
+/*	.xs-hambergar{
 		padding-left: 15px;
-	}
+	}*/
 	.hdr-menu{
 		padding: 50px 40px;
 	}

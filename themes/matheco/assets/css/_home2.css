@@ -11,7 +11,9 @@
 	width: 100%;
 	margin: 0 auto;
 }
-
+.sec-entry-hdr p{
+    color: #243444;
+}
 .mtc-faq-entry-title{
 	margin-bottom: 7px;
 }

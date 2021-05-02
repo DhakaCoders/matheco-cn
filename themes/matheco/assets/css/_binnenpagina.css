@@ -48,7 +48,7 @@ ul{
 }
 .default-page-con ul li,
 ul li {
-	padding: 5px 0 5px 18px;
+	padding: 7px 0 7px 18px;
 	position: relative;
 	line-height: 22px;
 }
@@ -108,7 +108,7 @@ ol li::before {
 .dfp-promo-module-title{
 	font-weight: 600;
 	display: block;
-	margin-bottom: 35px;
+	margin-bottom: 38px;
 	letter-spacing: -0.02em;
 }
 .dfp-plate-one-img-bx img{
