@@ -1803,7 +1803,6 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation{
         float:none!important;
     }
-    .woocommerce-input-wrapper span .radio-custom:after, 
     body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li label:before, 
     .shipping-methods .woocommerce-shipping-methods li label:before,
     .shipping-methods .woocommerce-shipping-methods li input[type=hidden] + label:before{
