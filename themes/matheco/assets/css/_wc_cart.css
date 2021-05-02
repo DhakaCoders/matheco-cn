@@ -28,7 +28,7 @@ body.woocommerce-cart .order-totald.cart-total-crtl th{
 	color: #2285E3!important;
 }
 .cart-crtl .cart-total-crtl .shop_table tr:not(.giftcard) td *{
-	color: #525A61!important;
+	color: #243444!important;
 }
 .cart-crtl .cart-total-crtl .shop_table tr.cart-total-crtl td *{
 	font-weight: 700;
@@ -252,7 +252,7 @@ body.woocommerce-cart .cart_totals tbody tr td:last-child{
 body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon{
 	padding-bottom: 20px;
 	margin-bottom: 20px;
-	border-bottom: 1px solid #edeef0;
+	border-bottom: 2px solid #edeef0;
 	text-align: right;
 }
 body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code{
@@ -261,6 +261,7 @@ body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-f
 	height: 48px;
 	margin-bottom: 20px;
 	padding: 5px 15px!important;
+	color: #707C88;
 }
 body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code::placeholder{
 	color: #707C88;
@@ -341,6 +342,7 @@ body.woocommerce-cart .add-more-product a{
     margin-right: auto;
     display: table;
     text-decoration: none;
+    font-weight: 400;
 }
 body.woocommerce-cart .add-more-product{
 	text-align: right;
@@ -577,9 +579,12 @@ body.woocommerce-page.woocommerce-checkout .woocommerce-NoticeGroup-checkout .wo
 }
 
 @media(max-width: 768px){
+	.product-quantity, .product-remove{
+		width: 50%!important;
+	}
 	body.woocommerce-cart .innerpage-con-wrap .default-page-con{
 		padding-top: 0!important;
-		padding-bottom: 45px!important;
+		padding-bottom: 38px!important;
 	}
 	body.woocommerce-cart .page-title{
 		margin-top: 40px!important;
@@ -671,9 +676,6 @@ body.woocommerce-page.woocommerce-checkout .woocommerce-NoticeGroup-checkout .wo
 	body.woocommerce-cart table.shop_table_responsive tr:nth-child(2n) td, 
 	body.woocommerce-cart table.shop_table_responsive tr:nth-child(2n) td{
 		background: transparent!important;
-	}
-	body.woocommerce-cart .add-more-product {
-	    margin-bottom: 40px;
 	}
 	.cart-crtl{
 		padding-left: 15px;
