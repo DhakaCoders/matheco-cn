@@ -224,6 +224,7 @@
 .meta-crtl ul li > span{
 	display: block;
 	text-transform: capitalize;
+	display: flex;
 }
 .single-product .breadcrumb-sec{
 	margin-bottom: 100px;
@@ -379,8 +380,25 @@ body.woocommerce-cart .product-quantity .quantity{
 .dft-hm-product-module.hide-sm{
 	display: block!important;
 }
-.dft-hm-product-module .slick-slider .slick-dots li{
-	background:#f8f8f8;
+.dft-hm-product-module .slick-slider .slick-dots li,
+.dfp-our-service-module .slick-slider .slick-dots li{
+    background: #f8f8f8!important;
+}
+.dft-hm-product-module .slick-slider .slick-dots li.slick-active,
+.dfp-our-service-module .slick-slider .slick-dots li.slick-active{
+     background: #243444!important;
+}
+.hm-product-grds .hmProdctGrdsSlideItme,
+.our-services-grid.OurServicesSlider .our-services-item-wrap{
+	display: none;
+}
+.hm-product-grds .hmProdctGrdsSlideItme:first-child,
+.our-services-grid.OurServicesSlider .our-services-item-wrap:first-child{
+	display: block;
+}
+.hm-product-grds.slick-initialized .hmProdctGrdsSlideItme,
+.our-services-grid.OurServicesSlider.slick-initialized .our-services-item-wrap{
+	display: block;
 }
 /*.related.products ul li{*/
 /*	width: 25%!important;*/
@@ -482,9 +500,8 @@ span.onsale{
     line-height: 1!important;
     font-weight: 700!important;
     z-index: 11;
-    left: auto!important;
+    left: 15px!important;
     top: 15px!important;
-    right: 15px!important;
     border-radius: 0!important;
     padding-top: 2px!important;
     margin: 0!important;
