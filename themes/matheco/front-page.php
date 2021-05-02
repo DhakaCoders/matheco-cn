@@ -252,7 +252,7 @@
                 <div class="mct-faq-accordion">
                   <h5 class="mct-faq-accordion-title fl-h5"><?php the_title(); ?><span></span></h5>
                   <div class="mct-faq-accordion-des">
-                    <?php the_excerpt(); ?>
+                   <?php echo cbv_get_excerpt(); ?>
                   </div>
                 </div>
               </li>
