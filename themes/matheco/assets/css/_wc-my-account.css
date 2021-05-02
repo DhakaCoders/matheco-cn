@@ -1787,6 +1787,7 @@ body.woocommerce-checkout section.checkout-top-sec{
    body.woocommerce-checkout .woocommerce-notices-wrapper{
        margin-top: 40px;
    } 
+   
 }
 @media(max-width:768px){
     body.woocommerce-edit-account .innerpage-con-wrap .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation,
