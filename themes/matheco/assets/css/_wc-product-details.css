@@ -584,6 +584,17 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	}
 }
 
+@media (max-width: 1599px){
+	.related-pro-crtl .hasRelatedProduct,
+	.dft-hm-product-module .hm-product-grds{
+	    margin:0 -7px
+	}
+	.related-pro-crtl .product,
+	.dft-hm-product-module .hmProdctGrdsSlideItme{
+    	padding: 0 7px;    
+	}
+}
+
 
 @media (max-width: 1499px){
 	.woocommerce div.product div.summary {

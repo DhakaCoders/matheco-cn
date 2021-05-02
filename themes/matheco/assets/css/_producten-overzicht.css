@@ -163,7 +163,8 @@
 	padding: 34px 0 5px;
 	margin: 0 32px;
 }
-.fl-products-cntlr .fl-product-grd .fl-pro-grd-title{
+.fl-products-cntlr .fl-product-grd .fl-pro-grd-title,
+.single-product .fl-pro-grd-title{
 	font-size: 20px;
 	margin-bottom: 3px;
     font-weight: 600;
@@ -181,7 +182,7 @@
 }
 .post-type-archive-product .fl-pro-grd-price,
 .single-product .fl-pro-grd-price{
-    padding-bottom: 19px;
+    padding-bottom: 24px;
 }
 .fl-pro-grd-price span.woocommerce-Price-amount bdi,
 .fl-pro-grd-price span.woocommerce-Price-amount bdi span,
@@ -279,7 +280,7 @@
 .contacteer-inner .cont-ons-title{
 	color: #fff;
 	text-transform: uppercase;
-	margin-bottom: 15px;
+	margin-bottom: 17px;
 	letter-spacing: -0.02em;
 }
 .contacteer-inner p{
@@ -603,7 +604,8 @@
 		padding: 0 8px 20px!important;
 		width: 50%!important;
 	}
-	.fl-products-cntlr .fl-product-grd .fl-pro-grd-title{
+	.fl-products-cntlr .fl-product-grd .fl-pro-grd-title,
+	.single-product .fl-pro-grd-title{
 		font-size: 18px;
 		margin-bottom: 8px;
 	}
@@ -687,6 +689,17 @@
 	    -moz-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
 	    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
 	}
+	.fl-products-cntlr .fl-product-grd .fl-pro-grd-title,
+	.single-product .fl-pro-grd-title{
+		font-size: 16px;
+	}
+	.post-type-archive-product .fl-pro-grd-price,
+	.single-product .fl-pro-grd-price{
+    	padding-bottom: 22px;
+	}
+	.fl-pro-grd-des{
+		padding: 34px 0 7px;
+	}
 }
 
 @media (max-width: 639px) {
@@ -731,6 +744,9 @@
 	}
 	.product-page-col-rgt .fl-pagination-ctlr{
 		text-align: center;
+	}
+	.fl-pro-grd-des{
+		padding: 34px 0 9px;
 	}
 }
 
