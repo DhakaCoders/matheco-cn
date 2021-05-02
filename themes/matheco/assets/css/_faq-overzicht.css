@@ -65,6 +65,7 @@
 .fl-pagination-ctlr ul{
 	margin-left: -22px;
 	margin-right: -22px;
+	padding-bottom: 0;
 }
 .fl-pagination-ctlr ul li{
 	display: inline-block;
