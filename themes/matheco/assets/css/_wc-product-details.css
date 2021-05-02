@@ -389,15 +389,15 @@ body.woocommerce-cart .product-quantity .quantity{
      background: #243444!important;
 }
 .hm-product-grds .hmProdctGrdsSlideItme,
-.our-services-grid .our-services-item-wrap{
+.our-services-grid.OurServicesSlider .our-services-item-wrap{
 	display: none;
 }
 .hm-product-grds .hmProdctGrdsSlideItme:first-child,
-.our-services-grid .our-services-item-wrap:first-child{
+.our-services-grid.OurServicesSlider .our-services-item-wrap:first-child{
 	display: block;
 }
 .hm-product-grds.slick-initialized .hmProdctGrdsSlideItme,
-.our-services-grid.slick-initialized .our-services-item-wrap{
+.our-services-grid.OurServicesSlider.slick-initialized .our-services-item-wrap{
 	display: block;
 }
 /*.related.products ul li{*/
