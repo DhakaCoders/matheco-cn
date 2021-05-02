@@ -246,20 +246,64 @@ $(window).resize(function() {
   $('.ftball-bcwrd-img').css("width", VclLefBgOuter);
 });
 
-if (windowWidth <= 767) {
-  if( $('.OurServicesSlider').length ){
+// // if (windowWidth <= 767) {
+//   if( $('.OurServicesSlider').length ){
+//     $('.OurServicesSlider').slick({
+//       dots: true,
+//       infinite: false,
+//       autoplay: false,
+//       autoplaySpeed: 4000,
+//       speed: 700,
+//       slidesToShow: 1,
+//       slidesToScroll: 1,
+//     });
+//   }
+// // }
+/**
+Slick slider
+*/
+if( $('.OurServicesSlider').length ){
     $('.OurServicesSlider').slick({
-      dots: true,
-      infinite: false,
+      dots: false,
+      arrows:false,
+      infinite: true,
       autoplay: false,
       autoplaySpeed: 4000,
       speed: 700,
-      slidesToShow: 1,
+      slidesToShow: 4,
       slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
     });
-  }
 }
-
 
 /*start of Rannojit*/
 
@@ -327,7 +371,7 @@ if( $('.hasRelatedProduct').length ){
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 700,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
@@ -373,7 +417,7 @@ if( $('.hm-product-grds').length ){
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 700,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
@@ -612,6 +656,45 @@ $("#cat_filterform").on("change", "#cat_filter input:checkbox", function(){
   }
   //$("#cat_filterform").submit();
 });
+
+
+
+
+//products counter
+if( $('.qty').length ){
+  $('.qty').each(function() {
+    var spinner = $(this),
+      input = spinner.find('input[type="number"]'),
+      btnUp = spinner.find('.plus'),
+      btnDown = spinner.find('.minus'),
+      min = 1,
+      max = input.attr('max');
+
+    btnUp.click(function() {
+      var oldValue = parseFloat(input.val());
+      if (oldValue <= max) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue + 1;
+      }
+      spinner.find("input").val(newVal);
+      spinner.find("input").trigger("change");
+    });
+
+    btnDown.click(function() {
+      var oldValue = parseFloat(input.val());
+      if (oldValue <= min) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue - 1;
+      }
+      spinner.find("input").val(newVal);
+      spinner.find("input").trigger("change");
+    });
+
+  });
+
+}
 new WOW().init();
 
 

@@ -240,12 +240,12 @@ if( !is_cart() ) get_template_part('templates/breadcrumbs');
                 $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): '';
             ?>
             <div class="our-services-item-wrap">
-              <div class="our-services-item-cnlr">
+              <div class="our-services-item-cnlr mHc">
                 <div class="our-services-item">
                   <div class="our-srvcs-icon">
                     <i><?php echo $imgtag; ?></i>
                   </div>
-                  <div class="our-services-hding mHc">
+                  <div class="our-services-hding mHc1">
                     <h4 class="our-services-item-title fl-h4"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                   </div>
                   <div class="our-services-item-desc">

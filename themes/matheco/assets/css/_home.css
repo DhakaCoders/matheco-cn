@@ -70,11 +70,15 @@
 .our-services-item-wrap:nth-child(4n+1){
 	clear: left;
 }
+.dfp-our-service-module .our-services-item-wrap:nth-child(4n+1),
+.home .our-services-item-wrap:nth-child(4n+1){
+	clear:initial;
+}
 .our-services-item-cnlr{
 	position: relative;
 }
 .our-services-item{
-	min-height: 456px;
+	padding:72px 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -266,6 +270,9 @@
 		padding-left: 60px;
 		min-height: 600px;
 	}
+	.our-services-item{
+		padding:55px 0px;
+	}
 }
 @media(max-width: 991px){
 	.hm-banner{
@@ -291,6 +298,10 @@
 		width: 100%;
 		margin: 0 auto;
 	}
+	.dfp-our-service-module .our-services-grid-cntlr,
+	.home .our-services-grid-cntlr{
+		max-width: initial;
+	}
 	.our-services-item-wrap{
 		width: 50%;
 	}
@@ -300,9 +311,22 @@
 	.our-services-item-wrap:nth-child(2n+1){
 		clear: left;
 	}
-	.our-services-item{
-		min-height: 380px;
+
+	.dfp-our-service-module .our-services-item-wrap:nth-child(4n+1),
+	.home .our-services-item-wrap:nth-child(4n+1){
+		clear: initial;
 	}
+	.dfp-our-service-module .our-services-item-wrap:nth-child(2n+1),
+	.home .our-services-item-wrap:nth-child(2n+1){
+		clear: initial;
+	}
+	.our-services-item{
+		padding:48px 0px;
+	}
+/*	.dfp-our-service-module .our-services-item,
+	.home .our-services-item{
+		min-height: initial;
+	}*/
 
 	.ftball-bcwrd-desc-cntlr{
 		padding-left: 15px;
@@ -343,7 +367,6 @@
 		margin-bottom: 18px;
 	}
 	.our-services-grid{
-		margin: 0;
 		display: block;
 
 	}
@@ -354,21 +377,33 @@
 	.our-services-grid-cntlr{
 		max-width: 320px;
 	}
+	.dfp-our-service-module .our-services-grid-cntlr,
+	.home .our-services-grid-cntlr{
+		max-width:initial;
+	}
 	.our-services-item-wrap{
-		padding: 0;
 		max-width: 320px;
 		width: 100%;
 		margin: 0 auto;
 		margin-bottom: 20px;
 	}
-	.our-services-item{
-		min-height: 337px;
+	.dfp-our-service-module .our-services-item-wrap,
+	.home .our-services-item-wrap{
+		max-width:initial;;
+		width: initial;
 	}
+	.our-services-item{
+		padding:30px 0;
+	}
+/*	.dfp-our-service-module .our-services-item,
+	.home .our-services-item{
+		min-height: initial;
+	}*/
 	.our-services-item-wrap:nth-child(2n+1){
 		clear: initial;
 	}
 	.OurServicesSlider.slick-dotted.slick-slider{
-		margin-bottom: 0!important;
+		margin-bottom: 55px!important;
 	}
 	.our-services-item-title br{
 		display: none;
