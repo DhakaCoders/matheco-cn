@@ -1,2 +1,4 @@
 2021-05-02T06:39:10+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in D:\xampp\htdocs\projects\2021\matheco\wp-includes\Requests\Transport\cURL.php on line 163
 
+2021-05-02T07:37:06+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in E:\host\htdocs\2021\04\mathecos\matheco-cn\themes\matheco\single-diensten.php on line 140
+
