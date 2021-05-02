@@ -103,7 +103,7 @@
 	padding: 0 10px;
 }
 .our-services-item-title{
-	margin-bottom: 0;
+	margin-bottom: 0!important;
 	text-align: center;
 }
 .our-services-item-title:hover a{
