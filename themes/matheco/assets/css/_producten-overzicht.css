@@ -549,11 +549,14 @@
 }
 
 @media (max-width: 1399px) {
+	.fl-products-cntlr ul.products{
+		margin: 0 -8px;
+	}
 	.fl-products-cntlr ul.products > li{
-		padding: 0 10px 24px!important;
+		padding: 0 8px 24px!important;
 	}
 	.fl-pro-grd-des{
-		margin: 0 25px;
+		margin: 0 20px;
 	}
 	.fl-pro-grd-des p{
 		font-size: 15px;
@@ -574,9 +577,6 @@
 	}
 	.fltr-prdt-title{
 		margin-left: 14px;
-	}
-	.fl-pro-grd-des{
-		margin: 0 23px;
 	}
 	.fl-pro-grd-btn{
 		padding: 0 26px 30px;
@@ -615,7 +615,7 @@
 		margin-bottom: 8px;
 	}
 	.fl-pro-grd-des{
-		margin: 0 21px;
+		margin: 0 25px;
 	}
 	.fl-pro-grd-btn{
 		padding: 0 21px 30px;
@@ -725,6 +725,9 @@
 	}
 	.contacteer-inner p{
 		margin-bottom: 34px;
+	}
+	.fl-pro-grd-des{
+		
 	}
 }
 
