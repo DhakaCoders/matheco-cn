@@ -21,11 +21,11 @@
 }
 .main-img-crtl .woocommerce-product-gallery__image a{
 	display: block;
-	/* width: 100%;
+	width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;    */ 
+    align-items: center;    
 }
 .main-img-crtl .woocommerce-product-gallery__image a img{
 	width: auto!important;
@@ -550,9 +550,6 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 .single-product .mct-faq-accordion{
 	box-shadow: initial;
 	border: 2px solid #F8F8F8;
-}
-.single-product .mct-faq-accordion-des{
-	border-top: none;
 }
 .single-product .faq-detials-sec{
 	padding: 99px 0 85px;

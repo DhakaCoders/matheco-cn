@@ -216,7 +216,7 @@ contact-info-sec-wrp
     padding: 10px 10px 10px!important;
     text-align: center;
 }
-.contact-form-wrp .wpforms-field-pagebreak .wpforms-clear button:hover,
+/*.contact-form-wrp .wpforms-field-pagebreak .wpforms-clear button:hover,
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button:hover{
 	background: transparent!important;
 	color: #2285E3!important;
@@ -224,7 +224,7 @@ contact-info-sec-wrp
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
-}
+}*/
 .wpforms-field-text p{
 	font-size: 13px;
 	line-height: 1.3;
@@ -588,7 +588,12 @@ placeholder
 	.contact-google-map{
 		height: 510px;
 	}
-
+	.contact-er-msg span{
+		font-size: 14px;
+	}
+	.contact-er-msg {
+	    padding: 11px 18px;
+	}
 }
 
 @media(max-width: 575px){
@@ -644,7 +649,7 @@ placeholder
 	    padding-top: 30px;
 	}
 	.contact-er-msg span{
-		font-size: 15px;
+		font-size: 12px;
 	}
 
 
@@ -656,9 +661,6 @@ placeholder
 	}
 	.contact-er-msg {
 	    padding: 13px 5px 13px 15px;
-	}
-	.contact-er-msg span{
-		padding-left: 22px;
 	}
 
 }
