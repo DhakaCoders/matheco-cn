@@ -35,9 +35,8 @@
 	color: #243444;
 	text-transform: uppercase;
 }
-
 .dfp-text-module{
-	
+    padding-bottom: 8px;
 }
 .default-page-con ul,
 ul{
@@ -462,9 +461,9 @@ Gallery design
 
 .dfp-faq-module{
 	margin-top: 20px;
-	padding: 80px 115px 75px 115px;
+	padding: 90px 115px 75px 115px;
 	background: #F8F8F8;
-	margin-bottom: 60px;
+	margin-bottom: 67px;
 }
 .dfp-faq-module .mct-faq-accordion-ctlr{
 	width: 100%;
@@ -474,13 +473,15 @@ Gallery design
 	padding: 0;
 	padding-bottom: 30px;
 }
-
+.dfp-faq-module .mct-faq-accordion-ctlr ul li:last-child{
+	padding-bottom:0px;
+}
 .dfp-faq-module .mct-faq-accordion{
-	padding: 25px 40px;
+	padding: 30px 40px;
 }
 .dfp-faq-module .mct-faq-accordion-title{
 	margin-bottom: 0!important;
-	text-transform: lowercase;
+	text-transform: initial;
 }
 .dfp-faq-module .mct-faq-title{
 	text-align: center;
