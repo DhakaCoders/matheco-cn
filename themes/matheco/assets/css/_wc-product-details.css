@@ -488,9 +488,8 @@ span.onsale{
     line-height: 1!important;
     font-weight: 700!important;
     z-index: 11;
-    left: auto!important;
+    left: 15px!important;
     top: 15px!important;
-    right: 15px!important;
     border-radius: 0!important;
     padding-top: 2px!important;
     margin: 0!important;
