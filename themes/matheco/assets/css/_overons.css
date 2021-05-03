@@ -152,7 +152,7 @@ ovs-counter-sec-wrp
 		height:600px;
 	}
 	.team-member-grid-img{
-		height:320px;
+		height:320px!important;
 	}
 }
 
