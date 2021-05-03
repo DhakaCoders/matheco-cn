@@ -571,6 +571,20 @@ var html = '';
   $("#extra_fields").empty(html);
 })
 
+// shipping field show/hide
+
+$(".hide-account-title .show_shipping_fields input.input-text").prop('required', true);
+$("#is_shipping_address").on('change',function(){
+   var ischecked= $(this).is(':checked');
+    if(ischecked){
+      $(".hide-account-title .show_shipping_fields input.input-text").prop('required', false);
+     $(".hide-account-title .show_shipping_fields").hide();
+    }else{
+      $(".hide-account-title .show_shipping_fields").show();
+      $(".hide-account-title .show_shipping_fields input.input-text").prop('required', true);
+    }
+ }); 
+
 // Registration form validation
 $("#re_password").bind('blur keyup change', function(){
   $("#register_action_btn").attr('disabled','disabled');

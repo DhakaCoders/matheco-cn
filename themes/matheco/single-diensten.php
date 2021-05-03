@@ -68,7 +68,7 @@ get_template_part('templates/breadcrumbs');
       <?php } ?>
       <div class="dfp-back-btn">
         <a href="javascript:history.go(-1)">
-          Terug naar overzicht
+          <?php _e('Terug naar overzicht', THEME_NAME); ?>
           <i>
             <svg class="dfp-back-btn-icon-svg" width="8" height="14" viewBox="0 0 8 14" fill="#707C88">
               <use xlink:href="#dfp-back-btn-icon-svg"></use>
