@@ -113,7 +113,9 @@ ol li::before {
 .dfp-plate-one-img-bx img{
 	width: 100%;
 }
-
+.dft-hm-product-module .fl-pro-grd-title{
+	margin-bottom:3px;
+}
 
 .ac-fancy-module{
 	overflow: hidden;
@@ -182,7 +184,7 @@ ol li::before {
 	position: relative;
 }
 .fl-dft-lftimg-rgtdes-rgt {
-	padding-left: 20px;
+	padding-left: 26px;
 	padding-bottom: 5px;
 	padding-top: 0;
 }
@@ -488,7 +490,7 @@ Gallery design
 
 .dfp-box-grd-module{
 	padding-top: 30px;
-	margin-bottom: 60px;
+	margin-bottom: 67px;
 }
 
 .dfp-our-service-module{
@@ -588,10 +590,24 @@ Gallery design
 	    overflow-y: hidden;
 	    white-space: nowrap;
 	}
-	.table-dsc::-webkit-scrollbar {
+	.table-dsc::-webkit-scrollbar{
 	  height: 6px;
 	}
-	.table-dsc::-webkit-scrollbar-thumb {
+	.table-dsc::-moz-scrollbar{
+	  height: 6px;
+	}
+	.table-dsc::-ms-scrollbar{
+	  height: 6px;
+	}
+	.table-dsc::-webkit-scrollbar-thumb{
+	  background: #2285E3;
+	  border-radius: 4px;
+	}
+	.table-dsc::-moz-scrollbar-thumb{
+	  background: #2285E3;
+	  border-radius: 4px;
+	}
+	.table-dsc::-ms-scrollbar-thumb{
 	  background: #2285E3;
 	  border-radius: 4px;
 	}
@@ -619,6 +635,9 @@ Gallery design
 	}
 	.dfp-text-module{
 		padding-right: 10px;
+	}
+	.dfp-text-module h3{
+		display: none;
 	}
 	.dfp-promo-module h1, 
 	.dfp-promo-module-title{
