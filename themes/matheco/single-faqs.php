@@ -10,7 +10,7 @@ get_template_part('templates/breadcrumbs');
         <div class="xs-faq-details-inr">
           <div class="dfp-back-btn">
             <a href="javascript:history.go(-1)">
-              Terug naar overzicht
+              <?php _e('Terug naar overzicht', THEME_NAME); ?>
               <i>
                 <svg class="dfp-back-btn-icon-svg" width="8" height="14" viewBox="0 0 8 14" fill="#707C88">
                   <use xlink:href="#dfp-back-btn-icon-svg"></use>
@@ -60,7 +60,7 @@ get_template_part('templates/breadcrumbs');
       <div class="dfp-back-btn-module">
         <div class="dfp-back-btn">
           <a href="javascript:history.go(-1)">
-            Terug naar overzicht
+            <?php _e('Terug naar overzicht', THEME_NAME); ?>
             <i>
               <svg class="dfp-back-btn-icon-svg" width="8" height="14" viewBox="0 0 8 14" fill="#707C88">
                 <use xlink:href="#dfp-back-btn-icon-svg"></use>
@@ -69,7 +69,7 @@ get_template_part('templates/breadcrumbs');
           </a>
         </div>
         <div class="dfp-social-media">
-          <span>Delen op:</span>
+          <span><?php _e('Delen op', THEME_NAME); ?>:</span>
           <ul class="reset-list">
             <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink(); ?>"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="https://twitter.com/intent/tweet?url=<?php echo get_permalink(); ?>&text=<?php the_title(); ?>"><i class="fab fa-twitter"></i></a></li>

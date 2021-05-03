@@ -12,14 +12,11 @@ contact-info-sec-wrp
 	margin: 0 auto;
 	text-align: center;
 }
-.contact-info-dsc-title.fl-h1{
-	font-size: 30px;
-	line-height: 1;
+.contact-info-dsc-title{
 	margin-bottom: 10px;
 }
 .contact-info-dsc p{
-	color: #243444;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 }
 .contact-info-box-wrp ul{
 	margin: 0 -12px;
@@ -109,7 +106,7 @@ contact-info-sec-wrp
 	margin-top:-1px;
 }
 .contact-form-wrp {
-    padding-top: 45px;
+    padding-top: 40px;
 }
 
 /*

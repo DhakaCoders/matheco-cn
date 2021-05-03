@@ -19,6 +19,23 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+if( is_user_logged_in() ){
+	$enable_different_address = get_user_meta(get_current_user_id()
+, 'enable_ship_to_different', true);
+	$enable_different_address = isset($enable_different_address)?$enable_different_address:0;
+	if($enable_different_address){
+		?>
+		<script> 
+			(function($) {
+				$(window).load(function() {
+					console.log('d');
+					$('#ship-to-different-address #ship-to-different-address-checkbox').trigger('click');
+				});
+			})(jQuery);
+		</script>
+		<?php
+	}
+}
 ?>
 <?php
 do_action( 'woocommerce_before_checkout_form', $checkout );
