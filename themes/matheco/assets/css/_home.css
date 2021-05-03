@@ -51,7 +51,9 @@
 .our-services{
 	padding: 0 0 52px 0;
 }
-
+.OurServicesSlider{
+	margin-bottom: 0!important
+}
 .our-services-grid-cntlr{
 
 }
@@ -123,7 +125,7 @@
 
 /*product sce*/
 .hm-box-grd-section{
-	padding-top: 52px;
+	padding-top: 32px;
 }
 .product-cntlr{
 
