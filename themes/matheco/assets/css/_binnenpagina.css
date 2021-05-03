@@ -146,8 +146,8 @@ ol li::before {
     -ms-transform: translate(-50%,-50%);
     -webkit-transform: translate(-50%,-50%);
     color: #E48AA4;
-    width: 122px;
-    height: 122px;
+    width: 120px;
+    height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -487,7 +487,9 @@ Gallery design
 .dfp-faq-module .mct-faq-title{
 	text-align: center;
 }
-
+.dfp-faq-module .mct-faq-title span{
+	display: none;
+}
 .dfp-box-grd-module{
 	padding-top: 30px;
 	margin-bottom: 67px;
@@ -556,6 +558,9 @@ Gallery design
 	    padding-bottom: 25px;
 	    border-bottom: 1px solid #F3F3F3;
 	    margin-bottom: 15px;
+	}
+	#faq-details .dfp-promo-module{
+		border-bottom:none;
 	}
 	.dfp-promo-module > strong{
 		font-size: 24px;
@@ -724,6 +729,9 @@ Gallery design
 	}
 	.dfp-our-service-module {
 	    margin-bottom: 35px;
+	}
+	.dfp-faq-module .mct-faq-title span{
+		display: inline-block;
 	}
 }
 

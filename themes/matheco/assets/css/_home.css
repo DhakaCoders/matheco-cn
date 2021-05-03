@@ -35,6 +35,7 @@
 	display: inline-block;
 	margin-left: auto;
 	margin-bottom: -47px;
+	margin-right: 23px;
 }
 .hm-banner-title{
 	color: #fff;
@@ -51,7 +52,9 @@
 .our-services{
 	padding: 0 0 52px 0;
 }
-
+.OurServicesSlider{
+	margin-bottom: 0!important
+}
 .our-services-grid-cntlr{
 
 }
@@ -123,7 +126,7 @@
 
 /*product sce*/
 .hm-box-grd-section{
-	padding-top: 52px;
+	padding-top: 32px;
 }
 .product-cntlr{
 
@@ -269,7 +272,8 @@
 	    padding: 91px 0 110px 85px;
 	    min-height: 560px;
 	}
-	.ftball-bcwrd-img{
+	.ftball-bcwrd-img,
+	.ornare-lft-bg {
 		background-position:right center!important;
 	}
 }
@@ -293,6 +297,9 @@
 	}
 	.our-services-item{
 		padding:55px 0px;
+	}
+	.hm-banner-desc{
+		margin-right: 12px;
 	}
 }
 @media(max-width: 1023px){
@@ -318,6 +325,7 @@
 		margin-bottom: -64px;
 		max-width: 400px;
 		width: 100%;
+		margin-right:0px;
 	}
 	.hm-banner-desc p:last-of-type{
 		margin-bottom: 25px;
