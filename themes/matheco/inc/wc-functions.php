@@ -169,6 +169,7 @@ if (!function_exists('add_custom_box_product_summary')) {
     function add_custom_box_product_summary() {
         global $product, $woocommerce, $post;
         $long_desc = $product->get_description();
+        $extravalue = get_post_meta( $product->get_id(), 'product_extra', true );
         echo '<div class="summary-ctrl">';
         echo '<div class="summary-hdr">';
         echo '<h1 class="product_title entry-title hide-sm">'.$product->get_title().'</h1>';
@@ -197,7 +198,7 @@ if (!function_exists('add_custom_box_product_summary')) {
                 echo ( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' );
                 echo '</span></li>';
             endif;
-            echo '<li><span class="extra"><strong>Extra:</strong>00000000</span></li>';
+            if( !empty($extravalue) ) printf('<li><span class="extra"><strong>Extra:</strong>%s</span></li>', $extravalue);
         echo '</ul>';
         echo '</div>';
         echo '<div class="price-quentity-ctrl">';
@@ -236,7 +237,13 @@ add_action( 'woocommerce_product_options_inventory_product_data', 'misha_adv_pro
 function misha_adv_product_options(){
  
     echo '<div class="options_group">';
- 
+    woocommerce_wp_text_input( array(
+        'id'      => 'product_extra',
+        'value'   => get_post_meta( get_the_ID(), 'product_extra', true ),
+        'label'   => __('Extra', 'woocommerce'),
+        'desc_tip'    => 'true',
+        'description' => __( 'Enter the extra value here.', 'woocommerce' ) 
+    ));
     woocommerce_wp_text_input( array(
         'id'      => 'product_min_qty',
         'value'   => get_post_meta( get_the_ID(), 'product_min_qty', true ),
@@ -263,6 +270,7 @@ function misha_adv_product_options(){
  
 add_action( 'woocommerce_process_product_meta', 'misha_save_fields', 10, 2 );
 function misha_save_fields( $id, $post ){
+    update_post_meta( $id, 'product_extra', $_POST['product_extra'] );
     update_post_meta( $id, 'product_min_qty', $_POST['product_min_qty'] );
     update_post_meta( $id, 'product_max_qty', $_POST['product_max_qty'] );
  
