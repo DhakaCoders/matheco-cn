@@ -290,6 +290,9 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 	.user a i svg{
 		max-width: 28px;
 	}
+	.shopping-cart a span{
+		margin-top:-1px;
+	}
 }
 @media(max-width: 1399px){
 	.logo a{
