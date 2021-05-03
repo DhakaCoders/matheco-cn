@@ -14,6 +14,15 @@
   $smedias = get_field('social_media', 'options');
   $copyright_text = get_field('copyright_text', 'options');
 ?>
+
+<div class="to-top-btn-cntlr">
+  <div class="to-top-btn">
+    <i>
+      <svg class="to-top-btn-arrow-icon" width="14" height="9" viewBox="0 0 14 9" fill="#fff">
+      <use xlink:href="#to-top-btn-arrow-icon"></use> </svg>
+    </i>
+  </div>
+</div>
 <footer class="footer">
   <div class="ftr-top">
     <div class="container">
