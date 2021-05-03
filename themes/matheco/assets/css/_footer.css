@@ -172,14 +172,19 @@
 	content: none;
 }
 .ftr-btm-menu ul li a,
-.ftr-btm-designby a{
+.ftr-btm-designby span a{
 	text-decoration: none;
 	font-size: 14px;
 	color: #243444;
 	font-weight: 400;
 }
+.ftr-btm-designby span{
+	font-size: 14px;
+	color: #243444;
+	font-weight: 400;
+}
 .ftr-btm-menu ul li a:hover,
-.ftr-btm-designby a:hover{
+.ftr-btm-designby span a:hover{
 	color: #2285E3;
 }
 
