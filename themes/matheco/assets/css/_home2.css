@@ -51,6 +51,12 @@
 	position: relative;
 	margin-bottom: 0;
 	text-transform: initial;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.mct-faq-accordion-title:hover{
+	color:#2285E3;
 }
 .mct-faq-accordion-title span{
 	position: absolute;
