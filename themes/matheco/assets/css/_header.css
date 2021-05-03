@@ -376,10 +376,9 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 		right: -20px;
 		top: 100%;
 		z-index: 9999;
-		margin-top: 4px;
-		margin-bottom: 22px;
+		border-top: 4px solid #fff;
 		display: none;
-		padding: 65px 64px 85px 64px;
+		padding: 88px 64px 100px 64px;
 		background: #243444;
 	}
 	.hdr-menu:after{
@@ -418,15 +417,15 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 		position: relative;
 	}
 	nav.main-nav > ul > li.menu-item-has-children > a:after {
-		content: "\f107"!important;
-		font-family: 'Font Awesome 5 Free';
-		font-weight: 600;
+		content: "";
 		text-decoration: inherit;
-		color: #fff;
-		font-size: 20px;
+		background-image: url('../images/menu-down-arrow.svg');
+		width: 12px;
+		height: 7px;
+		background-size: contain;
 		padding-right: 0;
 		position: absolute;
-		top: 0;
+		top: 3px;
 		right: 0;
 		line-height: 15px;
 		transition: all 0.5s;
@@ -496,7 +495,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 		padding-left: 15px;
 	}*/
 	.hdr-menu{
-		padding: 50px 40px;
+		padding: 60px 40px 80px;
 	}
 	.shopping-cart a span{
 		font-size:10px;
