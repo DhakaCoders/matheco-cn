@@ -272,7 +272,8 @@
 	    padding: 91px 0 110px 85px;
 	    min-height: 560px;
 	}
-	.ftball-bcwrd-img{
+	.ftball-bcwrd-img,
+	.ornare-lft-bg {
 		background-position:right center!important;
 	}
 }
