@@ -52,8 +52,8 @@
 	width: 100%
 }
 .xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-pimg{
-    width: 110px;
-    height: 110px;
+    width: 118px;
+    height: 118px;
     border: 2px solid #f8f8f8;
     padding: 8px;    
     display: flex;
@@ -200,6 +200,7 @@
 	display: flex;
     align-items: center;
     justify-content: center;
+    padding: 5px;
 }
 h3.pro-item-desc-title{
 	margin-bottom: 11px;
@@ -260,7 +261,7 @@ h3.pro-item-desc-title{
 }
 span.xoo-cp-close.xoo-cp-icon-cross{
 	background-color:transparent;
-	right: 31px;
+	right: 62px;
 	top: 60px;
 	width: 10px;
 	height: 10px;
@@ -385,10 +386,6 @@ small.woocommerce-price-suffix,
 	margin-left: 3px;
 }*/
 @media(max-width:1199px){
-	.xoo-cp-container {
-	    max-width: 750px;
-	    width: 100%;
-	}
 	.xoo-cp-container h5{
 		font-size:28px;
 	}
@@ -451,7 +448,7 @@ small.woocommerce-price-suffix,
 	    font-size: 24px;
 	}
 	.xoo-cp-container {
-	    max-width: 600px;
+	    max-width: 730px;
 	}
 	.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle .popup-product-title a{
 	    font-size: 18px;
@@ -523,7 +520,7 @@ small.woocommerce-price-suffix,
 }
 @media(max-width:768px){
 	.xoo-cp-container {
-	    max-width: 450px;
+	    max-width: 530px;
 	    padding-top:20px;
 	}
 	.xoo-cp-container h5 {
@@ -657,6 +654,14 @@ small.woocommerce-price-suffix,
 	}
 	.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-pimg{
 	    width: 80px;
+	    height: 80px;
+	    position: absolute;
+	}
+	.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle{
+		padding-left: 100px!important;
+	}
+	.xoo-cp-container{
+		max-width: 450px;
 	}
 	.xoo-cp-pprice del .woocommerce-Price-amount bdi,
 	.product-price del .woocommerce-Price-amount bdi{
@@ -711,10 +716,6 @@ small.woocommerce-price-suffix,
 	.xoo-cp-container{
 	    padding-bottom: 10px;
 	}
-	.xoo-cp-container{
-		max-width:420px;
-		padding-bottom: 30px;
-	}
 	span.xoo-cp-close.xoo-cp-icon-cross{
 		top: 27px;
 	}
@@ -722,8 +723,11 @@ small.woocommerce-price-suffix,
 
 @media(max-width:479px){
 	.xoo-cp-container {
-	    max-width: 349px;
+	    max-width: 350px;
 	    padding-top: 20px;
+	}
+	.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle{
+		padding-left: 97px!important;
 	}
 }
 
