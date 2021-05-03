@@ -47,7 +47,7 @@ $max_value = apply_filters( 'woocommerce_quantity_input_max', product_max_qty($p
 $min_value = apply_filters( 'woocommerce_quantity_input_min', product_min_qty($product_id, $_product) );
 $step      = apply_filters( 'woocommerce_quantity_input_step', 1, $_product );
 $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'woocommerce_stock_amount', 'intval' ) ? '[0-9]*' : '' );
-
+$sh_desc = $_product->get_short_description();
 ?>
 
 
@@ -62,7 +62,9 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
             <div class="popup-product-title">
               <div><a href="<?php echo  $product_permalink; ?>"><?php echo $product_name; ?></a></div>
             </div>
-
+            <?php if( !empty($sh_desc) ): ?>
+              <div class="single-shortdetails"><?php echo wpautop($sh_desc); ?></div>
+            <?php endif; ?>
           <?php if($attributes): ?>
             <div class="xoo-cp-variations"><?php echo $attributes; ?></div>
           <?php endif; ?>
@@ -123,35 +125,15 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
       <?php 
         while($pQuery->have_posts()): $pQuery->the_post(); 
         global $product, $woocommerce, $post;
+        $loop_short_desc = $product->get_short_description();
       ?>
       <div class="flex-fill bd-highlight">
         <div class="pro-item-cntlr">
           <?php 
-          $person = ' ';
-          $itemCls = 'notSimple';
-            switch ( $product->get_type() ) {
-            case "variable" :
-                $link   = get_permalink($product->get_id());
-                $label  = apply_filters('variable_add_to_cart_text', __('bestellen', 'woocommerce'));
-            break;
-            case "grouped" :
-                $link   = get_permalink($product->get_id());
-                $label  = apply_filters('grouped_add_to_cart_text', __('bestellen', 'woocommerce'));
-            break;
-            case "external" :
-                $link   = get_permalink($product->get_id());
-                $label  = apply_filters('external_add_to_cart_text', __('bestellen', 'woocommerce'));
-            break;
-            default :
-                $link   = esc_url( $product->add_to_cart_url() );
-                $label  = apply_filters('add_to_cart_text', __('bestellen', 'woocommerce'));
-                $itemCls = 'prsimple';
-            break;
-            }
-            $seller_flash = get_field('seller_flash', $product->get_id());
+            $itemCls = 'notSimple';
             $gridurl = cbv_get_image_tag( get_post_thumbnail_id($product->get_id()), 'hprogrid' );
             echo "<div class='pro-item {$itemCls}'>";
-            if( !empty($seller_flash) ) printf('<span class="seller-flash">%s</span>', $seller_flash); 
+            wc_get_template_part('loop/sale','flash'); 
             echo '<div class="pro-item-img-cntlr pw-item-img-cntlr">';
             echo '<a class="overlay-link" href="'.get_permalink( $product->get_id() ).'"></a>';
             echo '<div class="pro-item-img">'.$gridurl.'</div>';
@@ -159,26 +141,15 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
             echo '<div class="pro-item-desc pw-item-desc">';
             echo '<div class="pro-item-descWrap mHc">';
             echo '<h3 class="pro-item-desc-title"><a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a></h3>';
+            if( !empty($loop_short_desc) ){
+              echo '<div class="loop-shortdetails">';
+              echo wpautop($loop_short_desc);
+              echo '</div>';
+            }
             echo '<div class="product-price">';
             echo $product->get_price_html();
             echo '<span class="pro-prize-shrt-title show-sm"></span>';
             echo '</div></div>';
-            echo '<div class="product-quantity product-quantity-cntlr">';
-            if ( ! $product->is_in_stock() ) :
-
-            else:
-            if ( $product && $product->is_type( 'simple' ) && $product->is_purchasable() && ! $product->is_sold_individually() ) {
-            echo '<form action="' . esc_url( $product->add_to_cart_url() ) . '" class="cart" method="post" enctype="multipart/form-data">';
-            echo '<div class="quantity"><span class="minus">-</span>';
-            echo loop_qty_input();
-            echo '<span class="plus">+</span></div>';
-            echo '<div class="product-order-btn"><button type="submit" class="fl-btn">bestellen</button></div>';
-            echo '</form>';
-            }else{
-                printf('<div class="product-order-btn"><a class="fl-btn" href="%s" rel="nofollow" data-product_id="%s" class="button add_to_cart_button product_type_%s">%s</a></div>', $link, $product->get_id(), $product->get_type(), $label);
-            }
-            endif;
-            echo '</div>';
             echo '</div>';
             echo '</div>';
 

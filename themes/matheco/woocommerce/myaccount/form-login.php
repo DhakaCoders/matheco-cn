@@ -128,8 +128,54 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 			<div class="billing-address-wrap">
 				<h3>Factuuradres</h3>
 				<p class="same-as-shipping-address">
-					<input type="checkbox" name="is_shipping_address" value="1">&nbsp;Hetzelfde als bezorgadres
+					<input type="checkbox" name="is_shipping_address" id="is_shipping_address" value="0">&nbsp;Hetzelfde als bezorgadres
 				</p>
+				<!-- Start Shipping fields -->
+				<div class="show_shipping_fields">
+					<p class="form-row form-row-first" id="shipping_first_name_field">
+						<label for="shipping_first_name" class="">Naam</label>
+						<span class="woocommerce-input-wrapper">
+							<input type="text" class="input-text " name="shipping_first_name" id="shipping_first_name" placeholder="Voornaam" value="<?php echo isset($_POST['shipping_first_name'])? $_POST['shipping_first_name']:'';?>">
+						</span>
+					</p>
+					<p class="form-row form-row-last" id="shipping_last_name_field">
+						<label for="shipping_last_name" class="">&nbsp;</label>
+						<span class="woocommerce-input-wrapper">
+							<input type="text" class="input-text " name="shipping_last_name" id="shipping_last_name" placeholder="Naam" value="<?php echo isset($_POST['shipping_last_name'])? $_POST['shipping_last_name']:'';?>">
+						</span>
+					</p>
+					<p class="form-row form-row-first shipping_postcode" id="shipping_postcode_field">
+						<label for="shipping_postcode" class="">Postcode</label>
+						<span class="woocommerce-input-wrapper">
+							<input type="text" class="input-text " name="shipping_postcode" id="shipping_postcode" placeholder="Bijv. 9300" value="<?php echo isset($_POST['shipping_postcode'])? $_POST['shipping_postcode']:'';?>">
+						</span>
+					</p>
+					<p class="form-row form-row-last shipping_city" id="shipping_city_field">
+						<label for="shipping_city" class="">Gemeente</label>
+						<span class="woocommerce-input-wrapper">
+							<input type="text" class="input-text " name="shipping_city" id="shipping_city" placeholder="Bijv. 9300" value="<?php echo isset($_POST['shipping_city'])? $_POST['shipping_city']:'';?>">
+						</span>
+					</p>
+
+					<p class="form-row form-row-first shipping_address_1" id="shipping_address_1_field">
+						<label for="shipping_address_1" class="">Straatnaam</label>
+						<span class="woocommerce-input-wrapper">
+							<input type="text" class="input-text " name="shipping_address_1" id="shipping_address_1" placeholder="Bijv. Stationstraat" value="<?php echo isset($_POST['shipping_address_1'])? $_POST['shipping_address_1']:'';?>">
+						</span>
+					</p>
+					<p class="form-row form-row-last shipping_house" id="shipping_house_field">
+						<label for="shipping_house" class="">Huisnummer en bus</label>
+						<span class="woocommerce-input-wrapper">
+							<input type="text" class="input-text " name="shipping_house" id="shipping_house" placeholder="Bijv. 113-C" value="<?php echo isset($_POST['shipping_house'])? $_POST['shipping_house']:'';?>" autocomplete="house-number">
+						</span>
+					</p>
+					<p class="form-row form-row-wide shipping_address_2" id="shipping_address_2_field">
+						<label for="shipping_address_2" class="">Extra adresregel</label>
+						<span class="woocommerce-input-wrapper">
+							<input type="text" class="input-text " name="shipping_address_2" id="shipping_address_2" placeholder="" value="<?php echo isset($_POST['shipping_address_2'])? $_POST['shipping_address_2']:'';?>" autocomplete="address-line2">
+						</span>
+					</p>
+				</div><!-- End Shipping fields -->
 				<p class="form-row form-row-wide" id="billing_email_2_field">
 					<label for="billing_email_2" class="">E-mailadres</label>
 					<span class="woocommerce-input-wrapper">
@@ -151,7 +197,7 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 			</div>
 			<div class="clearfix"></div>
 			<div class="login-info">
-				<p><input type="checkbox" name="create_account" value="1" checked>&nbsp;Account aanmaken</p>
+				<!-- <p><input type="checkbox" name="create_account" value="1" checked>&nbsp;Account aanmaken</p> -->
 				<h3>Inloggegevens</h3>
 				<p>Het e-mailadres en wachtwoord zijn nodig om toegang te krijgen tot de gegevens. Ook zullen we je via dit e-mailadres op de hoogte houden van de status van bestellingen.</p>
 				<p class="form-row form-row-wide" id="billing_email_field">

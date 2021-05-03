@@ -10,7 +10,7 @@ get_template_part('templates/breadcrumbs');
         <div class="xs-faq-details-inr">
           <div class="dfp-back-btn">
             <a href="javascript:history.go(-1)">
-              Terug naar overzicht
+              <?php _e('Terug naar overzicht', THEME_NAME); ?>
               <i>
                 <svg class="dfp-back-btn-icon-svg" width="8" height="14" viewBox="0 0 8 14" fill="#707C88">
                   <use xlink:href="#dfp-back-btn-icon-svg"></use>
@@ -23,35 +23,44 @@ get_template_part('templates/breadcrumbs');
     </div>
   </div>
 </section>
+<?php 
+  $imgID = get_post_thumbnail_id(get_the_ID());
+  $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): '';
 
+  $categories = get_the_terms( $thisID, 'cat_faq' );
+  $term_name = $termid = $termlink = '';
+  if ( ! empty( $categories ) ) {
+      foreach( $categories as $category ) {
+         $term_name = $category->name; 
+         $termlink = get_term_link($category);
+         $termid = $category->term_id;
+      }
+  }
+?>
 
 <section class="innerpage-con-wrap">
   <article class="default-page-con" id="faq-details">
     <div class="block-955">
       <div class="dfp-promo-module clearfix">
         <div>
-          <strong class="dfp-promo-module-title fl-h3">dignissim ut odio egestas commodo?</strong>
-          <a href="#">Categorie</a>
+          <strong class="dfp-promo-module-title fl-h3"><?php the_title(); ?></strong>
+          <?php if( !empty($term_name) ) printf('<a href="%s">%s</a>', $termlink, $term_name); ?>
         </div>
+        <?php if( !empty($imgtag) ): ?>
         <div class="dfp-plate-one-img-bx">
-          <img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-01.jpg">
+          <?php echo $imgtag; ?>
         </div>
+        <?php endif; ?>
       </div>
 
       <div class="dfp-text-module clearfix">
-        <p>Purus consequat sed egestas. Nunc purus molestie sed tincidunt tellus adipiscing. Vestibulum, eu purus sapien mi sit. Interdum porttitor at praesent auctor diam. Purus gravida nulla amet.</p>
-        <ul>
-          <li>Nunc purus molestie sed tincidunt tellus.</li>
-          <li>Dictum mi facilisi elementum aliquam.</li>
-          <li>Lectus fames a nibh faucibus malesuada. Sit.</li>
-        </ul>
-        <p>Vestibulum, eu purus sapien mi sit. Interdum porttitor at praesent auctor diam. Purus gravida nulla amet.</p>
+        <?php the_content(); ?>
       </div>
 
       <div class="dfp-back-btn-module">
         <div class="dfp-back-btn">
           <a href="javascript:history.go(-1)">
-            Terug naar overzicht
+            <?php _e('Terug naar overzicht', THEME_NAME); ?>
             <i>
               <svg class="dfp-back-btn-icon-svg" width="8" height="14" viewBox="0 0 8 14" fill="#707C88">
                 <use xlink:href="#dfp-back-btn-icon-svg"></use>
@@ -60,11 +69,11 @@ get_template_part('templates/breadcrumbs');
           </a>
         </div>
         <div class="dfp-social-media">
-          <span>Delen op:</span>
+          <span><?php _e('Delen op', THEME_NAME); ?>:</span>
           <ul class="reset-list">
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink(); ?>"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://twitter.com/intent/tweet?url=<?php echo get_permalink(); ?>&text=<?php the_title(); ?>"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo get_permalink(); ?>"><i class="fab fa-linkedin-in"></i></a></li>
           </ul>
         </div>
       </div>
@@ -77,6 +86,24 @@ get_template_part('templates/breadcrumbs');
   </article>
 </section>
 
+<?php 
+if( !empty($termid) ): 
+$query = new WP_Query(array(
+  'post_type' => 'faqs',
+  'posts_per_page'=> 4,
+  'orderby' => 'rand',
+  'post__not_in' => array($thisID),
+  'tax_query' => array(
+      array(
+          'taxonomy' => 'cat_faq',
+          'field'    => 'term_id',
+          'terms'    => array( $termid ),
+      ),
+  ),
+
+));
+if( $query->have_posts() ):
+?>
 
 <section class="faq-detials-sec">
   <div class="container">
@@ -84,42 +111,20 @@ get_template_part('templates/breadcrumbs');
       <div class="col-md-12">
         <div class="faq-detials-sec-inr">
           <div class="sec-entry-hdr hm-faq-entry-hdr">
-            <h2 class="mtc-faq-entry-title fl-h3">Meer vragen?</h2>
+            <h2 class="mtc-faq-entry-title fl-h3"><?php _e('Meer vragen?', THEME_NAME); ?></h2>
           </div>
           <div class="mct-faq-accordion-ctlr clearfix">
             <ul class="reset-list">
+              <?php while($query->have_posts()): $query->the_post(); ?>
               <li>
                 <div class="mct-faq-accordion">
-                  <h5 class="mct-faq-accordion-title">Dolor augue ut tempus, non in quis diam aenean morbi.<span></span></h5>
+                  <h5 class="mct-faq-accordion-title"><?php the_title(); ?><span></span></h5>
                   <div class="mct-faq-accordion-des">
-                    <p>Purus consequat sed egestas. Nunc purus molestie sed tincidunt tellus adipiscing. Vestibulum, eu purus sapien mi sit. Interdum porttitor at praesent auctor diam. Purus gravida nulla amet.</p>
+                    <?php echo cbv_get_excerpt(); ?>
                   </div>
                 </div>
               </li>
-              <li>
-                <div class="mct-faq-accordion">
-                  <h5 class="mct-faq-accordion-title">Dolor augue ut tempus, non in quis diam aenean morbi.<span></span></h5>
-                  <div class="mct-faq-accordion-des">
-                    <p>Purus consequat sed egestas. Nunc purus molestie sed tincidunt tellus adipiscing. Vestibulum, eu purus sapien mi sit. Interdum porttitor at praesent auctor diam. Purus gravida nulla amet.</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="mct-faq-accordion">
-                  <h5 class="mct-faq-accordion-title">Dolor augue ut tempus, non in quis diam aenean morbi<span></span></h5>
-                  <div class="mct-faq-accordion-des">
-                    <p>Purus consequat sed egestas. Nunc purus molestie sed tincidunt tellus adipiscing. Vestibulum, eu purus sapien mi sit. Interdum porttitor at praesent auctor diam. Purus gravida nulla amet.</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="mct-faq-accordion">
-                  <h5 class="mct-faq-accordion-title">Dolor augue ut tempus, non in quis diam aenean morbi<span></span></h5>
-                  <div class="mct-faq-accordion-des">
-                    <p>Purus consequat sed egestas. Nunc purus molestie sed tincidunt tellus adipiscing. Vestibulum, eu purus sapien mi sit. Interdum porttitor at praesent auctor diam. Purus gravida nulla amet.</p>
-                  </div>
-                </div>
-              </li>
+              <?php endwhile; ?>
             </ul>
           </div>
         </div>
@@ -127,4 +132,6 @@ get_template_part('templates/breadcrumbs');
     </div>
   </div>
 </section>
+<?php endif; wp_reset_postdata(); ?>
+<?php endif; ?>
 <?php get_footer(); ?>

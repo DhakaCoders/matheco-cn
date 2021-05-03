@@ -1,20 +1,6 @@
 <?php
 add_action('init', 'ajax_register_save');
 
-/*function wc_user_signup_action_hooks(){
-        ajax_wc_user_signup_init();
-}
-function ajax_wc_user_signup_init(){
-    wp_register_script('ajax-user-register-script', get_stylesheet_directory_uri(). '/assets/js/ajax-action.js', array('jquery'));
-    wp_enqueue_script('ajax-user-register-script');
-
-    wp_localize_script( 'ajax-user-register-script', 'ajax_user_register_signup_object', array(
-        'ajaxurl' => admin_url( 'admin-ajax.php' )
-    ));
-    // Enable the user with no privileges to run ajax_login() in AJAX
-}
-add_action('wp_ajax_nopriv_ajax_register_save', 'ajax_register_save');
-//add_action('wp_ajax_ajax_register_save', 'ajax_register_save');*/
 function ajax_register_save(){
     global $data_reg;
     if (isset( $_POST["billing_email_2"] ) && wp_verify_nonce($_POST['user_register_nonce'], 'user-register-nonce')) {
@@ -27,8 +13,8 @@ function ajax_register_save(){
         if( isset($_POST['password']) && !empty($_POST['password'])){
             $user_password = $_POST['password'];
         }
-        $firstname = (isset($_POST['billing_first_name']) && !empty($_POST['billing_first_name']))? $_POST['billing_first_name']:'';
-        $lastname = (isset($_POST['billing_last_name']) && !empty($_POST['billing_last_name']))? $_POST['billing_last_name']:'';
+        $firstname = (isset($_POST['billing_first_name']) && !empty($_POST['billing_first_name']))? sanitize_text_field($_POST['billing_first_name']):'';
+        $lastname = (isset($_POST['billing_last_name']) && !empty($_POST['billing_last_name']))? sanitize_text_field($_POST['billing_last_name']):'';
         if(isset($email) && !empty($email)){
             $exp = explode('@', $email);
             $user_login = $exp[0];
@@ -75,46 +61,59 @@ function ajax_register_save(){
                     update_user_meta( $customerId, "billing_last_name", $lastname );
                 }
                 if( isset($_POST['billing_email_2']) && !empty($_POST['billing_email_2']) ){
-                    update_user_meta( $customerId, "billing_email_2", $_POST['billing_email_2'] );
+                    update_user_meta( $customerId, "billing_email_2", sanitize_email($_POST['billing_email_2']) );
                 }
                 if( isset($_POST['billing_email']) && !empty($_POST['billing_email']) ){
-                    update_user_meta( $customerId, "billing_email", $_POST['billing_email'] );
+                    update_user_meta( $customerId, "billing_email", sanitize_email($_POST['billing_email']) );
                 }
 
                 if( isset($_POST['billing_address_1']) && !empty($_POST['billing_address_1']) ){
-                    update_user_meta( $customerId, "billing_address_1", $_POST['billing_address_1']);
+                    update_user_meta( $customerId, "billing_address_1", sanitize_text_field($_POST['billing_address_1']));
                 }
                 if( isset($_POST['billing_address_2']) && !empty($_POST['billing_address_2']) ){
-                    update_user_meta( $customerId, "billing_address_2", $_POST['billing_address_2'] );
+                    update_user_meta( $customerId, "billing_address_2", sanitize_text_field($_POST['billing_address_2']) );
                 }
                 if( isset($_POST['billing_house']) && !empty($_POST['billing_house']) ){
-                    update_user_meta( $customerId, "billing_house", $_POST['billing_house'] );
+                    update_user_meta( $customerId, "billing_house", sanitize_text_field($_POST['billing_house']) );
                 }
 
                 if( isset($_POST['billing_city']) && !empty($_POST['billing_city']) ){
-                    update_user_meta( $customerId, "billing_city", $_POST['billing_city']);
+                    update_user_meta( $customerId, "billing_city", sanitize_text_field($_POST['billing_city']));
                 }
                 if( isset($_POST['billing_postcode']) && !empty($_POST['billing_postcode']) ){
-                    update_user_meta( $customerId, "billing_postcode", $_POST['billing_postcode'] );
+                    update_user_meta( $customerId, "billing_postcode", sanitize_text_field($_POST['billing_postcode']) );
                 }
                 if( isset($_POST['billing_country']) && !empty($_POST['billing_country'])){
                     update_user_meta( $customerId, "billing_country", $_POST['billing_country']);
                 }
                 if( isset($_POST['billing_gsm_number']) && !empty($_POST['billing_gsm_number'])){
-                    update_user_meta( $customerId, "billing_gsm_number", $_POST['billing_gsm_number'] );
+                    update_user_meta( $customerId, "billing_gsm_number", sanitize_text_field($_POST['billing_gsm_number']) );
                 }
                 if( isset($_POST['billing_phone']) && !empty($_POST['billing_phone'])){
-                    update_user_meta( $customerId, "billing_phone", $_POST['billing_phone'] );
+                    update_user_meta( $customerId, "billing_phone", sanitize_text_field($_POST['billing_phone']) );
                 }
-                if(isset($_POST['is_shipping_address']) && $_POST['is_shipping_address'] == '1'){
-                    if( isset($_POST['billing_address_2']) && !empty($_POST['billing_address_2']) ){
-                        update_user_meta( $customerId, "shipping_address_2", $_POST['billing_address_2'] );
+                if(!isset($_POST['is_shipping_address'])){
+                    update_user_meta($customerId,"enable_ship_to_different", 1);
+                    if( isset($_POST['shipping_first_name']) && !empty($_POST['shipping_first_name']) ){
+                        update_user_meta($customerId,"shipping_first_name",sanitize_text_field($_POST['shipping_first_name']));
                     }
-                    if( isset($_POST['billing_gsm_number']) && !empty($_POST['billing_gsm_number'])){
-                        update_user_meta( $customerId, "shipping_gsm_number", $_POST['billing_gsm_number'] );
+                    if( isset($_POST['shipping_last_name']) && !empty($_POST['shipping_last_name']) ){
+                        update_user_meta($customerId,"shipping_last_name",sanitize_text_field($_POST['shipping_last_name']));
                     }
-                    if( isset($_POST['billing_phone']) && !empty($_POST['billing_phone'])){
-                        update_user_meta( $customerId, "shipping_phone", $_POST['billing_phone'] );
+                    if( isset($_POST['shipping_address_1']) && !empty($_POST['shipping_address_1']) ){
+                        update_user_meta( $customerId,"shipping_address_1",sanitize_text_field($_POST['shipping_address_1']));
+                    }
+                    if( isset($_POST['shipping_house']) && !empty($_POST['shipping_house']) ){
+                        update_user_meta( $customerId, "shipping_house", sanitize_text_field($_POST['shipping_house']) );
+                    }
+                    if( isset($_POST['shipping_address_2']) && !empty($_POST['shipping_address_2']) ){
+                        update_user_meta( $customerId,"shipping_address_2",sanitize_text_field($_POST['shipping_address_2']) );
+                    }
+                    if( isset($_POST['shipping_city']) && !empty($_POST['shipping_city']) ){
+                        update_user_meta( $customerId, "shipping_city", sanitize_text_field($_POST['shipping_city']));
+                    }
+                    if( isset($_POST['shipping_postcode']) && !empty($_POST['shipping_postcode']) ){
+                        update_user_meta( $customerId, "shipping_postcode", sanitize_text_field($_POST['shipping_postcode']) );
                     }
                 }
                 $user = get_user_by( 'id', $customerId );

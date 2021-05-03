@@ -35,9 +35,8 @@
 	color: #243444;
 	text-transform: uppercase;
 }
-
 .dfp-text-module{
-	
+    padding-bottom: 8px;
 }
 .default-page-con ul,
 ul{
@@ -114,7 +113,9 @@ ol li::before {
 .dfp-plate-one-img-bx img{
 	width: 100%;
 }
-
+.dft-hm-product-module .fl-pro-grd-title{
+	margin-bottom:3px;
+}
 
 .ac-fancy-module{
 	overflow: hidden;
@@ -183,7 +184,7 @@ ol li::before {
 	position: relative;
 }
 .fl-dft-lftimg-rgtdes-rgt {
-	padding-left: 20px;
+	padding-left: 26px;
 	padding-bottom: 5px;
 	padding-top: 0;
 }
@@ -459,12 +460,11 @@ Gallery design
 .cta-btn .fl-trnsprnt-btn:hover{
 	border-color: #EC5387;
 }
-
 .dfp-faq-module{
 	margin-top: 20px;
-	padding: 80px 115px 75px 115px;
+	padding: 90px 115px 75px 115px;
 	background: #F8F8F8;
-	margin-bottom: 60px;
+	margin-bottom: 67px;
 }
 .dfp-faq-module .mct-faq-accordion-ctlr{
 	width: 100%;
@@ -474,13 +474,15 @@ Gallery design
 	padding: 0;
 	padding-bottom: 30px;
 }
-
+.dfp-faq-module .mct-faq-accordion-ctlr ul li:last-child{
+	padding-bottom:0px;
+}
 .dfp-faq-module .mct-faq-accordion{
-	padding: 25px 40px;
+	padding: 30px 40px;
 }
 .dfp-faq-module .mct-faq-accordion-title{
 	margin-bottom: 0!important;
-	text-transform: lowercase;
+	text-transform: initial;
 }
 .dfp-faq-module .mct-faq-title{
 	text-align: center;
@@ -488,7 +490,7 @@ Gallery design
 
 .dfp-box-grd-module{
 	padding-top: 30px;
-	margin-bottom: 60px;
+	margin-bottom: 67px;
 }
 
 .dfp-our-service-module{
@@ -555,6 +557,9 @@ Gallery design
 	    border-bottom: 1px solid #F3F3F3;
 	    margin-bottom: 15px;
 	}
+	#faq-details .dfp-promo-module{
+		border-bottom:none;
+	}
 	.dfp-promo-module > strong{
 		font-size: 24px;
 		line-height: 30px;
@@ -588,10 +593,24 @@ Gallery design
 	    overflow-y: hidden;
 	    white-space: nowrap;
 	}
-	.table-dsc::-webkit-scrollbar {
+	.table-dsc::-webkit-scrollbar{
 	  height: 6px;
 	}
-	.table-dsc::-webkit-scrollbar-thumb {
+	.table-dsc::-moz-scrollbar{
+	  height: 6px;
+	}
+	.table-dsc::-ms-scrollbar{
+	  height: 6px;
+	}
+	.table-dsc::-webkit-scrollbar-thumb{
+	  background: #2285E3;
+	  border-radius: 4px;
+	}
+	.table-dsc::-moz-scrollbar-thumb{
+	  background: #2285E3;
+	  border-radius: 4px;
+	}
+	.table-dsc::-ms-scrollbar-thumb{
 	  background: #2285E3;
 	  border-radius: 4px;
 	}
@@ -619,6 +638,9 @@ Gallery design
 	}
 	.dfp-text-module{
 		padding-right: 10px;
+	}
+	.dfp-text-module h3{
+		display: none;
 	}
 	.dfp-promo-module h1, 
 	.dfp-promo-module-title{
