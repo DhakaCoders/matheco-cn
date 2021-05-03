@@ -59,6 +59,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
 }
 .xoo-cp-content .popup-product-title{
 	padding-bottom: 9px;
@@ -84,8 +85,9 @@
 	display: none;
 }
 .xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle{
-	padding-left: 25px!important;
+	padding-left: 137px!important;
 	padding-right:0!important;
+	position: relative;
 }
 .xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-pdetails-col-2 .product-order-btn,
 .xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-pdetails-col-2{
