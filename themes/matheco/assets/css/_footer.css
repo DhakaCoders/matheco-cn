@@ -172,14 +172,19 @@
 	content: none;
 }
 .ftr-btm-menu ul li a,
-.ftr-btm-designby a{
+.ftr-btm-designby span a{
 	text-decoration: none;
 	font-size: 14px;
 	color: #243444;
 	font-weight: 400;
 }
+.ftr-btm-designby span{
+	font-size: 14px;
+	color: #243444;
+	font-weight: 400;
+}
 .ftr-btm-menu ul li a:hover,
-.ftr-btm-designby a:hover{
+.ftr-btm-designby span a:hover{
 	color: #2285E3;
 }
 
@@ -195,13 +200,13 @@
 
 @media(max-width: 1399px){
 	.ftr-logo{
-		width: 40%;
+		width: 35%;
 	}
 	.ftr-col-1 {
 	    width: 19%;
 	}
 	.ftr-col-2 {
-	    width: 20%;
+	    width: 25%;
 	}
 	.ftr-col-3 {
 	    width: 21%;
@@ -214,10 +219,10 @@
 
 @media(max-width: 1199px){
 	.ftr-logo {
-	    width: 35%;
+	    width: 30%;
 	}
 	.ftr-col-2 {
-	    width: 22%;
+	    width: 27%;
 	}
 	.ftr-col-3 {
 	    width: 24%;
@@ -240,6 +245,10 @@
 	}
 	.ftr-col-3 {
 	    width: 28%;
+	}
+	.ftr-logo a{
+		max-width: 120px;
+		width: 100%;
 	}
 	.ftr-menu ul li a{
 		font-size: 12px;

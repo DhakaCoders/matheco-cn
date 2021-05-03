@@ -147,11 +147,14 @@ ovs-counter-sec-wrp
  Responsive Css
 ------------------
 */
-@media (max-width: 1699px){
-	
+@media (max-width: 1599px){
+	.ornare-lft-bg{
+		height:600px;
+	}
+	.team-member-grid-img{
+		height:320px!important;
+	}
 }
-
-
 
 @media (max-width: 1499px) {
 	.ornare-dsc {

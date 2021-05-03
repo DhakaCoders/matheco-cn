@@ -38,7 +38,7 @@ $thisID = get_the_ID();
             <?php 
               if( !empty($introright['titel']) ) printf( '<h1 class="ornare-dsc-title fl-h1">%s</h1>', $introright['titel'] );
               if( !empty($introright['beschrijving']) ) echo wpautop( $introright['beschrijving'] );
-              $introRhtimg = !empty($introleft['afbeelding'])? cbv_get_image_tag( $introleft['afbeelding'] ): ''; 
+              $introRhtimg = !empty($introright['afbeelding'])? cbv_get_image_tag( $introright['afbeelding'] ): ''; 
             ?>
             <div class="ornare-fea-img">
               <?php echo $introRhtimg; ?>
