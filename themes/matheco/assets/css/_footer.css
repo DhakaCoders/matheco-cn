@@ -289,6 +289,10 @@
 	.footer:after{
 		height: 16px;
 	}
+	.ftr-btm-designby span,
+	.ftr-btm-designby span a{
+		color: #707C88;
+	}
 }
 
 @media(max-width: 767px){
@@ -332,6 +336,10 @@
 	    font-size: 14px;
 	    font-weight: 400;
 	}
+	.ftr-btm-designby span,
+	.ftr-btm-designby span a{
+		font-size: 14px;
+	}
 	.ftr-location, 
 	.ftr-phone, 
 	.ftr-email {
@@ -349,10 +357,10 @@
 	    padding: 40px 0;
 	}
 	.ftr-copywrite p{
-		font-size: 12px;
+		font-size: 14px;
 	}
 	.ftr-btm-menu ul li a{
-		font-size: 12px;
+		font-size: 14px;
 	} 
 	.ftr-btm-designby a{
 		font-size: 12px;
@@ -364,10 +372,24 @@
 	.ftr-btm-menu ul li:last-child{
 		padding-right: 0;
 	}
+	.ftr-location a br{
+		display: block;
+	}
+	.ftr-location a, 
+	.ftr-phone a, 
+	.ftr-email a, 
+	.ftr-vat span{
+		text-transform: initial;
+	}
 }
 
 @media(max-width: 575px){
-	
+	.ftr-copywrite p,
+	.ftr-btm-menu ul li a,
+	.ftr-btm-designby span,
+	.ftr-btm-designby span a{
+		font-size: 12px;
+	}
 
 }
 
