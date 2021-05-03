@@ -32,6 +32,7 @@
 	padding-left: 8px;
 	padding-right: 8px;
 	padding-bottom: 0;
+	padding-top:0;
 }
 #faq-details .dfp-social-media ul li a{
 	display: inline-block;
@@ -99,13 +100,16 @@
 		margin-bottom: 12px;
 	}
 	#faq-details .dfp-back-btn-module {
-	    padding: 20px 0;
+	    padding: 25px 0;
 	}
 	.faq-detials-sec {
 	    padding: 40px 0 40px;
 	}
 	.faq-detials-sec .mct-faq-accordion-ctlr ul li {
 	    padding-bottom: 20px;
+	}
+	#faq-details .dfp-social-media span{
+		padding-right:10px;
 	}
 }
 @media(max-width: 575px){
