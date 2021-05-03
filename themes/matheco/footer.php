@@ -85,7 +85,7 @@
               ?>
             </div>
             <div class="ftr-btm-designby">
-              <a href="#">Website laten maken door Conversal</a>
+              <span>Website laten maken door <a href="#">Conversal</a></span>
             </div>
           </div>
         </div>
