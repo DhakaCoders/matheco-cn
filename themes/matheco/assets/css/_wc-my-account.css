@@ -6,14 +6,7 @@ body.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row{
     padding-left:0px!important;
     padding-right:0px!important;
 }
-.to-top-btn-cntlr
-.to-top-btn-cntlr
-.to-top-btn-cntlr
-.to-top-btn-cntlr
-.to-top-btn-cntlr
-.to-top-btn-cntlr{
-    display: none;
-}
+
 .woocommerce form .form-row .required{
     font-size: 13px;
 }
@@ -1808,6 +1801,14 @@ body.woocommerce-checkout section.checkout-top-sec{
     }
 }
 @media(max-width: 767px){
+    body.login-register .to-top-btn-cntlr,
+    body.loggedin-deshboard-crtl .to-top-btn-cntlr,
+    body.woocommerce-orders .to-top-btn-cntlr,
+    body.loggedin-winkelmandje-crtl .to-top-btn-cntlr,
+    body.woocommerce-edit-account .to-top-btn-cntlr,
+    body.woocommerce-order-received .to-top-btn-cntlr{
+        display: none!important;
+    }
     body.woocommerce-edit-account .innerpage-con-wrap .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation,
     body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation{
         float:none!important;
