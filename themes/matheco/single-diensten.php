@@ -20,7 +20,7 @@ get_template_part('templates/breadcrumbs');
             </div>
             <?php 
               $page_title = !empty($title) ? $title : get_the_title();
-              if( !empty($page_title) ) printf('<strong class="dfp-promo-module-title fl-h1">%s</strong>', $page_title);
+              if( !empty($page_title) ) printf('<strong class="dfp-promo-module-title fl-h3">%s</strong>', $page_title);
             ?>
           </div>
           <?php 
@@ -70,7 +70,7 @@ get_template_part('templates/breadcrumbs');
         <a href="javascript:history.go(-1)">
           <?php _e('Terug naar overzicht', THEME_NAME); ?>
           <i>
-            <svg class="dfp-back-btn-icon-svg" width="8" height="14" viewBox="0 0 8 14" fill="#707C88">
+            <svg class="dfp-back-btn-icon-svg" width="14" height="14" viewBox="0 0 14 14" fill="#707C88">
               <use xlink:href="#dfp-back-btn-icon-svg"></use>
             </svg>
           </i>
