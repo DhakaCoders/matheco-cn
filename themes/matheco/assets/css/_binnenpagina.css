@@ -146,8 +146,8 @@ ol li::before {
     -ms-transform: translate(-50%,-50%);
     -webkit-transform: translate(-50%,-50%);
     color: #E48AA4;
-    width: 122px;
-    height: 122px;
+    width: 120px;
+    height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
