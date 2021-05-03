@@ -426,9 +426,6 @@ small.woocommerce-price-suffix,
 		left: 5px;
 		right: 5px;
 	}
-	.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle{
-		padding-left: 15px!important
-	}
 	.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-pdetails-col-2 .product-order-btn a:first-child, .popup-bottom-btn a:first-child{
 		margin-right: 20px;
 		font-size: 15px;
