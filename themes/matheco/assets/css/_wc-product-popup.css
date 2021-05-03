@@ -533,6 +533,9 @@ small.woocommerce-price-suffix,
 		top: 34px;
 		right: 21px;
 	}
+	.xoo-cp-content .single-shortdetails{
+		font-size: 14px;
+	}
 	.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle .popup-product-title a{
 		font-size: 16px;
 	}
@@ -719,6 +722,9 @@ small.woocommerce-price-suffix,
 	span.xoo-cp-close.xoo-cp-icon-cross{
 		top: 27px;
 	}
+	.xoo-cp-content .single-shortdetails{
+		font-size: 13px;
+	}
 }
 
 @media(max-width:479px){
@@ -728,6 +734,9 @@ small.woocommerce-price-suffix,
 	}
 	.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle{
 		padding-left: 97px!important;
+	}
+	.xoo-cp-content .single-shortdetails{
+		font-size: 12px;
 	}
 }
 
