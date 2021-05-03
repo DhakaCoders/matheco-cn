@@ -12,6 +12,9 @@ contact-info-sec-wrp
 	margin: 0 auto;
 	text-align: center;
 }
+.contact-info-dsc{
+	color: #243444;
+}
 .contact-info-dsc-title{
 	margin-bottom: 10px;
 }
@@ -458,7 +461,9 @@ placeholder
  }
 
 @media (max-width: 1499px) {
-	
+	.contact-info-box-dsc a{
+		font-size: 18px;
+	}
 }
 
 @media(max-width: 1399px){
