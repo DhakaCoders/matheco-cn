@@ -561,7 +561,7 @@ small.woocommerce-price-suffix,
 		order:2;
 	}
 	.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des{
-		padding:20px 0;
+		padding:35px 0;
 	}
 	.flex-fill {
     	max-width: 100%;
@@ -723,6 +723,9 @@ small.woocommerce-price-suffix,
 	}
 	.xoo-cp-content .single-shortdetails{
 		font-size: 13px;
+	}
+	.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des{
+		padding: 25px 0;
 	}
 }
 
