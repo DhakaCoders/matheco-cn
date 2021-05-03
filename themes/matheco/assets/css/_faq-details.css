@@ -60,7 +60,6 @@
 #faq-details .dfp-promo-module-title{
 	margin-bottom: 15px;
 }
-
 #faq-details .dfp-promo-module a{
 	display: inline-block;
 	vertical-align: baseline;
@@ -110,6 +109,10 @@
 	}
 	#faq-details .dfp-social-media span{
 		padding-right:10px;
+	}
+	#faq-details .dfp-promo-module-title,
+	.mtc-faq-entry-title{
+		font-size:24px!important;
 	}
 }
 @media(max-width: 575px){
