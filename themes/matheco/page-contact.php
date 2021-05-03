@@ -78,6 +78,7 @@ get_template_part('templates/breadcrumbs');
         $email = get_field('emailadres', 'options');
         $gmaplink = !empty($gmurl)?$gmurl: 'javascript:void()';
         $bwt = get_field('btw', 'options');
+        $continfo = $form['contact_info'];
       ?>
       <div class="contact-form-rgt">
         <div class="contact-form-info-cntlr">
@@ -86,9 +87,23 @@ get_template_part('templates/breadcrumbs');
             <h4 class="fl-h4 contact-form-info-title"><?php _e( 'Contact Informatie', THEME_NAME ); ?></h4>
             <ul class="reset-list clearfix">
               <?php 
-                if( !empty($address) ) printf('<li><a href="%s" target="_blank">%s</a></li>', $gmaplink, $address);
-                if( !empty($telefoon) ) printf('<li><a href="tel:%s">%s</a>', phone_preg($telefoon),  $telefoon);  
-                if( !empty($email) ) printf('<li><a href="mailto:%s">%s</a></li>', $email, $email); 
+                if( !empty($continfo['adres']) ) {
+                  $contmaplink = !empty($continfo['url'])?$continfo['url']: 'javascript:void()';
+                  printf('<li><a href="%s" target="_blank">%s</a></li>', $contmaplink, $continfo['adres']);
+                }
+                else{
+                  if( !empty($address) ) printf('<li><a href="%s" target="_blank">%s</a></li>', $gmaplink, $address);
+                }
+                if(!empty($continfo['telefoon'])){
+                  printf('<li><a href="tel:%s">%s</a>', phone_preg($continfo['telefoon']),  $continfo['telefoon']);
+                }else{
+                  if( !empty($telefoon) ) printf('<li><a href="tel:%s">%s</a>', phone_preg($telefoon),  $telefoon);
+                } 
+                if(!empty($continfo['emailadres'])){
+                  printf('<li><a href="mailto:%s">%s</a></li>', $continfo['emailadres'], $continfo['emailadres']);
+                }else{
+                  if( !empty($email) ) printf('<li><a href="mailto:%s">%s</a></li>', $email, $email);
+                }
                 if( !empty($bwt) ) printf('<li><span>BTW: %s</span></li>', $bwt);
               ?>
               </ul>

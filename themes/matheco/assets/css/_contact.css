@@ -484,10 +484,13 @@ placeholder
 	.contact-info-box-dsc a{
 		font-size: 18px;
 	}
+	.contact-form-info ul li span, .contact-form-info ul li a{
+		font-size: 18px;
+	}
 }
 
 @media(max-width: 1399px){
-	
+
 }
 
 @media(max-width: 1299px){
