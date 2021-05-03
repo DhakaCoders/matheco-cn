@@ -199,7 +199,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 
-/*start of Noyon*/
 if (windowWidth <= 767) {
   $('.hambergar-icon').on('click', function(e){
     $('.hdr-menu').slideToggle(500);
@@ -305,11 +304,6 @@ if( $('.OurServicesSlider').length ){
     });
 }
 
-/*start of Rannojit*/
-
-
-
-/*start of Shariful*/
 
   /*$('.mct-faq-accordion h5').on('click', function(){
      
@@ -469,14 +463,14 @@ $('.thumbnails-cntlr .thumbnails').slick({
 // }
 
 
-/* start of Niaz */
+
 $(".type-order-format .woocommerce-input-wrapper span").each(function(){
         $(this).append('<div class="radio-custom"></div>')
   });
 $(".billing-address-wrap .same-as-shipping-address,.login-info p:first-child,.form-row .woocommerce-form__label-for-checkbox").each(function(){
         $(this).append('<div class="checkbox-custom"></div>')
   });
-/*start of Milon*/
+
 
 if( $('.TeamMemberSlider').length ){
     $('.TeamMemberSlider').slick({
@@ -677,6 +671,41 @@ $("#cat_filterform").on("change", "#cat_filter input:checkbox", function(){
 //products counter
 if( $('.qty').length ){
   $('.qty').each(function() {
+    var spinner = $(this),
+      input = spinner.find('input[type="number"]'),
+      btnUp = spinner.find('.plus'),
+      btnDown = spinner.find('.minus'),
+      min = 1,
+      max = input.attr('max');
+
+    btnUp.click(function() {
+      var oldValue = parseFloat(input.val());
+      if (oldValue <= max) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue + 1;
+      }
+      spinner.find("input").val(newVal);
+      spinner.find("input").trigger("change");
+    });
+
+    btnDown.click(function() {
+      var oldValue = parseFloat(input.val());
+      if (oldValue <= min) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue - 1;
+      }
+      spinner.find("input").val(newVal);
+      spinner.find("input").trigger("change");
+    });
+
+  });
+
+}
+
+if( $('.qty1').length ){
+  $('.qty1').each(function() {
     var spinner = $(this),
       input = spinner.find('input[type="number"]'),
       btnUp = spinner.find('.plus'),
