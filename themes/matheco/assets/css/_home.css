@@ -297,6 +297,9 @@
 	.our-services-item{
 		padding:55px 0px;
 	}
+	.hm-banner-desc{
+		margin-right: 12px;
+	}
 }
 @media(max-width: 1023px){
 	.OurServicesSlider.slick-slider .slick-dots li{
@@ -321,6 +324,7 @@
 		margin-bottom: -64px;
 		max-width: 400px;
 		width: 100%;
+		margin-right:0px;
 	}
 	.hm-banner-desc p:last-of-type{
 		margin-bottom: 25px;
