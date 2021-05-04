@@ -17,6 +17,9 @@
     font-weight: bold!important;
     font-size: 16px!important;
 }
+.moove-gdpr-modal-left-content ul#moove-gdpr-menu li:before{
+    content: none!important;
+}
 #moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton:hover{
     background: #fff!important;
     color: #E48AA4!important;
@@ -224,7 +227,7 @@
     
 }
 #moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content span.change-settings-button:hover{
-    color: #8CCC0C!important;
+    color: #D9534F!important;
 }
 .tijd_notime .opened-time-title:after{
     display: none;
@@ -411,7 +414,7 @@ body.openReserveer div[id^=resengo-reservation-widget-]{
     top: 32px;
 }
 #moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme {
-    background-color: #31304F!important;
+    background-color: #2285E3!important;
     border: none!important;
 }
 #moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button {
@@ -430,9 +433,10 @@ body.openReserveer div[id^=resengo-reservation-widget-]{
     margin: 0!important;
 }
 #moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton:hover{
-    background: #fff!important;
-    color: #8CCC0C!important;
+    background: #D9534F!important;
+    color: #fff!important;
     text-shadow: none!important;
+    border-color: #D9534F !important;
 }
 #moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container{
     padding: 20px 40px!important;
@@ -453,8 +457,8 @@ body.openReserveer div[id^=resengo-reservation-widget-]{
 }
 #moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close i, 
 #moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close span.gdpr-icon {
-    background-color: #F0AD4E!important;
-    border: 1px solid #F0AD4E!important;
+    background-color: #D9534F!important;
+    border: 1px solid #D9534F!important;
 }
  #moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close:hover span.gdpr-icon{
     color: #fff!important;
@@ -522,12 +526,12 @@ body.openReserveer div[id^=resengo-reservation-widget-]{
 }
 #moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton{
     background: transparent!important;
-    color: #5CB85C!important;
+    color: #2285E3!important;
     font-weight: 700!important;
     font-size: 16px!important;
     line-height: 22px!important;
     text-transform: uppercase!important;
-    border: 1px solid #5CB85C!important;
+    border: 1px solid #2285E3!important;
     max-width: 190px!important;
     height: 49px!important;
     min-width: initial!important;
@@ -538,7 +542,8 @@ body.openReserveer div[id^=resengo-reservation-widget-]{
     letter-spacing: 0.04em;
 }
 #moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton:hover{
-    background: #5CB85C!important;
+    background: #D9534F!important;
+    border-color: #D9534F!important;
     color: #fff!important;
 }
 #moove_gdpr_cookie_modal .cookie-switch .cookie-slider{
@@ -568,11 +573,13 @@ body.openReserveer div[id^=resengo-reservation-widget-]{
 #moove_gdpr_cookie_modal .cookie-switch .cookie-slider.cookie-round{
     height: 40px!important;
     width: 72px!important;
-    background: #5CB85C!important;
+    background: #D9534F!important;
     box-shadow: inset 0px 2px 2px -1px rgba(74, 74, 104, 0.1)!important;
     border-radius: 32px!important;
 }
-
+#moove_gdpr_cookie_modal .checkbox-selected .cookie-switch .cookie-slider.cookie-round{
+    background: #2285E3!important;
+}
 .gdpr-icon.moovegdpr-arrow-close:before,
 .gdpr-icon.moovegdpr-arrow-close:after{
     width: 2px!important;
@@ -594,7 +601,8 @@ body.openReserveer div[id^=resengo-reservation-widget-]{
     left: auto!important;
 }
 #moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close span.gdpr-icon:hover{
-    color: #000!important;
+    background:#2285E3!important;
+    border-color:#2285E3!important;
 }
 #moove_gdpr_cookie_modal .moove-gdpr-modal-content{
     transform: initial!important;

@@ -197,6 +197,7 @@ ovs-counter-sec-wrp
 	.ornare-dsc {
 	    padding-left: 35px;
 	    padding-top: 30px;
+	    padding-top: 25px;
 	}
 	.ornare-lft-bg {
 	    height: 430px;
@@ -223,7 +224,10 @@ ovs-counter-sec-wrp
 	.ovs-counter-sec-wrp{
 		padding-bottom: 80px;
 	}
-	
+	/*.ornare-dsc-title.fl-h1{
+		font-size:25px;
+		line-height:1!important;
+	}*/
 }
 
 @media(max-width: 767px){
