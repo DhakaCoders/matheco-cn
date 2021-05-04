@@ -7,7 +7,7 @@ defined( 'THEME_DIR' ) or define( 'THEME_DIR', get_template_directory() );
 defined( 'THEME_URI' ) or define( 'THEME_URI', get_template_directory_uri() );
 defined( 'HOMEID' ) or define( 'HOMEID', get_option('page_on_front') );
 
-defined( 'PERPAGE_FAQ' ) or define( 'PERPAGE_FAQ', 6 );
+defined( 'PERPAGE_FAQ' ) or define( 'PERPAGE_FAQ', 1 );
 
 /**
 Theme Setup->>
@@ -141,6 +141,9 @@ function custom_body_classes($classes){
     $classes[] = join(' ', array_filter($browsers, function ($browser) {
         return $GLOBALS[$browser];
     }));
+    if( is_page_template( 'page-faq.php' ) ){
+        $classes[]='archive';
+    }
     return $classes;
 }
 // call the filter for the body class
