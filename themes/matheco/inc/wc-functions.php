@@ -504,14 +504,18 @@ function add_custom_surcharge( $cart ) {
     if ( is_admin() && ! defined( 'DOING_AJAX' ) )
         return;
 
-    $state = array('BE');
-    $surcharge  = 0;
-
-    if ( in_array( WC()->customer->get_shipping_state(), $state ) ) {
-       
-    }
-     $cart->add_fee( 'Extra diensten', $surcharge, true );
-}
+    $state = array('BE', 'NL');
+    if ( in_array( WC()->customer->get_billing_country(), $state ) ) {
+       if(WC()->cart->get_subtotal() >= 40){
+        $surcharge  = 0;
+       }else{
+        $surcharge  = 6;
+       }
+       $cart->add_fee( 'Verzending', $surcharge, true );
+    }else{
+        $surcharge  = 6;
+        $cart->add_fee( 'Verzending', $surcharge, true );
+    }}
 
 
 /**
