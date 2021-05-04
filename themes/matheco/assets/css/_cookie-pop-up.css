@@ -107,22 +107,32 @@
 #moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content{
     background: transparent!important;
 }
-#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton{
-    background: transparent!important;
-    color: #5CB85C!important;
-    font-weight: 700!important;
-    font-size: 16px!important;
-    line-height: 22px!important;
-    text-transform: uppercase!important;
-    border: 1px solid #5CB85C!important;
-    max-width: 190px!important;
-    height: 49px!important;
-    min-width: initial!important;
+#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder{
     display: flex!important;
-    border-radius: 0!important;
-    padding-left:20px!important;
-    padding-right:20px!important;
-    letter-spacing: 0.04em!important;
+    justify-content: center!important;
+    flex-wrap: wrap!important;
+}
+#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton {
+    background: transparent !important;
+    color: #5CB85C !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    text-transform: uppercase !important;
+    border: 1px solid #5CB85C !important;
+    max-width: 270px !important;
+    height: 49px !important;
+    min-width: initial !important;
+    display: flex !important;
+    border-radius: 0 !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    letter-spacing: 0.04em;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px!important;
+    margin-right: 5px!important;
+    margin-bottom: 10px!important;
 }
 #moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content::before{
     background-color: #fff!important;
@@ -264,17 +274,17 @@ body.openReserveer div[id^=resengo-reservation-widget-]{
 }
 
 @media(max-width: 1300px){
-	#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-right-content{
-	    padding-left: 30px!important;
-	}
+    #moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-right-content{
+        padding-left: 30px!important;
+    }
 }
 
 @media(max-width: 1299px){
-	
+    
 }
 
 @media(max-width: 1199px){
-	.gdpr_lightbox-container {
+    .gdpr_lightbox-container {
         padding: 40px 100px;
     }
     #moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main span.tab-title {
@@ -297,10 +307,16 @@ body.openReserveer div[id^=resengo-reservation-widget-]{
     #moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content p {
         font-size: 15px!important;
     }
+    #moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content {
+        height: 170px!important;
+    }
+    #moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content::before {
+        bottom: 100%!important;
+    }
 }
 
 @media(max-width: 1023px){
-	.gdpr_lightbox-container {
+    .gdpr_lightbox-container {
         padding: 40px 40px!important;
     }
     #moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder,
@@ -311,12 +327,12 @@ body.openReserveer div[id^=resengo-reservation-widget-]{
         padding-left: 25px;
         padding-right: 25px;
     }
-	
+    
 }
 
 @media(max-width: 767px){
-	.gdpr_lightbox.moove_gdpr_cookie_modal_open .gdpr_lightbox-container{
-	    overflow: initial!important;
+    .gdpr_lightbox.moove_gdpr_cookie_modal_open .gdpr_lightbox-container{
+        overflow: initial!important;
         overflow-y: initial!important;
     }
     #moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-right-content{
@@ -405,6 +421,40 @@ body.openReserveer div[id^=resengo-reservation-widget-]{
     iframe.pdfjs-viewer{
         height: 320px;
     }
+    /*.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes,
+    .fl-dft-lftimg-rgtdes{
+        display: block;
+    }
+    .fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-lft{
+        width: 100%;
+    }
+    .fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-rgt{
+        padding-right: 0!important;
+        padding-top: 15px;
+        width: 100%;
+    }
+    .dfp-des-module .dfp-des-lft,
+    .dfp-des-module .dfp-des-rgt{
+        width: 100%;
+        padding-right: 0;
+    }
+    .dfp-text-module{
+        padding-right: 0;
+    }
+    .fl-dft-lftimg-rgtdes-lft,
+    .fl-dft-lftimg-rgtdes-rgt{
+        width: 100%;
+        padding: 0;
+    }
+    .fl-dft-lftimg-rgtdes-rgt{
+        padding-right: 0;
+        padding-top: 15px;
+    }
+    .fl-dft-lftimg-rgtdes{
+        padding-bottom: 25px;
+    }*/
+    
+    
 }
 
 .admin-bar .home-body-rt{
@@ -528,7 +578,8 @@ body.openReserveer div[id^=resengo-reservation-widget-]{
     line-height: 22px!important;
     text-transform: uppercase!important;
     border: 1px solid #5CB85C!important;
-    max-width: 190px!important;
+    max-width: 250px!important;
+    width: 100%;
     height: 49px!important;
     min-width: initial!important;
     display: flex!important;
@@ -812,10 +863,56 @@ body.openReserveer div[id^=resengo-reservation-widget-]{
     iframe.pdfjs-viewer{
         height: 320px;
     }
+   /* .fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes,
+    .fl-dft-lftimg-rgtdes{
+        display: block;
+    }
+    .fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-lft{
+        width: 100%;
+    }
+    .fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-rgt{
+        padding-right: 0!important;
+        padding-top: 15px;
+        width: 100%;
+    }
+    .dfp-des-module .dfp-des-lft,
+    .dfp-des-module .dfp-des-rgt{
+        width: 100%;
+        padding-right: 0;
+    }
+    .dfp-text-module{
+        padding-right: 0;
+    }
+    .fl-dft-lftimg-rgtdes-lft,
+    .fl-dft-lftimg-rgtdes-rgt{
+        width: 100%;
+        padding: 0;
+    }
+    .fl-dft-lftimg-rgtdes-rgt{
+        padding-right: 0;
+        padding-top: 15px;
+    }
+    .fl-dft-lftimg-rgtdes{
+        padding-bottom: 25px;
+    }*/
+    
     
 }
 
 @media(max-width: 479px){
-
-
+    .moove-gdpr-modal-footer-content {
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+    #moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton {
+        font-size: 13px !important;
+        line-height: 1!important;
+        height: 42px !important;
+        display: flex !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        align-items: center;
+        padding-top: 0!important;
+        padding-bottom: 0!important;
+    }
 }
