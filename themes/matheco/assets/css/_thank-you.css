@@ -123,8 +123,8 @@ body.woocommerce-order-received .checkout-page-title{
 	.thnk-you-social-des-cntlr {
 	    padding: 0px 60px;
 	}
-	body.woocommerce-order-received .checkout-page-title h1{
-		display: none;
+	body.woocommerce-order-received .checkout-top-sec{
+		padding-top: 38px!important;
 	}
 	body.woocommerce-order-received .thank-you-section{
 	    padding-top: 30px;
