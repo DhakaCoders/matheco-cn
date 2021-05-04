@@ -515,6 +515,11 @@ small.woocommerce-price-suffix,
     	left: 2px;
     	right: 2px;
 	}
+	.xoo-cp-container .pro-item span.onsale{
+		width: 80px!important;
+    	height: 24px!important;
+    	font-size: 11px!important;
+	}
 
 }
 @media(max-width:768px){
@@ -627,10 +632,11 @@ small.woocommerce-price-suffix,
 		margin-bottom: 40px;
 	}
 	.xoo-cp-container .pro-item span.onsale{
-		width: 70px!important;
-    	height: 22px!important;
-    	left: 8px!important;
-    	top: 8px!important;
+		width: 60px!important;
+    	height: 19px!important;
+    	left: 6px!important;
+    	top: 6px!important;
+    	font-size: 10px!important;
 	}
 	.xoo-cp-container .loop-shortdetails p{
 		margin-bottom: 6px;
@@ -750,5 +756,10 @@ small.woocommerce-price-suffix,
 	}
 	.pro-item-desc{
 		padding-left: 22px;
+	}
+	.xoo-cp-container .pro-item span.onsale{
+		width: 52px!important;
+    	height: 17px!important;
+    	font-size: 9px!important;
 	}
 }
