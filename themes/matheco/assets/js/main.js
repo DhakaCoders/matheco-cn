@@ -323,12 +323,23 @@ if( $('.OurServicesSlider').length ){
   });*/
 
 
-$('.mct-faq-accordion-title').click(function(){
+/*$('.mct-faq-accordion-title').click(function(){
     $(this).next().slideToggle(300);
     $(this).parent().siblings().find('.mct-faq-accordion-des').slideUp(300);
     $(this).toggleClass('active');
     $(this).parent().siblings().find('.mct-faq-accordion-title').removeClass('active');
 });
+*/
+
+
+$('.mct-faq-accordion-title').click(function(){
+    $(this).next().slideToggle(300);
+    $(this).parent().siblings().find('.mct-faq-accordion-title').slideUp(300);
+    $(this).toggleClass('active');
+    $(this).parent().siblings().find('.mct-faq-accordion-title').removeClass('active');
+});
+
+
 
 
 /*start of Sabbir*/
