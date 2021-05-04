@@ -341,14 +341,6 @@ $('.mct-faq-accordion-title').click(function(){
 
 
 
-/*$('.hh-accordion-title').click(function(){
-    $(this).next().slideToggle(300);
-    $(this).parent().siblings().find('.hh-accordion-des').slideUp(300);
-    $(this).toggleClass('hh-accordion-active');
-    $(this).parent().siblings().find('.hh-accordion-title').removeClass('hh-accordion-active');
-});
-*/
-
 
 /*start of Sabbir*/
 if (windowWidth <= 767) {
