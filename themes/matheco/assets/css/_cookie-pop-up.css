@@ -583,7 +583,7 @@ body.openReserveer div[id^=resengo-reservation-widget-]{
     text-transform: uppercase!important;
     border: 1px solid #2285E3!important;
     /*max-width: 190px!important;*/
-     max-width: 250px!important; 
+    max-width: 250px!important; 
     width: 100%;
     padding-top:17px!important;
     height: 49px!important;
