@@ -481,8 +481,8 @@
 	}
 	.ftball-bcwrd-img{
 		position: initial;
-		min-height: 272px;
-		width: 100%;
+		min-height: 410px;
+		width: 100%!important;
 	}
 	.ftball-bcwrd-desc-cntlr{
 		min-height: initial;
@@ -514,6 +514,13 @@
 	}
 	.our-services{
 		padding-bottom: 35px;
+	}
+	.our-srvcs-icon{
+		width: 110px;
+		height: 110px;
+	}
+	.ftball-bcwrd-img{
+		min-height: 272px;
 	}
 }
 @media(max-width: 479px){

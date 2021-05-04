@@ -103,10 +103,11 @@
 	margin-top: 30px;
 }
 .mct-faq-accordion-des a{
-    font-size: 16px;
-    margin-left: 7px;
-    color: #0275D8;
-    font-weight: 500;
+	font-size: 14px;
+	margin-left: 7px;
+	color: #243444;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 .mct-faq-accordion-des p{
 	margin-bottom: 0;
@@ -185,6 +186,12 @@
 	}
 	.mct-faq-accordion-title {
 	    font-size: 14px;
+	}
+	.mct-faq-accordion-des a{
+		display:block;
+		margin-left:0;
+		font-size:12px;
+		margin-top:25px;
 	}
 }
 

@@ -109,6 +109,9 @@
 	.faq-overzicht-entry-hdr-sec{
 		padding-top: 30px;
 	}
+	.faq-overzicht-sec .mct-faq-accordion{
+		padding: 25px 20px;
+	}
 	.faq-overzicht-sec {
 	    padding: 40px 0 30px;
 	}
@@ -128,6 +131,10 @@
 	}
 	.faq-entry-hdr-btn{
 		padding-bottom: 20px;
+	}
+	.faq-overzicht-sec .mct-faq-accordion-title span{
+		height:28px;
+		width:28px;
 	}
 }
 @media(max-width: 575px){

@@ -405,38 +405,6 @@ body.openReserveer div[id^=resengo-reservation-widget-]{
     iframe.pdfjs-viewer{
         height: 320px;
     }
-    .fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes,
-    .fl-dft-lftimg-rgtdes{
-        display: block;
-    }
-    .fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-lft{
-        width: 100%;
-    }
-    .fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-rgt{
-        padding-right: 0!important;
-        padding-top: 15px;
-        width: 100%;
-    }
-    .dfp-des-module .dfp-des-lft,
-    .dfp-des-module .dfp-des-rgt{
-        width: 100%;
-        padding-right: 0;
-    }
-    .dfp-text-module{
-        padding-right: 0;
-    }
-    .fl-dft-lftimg-rgtdes-lft,
-    .fl-dft-lftimg-rgtdes-rgt{
-        width: 100%;
-        padding: 0;
-    }
-    .fl-dft-lftimg-rgtdes-rgt{
-        padding-right: 0;
-        padding-top: 15px;
-    }
-    .fl-dft-lftimg-rgtdes{
-        padding-bottom: 25px;
-    } 
 }
 
 .admin-bar .home-body-rt{
@@ -844,39 +812,6 @@ body.openReserveer div[id^=resengo-reservation-widget-]{
     iframe.pdfjs-viewer{
         height: 320px;
     }
-    .fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes,
-    .fl-dft-lftimg-rgtdes{
-        display: block;
-    }
-    .fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-lft{
-        width: 100%;
-    }
-    .fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-rgt{
-        padding-right: 0!important;
-        padding-top: 15px;
-        width: 100%;
-    }
-    .dfp-des-module .dfp-des-lft,
-    .dfp-des-module .dfp-des-rgt{
-        width: 100%;
-        padding-right: 0;
-    }
-    .dfp-text-module{
-        padding-right: 0;
-    }
-    .fl-dft-lftimg-rgtdes-lft,
-    .fl-dft-lftimg-rgtdes-rgt{
-        width: 100%;
-        padding: 0;
-    }
-    .fl-dft-lftimg-rgtdes-rgt{
-        padding-right: 0;
-        padding-top: 15px;
-    }
-    .fl-dft-lftimg-rgtdes{
-        padding-bottom: 25px;
-    }
-    
     
 }
 
