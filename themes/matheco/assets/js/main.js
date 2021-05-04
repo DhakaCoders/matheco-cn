@@ -495,7 +495,8 @@ if( $('.TeamMemberSlider').length ){
           breakpoint: 639,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            dots:true
           }
         },
         {
@@ -737,6 +738,21 @@ if( $('.qty1').length ){
 
   });
 
+}
+
+if (windowWidth <= 767) {
+  $(window).scroll(function() {
+      if ($(this).scrollTop()) {
+          $('.to-top-btn-cntlr').fadeIn();
+      } else {
+          $('.to-top-btn-cntlr').fadeOut();
+      }
+  });
+  }
+if( $('.to-top-btn-cntlr').length ){
+  $(".to-top-btn-cntlr").click(function() {
+      $("html, body").animate({scrollTop: 0}, 1000);
+   });
 }
 new WOW().init();
 
