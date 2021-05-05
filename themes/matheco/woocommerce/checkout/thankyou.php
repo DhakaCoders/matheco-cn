@@ -50,14 +50,16 @@ defined( 'ABSPATH' ) || exit;
 		        <p><?php esc_html_e( 'Bestelnummer', 'woocommerce' ); ?>:<span>#<?php echo $order->get_order_number(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span></p>
 		        <h6 class="fl-h6 chkout-subtitle"><?php esc_html_e( 'Een bevestigingsmail  komt zodadelijk jouw richting uit.', 'woocommerce' ); ?></h6> 
 		      </div>
-		      <div class="chkout-service">
-		        <div class="srv-fea-img">
-		          <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/checkout-page-img.jpg" alt=""></a>
-		        </div>
 				<?php 
 	            	$smedias = get_field('social_media', 'options'); 
 	            	$thankyou = get_field('orderthankyou', 'options'); 
 	            ?>
+		      <div class="chkout-service">
+		      	<?php if( $thankyou['afbeelding'] ): ?>
+		        <div class="srv-fea-img">
+		          <a><?php echo cbv_get_image_tag($thankyou['afbeelding']); ?></a>
+		        </div>
+		    	<?php endif; ?>
 		        <div class="srv-cont">
 		          <?php if($thankyou): ?>
 		          <div class="chk-acc">
