@@ -608,4 +608,3 @@ function remove_postcode_validation( $fields ) {
 remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display' );
 add_action('cbv_wc_cross_sell_display', 'woocommerce_cross_sell_display');
 include_once(THEME_DIR .'/inc/wc-manage-fields.php');
-
