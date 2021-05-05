@@ -66,7 +66,7 @@
 	font-size: 22px;
 	line-height: 1;
 	letter-spacing: -0.02em;
-	color: #8AA4E4;
+	color: #243444;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	padding-bottom: 20px;
@@ -110,14 +110,15 @@
     justify-content: center;
     align-items: center;
 }
-.page-404-btn a:hover:first-of-type{
+/*.page-404-btn a:hover:first-of-type{
 	background:transparent;
 	color: #31304F;
 	border-color: #31304F;
-}
-.page-404-btn a:hover:last-of-type{
-	background:#31304F;
-	border-color: #31304F;
+}*/
+.page-404-btn a:hover{
+	background: #D9534F;
+    border-color: #D9534F;
+    color: #fff;
 }
 
 /* resposnive */
