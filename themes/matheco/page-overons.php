@@ -81,10 +81,10 @@ $thisID = get_the_ID();
                    <div class="team-member-grid-img inline-bg" style="background: url(<?php echo $team_src; ?>);"></div>
                  </div>
                 <div class="team-member-grid-dsc">
-				<?php 
-					if( !empty($team['naam']) ) printf( '<h4 class="fl-h4">%s</h4>', $team['naam'] );
-					if( !empty($team['positie']) ) printf( '<span>%s</span>', $team['positie'] );
-				?>
+        				<?php 
+        					if( !empty($team['naam']) ) printf( '<h4 class="fl-h4">%s</h4>', $team['naam'] );
+        					if( !empty($team['positie']) ) printf( '<span>%s</span>', $team['positie'] );
+        				?>
                 </div>
               </div>
           	  <?php endforeach; ?>
