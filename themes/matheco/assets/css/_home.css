@@ -504,6 +504,9 @@
 	.ftball-bcwrd-btn{
 		padding-top: 0;
 	}
+	.services-overview .our-services-title span{
+	    display: none;
+	}
 }
 @media(max-width: 575px){
 	.hm-banner-img{
