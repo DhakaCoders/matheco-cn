@@ -14,15 +14,6 @@
   $smedias = get_field('social_media', 'options');
   $copyright_text = get_field('copyright_text', 'options');
 ?>
-
-<div class="to-top-btn-cntlr">
-  <div class="to-top-btn">
-    <i>
-      <svg class="to-top" width="14" height="14" viewBox="0 0 14 14" fill="#fff">
-      <use xlink:href="#to-top"></use> </svg>
-    </i>
-  </div>
-</div>
 <footer class="footer">
   <div class="ftr-top">
     <div class="container">
@@ -37,7 +28,7 @@
               </div>
               <?php endif; ?>
             <div class="ftr-menu ftr-col-1">
-              <h6 class="ftr-menu-title fl-h6 hide-sm"><?php _e( 'NAVIGATIE', THEME_NAME ); ?></h6>
+              <h6 class="ftr-menu-title fl-h6 hide-sm"><?php _e( 'NAVIGATIE', 'matheco' ); ?></h6>
               <?php 
                 $fmenuOptions1 = array( 
                     'theme_location' => 'cbv_fta_menu', 
@@ -49,7 +40,7 @@
               ?> 
             </div>
             <div class="ftr-menu ftr-col-2 hide-sm">
-              <h6 class="ftr-menu-title fl-h6 hide-sm"><?php _e( 'Diensten', THEME_NAME ); ?></h6>
+              <h6 class="ftr-menu-title fl-h6 hide-sm"><?php _e( 'Diensten', 'matheco' ); ?></h6>
               <?php 
                 $fmenuOptions2 = array( 
                     'theme_location' => 'cbv_ftb_menu', 
@@ -61,7 +52,7 @@
               ?>
             </div>
             <div class="ftr-menu ftr-col-3">
-              <h6 class="ftr-menu-title fl-h6 hide-sm"><?php _e( 'Contact', THEME_NAME ); ?></h6>
+              <h6 class="ftr-menu-title fl-h6 hide-sm"><?php _e( 'Contact', 'matheco' ); ?></h6>
               <?php 
                 if( !empty($address) ) printf('<div class="ftr-location"><a href="%s" target="_blank">%s</a></div>', $gmaplink, $address);
                 if( !empty($telefoon) ) printf('<div class="ftr-phone"><a href="tel:%s">%s</a></div>', phone_preg($telefoon),  $telefoon); 
