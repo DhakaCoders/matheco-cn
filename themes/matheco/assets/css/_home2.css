@@ -199,6 +199,9 @@
 	.mtc-faq-sec {
 	    padding-top: 60px;
 	}
+	.mct-faq-accordion-title span:after {
+	    font-size: 10px;
+	}
 
 }
 

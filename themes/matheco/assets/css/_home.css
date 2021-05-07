@@ -525,6 +525,10 @@
 	.ftball-bcwrd-img{
 		min-height: 272px;
 	}
+	.home .mct-faq-accordion-title span {
+	    width: 28px;
+	    height: 28px;
+	}
 }
 @media(max-width: 479px){
 	.hm-banner-inr{
