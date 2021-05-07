@@ -234,6 +234,9 @@ contact-info-sec-wrp
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }*/
+div.wpforms-container-full .wpforms-form .wpforms-field-description{
+	padding-top: 10px;
+}
 .wpforms-field-text p,
 .wpforms-field-description p{
 	font-size: 13px;
@@ -570,7 +573,7 @@ placeholder
 
 @media(max-width: 767px){
 	.contact-info-box-dsc a{
-		font-size: 18px;
+		font-size: 16px;
 	}
 	.contact-info-box-inr {
 	    padding: 35px 10px 30px;

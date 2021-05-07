@@ -150,16 +150,6 @@
 	.mct-faq-accordion{
 		padding: 25px 20px;
 	}
-	.mct-faq-accordion-ctlr ul {
-	    margin-left: 0;
-	    margin-right: 0;
-	}
-	.mct-faq-accordion-ctlr ul li {
-	    width: 100%;
-	    padding-left: 0;
-	    padding-right: 0;
-	    padding-bottom: 20px;
-	}
 	.mct-faq-accordion-title{
 		font-size: 16px;
 	}
@@ -192,6 +182,16 @@
 		margin-left:0;
 		font-size:12px;
 		margin-top:25px;
+	}
+	.mct-faq-accordion-ctlr ul {
+	    margin-left: 0;
+	    margin-right: 0;
+	}
+	.mct-faq-accordion-ctlr ul li {
+	    width: 100%;
+	    padding-left: 0;
+	    padding-right: 0;
+	    padding-bottom: 20px;
 	}
 }
 

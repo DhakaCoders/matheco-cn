@@ -634,7 +634,7 @@ body.woocommerce-page.woocommerce-checkout .woocommerce-NoticeGroup-checkout .wo
 	}
 	body.woocommerce-cart .cart-table-crtl table.shop_table tbody tr td.product-remove > a {
 	    position: absolute;
-	    bottom: 22px;
+	    bottom: 18px;
 	    left: auto;
 	    right: 0;
 	    z-index: 10!important;
