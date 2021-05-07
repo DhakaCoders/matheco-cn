@@ -214,7 +214,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
     line-height:1;
     margin-bottom: 0;
     display: inline-block;
-    margin-top:-2px;
+    margin-top:-1px;
     margin-left: 1.5px;
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
@@ -478,6 +478,19 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 	}
 	.user-cart-cntlr .user {
 	    display: none;
+	}
+	nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
+		transform: initial!important;
+		transition: initial!important;
+	}
+	nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:after{
+		content: none!important;
+	}
+	nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
+		position: static!important;
+		display: none;
+		width: 100%!important;
+		margin: 0;
 	}
 }
 @media(max-width: 639px){

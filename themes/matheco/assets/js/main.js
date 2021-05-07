@@ -207,10 +207,11 @@ if (windowWidth <= 767) {
 
   $('li.menu-item-has-children > a').on('click', function(e){
     e.preventDefault();
-    $(this).parent().toggleClass('sub-menu-arrow');
-    $(this).next().slideToggle(300);
-
+    $(this).parent().siblings().find('.sub-menu').slideUp(300);
+    $(this).parent().find('.sub-menu').slideToggle(300);
+    $(this).toggleClass('sub-menu-arrow');
   });
+
 }
 
 if( $('.hm-banner-bdr').length ){

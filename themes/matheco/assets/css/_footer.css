@@ -113,19 +113,22 @@
 .ftr-email a,
 .ftr-vat span{
 	font-size: 14px;
-	line-height: 1.8;
 	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
 	letter-spacing: -0.02em;
 	font-weight: 500;
+	display: block;
 }
 .ftr-location a:hover,
 .ftr-phone a:hover,
 .ftr-email a:hover{
 	opacity: 0.7;
 }
-
+/*.ftr-location a br{
+	display: none;
+}
+*/
 
 
 
